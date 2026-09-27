@@ -1,0 +1,200 @@
+{
+  "report": [
+    {
+      "name": "home",
+      "width": 1920,
+      "size": "76px",
+      "lineHeight": "80.56px",
+      "tracking": "-4.18px",
+      "fontLoaded": true,
+      "h2": [
+        "60px"
+      ],
+      "documentWidth": 1920,
+      "overflow": []
+    },
+    {
+      "name": "formacion",
+      "width": 1920,
+      "size": "76px",
+      "lineHeight": "80.56px",
+      "tracking": "-4.18px",
+      "fontLoaded": true,
+      "h2": [
+        "60px"
+      ],
+      "documentWidth": 1920,
+      "overflow": []
+    },
+    {
+      "name": "empresas",
+      "width": 1920,
+      "size": "76px",
+      "lineHeight": "80.56px",
+      "tracking": "-4.18px",
+      "fontLoaded": true,
+      "h2": [
+        "60px"
+      ],
+      "documentWidth": 1920,
+      "overflow": []
+    },
+    {
+      "name": "home",
+      "width": 1440,
+      "size": "76px",
+      "lineHeight": "80.56px",
+      "tracking": "-4.18px",
+      "fontLoaded": true,
+      "h2": [
+        "57.6px"
+      ],
+      "documentWidth": 1440,
+      "overflow": []
+    },
+    {
+      "name": "formacion",
+      "width": 1440,
+      "size": "76px",
+      "lineHeight": "80.56px",
+      "tracking": "-4.18px",
+      "fontLoaded": true,
+      "h2": [
+        "57.6px"
+      ],
+      "documentWidth": 1440,
+      "overflow": []
+    },
+    {
+      "name": "empresas",
+      "width": 1440,
+      "size": "76px",
+      "lineHeight": "80.56px",
+      "tracking": "-4.18px",
+      "fontLoaded": true,
+      "h2": [
+        "57.6px"
+      ],
+      "documentWidth": 1440,
+      "overflow": []
+    },
+    {
+      "name": "home",
+      "width": 1024,
+      "size": "63.744px",
+      "lineHeight": "67.5686px",
+      "tracking": "-3.50592px",
+      "fontLoaded": true,
+      "h2": [
+        "40.96px"
+      ],
+      "documentWidth": 1024,
+      "overflow": []
+    },
+    {
+      "name": "formacion",
+      "width": 1024,
+      "size": "63.744px",
+      "lineHeight": "67.5686px",
+      "tracking": "-3.50592px",
+      "fontLoaded": true,
+      "h2": [
+        "40.96px"
+      ],
+      "documentWidth": 1024,
+      "overflow": []
+    },
+    {
+      "name": "empresas",
+      "width": 1024,
+      "size": "63.744px",
+      "lineHeight": "67.5686px",
+      "tracking": "-3.50592px",
+      "fontLoaded": true,
+      "h2": [
+        "40.96px"
+      ],
+      "documentWidth": 1024,
+      "overflow": []
+    },
+    {
+      "name": "home",
+      "width": 768,
+      "size": "55.808px",
+      "lineHeight": "59.1565px",
+      "tracking": "-3.06944px",
+      "fontLoaded": true,
+      "h2": [
+        "34px"
+      ],
+      "documentWidth": 768,
+      "overflow": []
+    },
+    {
+      "name": "formacion",
+      "width": 768,
+      "size": "55.808px",
+      "lineHeight": "59.1565px",
+      "tracking": "-3.06944px",
+      "fontLoaded": true,
+      "h2": [
+        "34px"
+      ],
+      "documentWidth": 768,
+      "overflow": []
+    },
+    {
+      "name": "empresas",
+      "width": 768,
+      "size": "55.808px",
+      "lineHeight": "59.1565px",
+      "tracking": "-3.06944px",
+      "fontLoaded": true,
+      "h2": [
+        "34px"
+      ],
+      "documentWidth": 768,
+      "overflow": []
+    },
+    {
+      "name": "home",
+      "width": 390,
+      "size": "44.09px",
+      "lineHeight": "46.7354px",
+      "tracking": "-2.42495px",
+      "fontLoaded": true,
+      "h2": [
+        "34px"
+      ],
+      "documentWidth": 390,
+      "overflow": []
+    },
+    {
+      "name": "formacion",
+      "width": 390,
+      "size": "44.09px",
+      "lineHeight": "46.7354px",
+      "tracking": "-2.42495px",
+      "fontLoaded": true,
+      "h2": [
+        "34px"
+      ],
+      "documentWidth": 390,
+      "overflow": []
+    },
+    {
+      "name": "empresas",
+      "width": 390,
+      "size": "44.09px",
+      "lineHeight": "46.7354px",
+      "tracking": "-2.42495px",
+      "fontLoaded": true,
+      "h2": [
+        "34px"
+      ],
+      "documentWidth": 390,
+      "overflow": []
+    }
+  ],
+  "errors": []
+}

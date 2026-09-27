@@ -1,0 +1,65 @@
+/* Document defaults and accessibility inherited from the original. */
+
+:root {
+  color-scheme: light;
+  box-sizing: border-box;
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+:root[data-theme="dark"],
+:root:not([data-theme="light"]) {
+  --paper: #f3f2ec;
+  --ink: #0a0c1b;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #f3f2ec;
+    --ink: #0a0c1b;
+  }
+}
+html {
+  scroll-padding-top: calc(env(safe-area-inset-top, 0px) + 84px);
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family:
+    "IBM Plex Sans",
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+a {
+  color: #0219fc;
+}
+a:hover {
+  color: #0112b0;
+}
+img,
+svg {
+  max-width: 100%;
+}
+summary {
+  cursor: pointer;
+  list-style: none;
+}
+summary::-webkit-details-marker {
+  display: none;
+}
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+summary:focus-visible {
+  outline: 3px solid #ff7a1a;
+  outline-offset: 2px;
+}

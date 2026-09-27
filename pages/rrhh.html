@@ -1,0 +1,78 @@
+<div class="rrhh-page">
+  <section class="rrhh-hero" aria-labelledby="rrhh-title">
+    <div class="rrhh-shell">
+      <div class="rrhh-breadcrumb"><a href="#/">Inicio</a><span>/</span><span>Para RRHH</span></div>
+      <div class="rrhh-hero-grid">
+        <div>
+          <p class="rrhh-kicker">PARA RECURSOS HUMANOS · HERRAMIENTAS · PLANIFICACIÓN</p>
+          <h1 id="rrhh-title">Menos trámites.<br><span>Más argumentos ante dirección.</span></h1>
+          <p class="rrhh-lead">Herramientas gratuitas para detectar necesidades, planificar, justificar y medir la formación de operaciones. Y un equipo que se ocupa del resto.</p>
+        </div>
+        <div id="kit" class="rrhh-kitbox">
+          <h2>Tu kit RRHH, en un solo sitio.</h2>
+          <p>7 herramientas para convertir necesidades de formación en un plan defendible, medible y preparado para FUNDAE.</p>
+          <sc-if value="{{kitPending}}" hint-placeholder-val="{{ true }}">
+            <label>Email de trabajo<input type="email" placeholder="nombre@empresa.com" value="{{kitEmail}}" data-on-change="{{onKitEmail}}" /></label>
+            <button type="button" data-on-click="{{onKitSend}}">Recibir el kit RRHH completo</button>
+            <div class="rrhh-kiterror">{{kitError}}</div>
+          </sc-if>
+          <sc-if value="{{kitSent}}" hint-placeholder-val="{{ false }}">
+            <div class="rrhh-kitsent">
+              <strong>Kit en camino.</strong>
+              <p>Registrado: {{kitEmail}}. Descarga ahora las 7 herramientas en un solo archivo.</p>
+              <a href="#rrhh" data-dl="Kit_RRHH_Logistikos.zip" class="rrhh-download-main">Descargar kit completo (ZIP) →</a>
+              <button type="button" data-on-click="{{onKitReset}}" class="rrhh-reset">Usar otro email</button>
+            </div>
+          </sc-if>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="rrhh-section rrhh-section--light" aria-labelledby="rrhh-tools-title">
+    <div class="rrhh-shell">
+      <div class="rrhh-section-head">
+        <div><p class="rrhh-eyebrow">KIT RRHH</p><h2 id="rrhh-tools-title">De detectar el problema a demostrar el impacto.</h2></div>
+        <p>Seis recursos descargables para trabajar con incidencias reales, ordenar el plan anual, preparar FUNDAE y presentar resultados al comité.</p>
+      </div>
+      <div class="rrhh-tools">
+        <article class="rrhh-tool"><div class="rrhh-tool-top"><span>KIT-01</span><span>EXCEL</span></div><h3>Detección de necesidades por departamento</h3><p>Cuestionario para mandos de almacén, tráfico, compras y comercio exterior. Cruza incidencias reales con carencias de formación.</p><a href="#rrhh" data-dl="KIT-01_Deteccion_necesidades_formativas.xlsx">Descargar Excel →</a></article>
+        <article class="rrhh-tool rrhh-tool--accent"><div class="rrhh-tool-top"><span>KIT-02</span><span>EXCEL</span></div><h3>Plan anual de formación listo para dirección</h3><p>Acciones, grupos, calendario por turnos y consumo de crédito FUNDAE en una sola hoja, con resumen ejecutivo.</p><a href="#rrhh" data-dl="KIT-02_Plan_anual_formacion.xlsx">Descargar Excel →</a></article>
+        <article class="rrhh-tool"><div class="rrhh-tool-top"><span>KIT-03</span><span>EXCEL</span></div><h3>Matriz de competencias de puestos logísticos</h3><p>Competencias técnicas y de gestión por puesto, de preparador a dirección de operaciones, con niveles para evaluar al equipo.</p><a href="#rrhh" data-dl="KIT-03_Matriz_competencias_logistica.xlsx">Descargar Excel →</a></article>
+        <article class="rrhh-tool"><div class="rrhh-tool-top"><span>KIT-04</span><span>PDF</span></div><h3>Checklist documental FUNDAE</h3><p>Todo lo que debe existir si llega una revisión: RLT, comunicaciones, controles de asistencia, evaluación y cuestionario de calidad.</p><a href="#rrhh" data-dl="KIT-04_Checklist_documental_FUNDAE.pdf">Descargar PDF →</a></article>
+        <article class="rrhh-tool"><div class="rrhh-tool-top"><span>KIT-05</span><span>AI ACT</span></div><h3>Registro de alfabetización en IA por puesto</h3><p>Qué herramientas de IA usa cada puesto, qué formación ha recibido y la evidencia documental que acredita el cumplimiento.</p><a href="#rrhh" data-dl="KIT-05_Registro_alfabetizacion_IA.xlsx">Descargar Excel →</a></article>
+        <article class="rrhh-tool"><div class="rrhh-tool-top"><span>KIT-06</span><span>PDF + EXCEL</span></div><h3>Medición de impacto y ROI de la formación</h3><p>Modelo de cuatro niveles —satisfacción, aprendizaje, aplicación y resultados— con KPIs logísticos para presentar al comité.</p><a href="#rrhh" data-dl="KIT-06_Impacto_ROI_y_guia.zip">Descargar Excel + guía →</a></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="rrhh-section rrhh-section--dark" aria-labelledby="rrhh-calendar-title">
+    <div class="rrhh-shell rrhh-calendar-wrap">
+      <div class="rrhh-calendar-copy"><p class="rrhh-eyebrow">CALENDARIO DE UNA FORMACIÓN BONIFICADA</p><h2 id="rrhh-calendar-title">Los plazos que RRHH no puede saltarse.</h2><p>Los gestionamos nosotros, pero tu equipo debe conocerlos. Te avisamos de cada hito por email.</p></div>
+      <div class="rrhh-timeline">
+        <article class="rrhh-step"><div class="rrhh-step-time">−15 DÍAS</div><div><h3>Información a la RLT</h3><p>Si hay representación legal, se le informa del plan antes de empezar.</p></div></article>
+        <article class="rrhh-step"><div class="rrhh-step-time">−2 DÍAS</div><div><h3>Comunicación de inicio</h3><p>Alta del grupo en FUNDAE con fechas, horario, lugar y participantes.</p></div></article>
+        <article class="rrhh-step"><div class="rrhh-step-time">DURANTE</div><div><h3>Asistencia y evaluación</h3><p>Firmas o registros de conexión y al menos el 75 % de asistencia por participante.</p></div></article>
+        <article class="rrhh-step"><div class="rrhh-step-time">AL TERMINAR</div><div><h3>Finalización y bonificación</h3><p>Costes, cuestionarios y aplicación del descuento en los seguros sociales.</p></div></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="rrhh-section rrhh-section--light" aria-labelledby="rrhh-service-title">
+    <div class="rrhh-shell">
+      <div class="rrhh-section-head"><div><p class="rrhh-eyebrow">LO QUE RRHH RECIBE</p><h2 id="rrhh-service-title">Un proceso que también se puede defender internamente.</h2></div><p>No solo impartimos formación. Dejamos trazabilidad, costes claros y argumentos para explicar qué se hizo y qué cambió.</p></div>
+      <div class="rrhh-service-grid">
+        <article class="rrhh-service"><span>01</span><h3>Un solo interlocutor</h3><p>Desde el diagnóstico hasta el informe final.</p></article>
+        <article class="rrhh-service"><span>02</span><h3>Coste bonificable cerrado</h3><p>La propuesta indica qué paga el crédito y qué no.</p></article>
+        <article class="rrhh-service"><span>03</span><h3>Informe para el comité</h3><p>Resultados en KPIs de operación, no solo en horas.</p></article>
+        <article class="rrhh-service"><span>04</span><h3>Documentación 4 años</h3><p>Expediente completo, listo para cualquier revisión.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="rrhh-fundae">
+    <div class="rrhh-shell rrhh-fundae-inner"><div><p class="rrhh-eyebrow">FUNDAE</p><h2>Antes de cerrar el plan, calcula cuánto crédito tiene disponible tu empresa.</h2><p>Usa el simulador del proyecto para estimar el crédito anual y comparar la bonificación según modalidad.</p></div><a href="#/fundae">Abrir calculadora FUNDAE →</a></div>
+  </section>
+
+
+</div>

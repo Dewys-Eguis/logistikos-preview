@@ -1,0 +1,158 @@
+<div class="credit-view">
+  <section class="credit-hero" aria-labelledby="credit-title">
+    <div class="credit-shell">
+      <nav class="credit-breadcrumb" aria-label="Ruta de navegación"><a href="#/">Inicio</a><span aria-hidden="true">/</span><span aria-current="page">Calculadora FUNDAE</span></nav>
+      <div class="credit-hero-grid">
+        <div>
+          <p class="credit-eyebrow">CALCULADORA DE CRÉDITO FUNDAE</p>
+          <h1 id="credit-title">¿Cuánto de tu formación paga <span>tu crédito?</span></h1>
+          <p class="credit-lead">Calcula tu crédito anual, lo que te queda disponible y cuánto bonifica cada formación según su modalidad. Después gestionamos el trámite completo, sin coste añadido.</p>
+        </div>
+        <aside class="credit-online">
+          <span class="credit-online-mark" aria-hidden="true">↗</span>
+          <h3>Online Live cuenta como presencial.</h3>
+          <p>El aula virtual con interacción síncrona se bonifica con el módulo presencial, no con el de teleformación.</p>
+          <a class="credit-text-link" href="#fundae-calculadora">Estimar mi crédito <span aria-hidden="true">↓</span></a>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section id="fundae" class="credit-calculator-section" aria-labelledby="credit-calculator-title">
+    <div class="credit-shell">
+      <div id="fundae-calculadora" class="credit-calculator">
+        <div class="credit-calculator-head"><h2 id="credit-calculator-title">SIMULADOR FUNDAE</h2><p>Estimación orientativa.</p></div>
+        <div class="credit-workspace">
+          <div class="credit-form">
+            <fieldset class="credit-fieldset">
+              <legend>1 · TU EMPRESA</legend>
+              <div class="credit-fields credit-fields--company">
+                <label for="credit-employees">Plantilla media<input id="credit-employees" type="number" min="1" inputmode="numeric" value="{{plantilla}}" data-on-change="{{onPlantilla}}" /></label>
+                <label for="credit-salary">Salario bruto medio (€/año)<input id="credit-salary" type="number" min="0" step="500" inputmode="decimal" value="{{salario}}" data-on-change="{{onSalario}}" /></label>
+                <label for="credit-used">Crédito ya usado este año (€)<input id="credit-used" type="number" min="0" step="100" inputmode="decimal" value="{{consumido}}" data-on-change="{{onConsumido}}" /></label>
+              </div>
+              <p class="credit-band">Tramo: <strong>{{tramo}}</strong> · bonificación del {{pctLabel}} de lo cotizado</p>
+            </fieldset>
+
+            <fieldset class="credit-fieldset">
+              <legend>2 · LA FORMACIÓN</legend>
+              <label for="credit-course">Formación<select id="credit-course" value="{{courseIdx}}" data-on-change="{{onCourse}}">
+                <sc-for list="{{courseOptions}}" as="o" hint-placeholder-count="10"><option value="{{o.value}}">{{o.label}}</option></sc-for>
+              </select></label>
+              <div class="credit-fields credit-fields--course">
+                <label for="credit-participants">Participantes<input id="credit-participants" type="number" min="1" inputmode="numeric" value="{{participantes}}" data-on-change="{{onParticipantes}}" /></label>
+                <label for="credit-hours">Horas por participante<input id="credit-hours" type="number" min="1" inputmode="decimal" value="{{horas}}" data-on-change="{{onHoras}}" /></label>
+              </div>
+              <div class="credit-choice-group">
+                <p id="credit-mode-label" class="credit-control-label">Modalidad</p>
+                <div class="credit-segments" role="group" aria-labelledby="credit-mode-label">
+                  <sc-for list="{{modes}}" as="m" hint-placeholder-count="4"><button type="button" data-on-click="{{m.pick}}" class="credit-choice {{m.className}}">{{m.label}}</button></sc-for>
+                </div>
+              </div>
+              <div class="credit-choice-group">
+                <p id="credit-level-label" class="credit-control-label">Nivel de la formación</p>
+                <div class="credit-segments credit-segments--level" role="group" aria-labelledby="credit-level-label">
+                  <sc-for list="{{levels}}" as="l" hint-placeholder-count="2"><button type="button" data-on-click="{{l.pick}}" class="credit-choice {{l.className}}">{{l.label}}</button></sc-for>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+
+          <div class="credit-results" aria-label="Resultado de la estimación">
+            <div class="credit-result-card">
+              <div class="credit-result-main">
+                <p class="credit-eyebrow">CRÉDITO ANUAL ESTIMADO</p>
+                <output id="credit-annual" class="credit-amount" for="credit-employees credit-salary">{{creditoLabel}}</output>
+                <p class="credit-available">Disponible hoy: <output id="credit-available" for="credit-employees credit-salary credit-used">{{disponibleLabel}}</output></p>
+              </div>
+              <div class="credit-result-bonus">
+                <p class="credit-eyebrow">ESTA FORMACIÓN BONIFICA HASTA</p>
+                <output id="credit-bonus" class="credit-amount credit-amount--bonus" for="credit-employees credit-salary credit-used credit-participants credit-hours credit-course">{{bonifLabel}}</output>
+                <p id="credit-formula" class="credit-formula">{{calcLabel}}</p>
+                <div class="credit-progress" aria-hidden="true"><div data-progress="{{barWidth}}" class="{{barClass}}"></div></div>
+                <p id="credit-usage" class="credit-usage">{{usoLabel}}</p>
+              </div>
+              <div class="credit-comparison">
+                <h3>MISMA FORMACIÓN, OTRA MODALIDAD</h3>
+                <sc-for list="{{compare}}" as="c" hint-placeholder-count="3">
+                  <div class="credit-comparison-row">
+                    <span>{{c.label}}</span>
+                    <div class="credit-compare-bar" aria-hidden="true"><div data-progress="{{c.barWidth}}" class="{{c.barClass}}"></div></div>
+                    <span class="credit-compare-amount">{{c.amount}}</span>
+                  </div>
+                </sc-for>
+              </div>
+              <p class="credit-cofin">Aportación privada mínima de tu tramo: <strong id="credit-cofin">{{cofinLabel}}</strong> del coste total. Puede cubrirse con el coste salarial de los participantes en horario laboral.</p>
+              <a href="#contacto" class="credit-button credit-button--orange">Validar con mi crédito real en 24 h <span aria-hidden="true">→</span></a>
+              <p class="credit-result-note">Estimación orientativa. El crédito real se valida con la cuenta FUNDAE de la empresa.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="credit-section credit-process" aria-labelledby="credit-process-title">
+    <div class="credit-shell">
+      <div class="credit-section-heading">
+        <div><p class="credit-eyebrow">CALENDARIO DE UNA FORMACIÓN BONIFICADA</p><h2 id="credit-process-title">Los plazos que no puedes saltarte.</h2></div>
+        <p>Los gestionamos nosotros, pero RRHH debe conocerlos. Te avisamos de cada hito por email.</p>
+      </div>
+      <div class="credit-timeline">
+        <article><p class="credit-step-label">−15 DÍAS</p><h3>Información a la RLT</h3><p>Si hay representación legal, se le informa del plan antes de empezar.</p></article>
+        <article><p class="credit-step-label">−2 DÍAS</p><h3>Comunicación de inicio</h3><p>Alta del grupo en FUNDAE con fechas, horario, lugar y participantes.</p></article>
+        <article><p class="credit-step-label">DURANTE</p><h3>Asistencia y evaluación</h3><p>Firmas o registros de conexión y al menos el 75 % de asistencia por participante.</p></article>
+        <article><p class="credit-step-label">AL TERMINAR</p><h3>Finalización y bonificación</h3><p>Costes, cuestionarios y aplicación del descuento en los seguros sociales.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="credit-section credit-information" aria-labelledby="credit-information-title">
+    <div class="credit-shell">
+      <div class="credit-section-heading">
+        <div><p class="credit-eyebrow">TU EMPRESA · LA FORMACIÓN</p><h2 id="credit-information-title">Qué información necesita la empresa.</h2></div>
+      </div>
+      <div class="credit-information-grid">
+        <div class="credit-required">
+          <div><h3>Tu empresa</h3><ul><li>Plantilla media</li><li>Salario bruto medio (€/año)</li><li>Crédito ya usado este año (€)</li></ul></div>
+          <div><h3>La formación</h3><ul><li>Formación</li><li>Participantes</li><li>Horas por participante</li><li>Modalidad</li><li>Nivel de la formación</li></ul></div>
+        </div>
+        <aside class="credit-checklist">
+          <p class="credit-eyebrow">KIT-04 · PDF</p>
+          <h3>Checklist documental FUNDAE</h3>
+          <p>Todo lo que debe existir si llega una revisión: información a la RLT, comunicaciones, controles de asistencia, evaluación y cuestionario de calidad.</p>
+          <a href="#rrhh" data-dl="KIT-04_Checklist_documental_FUNDAE.pdf" class="credit-text-link">Descargar PDF <span aria-hidden="true">→</span></a>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="credit-section credit-example" aria-labelledby="credit-example-title">
+    <div class="credit-shell credit-example-grid">
+      <div><p class="credit-eyebrow">BONIFICACIÓN FUNDAE</p><h2 id="credit-example-title">Un ejemplo con números.</h2><a href="#fundae-calculadora" class="credit-text-link">Ir a la calculadora <span aria-hidden="true">→</span></a></div>
+      <div class="credit-example-card">
+        <p class="credit-eyebrow">JEFE DE ALMACÉN · 20 H · PRESENCIAL</p>
+        <p class="credit-example-formula">10 participantes × 20 h × 13 €/h</p>
+        <p class="credit-example-amount">hasta 2.600 €</p>
+        <p>bonificables, sujeto al crédito disponible de la empresa.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="credit-section credit-limitations" aria-labelledby="credit-limitations-title">
+    <div class="credit-shell credit-limitations-grid">
+      <div><p class="credit-eyebrow">ESTIMACIÓN ORIENTATIVA</p><h2 id="credit-limitations-title">El crédito real se valida con la cuenta FUNDAE de la empresa.</h2></div>
+      <div class="credit-limitations-copy">
+        <p>Estimación orientativa. Crédito = 0,70 % de la base de cotización del año anterior × porcentaje del tramo (100 % hasta 9 personas, 75 % de 10 a 49, 60 % de 50 a 249 y 50 % desde 250; mínimo de 420 € de 1 a 5). Módulos máximos por participante y hora: presencial y aula virtual 9 € (básico) o 13 € (superior); teleformación 7,50 €. El dato exacto lo consultamos en vuestra cuenta de FUNDAE.</p>
+        <p class="credit-estimate-note">El salario bruto medio se usa como aproximación de la base de cotización. La calculadora no valida costes reales, crédito oficial ni todos los condicionantes de bonificación.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="credit-section credit-final" aria-labelledby="credit-final-title">
+    <div class="credit-shell credit-final-inner">
+      <div><p class="credit-eyebrow">HABLEMOS</p><h2 id="credit-final-title">Validar con mi crédito real</h2><p>El dato exacto lo consultamos en vuestra cuenta de FUNDAE.</p></div>
+      <a href="#contacto" class="credit-button credit-button--orange">Validar con mi crédito real en 24 h <span aria-hidden="true">↗</span></a>
+    </div>
+  </section>
+</div>

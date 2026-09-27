@@ -1,0 +1,16 @@
+{
+  "name": "logistikos-web",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Portable website sources, preserved before the new visual design",
+  "scripts": {
+    "build": "node scripts/build.cjs",
+    "test": "node tests/calculator.cjs && node tests/regression.cjs && node tests/http-smoke.cjs"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "playwright": "1.62.1"
+  }
+}

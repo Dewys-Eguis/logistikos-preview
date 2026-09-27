@@ -1,0 +1,40 @@
+/* Next visual identity. Legacy aliases deliberately retain the current presentation. */
+:root {
+  --color-dark: #070b14;
+  --color-dark-soft: #0f172a;
+  --color-electric-blue: #315bff;
+  --color-light-blue: #6f8bff;
+  --color-orange-accent: #ff7a1a;
+  --color-white: #f8fafc;
+  --color-gray: #94a3b8;
+  --legacy-accent: #0219fc;
+  --paper: #f3f2ec;
+  --ink: #0a0c1b;
+  --accent: var(--legacy-accent);
+  /* Shared editorial scale: Home, Formación and Empresas. */
+  --type-hero: clamp(44px, calc(32px + 3.1vw), 76px);
+  --type-section: clamp(34px, 4vw, 60px);
+  --type-subtitle: clamp(24px, calc(22px + .55vw), 30px);
+  --type-lead: clamp(16px, calc(15px + .15vw), 18px);
+  --type-body: 16px;
+  --type-secondary: 14px;
+  --type-small: 12px;
+  --type-eyebrow: 10px;
+  --type-button: 14px;
+  --type-button-small: 13px;
+  --leading-hero: 1.06;
+  --leading-section: 1.07;
+  --leading-subtitle: 1.2;
+  --leading-body: 1.65;
+  --tracking-hero: -.055em;
+  --tracking-section: -.045em;
+  --tracking-subtitle: -.025em;
+  --tracking-eyebrow: .13em;
+  --weight-heading: 500;
+  --measure-hero: 880px;
+  --measure-lead: 520px;
+  --space-eyebrow-title: 28px;
+  --space-title-lead: 28px;
+  --space-lead-actions: 28px;
+  --space-actions: 24px;
+}

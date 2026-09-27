@@ -1,0 +1,23 @@
+{
+  "missing": [],
+  "errors": [],
+  "downloads": 7,
+  "lazyBundleNotLoaded": true,
+  "previews": [
+    {
+      "width": 1440,
+      "route": "/",
+      "documentWidth": 1440
+    },
+    {
+      "width": 390,
+      "route": "/",
+      "documentWidth": 390
+    },
+    {
+      "width": 390,
+      "route": "/fundae",
+      "documentWidth": 885
+    }
+  ]
+}

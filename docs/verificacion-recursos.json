@@ -1,0 +1,26 @@
+{
+  "archives": [
+    {
+      "file": "KIT-06_Impacto_ROI_y_guia.zip",
+      "entries": [
+        "KIT-06_Impacto_ROI_formacion.xlsx",
+        "KIT-06_Guia_medicion_impacto_formacion.pdf"
+      ],
+      "integrity": "OK"
+    },
+    {
+      "file": "Kit_RRHH_Logistikos.zip",
+      "entries": [
+        "KIT-01_Deteccion_necesidades_formativas.xlsx",
+        "KIT-02_Plan_anual_formacion.xlsx",
+        "KIT-03_Matriz_competencias_logistica.xlsx",
+        "KIT-04_Checklist_documental_FUNDAE.pdf",
+        "KIT-05_Registro_alfabetizacion_IA.xlsx",
+        "KIT-06_Guia_medicion_impacto_formacion.pdf",
+        "KIT-06_Impacto_ROI_formacion.xlsx"
+      ],
+      "integrity": "OK"
+    }
+  ],
+  "originalAssetsUnchanged": true
+}

@@ -1,0 +1,818 @@
+/* Al día: premium editorial redesign aligned with the new visual system. */
+.alday-page {
+  background:
+    radial-gradient(circle at top left, rgba(49, 91, 255, 0.06), transparent 34%),
+    radial-gradient(circle at 86% 12%, rgba(255, 122, 26, 0.08), transparent 22%),
+    linear-gradient(180deg, #f3f2ec 0%, #f5f7fb 100%);
+  color: #0a0c1b;
+}
+.alday-shell {
+  width: min(1240px, calc(100% - 80px));
+  margin: 0 auto;
+}
+.alday-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 42px 0 28px;
+  color: #5c6373;
+  font: 400 14px/1.4 "IBM Plex Mono", monospace;
+}
+.alday-breadcrumb a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.alday-hero {
+  position: relative;
+  overflow: clip;
+  isolation: isolate;
+}
+.alday-hero::before,
+.alday-hero::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+  inset: auto;
+  z-index: -1;
+}
+.alday-hero::before {
+  width: 620px;
+  height: 620px;
+  right: -120px;
+  top: 12px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(49, 91, 255, 0.1), transparent 64%);
+  animation: aldayFloat 18s ease-in-out infinite;
+}
+.alday-hero::after {
+  left: 50%;
+  top: 130px;
+  width: min(1240px, calc(100% - 80px));
+  height: 1px;
+  transform: translateX(-50%);
+  background: linear-gradient(90deg, transparent, rgba(10, 12, 27, 0.08), transparent);
+}
+.alday-hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(320px, 430px);
+  gap: 48px;
+  align-items: start;
+  padding-bottom: 84px;
+}
+.alday-kicker {
+  margin: 0 0 var(--space-eyebrow-title);
+  font: 500 var(--type-eyebrow)/var(--leading-body) "IBM Plex Mono", monospace;
+  letter-spacing: var(--tracking-eyebrow);
+  color: #ff7a1a;
+}
+.alday-hero-copy h1 {
+  margin: 0;
+  max-width: var(--measure-hero);
+  font-family: "Archivo", sans-serif;
+  font-size: var(--type-hero);
+  line-height: var(--leading-hero);
+  letter-spacing: var(--tracking-hero);
+  font-weight: var(--weight-heading);
+  text-wrap: balance;
+}
+.alday-hero-copy h1 span {
+  color: #315bff;
+}
+.alday-lead {
+  margin: var(--space-title-lead) 0 0;
+  max-width: calc(var(--measure-lead) + 110px);
+  font-size: var(--type-lead);
+  line-height: var(--leading-body);
+  color: #2c3550;
+}
+.alday-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 34px;
+}
+.alday-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 52px;
+  padding: 14px 20px;
+  border: 1px solid #13192a;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 15px;
+  transition: transform 0.24s ease, box-shadow 0.24s ease, background 0.24s ease, color 0.24s ease;
+}
+.alday-btn:hover {
+  transform: translateY(-2px);
+}
+.alday-btn-primary {
+  background: #0219fc;
+  color: #fff;
+  border-color: #0219fc;
+  box-shadow: 0 18px 45px rgba(2, 25, 252, 0.16);
+}
+.alday-btn-primary:hover {
+  color: #fff;
+  box-shadow: 0 24px 60px rgba(2, 25, 252, 0.22);
+}
+.alday-btn-secondary {
+  background: transparent;
+  color: #0a0c1b;
+}
+.alday-btn-secondary:hover {
+  background: #0a0c1b;
+  color: #fff;
+}
+.alday-chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 32px;
+}
+.alday-chip-row span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  padding: 0 14px;
+  border: 1px solid rgba(10, 12, 27, 0.14);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.75);
+  font-size: 13px;
+  color: #394257;
+}
+.alday-hero-side {
+  display: grid;
+  gap: 18px;
+}
+.alday-signal-card,
+.alday-subscribe-card,
+.alday-summary-card,
+.alday-update-card,
+.alday-training-card,
+.alday-profile-grid article,
+.alday-required-cta {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(16, 25, 44, 0.1);
+  background: rgba(255, 255, 255, 0.88);
+  box-shadow: 0 14px 38px rgba(8, 13, 30, 0.05);
+  backdrop-filter: blur(10px);
+}
+.alday-signal-card::before,
+.alday-subscribe-card::before,
+.alday-update-card::before,
+.alday-training-card::before,
+.alday-profile-grid article::before,
+.alday-required-cta::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(49, 91, 255, 0.06), transparent 36%, transparent 66%, rgba(255, 122, 26, 0.06));
+  pointer-events: none;
+}
+.alday-signal-card {
+  padding: 22px;
+}
+.alday-signal-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 18px;
+  font-size: 15px;
+}
+.alday-signal-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #02c57b;
+  box-shadow: 0 0 0 0 rgba(2, 197, 123, 0.45);
+  animation: aldayPulse 2s infinite;
+}
+.alday-signal-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+.alday-signal-grid article {
+  min-height: 134px;
+  padding: 16px;
+  border: 1px solid rgba(16, 25, 44, 0.08);
+  background: linear-gradient(180deg, rgba(248, 250, 252, 0.96), rgba(241, 245, 249, 0.88));
+}
+.alday-signal-grid span,
+.alday-deadline-grid span,
+.alday-profile-grid article > span {
+  display: inline-flex;
+  width: fit-content;
+  margin-bottom: 10px;
+  font: 500 11px/1.3 "IBM Plex Mono", monospace;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #ff7a1a;
+}
+.alday-signal-grid strong {
+  display: block;
+  font-size: 20px;
+  line-height: 1.16;
+}
+.alday-signal-grid small {
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #56627b;
+}
+.alday-subscribe-card {
+  padding: 28px 22px 24px;
+}
+.alday-subscribe-card h2 {
+  margin: 0;
+  font-family: "Archivo", sans-serif;
+  font-size: clamp(26px, calc(24px + 0.55vw), 34px);
+  line-height: 1.08;
+  letter-spacing: var(--tracking-section);
+}
+.alday-subscribe-card p {
+  margin: 16px 0 0;
+  color: #41506a;
+  line-height: 1.65;
+}
+.alday-field {
+  display: grid;
+  gap: 8px;
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.alday-field span {
+  color: #22304b;
+}
+.alday-field input {
+  width: 100%;
+  min-height: 56px;
+  padding: 0 16px;
+  border: 1px solid #ccd5e4;
+  background: #fff;
+  color: #0a0c1b;
+  font: inherit;
+}
+.alday-subscribe-btn {
+  width: 100%;
+  margin-top: 14px;
+  min-height: 56px;
+  padding: 0 18px;
+  border: 0;
+  background: #ff7a1a;
+  color: #0a0c1b;
+  font-size: 15px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: transform 0.24s ease, box-shadow 0.24s ease;
+}
+.alday-subscribe-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 35px rgba(255, 122, 26, 0.22);
+}
+.alday-summary {
+  padding: 0 0 84px;
+}
+.alday-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+.alday-summary-card {
+  padding: 26px 24px;
+}
+.alday-summary-card span {
+  display: block;
+  font-family: "Archivo", sans-serif;
+  font-size: clamp(34px, 3vw, 46px);
+  font-weight: 800;
+  line-height: 1;
+  color: #0219fc;
+}
+.alday-summary-card strong {
+  display: block;
+  margin-top: 10px;
+  font-size: 20px;
+  line-height: 1.15;
+}
+.alday-summary-card p {
+  margin: 12px 0 0;
+  color: #53617a;
+  line-height: 1.6;
+}
+.alday-feed,
+.alday-required,
+.alday-profiles {
+  padding: 96px 0;
+}
+.alday-deadlines {
+  padding: 24px 0 96px;
+}
+.alday-section-head {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr);
+  gap: 36px;
+  align-items: end;
+  margin-bottom: 34px;
+}
+.alday-section-head h2 {
+  margin: 0;
+  max-width: 14ch;
+  font-family: "Archivo", sans-serif;
+  font-size: var(--type-section);
+  line-height: var(--leading-section);
+  letter-spacing: var(--tracking-section);
+}
+.alday-section-head p:last-child {
+  margin: 0;
+  color: #51607a;
+  line-height: 1.65;
+}
+.alday-section-head-compact {
+  grid-template-columns: 1fr;
+}
+.alday-feed-grid,
+.alday-training-grid,
+.alday-profile-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+.alday-update-card,
+.alday-training-card,
+.alday-profile-grid article {
+  padding: 24px;
+}
+.alday-update-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 18px;
+  font: 500 11px/1.35 "IBM Plex Mono", monospace;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  color: #53617a;
+}
+.alday-update-meta span:last-child {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 28px;
+  padding: 0 10px;
+  border-radius: 999px;
+  letter-spacing: 0.08em;
+  font-size: 10px;
+}
+.alday-update-meta .tone-open { background: rgba(255, 122, 26, 0.12); color: #d95f00; }
+.alday-update-meta .tone-live { background: rgba(49, 91, 255, 0.12); color: #1538d7; }
+.alday-update-meta .tone-next { background: rgba(2, 197, 123, 0.12); color: #007a53; }
+.alday-update-meta .tone-track { background: rgba(8, 13, 30, 0.08); color: #1f2a43; }
+.alday-update-card h3,
+.alday-training-card h3,
+.alday-profile-grid h3,
+.alday-deadline-grid strong {
+  margin: 0;
+  font-family: "Archivo", sans-serif;
+  font-size: clamp(24px, calc(20px + .35vw), 30px);
+  line-height: 1.08;
+  letter-spacing: var(--tracking-subtitle);
+}
+.alday-update-card p,
+.alday-training-card p,
+.alday-profile-grid p,
+.alday-deadline-grid p,
+.alday-required-cta p,
+.alday-note {
+  color: #53617a;
+  line-height: 1.65;
+}
+.alday-update-card > p {
+  margin: 16px 0 0;
+}
+.alday-update-card ul {
+  display: grid;
+  gap: 10px;
+  margin: 18px 0 0;
+  padding: 0;
+  list-style: none;
+}
+.alday-update-card li {
+  position: relative;
+  padding-left: 18px;
+  color: #38455e;
+  line-height: 1.55;
+}
+.alday-update-card li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #0219fc;
+}
+.alday-update-card a,
+.alday-profile-grid a {
+  display: inline-flex;
+  margin-top: 18px;
+  font-weight: 700;
+  text-decoration: none;
+}
+.alday-deadline-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+.alday-deadline-grid article {
+  min-height: 210px;
+  padding: 22px;
+  border: 1px solid rgba(16, 25, 44, 0.1);
+  background: linear-gradient(180deg, rgba(8, 13, 30, 0.98), rgba(12, 21, 40, 0.98));
+  color: #f8fafc;
+  box-shadow: 0 22px 55px rgba(8, 13, 30, 0.15);
+}
+.alday-deadline-grid p {
+  margin: 14px 0 0;
+  color: #aab7cb;
+}
+.alday-required {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.55), rgba(241, 244, 249, 0.92));
+  border-top: 1px solid rgba(16, 25, 44, 0.08);
+  border-bottom: 1px solid rgba(16, 25, 44, 0.08);
+}
+.alday-training-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
+}
+.alday-training-card {
+  padding: 0;
+  transition: transform 0.24s ease, border-color 0.24s ease, box-shadow 0.24s ease;
+}
+.alday-training-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(49, 91, 255, 0.18);
+  box-shadow: 0 22px 48px rgba(8, 13, 30, 0.08);
+}
+.alday-training-card summary {
+  list-style: none;
+  display: grid;
+  gap: 14px;
+  padding: 24px;
+  cursor: pointer;
+}
+.alday-training-card summary::-webkit-details-marker {
+  display: none;
+}
+.alday-training-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+}
+.alday-training-pill {
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  padding: 0 12px;
+  border-radius: 999px;
+  background: rgba(49, 91, 255, 0.1);
+  color: #1639d8;
+  font: 500 10px/1.3 "IBM Plex Mono", monospace;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.alday-training-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 32px;
+  padding: 0 12px;
+  border: 1px solid rgba(16, 25, 44, 0.12);
+  border-radius: 999px;
+  font: 500 11px/1.3 "IBM Plex Mono", monospace;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #38455e;
+  transition: background 0.24s ease, color 0.24s ease, border-color 0.24s ease;
+}
+.alday-training-card[open] .alday-training-toggle {
+  background: #0219fc;
+  border-color: #0219fc;
+  color: #fff;
+}
+.alday-training-card h3 {
+  margin: 0;
+}
+.alday-training-preview {
+  margin: 0;
+  color: #53617a;
+  line-height: 1.55;
+}
+.alday-training-body {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  padding: 0 24px 24px;
+}
+.alday-training-detail {
+  min-height: 100%;
+  padding: 16px;
+  border: 1px solid rgba(16, 25, 44, 0.08);
+  background: linear-gradient(180deg, rgba(248, 250, 252, 0.96), rgba(241, 245, 249, 0.88));
+}
+.alday-training-detail span {
+  display: inline-flex;
+  width: fit-content;
+  margin-bottom: 10px;
+  font: 500 10px/1.3 "IBM Plex Mono", monospace;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #ff7a1a;
+}
+.alday-training-card p,
+.alday-training-detail p {
+  margin: 0;
+}
+.alday-required-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-top: 24px;
+  padding: 24px 26px;
+}
+.alday-required-cta strong {
+  display: block;
+  font-size: 22px;
+  line-height: 1.15;
+}
+.alday-required-cta p {
+  margin: 10px 0 0;
+}
+.alday-required-cta a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50px;
+  padding: 0 18px;
+  border: 1px solid #0a0c1b;
+  background: #0a0c1b;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.alday-note {
+  margin: 16px 0 0;
+  font-size: 14px;
+}
+.alday-profile-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.alday-profile-grid article {
+  min-height: 100%;
+}
+.alday-profile-grid p {
+  margin: 12px 0 0;
+}
+@keyframes aldayPulse {
+  0% { box-shadow: 0 0 0 0 rgba(2, 197, 123, 0.45); }
+  70% { box-shadow: 0 0 0 14px rgba(2, 197, 123, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(2, 197, 123, 0); }
+}
+@keyframes aldayFloat {
+  0%, 100% { transform: translate3d(0, 0, 0); }
+  50% { transform: translate3d(0, 22px, 0); }
+}
+:root[data-theme="dark"] .alday-page {
+  background:
+    radial-gradient(circle at top left, rgba(49, 91, 255, 0.1), transparent 34%),
+    radial-gradient(circle at 86% 12%, rgba(255, 122, 26, 0.08), transparent 22%),
+    linear-gradient(180deg, #050913 0%, #08111d 100%);
+  color: #f8fafc;
+}
+:root[data-theme="dark"] .alday-breadcrumb,
+:root[data-theme="dark"] .alday-chip-row span,
+:root[data-theme="dark"] .alday-lead,
+:root[data-theme="dark"] .alday-subscribe-card p,
+:root[data-theme="dark"] .alday-section-head p:last-child,
+:root[data-theme="dark"] .alday-update-card > p,
+:root[data-theme="dark"] .alday-update-card li,
+:root[data-theme="dark"] .alday-training-card p,
+:root[data-theme="dark"] .alday-required-cta p,
+:root[data-theme="dark"] .alday-note,
+:root[data-theme="dark"] .alday-profile-grid p,
+:root[data-theme="dark"] .alday-summary-card p,
+:root[data-theme="dark"] .alday-signal-grid small {
+  color: #aab7cb;
+}
+:root[data-theme="dark"] .alday-hero::after {
+  background: linear-gradient(90deg, transparent, rgba(248, 250, 252, 0.14), transparent);
+}
+:root[data-theme="dark"] .alday-btn-secondary,
+:root[data-theme="dark"] .alday-required-cta a {
+  border-color: #d6def2;
+}
+:root[data-theme="dark"] .alday-btn-secondary {
+  color: #f8fafc;
+}
+:root[data-theme="dark"] .alday-btn-secondary:hover {
+  background: #f8fafc;
+  color: #0a0c1b;
+}
+:root[data-theme="dark"] .alday-chip-row span,
+:root[data-theme="dark"] .alday-signal-grid article,
+:root[data-theme="dark"] .alday-signal-card,
+:root[data-theme="dark"] .alday-subscribe-card,
+:root[data-theme="dark"] .alday-summary-card,
+:root[data-theme="dark"] .alday-update-card,
+:root[data-theme="dark"] .alday-training-card,
+:root[data-theme="dark"] .alday-profile-grid article,
+:root[data-theme="dark"] .alday-required-cta {
+  border-color: rgba(203, 213, 225, 0.12);
+  background: rgba(10, 17, 31, 0.82);
+  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.25);
+}
+:root[data-theme="dark"] .alday-field input {
+  border-color: rgba(203, 213, 225, 0.16);
+  background: rgba(255, 255, 255, 0.04);
+  color: #f8fafc;
+}
+:root[data-theme="dark"] .alday-field span,
+:root[data-theme="dark"] .alday-update-meta,
+:root[data-theme="dark"] .alday-breadcrumb a {
+  color: #c3cee1;
+}
+:root[data-theme="dark"] .alday-required {
+  background: linear-gradient(180deg, rgba(8, 14, 25, 0.65), rgba(10, 17, 31, 0.95));
+  border-color: rgba(203, 213, 225, 0.1);
+}
+body.is-al-dia > footer {
+  background: #070b14;
+  color: #f8fafc;
+  border-top: 1px solid #24314a;
+}
+body.is-al-dia > footer .legacy-445 {
+  max-width: 680px;
+  font-size: clamp(34px, 4vw, 58px) !important;
+  line-height: 1.02 !important;
+  color: #f8fafc !important;
+}
+body.is-al-dia > footer .legacy-226 {
+  max-width: 720px;
+  color: #b2bed2 !important;
+  font-size: 16px !important;
+  line-height: 1.6 !important;
+}
+body.is-al-dia > footer .legacy-447,
+body.is-al-dia > footer .legacy-448 {
+  min-height: 48px !important;
+  padding: 13px 16px !important;
+  font-size: 13px !important;
+}
+body.is-al-dia > footer .legacy-447 {
+  background: #315bff !important;
+  color: #fff !important;
+  border: 0 !important;
+}
+body.is-al-dia > footer .legacy-448 {
+  color: #f8fafc !important;
+  border-color: #35435e !important;
+}
+body.is-al-dia > footer .legacy-449 {
+  color: #c3cee1 !important;
+  font-size: 13px !important;
+}
+body.is-al-dia > footer .legacy-450 {
+  border-color: #24314a !important;
+}
+body.is-al-dia > footer .wordmark,
+body.is-al-dia > footer a {
+  color: #f8fafc;
+}
+:root[data-theme="dark"] .alday-training-pill {
+  background: rgba(111, 139, 255, 0.14);
+  color: #dbe4ff;
+}
+:root[data-theme="dark"] .alday-training-toggle {
+  border-color: rgba(203, 213, 225, 0.16);
+  color: #c3cee1;
+}
+:root[data-theme="dark"] .alday-training-card:hover {
+  border-color: rgba(111, 139, 255, 0.22);
+  box-shadow: 0 24px 54px rgba(0, 0, 0, 0.3);
+}
+:root[data-theme="dark"] .alday-training-preview {
+  color: #aab7cb;
+}
+:root[data-theme="dark"] .alday-training-detail {
+  border-color: rgba(203, 213, 225, 0.08);
+  background: linear-gradient(180deg, rgba(17, 26, 45, 0.9), rgba(10, 17, 31, 0.92));
+}
+@media (max-width: 1180px) {
+  .alday-training-body {
+    grid-template-columns: 1fr;
+  }
+  .alday-hero-grid,
+  .alday-section-head {
+    grid-template-columns: 1fr;
+  }
+  .alday-hero-copy h1,
+  .alday-section-head h2 {
+    max-width: none;
+  }
+  .alday-deadline-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .alday-profile-grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 960px) {
+  .alday-shell {
+    width: calc(100% - 40px);
+  }
+  .alday-breadcrumb {
+    padding-top: 30px;
+  }
+  .alday-summary-grid,
+  .alday-feed-grid,
+  .alday-training-grid,
+  .alday-signal-grid {
+    grid-template-columns: 1fr;
+  }
+  .alday-feed,
+  .alday-required,
+  .alday-profiles,
+  .alday-deadlines {
+    padding-top: 72px;
+    padding-bottom: 72px;
+  }
+  .alday-summary {
+    padding-bottom: 72px;
+  }
+  .alday-required-cta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+@media (max-width: 640px) {
+  .alday-shell {
+    width: calc(100% - 32px);
+  }
+  .alday-hero-grid {
+    gap: 28px;
+    padding-bottom: 64px;
+  }
+  .alday-kicker {
+    margin-bottom: 18px;
+  }
+  .alday-actions {
+    gap: 12px;
+    margin-top: 26px;
+  }
+  .alday-btn,
+  .alday-required-cta a {
+    width: 100%;
+  }
+  .alday-summary-card,
+  .alday-update-card,
+  .alday-profile-grid article,
+  .alday-deadline-grid article,
+  .alday-subscribe-card,
+  .alday-signal-card,
+  .alday-required-cta {
+    padding: 22px;
+  }
+  .alday-training-card summary,
+  .alday-training-body {
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+  .alday-training-body {
+    grid-template-columns: 1fr;
+    padding-bottom: 22px;
+  }
+  .alday-deadline-grid {
+    grid-template-columns: 1fr;
+  }
+  .alday-update-meta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .alday-hero::before,
+  .alday-signal-dot,
+  .alday-btn,
+  .alday-subscribe-btn {
+    animation: none !important;
+    transition: none !important;
+  }
+}

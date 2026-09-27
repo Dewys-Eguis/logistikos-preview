@@ -1,0 +1,50 @@
+/* Shared navigation: desktop disclosures and one native mobile dialog. */
+.resource-nav { position:relative; display:flex; align-items:center; }
+.resource-toggle { display:inline-flex; align-items:center; justify-content:flex-start; gap:8px; padding:10px 0; border:0; background:none; color:inherit; font:inherit; cursor:pointer; white-space:nowrap; line-height:1; }
+.resource-chevron{flex:none;width:16px;height:16px;display:inline-flex;align-items:center;justify-content:center;transform:translateY(1px);transition:transform .2s ease}.resource-chevron svg{display:block;width:14px;height:14px}
+.resource-toggle[aria-expanded="true"] .resource-chevron { transform:rotate(180deg); }
+.resource-panel { position:absolute; top:calc(100% + 12px); left:-22px; width:246px; padding:12px; border:1px solid #29364d; border-radius:12px; background:#101a2c; color:#f8fafc; box-shadow:0 20px 50px #0005; }
+.resource-panel[hidden] { display:none!important; }
+:is(.site-nav,.home-desktop-nav) .resource-panel a { display:block; padding:14px 12px; border:0!important; border-radius:6px; color:inherit; font-size:var(--type-secondary); white-space:normal; }
+.resource-panel a:hover,.resource-panel a:focus-visible { background:#6f8bff20; }
+.resource-toggle:focus-visible,.architecture-burger:focus-visible,.architecture-menu a:focus-visible,.architecture-menu button:focus-visible { outline:2px solid #6f8bff; outline-offset:5px; }
+.resource-toggle.is-current { color:#6f8bff; }
+.architecture-burger { display:none; flex:none; width:44px; height:44px; padding:11px; border:1px solid #526079; background:transparent; color:inherit; cursor:pointer; }
+.architecture-burger span { display:block; height:1px; background:currentColor; margin:6px 0; }
+.architecture-menu { width:min(100%,600px); max-width:100%; height:100dvh; max-height:100dvh; margin:0 0 0 auto; padding:24px; box-sizing:border-box; border:0; background:#0d1423; color:#f8fafc; overscroll-behavior:contain; }
+.architecture-menu::backdrop { background:#0009; backdrop-filter:blur(6px); }
+.architecture-menu-top { display:flex; justify-content:space-between; align-items:center; gap:16px; margin-bottom:40px; }
+.architecture-menu-top button { color:inherit; background:none; border:0; padding:12px 0; cursor:pointer; font-size:var(--type-secondary); }
+.architecture-menu nav > a,.architecture-menu nav > .resource-nav > button { display:flex; width:100%; padding:18px 0; border:0; border-bottom:1px solid #29364d; color:inherit; text-decoration:none; font-size:var(--type-subtitle); line-height:var(--leading-subtitle); text-align:left; justify-content:space-between; align-items:center; }
+.architecture-menu .resource-panel { position:static; width:auto; box-shadow:none; margin:12px 0; }
+.architecture-menu .resource-panel a { display:block; padding:14px 10px; color:inherit; font-size:var(--type-body); text-decoration:none; }
+.architecture-menu-bottom { display:grid; gap:22px; margin-top:36px; font-size:var(--type-body); }
+.architecture-menu-bottom a { color:inherit; }
+.architecture-menu-bottom .architecture-contact { background:#ff7a0d; color:#080c14; padding:18px; text-decoration:none; }
+body.navigation-open { overflow:hidden; }
+:root[data-theme="light"] :is(.resource-panel,.architecture-menu) { background:#fff; color:#10192c; border-color:#d4dceb; }
+:root[data-theme="light"] .architecture-menu nav > :is(a,.resource-nav) > button,:root[data-theme="light"] .architecture-menu nav > a { border-color:#d4dceb; }
+@media(min-width:1100px) {
+ body:not(.is-home) .site-nav,.home-desktop-nav { display:flex; align-items:center; gap:clamp(18px,1.7vw,30px)!important; width:auto; overflow:visible; }
+ body:not(.is-home) .hwrap { flex-wrap:nowrap; gap:24px; }
+}
+@media(max-width:1099px) {
+ body:not(.is-home) .site-nav,.home-desktop-nav { display:none!important; }
+ .architecture-burger { display:block; }
+ body:not(.is-home) .hwrap { flex-wrap:nowrap; min-height:76px; padding:12px 20px!important; gap:16px; }
+ .site-header-actions,.home-header-actions { margin-left:auto; gap:14px!important; }
+ body:not(.is-home) .campus-link,.home-campus { display:none; }
+ .home-header-inner { gap:14px; }
+}
+@media(max-width:559px) {
+ body:not(.is-home) .site-header-actions > .cta,.home-header-actions > .home-button { display:none!important; }
+ .site-header-actions,.home-header-actions { gap:12px!important; }
+ .architecture-menu { padding:24px 20px; }
+}
+@media(prefers-reduced-motion:reduce) { .resource-chevron { transition:none; } }
+/* Preview mode: pages not yet rediseñadas are visible as coming soon, but not clickable. */
+a.is-pending-link,[aria-disabled="true"].is-pending-link{cursor:default!important;pointer-events:none!important;opacity:.38!important;text-decoration:none!important;filter:saturate(.35)}
+.home-view .area-card.is-pending-link{position:relative}
+.home-view .area-card.is-pending-link::after{content:"PRÓXIMAMENTE";position:absolute;top:22px;right:22px;padding:7px 9px;border:1px solid rgba(111,139,255,.35);border-radius:999px;background:rgba(7,11,20,.72);color:#aebcf0;font:500 9px/1 "IBM Plex Mono",monospace;letter-spacing:.12em}
+.sc-other-grid a.is-pending-link{opacity:.35!important;background:#0b1322!important}
+:root[data-theme="light"] .home-view .area-card.is-pending-link::after{background:rgba(255,255,255,.86);color:#315bff}

@@ -1,0 +1,37 @@
+<div class="legacy-139 layout-container">
+  <a href="#/" class="legacy-010">Inicio</a> / Radar 2026
+</div>
+<section id="radar" class="legacy-223 layout-section-96">
+  <div class="legacy-224 layout-container">
+    <div class="legacy-071 layout-between">
+      <div class="legacy-225">
+        <div class="legacy-063">RADAR LOGÍSTIKOS 2026–27</div>
+        <h2 class="legacy-055">Formamos antes de que sea obligatorio.</h2>
+        <p class="legacy-226">
+          Cada trimestre revisamos normativa, tecnología y mercado. Si algo va a
+          cambiar cómo compráis, almacenáis o movéis mercancía, existe un
+          programa antes de que llegue la inspección, el cliente o la
+          licitación.
+        </p>
+      </div>
+      <a href="#contacto" class="legacy-227 layout-nowrap"
+        >Recibir el radar trimestral</a
+      >
+    </div>
+    <div class="legacy-228 layout-grid">
+      <sc-for list="{{radar}}" as="r" hint-placeholder-count="6">
+        <div class="legacy-229">
+          <div class="legacy-230 layout-between">
+            <span class="legacy-231">{{r.date}}</span>
+            <span class="{{r.statusClass}}">{{r.status}}</span>
+          </div>
+          <div class="legacy-232">{{r.name}}</div>
+          <div class="legacy-233">{{r.desc}}</div>
+          <a href="#/programas" class="legacy-234"
+            >→ Formación para {{r.code}}</a
+          >
+        </div>
+      </sc-for>
+    </div>
+  </div>
+</section>

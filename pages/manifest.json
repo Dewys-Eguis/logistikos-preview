@@ -1,0 +1,70 @@
+[
+  {
+    "id": "tpl-home",
+    "file": "pages/home.html"
+  },
+  {
+    "id": "tpl-page-programas",
+    "file": "pages/programas.html"
+  },
+  {
+    "id": "tpl-page-fundae",
+    "file": "pages/fundae.html"
+  },
+  {
+    "id": "tpl-page-rrhh",
+    "file": "pages/rrhh.html"
+  },
+  {
+    "id": "tpl-page-radar",
+    "file": "pages/radar.html"
+  },
+  {
+    "id": "tpl-page-universitarios",
+    "file": "pages/universitarios.html"
+  },
+  {
+    "id": "tpl-page-quienes-somos",
+    "file": "pages/quienes-somos.html"
+  },
+  {
+    "id": "tpl-page-a-medida",
+    "file": "pages/a-medida.html"
+  },
+  {
+    "id": "tpl-page-al-dia",
+    "file": "pages/al-dia.html"
+  },
+  {
+    "id": "tpl-page-campus",
+    "file": "pages/campus.html"
+  },
+  {
+    "id": "tpl-area-comercio-internacional",
+    "file": "pages/area-comercio-internacional.html"
+  },
+  {
+    "id": "tpl-area-compras",
+    "file": "pages/area-compras.html"
+  },
+  {
+    "id": "tpl-area-ia-datos",
+    "file": "pages/area-ia-datos.html"
+  },
+  {
+    "id": "tpl-area-liderazgo",
+    "file": "pages/area-liderazgo.html"
+  },
+  {
+    "id": "tpl-area-supply-chain",
+    "file": "pages/area-supply-chain.html"
+  },
+  {
+    "id": "tpl-area-transporte",
+    "file": "pages/area-transporte.html"
+  },
+  {
+    "id": "tpl-page-marca",
+    "file": "pages/marca.html"
+  }
+]

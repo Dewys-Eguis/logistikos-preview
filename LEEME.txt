@@ -1,0 +1,40 @@
+LOGÍSTIKOS · WEB (prototipo navegable)
+Formación logística para inconformistas · Every step covered
+Versión: 26 de septiembre de 2026
+
+CONTENIDO
+- index.html ........ La web completa en un solo archivo. Se abre con doble clic en cualquier navegador.
+- kit-rrhh/ ......... Las 7 herramientas del kit para RRHH (Excel y PDF) que se descargan desde la web.
+- logos/ ............ Logos de las compañías de "Nuestros Logístikos" (uso autorizado por Logístikos).
+
+PÁGINAS
+Inicio · Quiénes somos · Qué formamos (6 áreas) · A medida · Cómo trabajamos · FUNDAE (calculadora)
+Para RRHH (kit) · Al día (normativa y formaciones obligatorias) · Cursos universitarios (25 h)
+Campus · Por departamento · 6 páginas de área
+
+QUÉ FUNCIONA YA EN EL ARCHIVO
+Navegación, calculadora FUNDAE, selector de departamentos, descargas del kit, botón de WhatsApp,
+opción "Otro perfil" (abre WhatsApp), enlaces al vídeo y al contacto, preguntas frecuentes.
+
+PENDIENTE PARA PUBLICARLA EN LOGISTIKOS.ES (tareas para el desarrollador)
+1. URLs propias por página (p. ej. /campus, /area/transporte) para que Google indexe bien la web.
+   Ahora es una sola página con navegación interna (#/...).
+2. Conectar formularios al email/CRM: kit RRHH, suscripción "Al día", "Otro perfil" y diagnóstico.
+3. Botón "Campus": enlazar a la pantalla de acceso real de la plataforma. No gestionar contraseñas en la web.
+4. Asistente de IA: solo funciona dentro de Claude. En producción, conectarlo a un servicio de IA propio
+   con la base de conocimiento de la web.
+5. Vídeo de presentación: incrustar dentro de la página con este código:
+   <iframe src="https://www.youtube-nocookie.com/embed/2Ji4mJ8o0eY" title="Vídeo de presentación de Logístikos"
+     style="width:100%;aspect-ratio:16/9;border:0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
+     allowfullscreen loading="lazy"></iframe>
+6. Añadir fotos reales de sesiones y el retrato de dirección.
+7. Sustituir los "ejemplos ilustrativos" de la sección de casos por casos reales de clientes.
+8. Añadir aviso legal, política de privacidad y de cookies.
+
+CONTENIDO A REVISAR POR LOGÍSTIKOS
+- Programas, horas y etiquetas "Más demandado" de cada área.
+- Tabla de formaciones obligatorias (orientativa) y fichas de "Al día" (revisión mensual).
+- Condiciones de la garantía de resultado (indicador, objetivo y plazo) por escrito.
+- Mención al diploma de la Fundación General de la Universidad de Salamanca.
+
+Contacto: formacion@logistikos.es · +34 696 34 80 47

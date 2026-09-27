@@ -1,0 +1,618 @@
+{
+  "report": [
+    {
+      "width": 1920,
+      "theme": "dark",
+      "headings": [
+        {
+          "tag": "H1",
+          "size": "76px",
+          "lineHeight": "80.56px"
+        },
+        {
+          "tag": "H2",
+          "size": "60px",
+          "lineHeight": "64.2px"
+        },
+        {
+          "tag": "H3",
+          "size": "30px",
+          "lineHeight": "36px"
+        },
+        {
+          "tag": "H3",
+          "size": "30px",
+          "lineHeight": "36px"
+        },
+        {
+          "tag": "H3",
+          "size": "30px",
+          "lineHeight": "36px"
+        },
+        {
+          "tag": "H2",
+          "size": "60px",
+          "lineHeight": "64.2px"
+        },
+        {
+          "tag": "H2",
+          "size": "60px",
+          "lineHeight": "64.2px"
+        },
+        {
+          "tag": "H2",
+          "size": "60px",
+          "lineHeight": "64.2px"
+        },
+        {
+          "tag": "H2",
+          "size": "60px",
+          "lineHeight": "64.2px"
+        }
+      ],
+      "overflow": [],
+      "documentWidth": 1920,
+      "fontLoaded": true,
+      "brokenImages": [],
+      "hiddenReveals": 0,
+      "viewBackground": "rgb(7, 11, 20)",
+      "viewColor": "rgb(248, 250, 252)",
+      "buttonColor": "rgb(255, 255, 255)",
+      "headerAndWhatsAppUnchanged": true
+    },
+    {
+      "width": 1920,
+      "theme": "light",
+      "headings": [
+        {
+          "tag": "H1",
+          "size": "76px",
+          "lineHeight": "80.56px"
+        },
+        {
+          "tag": "H2",
+          "size": "60px",
+          "lineHeight": "64.2px"
+        },
+        {
+          "tag": "H3",
+          "size": "30px",
+          "lineHeight": "36px"
+        },
+        {
+          "tag": "H3",
+          "size": "30px",
+          "lineHeight": "36px"
+        },
+        {
+          "tag": "H3",
+          "size": "30px",
+          "lineHeight": "36px"
+        },
+        {
+          "tag": "H2",
+          "size": "60px",
+          "lineHeight": "64.2px"
+        },
+        {
+          "tag": "H2",
+          "size": "60px",
+          "lineHeight": "64.2px"
+        },
+        {
+          "tag": "H2",
+          "size": "60px",
+          "lineHeight": "64.2px"
+        },
+        {
+          "tag": "H2",
+          "size": "60px",
+          "lineHeight": "64.2px"
+        }
+      ],
+      "overflow": [],
+      "documentWidth": 1920,
+      "fontLoaded": true,
+      "brokenImages": [],
+      "hiddenReveals": 0,
+      "viewBackground": "rgb(247, 249, 253)",
+      "viewColor": "rgb(11, 17, 32)",
+      "buttonColor": "rgb(255, 255, 255)",
+      "headerAndWhatsAppUnchanged": true
+    },
+    {
+      "width": 1440,
+      "theme": "dark",
+      "headings": [
+        {
+          "tag": "H1",
+          "size": "76px",
+          "lineHeight": "80.56px"
+        },
+        {
+          "tag": "H2",
+          "size": "57.6px",
+          "lineHeight": "61.632px"
+        },
+        {
+          "tag": "H3",
+          "size": "29.92px",
+          "lineHeight": "35.904px"
+        },
+        {
+          "tag": "H3",
+          "size": "29.92px",
+          "lineHeight": "35.904px"
+        },
+        {
+          "tag": "H3",
+          "size": "29.92px",
+          "lineHeight": "35.904px"
+        },
+        {
+          "tag": "H2",
+          "size": "57.6px",
+          "lineHeight": "61.632px"
+        },
+        {
+          "tag": "H2",
+          "size": "57.6px",
+          "lineHeight": "61.632px"
+        },
+        {
+          "tag": "H2",
+          "size": "57.6px",
+          "lineHeight": "61.632px"
+        },
+        {
+          "tag": "H2",
+          "size": "57.6px",
+          "lineHeight": "61.632px"
+        }
+      ],
+      "overflow": [],
+      "documentWidth": 1440,
+      "fontLoaded": true,
+      "brokenImages": [],
+      "hiddenReveals": 0,
+      "viewBackground": "rgb(7, 11, 20)",
+      "viewColor": "rgb(248, 250, 252)",
+      "buttonColor": "rgb(255, 255, 255)",
+      "headerAndWhatsAppUnchanged": true
+    },
+    {
+      "width": 1440,
+      "theme": "light",
+      "headings": [
+        {
+          "tag": "H1",
+          "size": "76px",
+          "lineHeight": "80.56px"
+        },
+        {
+          "tag": "H2",
+          "size": "57.6px",
+          "lineHeight": "61.632px"
+        },
+        {
+          "tag": "H3",
+          "size": "29.92px",
+          "lineHeight": "35.904px"
+        },
+        {
+          "tag": "H3",
+          "size": "29.92px",
+          "lineHeight": "35.904px"
+        },
+        {
+          "tag": "H3",
+          "size": "29.92px",
+          "lineHeight": "35.904px"
+        },
+        {
+          "tag": "H2",
+          "size": "57.6px",
+          "lineHeight": "61.632px"
+        },
+        {
+          "tag": "H2",
+          "size": "57.6px",
+          "lineHeight": "61.632px"
+        },
+        {
+          "tag": "H2",
+          "size": "57.6px",
+          "lineHeight": "61.632px"
+        },
+        {
+          "tag": "H2",
+          "size": "57.6px",
+          "lineHeight": "61.632px"
+        }
+      ],
+      "overflow": [],
+      "documentWidth": 1440,
+      "fontLoaded": true,
+      "brokenImages": [],
+      "hiddenReveals": 0,
+      "viewBackground": "rgb(247, 249, 253)",
+      "viewColor": "rgb(11, 17, 32)",
+      "buttonColor": "rgb(255, 255, 255)",
+      "headerAndWhatsAppUnchanged": true
+    },
+    {
+      "width": 1024,
+      "theme": "dark",
+      "headings": [
+        {
+          "tag": "H1",
+          "size": "63.744px",
+          "lineHeight": "67.5686px"
+        },
+        {
+          "tag": "H2",
+          "size": "40.96px",
+          "lineHeight": "43.8272px"
+        },
+        {
+          "tag": "H3",
+          "size": "27.632px",
+          "lineHeight": "33.1584px"
+        },
+        {
+          "tag": "H3",
+          "size": "27.632px",
+          "lineHeight": "33.1584px"
+        },
+        {
+          "tag": "H3",
+          "size": "27.632px",
+          "lineHeight": "33.1584px"
+        },
+        {
+          "tag": "H2",
+          "size": "40.96px",
+          "lineHeight": "43.8272px"
+        },
+        {
+          "tag": "H2",
+          "size": "40.96px",
+          "lineHeight": "43.8272px"
+        },
+        {
+          "tag": "H2",
+          "size": "40.96px",
+          "lineHeight": "43.8272px"
+        },
+        {
+          "tag": "H2",
+          "size": "40.96px",
+          "lineHeight": "43.8272px"
+        }
+      ],
+      "overflow": [],
+      "documentWidth": 1024,
+      "fontLoaded": true,
+      "brokenImages": [],
+      "hiddenReveals": 0,
+      "viewBackground": "rgb(7, 11, 20)",
+      "viewColor": "rgb(248, 250, 252)",
+      "buttonColor": "rgb(255, 255, 255)",
+      "headerAndWhatsAppUnchanged": true
+    },
+    {
+      "width": 1024,
+      "theme": "light",
+      "headings": [
+        {
+          "tag": "H1",
+          "size": "63.744px",
+          "lineHeight": "67.5686px"
+        },
+        {
+          "tag": "H2",
+          "size": "40.96px",
+          "lineHeight": "43.8272px"
+        },
+        {
+          "tag": "H3",
+          "size": "27.632px",
+          "lineHeight": "33.1584px"
+        },
+        {
+          "tag": "H3",
+          "size": "27.632px",
+          "lineHeight": "33.1584px"
+        },
+        {
+          "tag": "H3",
+          "size": "27.632px",
+          "lineHeight": "33.1584px"
+        },
+        {
+          "tag": "H2",
+          "size": "40.96px",
+          "lineHeight": "43.8272px"
+        },
+        {
+          "tag": "H2",
+          "size": "40.96px",
+          "lineHeight": "43.8272px"
+        },
+        {
+          "tag": "H2",
+          "size": "40.96px",
+          "lineHeight": "43.8272px"
+        },
+        {
+          "tag": "H2",
+          "size": "40.96px",
+          "lineHeight": "43.8272px"
+        }
+      ],
+      "overflow": [],
+      "documentWidth": 1024,
+      "fontLoaded": true,
+      "brokenImages": [],
+      "hiddenReveals": 0,
+      "viewBackground": "rgb(247, 249, 253)",
+      "viewColor": "rgb(11, 17, 32)",
+      "buttonColor": "rgb(255, 255, 255)",
+      "headerAndWhatsAppUnchanged": true
+    },
+    {
+      "width": 768,
+      "theme": "dark",
+      "headings": [
+        {
+          "tag": "H1",
+          "size": "55.808px",
+          "lineHeight": "59.1565px"
+        },
+        {
+          "tag": "H2",
+          "size": "34px",
+          "lineHeight": "36.38px"
+        },
+        {
+          "tag": "H3",
+          "size": "26.224px",
+          "lineHeight": "31.4688px"
+        },
+        {
+          "tag": "H3",
+          "size": "26.224px",
+          "lineHeight": "31.4688px"
+        },
+        {
+          "tag": "H3",
+          "size": "26.224px",
+          "lineHeight": "31.4688px"
+        },
+        {
+          "tag": "H2",
+          "size": "34px",
+          "lineHeight": "36.38px"
+        },
+        {
+          "tag": "H2",
+          "size": "34px",
+          "lineHeight": "36.38px"
+        },
+        {
+          "tag": "H2",
+          "size": "34px",
+          "lineHeight": "36.38px"
+        },
+        {
+          "tag": "H2",
+          "size": "34px",
+          "lineHeight": "36.38px"
+        }
+      ],
+      "overflow": [],
+      "documentWidth": 768,
+      "fontLoaded": true,
+      "brokenImages": [],
+      "hiddenReveals": 0,
+      "viewBackground": "rgb(7, 11, 20)",
+      "viewColor": "rgb(248, 250, 252)",
+      "buttonColor": "rgb(255, 255, 255)",
+      "headerAndWhatsAppUnchanged": true
+    },
+    {
+      "width": 768,
+      "theme": "light",
+      "headings": [
+        {
+          "tag": "H1",
+          "size": "55.808px",
+          "lineHeight": "59.1565px"
+        },
+        {
+          "tag": "H2",
+          "size": "34px",
+          "lineHeight": "36.38px"
+        },
+        {
+          "tag": "H3",
+          "size": "26.224px",
+          "lineHeight": "31.4688px"
+        },
+        {
+          "tag": "H3",
+          "size": "26.224px",
+          "lineHeight": "31.4688px"
+        },
+        {
+          "tag": "H3",
+          "size": "26.224px",
+          "lineHeight": "31.4688px"
+        },
+        {
+          "tag": "H2",
+          "size": "34px",
+          "lineHeight": "36.38px"
+        },
+        {
+          "tag": "H2",
+          "size": "34px",
+          "lineHeight": "36.38px"
+        },
+        {
+          "tag": "H2",
+          "size": "34px",
+          "lineHeight": "36.38px"
+        },
+        {
+          "tag": "H2",
+          "size": "34px",
+          "lineHeight": "36.38px"
+        }
+      ],
+      "overflow": [],
+      "documentWidth": 768,
+      "fontLoaded": true,
+      "brokenImages": [],
+      "hiddenReveals": 0,
+      "viewBackground": "rgb(247, 249, 253)",
+      "viewColor": "rgb(11, 17, 32)",
+      "buttonColor": "rgb(255, 255, 255)",
+      "headerAndWhatsAppUnchanged": true
+    },
+    {
+      "width": 390,
+      "theme": "dark",
+      "headings": [
+        {
+          "tag": "H1",
+          "size": "44.09px",
+          "lineHeight": "46.7354px"
+        },
+        {
+          "tag": "H2",
+          "size": "34px",
+          "lineHeight": "36.38px"
+        },
+        {
+          "tag": "H3",
+          "size": "24.145px",
+          "lineHeight": "28.974px"
+        },
+        {
+          "tag": "H3",
+          "size": "24.145px",
+          "lineHeight": "28.974px"
+        },
+        {
+          "tag": "H3",
+          "size": "24.145px",
+          "lineHeight": "28.974px"
+        },
+        {
+          "tag": "H2",
+          "size": "34px",
+          "lineHeight": "36.38px"
+        },
+        {
+          "tag": "H2",
+          "size": "34px",
+          "lineHeight": "36.38px"
+        },
+        {
+          "tag": "H2",
+          "size": "34px",
+          "lineHeight": "36.38px"
+        },
+        {
+          "tag": "H2",
+          "size": "34px",
+          "lineHeight": "36.38px"
+        }
+      ],
+      "overflow": [],
+      "documentWidth": 390,
+      "fontLoaded": true,
+      "brokenImages": [],
+      "hiddenReveals": 0,
+      "viewBackground": "rgb(7, 11, 20)",
+      "viewColor": "rgb(248, 250, 252)",
+      "buttonColor": "rgb(255, 255, 255)",
+      "headerAndWhatsAppUnchanged": true
+    },
+    {
+      "width": 390,
+      "theme": "light",
+      "headings": [
+        {
+          "tag": "H1",
+          "size": "44.09px",
+          "lineHeight": "46.7354px"
+        },
+        {
+          "tag": "H2",
+          "size": "34px",
+          "lineHeight": "36.38px"
+        },
+        {
+          "tag": "H3",
+          "size": "24.145px",
+          "lineHeight": "28.974px"
+        },
+        {
+          "tag": "H3",
+          "size": "24.145px",
+          "lineHeight": "28.974px"
+        },
+        {
+          "tag": "H3",
+          "size": "24.145px",
+          "lineHeight": "28.974px"
+        },
+        {
+          "tag": "H2",
+          "size": "34px",
+          "lineHeight": "36.38px"
+        },
+        {
+          "tag": "H2",
+          "size": "34px",
+          "lineHeight": "36.38px"
+        },
+        {
+          "tag": "H2",
+          "size": "34px",
+          "lineHeight": "36.38px"
+        },
+        {
+          "tag": "H2",
+          "size": "34px",
+          "lineHeight": "36.38px"
+        }
+      ],
+      "overflow": [],
+      "documentWidth": 390,
+      "fontLoaded": true,
+      "brokenImages": [],
+      "hiddenReveals": 0,
+      "viewBackground": "rgb(247, 249, 253)",
+      "viewColor": "rgb(11, 17, 32)",
+      "buttonColor": "rgb(255, 255, 255)",
+      "headerAndWhatsAppUnchanged": true
+    }
+  ],
+  "errors": [],
+  "checks": [
+    "Original text and all 12 logos preserved",
+    "10 viewport/theme combinations",
+    "Global heading scale",
+    "No text overflow or missing images",
+    "Header and WhatsApp unaffected",
+    "All scroll reveals visible",
+    "Counters progress and finish at original values",
+    "Reduced motion",
+    "Internal CTA anchors",
+    "Theme persistence",
+    "Route transitions and active navigation"
+  ]
+}

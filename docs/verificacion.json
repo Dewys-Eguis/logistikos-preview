@@ -1,0 +1,1124 @@
+{
+  "routes": [
+    {
+      "width": 390,
+      "route": "/programas",
+      "originalOverflow": 4,
+      "currentOverflow": 4,
+      "overflow": [
+        {
+          "tag": "A",
+          "text": "Cómo trabajamos"
+        },
+        {
+          "tag": "A",
+          "text": "FUNDAE"
+        },
+        {
+          "tag": "A",
+          "text": "Para RRHH"
+        },
+        {
+          "tag": "A",
+          "text": "Al día"
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "route": "/fundae",
+      "originalOverflow": 67,
+      "currentOverflow": 67,
+      "overflow": [
+        {
+          "tag": "A",
+          "text": "Cómo trabajamos"
+        },
+        {
+          "tag": "A",
+          "text": "FUNDAE"
+        },
+        {
+          "tag": "A",
+          "text": "Para RRHH"
+        },
+        {
+          "tag": "A",
+          "text": "Al día"
+        },
+        {
+          "tag": "DIV",
+          "text": "1 · TU EMPRESA\n          \n            Plantilla media\n      "
+        },
+        {
+          "tag": "DIV",
+          "text": "1 · TU EMPRESA\n          \n            Plantilla media\n      "
+        },
+        {
+          "tag": "DIV",
+          "text": "1 · TU EMPRESA"
+        },
+        {
+          "tag": "DIV",
+          "text": "Plantilla media\n            Salario bruto medio (€/año)\n    "
+        },
+        {
+          "tag": "LABEL",
+          "text": "Plantilla media"
+        },
+        {
+          "tag": "INPUT",
+          "text": ""
+        },
+        {
+          "tag": "LABEL",
+          "text": "Salario bruto medio (€/año)"
+        },
+        {
+          "tag": "INPUT",
+          "text": ""
+        },
+        {
+          "tag": "LABEL",
+          "text": "Crédito ya usado este año (€)"
+        },
+        {
+          "tag": "INPUT",
+          "text": ""
+        },
+        {
+          "tag": "DIV",
+          "text": "Tramo: 50 a 249 personas · bonificación del\n            60 %"
+        },
+        {
+          "tag": "DIV",
+          "text": "2 · LA FORMACIÓN\n          Formación\n              Almacén e"
+        },
+        {
+          "tag": "DIV",
+          "text": "2 · LA FORMACIÓN"
+        },
+        {
+          "tag": "LABEL",
+          "text": "Formación\n              Almacén e intralogística · Productiv"
+        },
+        {
+          "tag": "SELECT",
+          "text": "Almacén e intralogística · Productividad en picking: métodos"
+        },
+        {
+          "tag": "DIV",
+          "text": "Participantes\n            Horas por participante"
+        },
+        {
+          "tag": "LABEL",
+          "text": "Participantes"
+        },
+        {
+          "tag": "INPUT",
+          "text": ""
+        },
+        {
+          "tag": "LABEL",
+          "text": "Horas por participante"
+        },
+        {
+          "tag": "INPUT",
+          "text": ""
+        },
+        {
+          "tag": "DIV",
+          "text": "Modalidad\n            \n              \n                  Pres"
+        },
+        {
+          "tag": "DIV",
+          "text": "Modalidad"
+        },
+        {
+          "tag": "DIV",
+          "text": "Presencial\n                \n                  Online Live\n  "
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Presencial"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Online Live"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Híbrida"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Teleformación"
+        },
+        {
+          "tag": "DIV",
+          "text": "Nivel de la formación\n            \n              \n          "
+        },
+        {
+          "tag": "DIV",
+          "text": "Nivel de la formación"
+        },
+        {
+          "tag": "DIV",
+          "text": "Superior · técnico y mandos (13 €/h)\n                \n      "
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Superior · técnico y mandos (13 €/h)"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Básico · operativo (9 €/h)"
+        },
+        {
+          "tag": "DIV",
+          "text": "CRÉDITO ANUAL ESTIMADO\n          9408 €\n          \n         "
+        },
+        {
+          "tag": "DIV",
+          "text": "CRÉDITO ANUAL ESTIMADO\n          9408 €\n          \n         "
+        },
+        {
+          "tag": "DIV",
+          "text": "CRÉDITO ANUAL ESTIMADO"
+        },
+        {
+          "tag": "DIV",
+          "text": "9408 €"
+        },
+        {
+          "tag": "DIV",
+          "text": "Disponible hoy: 9408 €"
+        },
+        {
+          "tag": "DIV",
+          "text": "ESTA FORMACIÓN BONIFICA HASTA\n          3120 €\n          12 "
+        },
+        {
+          "tag": "DIV",
+          "text": "ESTA FORMACIÓN BONIFICA HASTA"
+        },
+        {
+          "tag": "DIV",
+          "text": "3120 €"
+        },
+        {
+          "tag": "DIV",
+          "text": "12 participantes × 20 h × 13 €/h"
+        },
+        {
+          "tag": "DIV",
+          "text": ""
+        },
+        {
+          "tag": "DIV",
+          "text": "Consume el 33 % de tu crédito disponible. Te quedarían 6288 "
+        },
+        {
+          "tag": "DIV",
+          "text": "MISMA FORMACIÓN, OTRA MODALIDAD\n          \n            \n    "
+        },
+        {
+          "tag": "DIV",
+          "text": "MISMA FORMACIÓN, OTRA MODALIDAD"
+        },
+        {
+          "tag": "DIV",
+          "text": "Presencial\n              \n                \n              \n  "
+        },
+        {
+          "tag": "SPAN",
+          "text": "Presencial"
+        },
+        {
+          "tag": "DIV",
+          "text": ""
+        },
+        {
+          "tag": "DIV",
+          "text": ""
+        },
+        {
+          "tag": "SPAN",
+          "text": "3120 €"
+        },
+        {
+          "tag": "DIV",
+          "text": "Online Live\n              \n                \n              \n "
+        },
+        {
+          "tag": "SPAN",
+          "text": "Online Live"
+        },
+        {
+          "tag": "DIV",
+          "text": ""
+        },
+        {
+          "tag": "DIV",
+          "text": ""
+        },
+        {
+          "tag": "SPAN",
+          "text": "3120 €"
+        },
+        {
+          "tag": "DIV",
+          "text": "Teleformación\n              \n                \n              "
+        },
+        {
+          "tag": "SPAN",
+          "text": "Teleformación"
+        },
+        {
+          "tag": "DIV",
+          "text": ""
+        },
+        {
+          "tag": "DIV",
+          "text": ""
+        },
+        {
+          "tag": "SPAN",
+          "text": "1800 €"
+        },
+        {
+          "tag": "DIV",
+          "text": "Aportación privada mínima de tu tramo:\n          20 % del co"
+        },
+        {
+          "tag": "A",
+          "text": "Validar con mi crédito real en 24 h →"
+        },
+        {
+          "tag": "SPAN",
+          "text": "→"
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "route": "/rrhh",
+      "originalOverflow": 4,
+      "currentOverflow": 4,
+      "overflow": [
+        {
+          "tag": "A",
+          "text": "Cómo trabajamos"
+        },
+        {
+          "tag": "A",
+          "text": "FUNDAE"
+        },
+        {
+          "tag": "A",
+          "text": "Para RRHH"
+        },
+        {
+          "tag": "A",
+          "text": "Al día"
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "route": "/radar",
+      "originalOverflow": 4,
+      "currentOverflow": 4,
+      "overflow": [
+        {
+          "tag": "A",
+          "text": "Cómo trabajamos"
+        },
+        {
+          "tag": "A",
+          "text": "FUNDAE"
+        },
+        {
+          "tag": "A",
+          "text": "Para RRHH"
+        },
+        {
+          "tag": "A",
+          "text": "Al día"
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "route": "/universitarios",
+      "originalOverflow": 4,
+      "currentOverflow": 4,
+      "overflow": [
+        {
+          "tag": "A",
+          "text": "Cómo trabajamos"
+        },
+        {
+          "tag": "A",
+          "text": "FUNDAE"
+        },
+        {
+          "tag": "A",
+          "text": "Para RRHH"
+        },
+        {
+          "tag": "A",
+          "text": "Al día"
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "route": "/quienes-somos",
+      "originalOverflow": 4,
+      "currentOverflow": 4,
+      "overflow": [
+        {
+          "tag": "A",
+          "text": "Cómo trabajamos"
+        },
+        {
+          "tag": "A",
+          "text": "FUNDAE"
+        },
+        {
+          "tag": "A",
+          "text": "Para RRHH"
+        },
+        {
+          "tag": "A",
+          "text": "Al día"
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "route": "/a-medida",
+      "originalOverflow": 4,
+      "currentOverflow": 4,
+      "overflow": [
+        {
+          "tag": "A",
+          "text": "Cómo trabajamos"
+        },
+        {
+          "tag": "A",
+          "text": "FUNDAE"
+        },
+        {
+          "tag": "A",
+          "text": "Para RRHH"
+        },
+        {
+          "tag": "A",
+          "text": "Al día"
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "route": "/al-dia",
+      "originalOverflow": 4,
+      "currentOverflow": 4,
+      "overflow": [
+        {
+          "tag": "A",
+          "text": "Cómo trabajamos"
+        },
+        {
+          "tag": "A",
+          "text": "FUNDAE"
+        },
+        {
+          "tag": "A",
+          "text": "Para RRHH"
+        },
+        {
+          "tag": "A",
+          "text": "Al día"
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "route": "/campus",
+      "originalOverflow": 4,
+      "currentOverflow": 4,
+      "overflow": [
+        {
+          "tag": "A",
+          "text": "Cómo trabajamos"
+        },
+        {
+          "tag": "A",
+          "text": "FUNDAE"
+        },
+        {
+          "tag": "A",
+          "text": "Para RRHH"
+        },
+        {
+          "tag": "A",
+          "text": "Al día"
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "route": "/area/comercio-internacional",
+      "originalOverflow": 4,
+      "currentOverflow": 4,
+      "overflow": [
+        {
+          "tag": "A",
+          "text": "Cómo trabajamos"
+        },
+        {
+          "tag": "A",
+          "text": "FUNDAE"
+        },
+        {
+          "tag": "A",
+          "text": "Para RRHH"
+        },
+        {
+          "tag": "A",
+          "text": "Al día"
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "route": "/area/compras",
+      "originalOverflow": 4,
+      "currentOverflow": 4,
+      "overflow": [
+        {
+          "tag": "A",
+          "text": "Cómo trabajamos"
+        },
+        {
+          "tag": "A",
+          "text": "FUNDAE"
+        },
+        {
+          "tag": "A",
+          "text": "Para RRHH"
+        },
+        {
+          "tag": "A",
+          "text": "Al día"
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "route": "/area/ia-datos",
+      "originalOverflow": 4,
+      "currentOverflow": 4,
+      "overflow": [
+        {
+          "tag": "A",
+          "text": "Cómo trabajamos"
+        },
+        {
+          "tag": "A",
+          "text": "FUNDAE"
+        },
+        {
+          "tag": "A",
+          "text": "Para RRHH"
+        },
+        {
+          "tag": "A",
+          "text": "Al día"
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "route": "/area/liderazgo",
+      "originalOverflow": 4,
+      "currentOverflow": 4,
+      "overflow": [
+        {
+          "tag": "A",
+          "text": "Cómo trabajamos"
+        },
+        {
+          "tag": "A",
+          "text": "FUNDAE"
+        },
+        {
+          "tag": "A",
+          "text": "Para RRHH"
+        },
+        {
+          "tag": "A",
+          "text": "Al día"
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "route": "/area/supply-chain",
+      "originalOverflow": 4,
+      "currentOverflow": 4,
+      "overflow": [
+        {
+          "tag": "A",
+          "text": "Cómo trabajamos"
+        },
+        {
+          "tag": "A",
+          "text": "FUNDAE"
+        },
+        {
+          "tag": "A",
+          "text": "Para RRHH"
+        },
+        {
+          "tag": "A",
+          "text": "Al día"
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "route": "/area/transporte",
+      "originalOverflow": 4,
+      "currentOverflow": 4,
+      "overflow": [
+        {
+          "tag": "A",
+          "text": "Cómo trabajamos"
+        },
+        {
+          "tag": "A",
+          "text": "FUNDAE"
+        },
+        {
+          "tag": "A",
+          "text": "Para RRHH"
+        },
+        {
+          "tag": "A",
+          "text": "Al día"
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "route": "/marca",
+      "originalOverflow": 8,
+      "currentOverflow": 8,
+      "overflow": [
+        {
+          "tag": "A",
+          "text": "Cómo trabajamos"
+        },
+        {
+          "tag": "A",
+          "text": "FUNDAE"
+        },
+        {
+          "tag": "A",
+          "text": "Para RRHH"
+        },
+        {
+          "tag": "A",
+          "text": "Al día"
+        },
+        {
+          "tag": "DIV",
+          "text": "1 · UNBOUNDED SEMIBOLDRECOMENDADA\n      \n      logístikos\n  "
+        },
+        {
+          "tag": "DIV",
+          "text": "2 · BRICOLAGE GROTESQUE EXTRABOLD\n      logístikos\n      log"
+        },
+        {
+          "tag": "DIV",
+          "text": "3 · SORA BOLD\n      logístikos\n      logístikos\n      \n     "
+        },
+        {
+          "tag": "DIV",
+          "text": "4 · SPACE GROTESK BOLD\n      logístikos\n      logístikos\n   "
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "route": "/programas",
+      "originalOverflow": 0,
+      "currentOverflow": 0,
+      "overflow": []
+    },
+    {
+      "width": 768,
+      "route": "/fundae",
+      "originalOverflow": 60,
+      "currentOverflow": 60,
+      "overflow": [
+        {
+          "tag": "DIV",
+          "text": "1 · TU EMPRESA\n          \n            Plantilla media\n      "
+        },
+        {
+          "tag": "DIV",
+          "text": "1 · TU EMPRESA\n          \n            Plantilla media\n      "
+        },
+        {
+          "tag": "DIV",
+          "text": "1 · TU EMPRESA"
+        },
+        {
+          "tag": "DIV",
+          "text": "Plantilla media\n            Salario bruto medio (€/año)\n    "
+        },
+        {
+          "tag": "LABEL",
+          "text": "Plantilla media"
+        },
+        {
+          "tag": "INPUT",
+          "text": ""
+        },
+        {
+          "tag": "LABEL",
+          "text": "Salario bruto medio (€/año)"
+        },
+        {
+          "tag": "INPUT",
+          "text": ""
+        },
+        {
+          "tag": "LABEL",
+          "text": "Crédito ya usado este año (€)"
+        },
+        {
+          "tag": "INPUT",
+          "text": ""
+        },
+        {
+          "tag": "DIV",
+          "text": "Tramo: 50 a 249 personas · bonificación del\n            60 %"
+        },
+        {
+          "tag": "DIV",
+          "text": "2 · LA FORMACIÓN\n          Formación\n              Almacén e"
+        },
+        {
+          "tag": "DIV",
+          "text": "2 · LA FORMACIÓN"
+        },
+        {
+          "tag": "LABEL",
+          "text": "Formación\n              Almacén e intralogística · Productiv"
+        },
+        {
+          "tag": "SELECT",
+          "text": "Almacén e intralogística · Productividad en picking: métodos"
+        },
+        {
+          "tag": "DIV",
+          "text": "Participantes\n            Horas por participante"
+        },
+        {
+          "tag": "LABEL",
+          "text": "Participantes"
+        },
+        {
+          "tag": "INPUT",
+          "text": ""
+        },
+        {
+          "tag": "LABEL",
+          "text": "Horas por participante"
+        },
+        {
+          "tag": "INPUT",
+          "text": ""
+        },
+        {
+          "tag": "DIV",
+          "text": "Modalidad\n            \n              \n                  Pres"
+        },
+        {
+          "tag": "DIV",
+          "text": "Modalidad"
+        },
+        {
+          "tag": "DIV",
+          "text": "Presencial\n                \n                  Online Live\n  "
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Online Live"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Teleformación"
+        },
+        {
+          "tag": "DIV",
+          "text": "Nivel de la formación\n            \n              \n          "
+        },
+        {
+          "tag": "DIV",
+          "text": "Nivel de la formación"
+        },
+        {
+          "tag": "DIV",
+          "text": "Superior · técnico y mandos (13 €/h)\n                \n      "
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Superior · técnico y mandos (13 €/h)"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Básico · operativo (9 €/h)"
+        },
+        {
+          "tag": "DIV",
+          "text": "CRÉDITO ANUAL ESTIMADO\n          9408 €\n          \n         "
+        },
+        {
+          "tag": "DIV",
+          "text": "CRÉDITO ANUAL ESTIMADO\n          9408 €\n          \n         "
+        },
+        {
+          "tag": "DIV",
+          "text": "CRÉDITO ANUAL ESTIMADO"
+        },
+        {
+          "tag": "DIV",
+          "text": "9408 €"
+        },
+        {
+          "tag": "DIV",
+          "text": "Disponible hoy: 9408 €"
+        },
+        {
+          "tag": "DIV",
+          "text": "ESTA FORMACIÓN BONIFICA HASTA\n          3120 €\n          12 "
+        },
+        {
+          "tag": "DIV",
+          "text": "ESTA FORMACIÓN BONIFICA HASTA"
+        },
+        {
+          "tag": "DIV",
+          "text": "3120 €"
+        },
+        {
+          "tag": "DIV",
+          "text": "12 participantes × 20 h × 13 €/h"
+        },
+        {
+          "tag": "DIV",
+          "text": ""
+        },
+        {
+          "tag": "DIV",
+          "text": "Consume el 33 % de tu crédito disponible. Te quedarían 6288 "
+        },
+        {
+          "tag": "DIV",
+          "text": "MISMA FORMACIÓN, OTRA MODALIDAD\n          \n            \n    "
+        },
+        {
+          "tag": "DIV",
+          "text": "MISMA FORMACIÓN, OTRA MODALIDAD"
+        },
+        {
+          "tag": "DIV",
+          "text": "Presencial\n              \n                \n              \n  "
+        },
+        {
+          "tag": "SPAN",
+          "text": "Presencial"
+        },
+        {
+          "tag": "DIV",
+          "text": ""
+        },
+        {
+          "tag": "DIV",
+          "text": ""
+        },
+        {
+          "tag": "SPAN",
+          "text": "3120 €"
+        },
+        {
+          "tag": "DIV",
+          "text": "Online Live\n              \n                \n              \n "
+        },
+        {
+          "tag": "SPAN",
+          "text": "Online Live"
+        },
+        {
+          "tag": "DIV",
+          "text": ""
+        },
+        {
+          "tag": "DIV",
+          "text": ""
+        },
+        {
+          "tag": "SPAN",
+          "text": "3120 €"
+        },
+        {
+          "tag": "DIV",
+          "text": "Teleformación\n              \n                \n              "
+        },
+        {
+          "tag": "SPAN",
+          "text": "Teleformación"
+        },
+        {
+          "tag": "DIV",
+          "text": ""
+        },
+        {
+          "tag": "SPAN",
+          "text": "1800 €"
+        },
+        {
+          "tag": "DIV",
+          "text": "Aportación privada mínima de tu tramo:\n          20 % del co"
+        },
+        {
+          "tag": "A",
+          "text": "Validar con mi crédito real en 24 h →"
+        },
+        {
+          "tag": "SPAN",
+          "text": "→"
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "route": "/rrhh",
+      "originalOverflow": 0,
+      "currentOverflow": 0,
+      "overflow": []
+    },
+    {
+      "width": 768,
+      "route": "/radar",
+      "originalOverflow": 0,
+      "currentOverflow": 0,
+      "overflow": []
+    },
+    {
+      "width": 768,
+      "route": "/universitarios",
+      "originalOverflow": 0,
+      "currentOverflow": 0,
+      "overflow": []
+    },
+    {
+      "width": 768,
+      "route": "/quienes-somos",
+      "originalOverflow": 0,
+      "currentOverflow": 0,
+      "overflow": []
+    },
+    {
+      "width": 768,
+      "route": "/a-medida",
+      "originalOverflow": 0,
+      "currentOverflow": 0,
+      "overflow": []
+    },
+    {
+      "width": 768,
+      "route": "/al-dia",
+      "originalOverflow": 0,
+      "currentOverflow": 0,
+      "overflow": []
+    },
+    {
+      "width": 768,
+      "route": "/campus",
+      "originalOverflow": 0,
+      "currentOverflow": 0,
+      "overflow": []
+    },
+    {
+      "width": 768,
+      "route": "/area/comercio-internacional",
+      "originalOverflow": 0,
+      "currentOverflow": 0,
+      "overflow": []
+    },
+    {
+      "width": 768,
+      "route": "/area/compras",
+      "originalOverflow": 0,
+      "currentOverflow": 0,
+      "overflow": []
+    },
+    {
+      "width": 768,
+      "route": "/area/ia-datos",
+      "originalOverflow": 0,
+      "currentOverflow": 0,
+      "overflow": []
+    },
+    {
+      "width": 768,
+      "route": "/area/liderazgo",
+      "originalOverflow": 0,
+      "currentOverflow": 0,
+      "overflow": []
+    },
+    {
+      "width": 768,
+      "route": "/area/supply-chain",
+      "originalOverflow": 0,
+      "currentOverflow": 0,
+      "overflow": []
+    },
+    {
+      "width": 768,
+      "route": "/area/transporte",
+      "originalOverflow": 0,
+      "currentOverflow": 0,
+      "overflow": []
+    },
+    {
+      "width": 768,
+      "route": "/marca",
+      "originalOverflow": 0,
+      "currentOverflow": 0,
+      "overflow": []
+    },
+    {
+      "width": 1440,
+      "route": "/programas",
+      "originalOverflow": 0,
+      "currentOverflow": 0,
+      "overflow": []
+    },
+    {
+      "width": 1440,
+      "route": "/fundae",
+      "originalOverflow": 0,
+      "currentOverflow": 0,
+      "overflow": []
+    },
+    {
+      "width": 1440,
+      "route": "/rrhh",
+      "originalOverflow": 0,
+      "currentOverflow": 0,
+      "overflow": []
+    },
+    {
+      "width": 1440,
+      "route": "/radar",
+      "originalOverflow": 0,
+      "currentOverflow": 0,
+      "overflow": []
+    },
+    {
+      "width": 1440,
+      "route": "/universitarios",
+      "originalOverflow": 0,
+      "currentOverflow": 0,
+      "overflow": []
+    },
+    {
+      "width": 1440,
+      "route": "/quienes-somos",
+      "originalOverflow": 0,
+      "currentOverflow": 0,
+      "overflow": []
+    },
+    {
+      "width": 1440,
+      "route": "/a-medida",
+      "originalOverflow": 0,
+      "currentOverflow": 0,
+      "overflow": []
+    },
+    {
+      "width": 1440,
+      "route": "/al-dia",
+      "originalOverflow": 0,
+      "currentOverflow": 0,
+      "overflow": []
+    },
+    {
+      "width": 1440,
+      "route": "/campus",
+      "originalOverflow": 0,
+      "currentOverflow": 0,
+      "overflow": []
+    },
+    {
+      "width": 1440,
+      "route": "/area/comercio-internacional",
+      "originalOverflow": 0,
+      "currentOverflow": 0,
+      "overflow": []
+    },
+    {
+      "width": 1440,
+      "route": "/area/compras",
+      "originalOverflow": 0,
+      "currentOverflow": 0,
+      "overflow": []
+    },
+    {
+      "width": 1440,
+      "route": "/area/ia-datos",
+      "originalOverflow": 0,
+      "currentOverflow": 0,
+      "overflow": []
+    },
+    {
+      "width": 1440,
+      "route": "/area/liderazgo",
+      "originalOverflow": 0,
+      "currentOverflow": 0,
+      "overflow": []
+    },
+    {
+      "width": 1440,
+      "route": "/area/supply-chain",
+      "originalOverflow": 0,
+      "currentOverflow": 0,
+      "overflow": []
+    },
+    {
+      "width": 1440,
+      "route": "/area/transporte",
+      "originalOverflow": 0,
+      "currentOverflow": 0,
+      "overflow": []
+    },
+    {
+      "width": 1440,
+      "route": "/marca",
+      "originalOverflow": 0,
+      "currentOverflow": 0,
+      "overflow": []
+    }
+  ],
+  "differences": [],
+  "errors": [],
+  "interactions": []
+}

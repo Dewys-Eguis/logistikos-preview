@@ -1,0 +1,162 @@
+{
+  "reports": [
+    {
+      "width": 1920,
+      "theme": "dark",
+      "documentWidth": 1920,
+      "overflow": [],
+      "bodyOverflow": "visible",
+      "h1": "76px",
+      "inputFont": "16px",
+      "selection": [
+        "Híbrida",
+        "Superior · técnico y mandos (13 €/h)"
+      ],
+      "fontLoaded": true
+    },
+    {
+      "width": 1920,
+      "theme": "light",
+      "documentWidth": 1920,
+      "overflow": [],
+      "bodyOverflow": "visible",
+      "h1": "76px",
+      "inputFont": "16px",
+      "selection": [
+        "Híbrida",
+        "Superior · técnico y mandos (13 €/h)"
+      ],
+      "fontLoaded": true
+    },
+    {
+      "width": 1440,
+      "theme": "dark",
+      "documentWidth": 1440,
+      "overflow": [],
+      "bodyOverflow": "visible",
+      "h1": "76px",
+      "inputFont": "16px",
+      "selection": [
+        "Híbrida",
+        "Superior · técnico y mandos (13 €/h)"
+      ],
+      "fontLoaded": true
+    },
+    {
+      "width": 1440,
+      "theme": "light",
+      "documentWidth": 1440,
+      "overflow": [],
+      "bodyOverflow": "visible",
+      "h1": "76px",
+      "inputFont": "16px",
+      "selection": [
+        "Híbrida",
+        "Superior · técnico y mandos (13 €/h)"
+      ],
+      "fontLoaded": true
+    },
+    {
+      "width": 1024,
+      "theme": "dark",
+      "documentWidth": 1024,
+      "overflow": [],
+      "bodyOverflow": "visible",
+      "h1": "63.744px",
+      "inputFont": "16px",
+      "selection": [
+        "Híbrida",
+        "Superior · técnico y mandos (13 €/h)"
+      ],
+      "fontLoaded": true
+    },
+    {
+      "width": 1024,
+      "theme": "light",
+      "documentWidth": 1024,
+      "overflow": [],
+      "bodyOverflow": "visible",
+      "h1": "63.744px",
+      "inputFont": "16px",
+      "selection": [
+        "Híbrida",
+        "Superior · técnico y mandos (13 €/h)"
+      ],
+      "fontLoaded": true
+    },
+    {
+      "width": 768,
+      "theme": "dark",
+      "documentWidth": 768,
+      "overflow": [],
+      "bodyOverflow": "visible",
+      "h1": "55.808px",
+      "inputFont": "16px",
+      "selection": [
+        "Híbrida",
+        "Superior · técnico y mandos (13 €/h)"
+      ],
+      "fontLoaded": true
+    },
+    {
+      "width": 768,
+      "theme": "light",
+      "documentWidth": 768,
+      "overflow": [],
+      "bodyOverflow": "visible",
+      "h1": "55.808px",
+      "inputFont": "16px",
+      "selection": [
+        "Híbrida",
+        "Superior · técnico y mandos (13 €/h)"
+      ],
+      "fontLoaded": true
+    },
+    {
+      "width": 390,
+      "theme": "dark",
+      "documentWidth": 390,
+      "overflow": [],
+      "bodyOverflow": "visible",
+      "h1": "44.09px",
+      "inputFont": "16px",
+      "selection": [
+        "Híbrida",
+        "Superior · técnico y mandos (13 €/h)"
+      ],
+      "fontLoaded": true
+    },
+    {
+      "width": 390,
+      "theme": "light",
+      "documentWidth": 390,
+      "overflow": [],
+      "bodyOverflow": "visible",
+      "h1": "44.09px",
+      "inputFont": "16px",
+      "selection": [
+        "Híbrida",
+        "Superior · técnico y mandos (13 €/h)"
+      ],
+      "fontLoaded": true
+    }
+  ],
+  "errors": [],
+  "calculatorSourceUnchanged": true,
+  "baselineScenarios": 86,
+  "uiScenarios": 23,
+  "catalogOptions": 29,
+  "checks": [
+    "original calculator copy",
+    "all modes/levels",
+    "band boundaries",
+    "exhausted credit",
+    "empty and large inputs",
+    "catalog hour/mode selection",
+    "focus after re-render",
+    "PDF download",
+    "internal anchors",
+    "saved theme",
+    "route transitions"
+  ]
+}
