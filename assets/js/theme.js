@@ -29,5 +29,6 @@
   });
 
   document.addEventListener("DOMContentLoaded", syncControls);
+  window.syncThemeControls = syncControls;
   window.addEventListener("pageshow", syncControls);
 })();

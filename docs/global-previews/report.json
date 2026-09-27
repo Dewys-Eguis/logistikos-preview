@@ -1,0 +1,850 @@
+{
+  "errors": [],
+  "checks": 168,
+  "footerIdentical": true,
+  "comprasActive": true,
+  "transporteActive": true,
+  "pendingAreas": 3,
+  "report": [
+    {
+      "route": "/",
+      "width": 320,
+      "theme": "dark"
+    },
+    {
+      "route": "/",
+      "width": 320,
+      "theme": "light"
+    },
+    {
+      "route": "/programas",
+      "width": 320,
+      "theme": "dark"
+    },
+    {
+      "route": "/programas",
+      "width": 320,
+      "theme": "light"
+    },
+    {
+      "route": "/a-medida",
+      "width": 320,
+      "theme": "dark"
+    },
+    {
+      "route": "/a-medida",
+      "width": 320,
+      "theme": "light"
+    },
+    {
+      "route": "/quienes-somos",
+      "width": 320,
+      "theme": "dark"
+    },
+    {
+      "route": "/quienes-somos",
+      "width": 320,
+      "theme": "light"
+    },
+    {
+      "route": "/fundae",
+      "width": 320,
+      "theme": "dark"
+    },
+    {
+      "route": "/fundae",
+      "width": 320,
+      "theme": "light"
+    },
+    {
+      "route": "/rrhh",
+      "width": 320,
+      "theme": "dark"
+    },
+    {
+      "route": "/rrhh",
+      "width": 320,
+      "theme": "light"
+    },
+    {
+      "route": "/universitarios",
+      "width": 320,
+      "theme": "dark"
+    },
+    {
+      "route": "/universitarios",
+      "width": 320,
+      "theme": "light"
+    },
+    {
+      "route": "/al-dia",
+      "width": 320,
+      "theme": "dark"
+    },
+    {
+      "route": "/al-dia",
+      "width": 320,
+      "theme": "light"
+    },
+    {
+      "route": "/area/supply-chain",
+      "width": 320,
+      "theme": "dark"
+    },
+    {
+      "route": "/area/supply-chain",
+      "width": 320,
+      "theme": "light"
+    },
+    {
+      "route": "/area/compras",
+      "width": 320,
+      "theme": "dark"
+    },
+    {
+      "route": "/area/compras",
+      "width": 320,
+      "theme": "light"
+    },
+    {
+      "route": "/area/transporte",
+      "width": 320,
+      "theme": "dark"
+    },
+    {
+      "route": "/area/transporte",
+      "width": 320,
+      "theme": "light"
+    },
+    {
+      "route": "/campus",
+      "width": 320,
+      "theme": "dark"
+    },
+    {
+      "route": "/campus",
+      "width": 320,
+      "theme": "light"
+    },
+    {
+      "route": "/",
+      "width": 375,
+      "theme": "dark"
+    },
+    {
+      "route": "/",
+      "width": 375,
+      "theme": "light"
+    },
+    {
+      "route": "/programas",
+      "width": 375,
+      "theme": "dark"
+    },
+    {
+      "route": "/programas",
+      "width": 375,
+      "theme": "light"
+    },
+    {
+      "route": "/a-medida",
+      "width": 375,
+      "theme": "dark"
+    },
+    {
+      "route": "/a-medida",
+      "width": 375,
+      "theme": "light"
+    },
+    {
+      "route": "/quienes-somos",
+      "width": 375,
+      "theme": "dark"
+    },
+    {
+      "route": "/quienes-somos",
+      "width": 375,
+      "theme": "light"
+    },
+    {
+      "route": "/fundae",
+      "width": 375,
+      "theme": "dark"
+    },
+    {
+      "route": "/fundae",
+      "width": 375,
+      "theme": "light"
+    },
+    {
+      "route": "/rrhh",
+      "width": 375,
+      "theme": "dark"
+    },
+    {
+      "route": "/rrhh",
+      "width": 375,
+      "theme": "light"
+    },
+    {
+      "route": "/universitarios",
+      "width": 375,
+      "theme": "dark"
+    },
+    {
+      "route": "/universitarios",
+      "width": 375,
+      "theme": "light"
+    },
+    {
+      "route": "/al-dia",
+      "width": 375,
+      "theme": "dark"
+    },
+    {
+      "route": "/al-dia",
+      "width": 375,
+      "theme": "light"
+    },
+    {
+      "route": "/area/supply-chain",
+      "width": 375,
+      "theme": "dark"
+    },
+    {
+      "route": "/area/supply-chain",
+      "width": 375,
+      "theme": "light"
+    },
+    {
+      "route": "/area/compras",
+      "width": 375,
+      "theme": "dark"
+    },
+    {
+      "route": "/area/compras",
+      "width": 375,
+      "theme": "light"
+    },
+    {
+      "route": "/area/transporte",
+      "width": 375,
+      "theme": "dark"
+    },
+    {
+      "route": "/area/transporte",
+      "width": 375,
+      "theme": "light"
+    },
+    {
+      "route": "/campus",
+      "width": 375,
+      "theme": "dark"
+    },
+    {
+      "route": "/campus",
+      "width": 375,
+      "theme": "light"
+    },
+    {
+      "route": "/",
+      "width": 390,
+      "theme": "dark"
+    },
+    {
+      "route": "/",
+      "width": 390,
+      "theme": "light"
+    },
+    {
+      "route": "/programas",
+      "width": 390,
+      "theme": "dark"
+    },
+    {
+      "route": "/programas",
+      "width": 390,
+      "theme": "light"
+    },
+    {
+      "route": "/a-medida",
+      "width": 390,
+      "theme": "dark"
+    },
+    {
+      "route": "/a-medida",
+      "width": 390,
+      "theme": "light"
+    },
+    {
+      "route": "/quienes-somos",
+      "width": 390,
+      "theme": "dark"
+    },
+    {
+      "route": "/quienes-somos",
+      "width": 390,
+      "theme": "light"
+    },
+    {
+      "route": "/fundae",
+      "width": 390,
+      "theme": "dark"
+    },
+    {
+      "route": "/fundae",
+      "width": 390,
+      "theme": "light"
+    },
+    {
+      "route": "/rrhh",
+      "width": 390,
+      "theme": "dark"
+    },
+    {
+      "route": "/rrhh",
+      "width": 390,
+      "theme": "light"
+    },
+    {
+      "route": "/universitarios",
+      "width": 390,
+      "theme": "dark"
+    },
+    {
+      "route": "/universitarios",
+      "width": 390,
+      "theme": "light"
+    },
+    {
+      "route": "/al-dia",
+      "width": 390,
+      "theme": "dark"
+    },
+    {
+      "route": "/al-dia",
+      "width": 390,
+      "theme": "light"
+    },
+    {
+      "route": "/area/supply-chain",
+      "width": 390,
+      "theme": "dark"
+    },
+    {
+      "route": "/area/supply-chain",
+      "width": 390,
+      "theme": "light"
+    },
+    {
+      "route": "/area/compras",
+      "width": 390,
+      "theme": "dark"
+    },
+    {
+      "route": "/area/compras",
+      "width": 390,
+      "theme": "light"
+    },
+    {
+      "route": "/area/transporte",
+      "width": 390,
+      "theme": "dark"
+    },
+    {
+      "route": "/area/transporte",
+      "width": 390,
+      "theme": "light"
+    },
+    {
+      "route": "/campus",
+      "width": 390,
+      "theme": "dark"
+    },
+    {
+      "route": "/campus",
+      "width": 390,
+      "theme": "light"
+    },
+    {
+      "route": "/",
+      "width": 430,
+      "theme": "dark"
+    },
+    {
+      "route": "/",
+      "width": 430,
+      "theme": "light"
+    },
+    {
+      "route": "/programas",
+      "width": 430,
+      "theme": "dark"
+    },
+    {
+      "route": "/programas",
+      "width": 430,
+      "theme": "light"
+    },
+    {
+      "route": "/a-medida",
+      "width": 430,
+      "theme": "dark"
+    },
+    {
+      "route": "/a-medida",
+      "width": 430,
+      "theme": "light"
+    },
+    {
+      "route": "/quienes-somos",
+      "width": 430,
+      "theme": "dark"
+    },
+    {
+      "route": "/quienes-somos",
+      "width": 430,
+      "theme": "light"
+    },
+    {
+      "route": "/fundae",
+      "width": 430,
+      "theme": "dark"
+    },
+    {
+      "route": "/fundae",
+      "width": 430,
+      "theme": "light"
+    },
+    {
+      "route": "/rrhh",
+      "width": 430,
+      "theme": "dark"
+    },
+    {
+      "route": "/rrhh",
+      "width": 430,
+      "theme": "light"
+    },
+    {
+      "route": "/universitarios",
+      "width": 430,
+      "theme": "dark"
+    },
+    {
+      "route": "/universitarios",
+      "width": 430,
+      "theme": "light"
+    },
+    {
+      "route": "/al-dia",
+      "width": 430,
+      "theme": "dark"
+    },
+    {
+      "route": "/al-dia",
+      "width": 430,
+      "theme": "light"
+    },
+    {
+      "route": "/area/supply-chain",
+      "width": 430,
+      "theme": "dark"
+    },
+    {
+      "route": "/area/supply-chain",
+      "width": 430,
+      "theme": "light"
+    },
+    {
+      "route": "/area/compras",
+      "width": 430,
+      "theme": "dark"
+    },
+    {
+      "route": "/area/compras",
+      "width": 430,
+      "theme": "light"
+    },
+    {
+      "route": "/area/transporte",
+      "width": 430,
+      "theme": "dark"
+    },
+    {
+      "route": "/area/transporte",
+      "width": 430,
+      "theme": "light"
+    },
+    {
+      "route": "/campus",
+      "width": 430,
+      "theme": "dark"
+    },
+    {
+      "route": "/campus",
+      "width": 430,
+      "theme": "light"
+    },
+    {
+      "route": "/",
+      "width": 768,
+      "theme": "dark"
+    },
+    {
+      "route": "/",
+      "width": 768,
+      "theme": "light"
+    },
+    {
+      "route": "/programas",
+      "width": 768,
+      "theme": "dark"
+    },
+    {
+      "route": "/programas",
+      "width": 768,
+      "theme": "light"
+    },
+    {
+      "route": "/a-medida",
+      "width": 768,
+      "theme": "dark"
+    },
+    {
+      "route": "/a-medida",
+      "width": 768,
+      "theme": "light"
+    },
+    {
+      "route": "/quienes-somos",
+      "width": 768,
+      "theme": "dark"
+    },
+    {
+      "route": "/quienes-somos",
+      "width": 768,
+      "theme": "light"
+    },
+    {
+      "route": "/fundae",
+      "width": 768,
+      "theme": "dark"
+    },
+    {
+      "route": "/fundae",
+      "width": 768,
+      "theme": "light"
+    },
+    {
+      "route": "/rrhh",
+      "width": 768,
+      "theme": "dark"
+    },
+    {
+      "route": "/rrhh",
+      "width": 768,
+      "theme": "light"
+    },
+    {
+      "route": "/universitarios",
+      "width": 768,
+      "theme": "dark"
+    },
+    {
+      "route": "/universitarios",
+      "width": 768,
+      "theme": "light"
+    },
+    {
+      "route": "/al-dia",
+      "width": 768,
+      "theme": "dark"
+    },
+    {
+      "route": "/al-dia",
+      "width": 768,
+      "theme": "light"
+    },
+    {
+      "route": "/area/supply-chain",
+      "width": 768,
+      "theme": "dark"
+    },
+    {
+      "route": "/area/supply-chain",
+      "width": 768,
+      "theme": "light"
+    },
+    {
+      "route": "/area/compras",
+      "width": 768,
+      "theme": "dark"
+    },
+    {
+      "route": "/area/compras",
+      "width": 768,
+      "theme": "light"
+    },
+    {
+      "route": "/area/transporte",
+      "width": 768,
+      "theme": "dark"
+    },
+    {
+      "route": "/area/transporte",
+      "width": 768,
+      "theme": "light"
+    },
+    {
+      "route": "/campus",
+      "width": 768,
+      "theme": "dark"
+    },
+    {
+      "route": "/campus",
+      "width": 768,
+      "theme": "light"
+    },
+    {
+      "route": "/",
+      "width": 900,
+      "theme": "dark"
+    },
+    {
+      "route": "/",
+      "width": 900,
+      "theme": "light"
+    },
+    {
+      "route": "/programas",
+      "width": 900,
+      "theme": "dark"
+    },
+    {
+      "route": "/programas",
+      "width": 900,
+      "theme": "light"
+    },
+    {
+      "route": "/a-medida",
+      "width": 900,
+      "theme": "dark"
+    },
+    {
+      "route": "/a-medida",
+      "width": 900,
+      "theme": "light"
+    },
+    {
+      "route": "/quienes-somos",
+      "width": 900,
+      "theme": "dark"
+    },
+    {
+      "route": "/quienes-somos",
+      "width": 900,
+      "theme": "light"
+    },
+    {
+      "route": "/fundae",
+      "width": 900,
+      "theme": "dark"
+    },
+    {
+      "route": "/fundae",
+      "width": 900,
+      "theme": "light"
+    },
+    {
+      "route": "/rrhh",
+      "width": 900,
+      "theme": "dark"
+    },
+    {
+      "route": "/rrhh",
+      "width": 900,
+      "theme": "light"
+    },
+    {
+      "route": "/universitarios",
+      "width": 900,
+      "theme": "dark"
+    },
+    {
+      "route": "/universitarios",
+      "width": 900,
+      "theme": "light"
+    },
+    {
+      "route": "/al-dia",
+      "width": 900,
+      "theme": "dark"
+    },
+    {
+      "route": "/al-dia",
+      "width": 900,
+      "theme": "light"
+    },
+    {
+      "route": "/area/supply-chain",
+      "width": 900,
+      "theme": "dark"
+    },
+    {
+      "route": "/area/supply-chain",
+      "width": 900,
+      "theme": "light"
+    },
+    {
+      "route": "/area/compras",
+      "width": 900,
+      "theme": "dark"
+    },
+    {
+      "route": "/area/compras",
+      "width": 900,
+      "theme": "light"
+    },
+    {
+      "route": "/area/transporte",
+      "width": 900,
+      "theme": "dark"
+    },
+    {
+      "route": "/area/transporte",
+      "width": 900,
+      "theme": "light"
+    },
+    {
+      "route": "/campus",
+      "width": 900,
+      "theme": "dark"
+    },
+    {
+      "route": "/campus",
+      "width": 900,
+      "theme": "light"
+    },
+    {
+      "route": "/",
+      "width": 1440,
+      "theme": "dark"
+    },
+    {
+      "route": "/",
+      "width": 1440,
+      "theme": "light"
+    },
+    {
+      "route": "/programas",
+      "width": 1440,
+      "theme": "dark"
+    },
+    {
+      "route": "/programas",
+      "width": 1440,
+      "theme": "light"
+    },
+    {
+      "route": "/a-medida",
+      "width": 1440,
+      "theme": "dark"
+    },
+    {
+      "route": "/a-medida",
+      "width": 1440,
+      "theme": "light"
+    },
+    {
+      "route": "/quienes-somos",
+      "width": 1440,
+      "theme": "dark"
+    },
+    {
+      "route": "/quienes-somos",
+      "width": 1440,
+      "theme": "light"
+    },
+    {
+      "route": "/fundae",
+      "width": 1440,
+      "theme": "dark"
+    },
+    {
+      "route": "/fundae",
+      "width": 1440,
+      "theme": "light"
+    },
+    {
+      "route": "/rrhh",
+      "width": 1440,
+      "theme": "dark"
+    },
+    {
+      "route": "/rrhh",
+      "width": 1440,
+      "theme": "light"
+    },
+    {
+      "route": "/universitarios",
+      "width": 1440,
+      "theme": "dark"
+    },
+    {
+      "route": "/universitarios",
+      "width": 1440,
+      "theme": "light"
+    },
+    {
+      "route": "/al-dia",
+      "width": 1440,
+      "theme": "dark"
+    },
+    {
+      "route": "/al-dia",
+      "width": 1440,
+      "theme": "light"
+    },
+    {
+      "route": "/area/supply-chain",
+      "width": 1440,
+      "theme": "dark"
+    },
+    {
+      "route": "/area/supply-chain",
+      "width": 1440,
+      "theme": "light"
+    },
+    {
+      "route": "/area/compras",
+      "width": 1440,
+      "theme": "dark"
+    },
+    {
+      "route": "/area/compras",
+      "width": 1440,
+      "theme": "light"
+    },
+    {
+      "route": "/area/transporte",
+      "width": 1440,
+      "theme": "dark"
+    },
+    {
+      "route": "/area/transporte",
+      "width": 1440,
+      "theme": "light"
+    },
+    {
+      "route": "/campus",
+      "width": 1440,
+      "theme": "dark"
+    },
+    {
+      "route": "/campus",
+      "width": 1440,
+      "theme": "light"
+    }
+  ]
+}

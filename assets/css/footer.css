@@ -1,0 +1,29 @@
+/* One footer for all routes. Dark closure in both themes, as in the approved pages. */
+.site-footer{--color-dark:#070b14;--color-white:#f8fafc;background:var(--color-dark);color:var(--color-white);border-top:1px solid #24314a}
+.site-footer a{color:inherit;text-decoration:none;overflow-wrap:anywhere}
+.site-footer a:hover{color:var(--color-light-blue)}
+.site-footer .legacy-443{max-width:1240px;width:100%;margin:0 auto;padding:88px 40px 56px;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:32px 24px;align-items:end}
+.site-footer .legacy-444{grid-column:span 7;display:flex;flex-direction:column;gap:18px;max-width:680px}
+.site-footer .legacy-445{margin:0;font:var(--weight-heading) var(--type-section)/var(--leading-section) Archivo,sans-serif;font-size:var(--type-section)!important;line-height:var(--leading-section)!important;letter-spacing:var(--tracking-section);text-wrap:balance}
+.site-footer .legacy-226{max-width:720px;margin:0;color:#b2bed2;font-size:var(--type-body);line-height:var(--leading-body)}
+.site-footer .legacy-446{grid-column:9/span 4;display:flex;flex-direction:column;gap:12px;min-width:0}
+.site-footer .legacy-447,.site-footer .legacy-448{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:48px;padding:13px 16px;font-size:var(--type-button-small);font-weight:600;transition:background .2s}
+.site-footer .legacy-447{background:var(--color-electric-blue);color:#fff;border:0}
+.site-footer .legacy-447:hover{background:#446aff;color:#fff}
+.site-footer .legacy-448{border:1px solid #35435e;color:var(--color-white)}
+.site-footer .legacy-448:hover{background:#13213a}
+.site-footer .legacy-449{font:400 var(--type-button-small)/1.65 "IBM Plex Mono",monospace;color:#c3cee1;padding:8px 0}
+.site-footer .legacy-450{border-top:1px solid #24314a;background:#050811}
+.site-footer .legacy-451{max-width:1240px;margin:0 auto;padding:40px;display:grid;grid-template-columns:1.15fr 1fr 1fr 1fr;gap:32px;font-size:var(--type-secondary)}
+.site-footer .legacy-452{display:flex;flex-direction:column;gap:16px}
+.site-footer .wordmark{color:var(--color-white);font-size:22px}
+.site-footer .legacy-454{color:#a7b4c9;line-height:var(--leading-body)}
+.site-footer .legacy-146,.site-footer .legacy-456{display:flex;flex-direction:column;gap:12px;min-width:0;color:#a7b4c9}
+.site-footer .legacy-231{color:#c3cee1;text-decoration:none;line-height:1.6}
+.site-footer .legacy-455,.site-footer .legacy-424{font:500 var(--type-eyebrow)/1.6 "IBM Plex Mono",monospace;color:#a7b4c9;letter-spacing:var(--tracking-eyebrow);margin-bottom:8px}
+.site-footer-bottom{max-width:1240px;margin:0 auto;display:flex;flex-wrap:wrap;gap:20px 28px;align-items:center;padding:26px 40px 100px;font-size:var(--type-small);color:#a7b4c9}
+.site-footer-bottom>a:last-child{margin-left:auto}
+.site-footer a:focus-visible{outline:2px solid var(--color-orange-accent);outline-offset:4px}
+@media(max-width:960px){.site-footer .legacy-443{grid-template-columns:1fr;padding:64px 20px 42px}.site-footer .legacy-444,.site-footer .legacy-446{grid-column:auto}.site-footer .legacy-451{grid-template-columns:1fr 1fr;padding:32px 20px}.site-footer-bottom{padding:26px 20px 100px}}
+@media(max-width:520px){.site-footer .legacy-451{grid-template-columns:1fr}.site-footer-bottom{align-items:flex-start;flex-direction:column}.site-footer-bottom>a:last-child{margin-left:0}}
+@media(prefers-reduced-motion:reduce){.site-footer a{transition:none}}

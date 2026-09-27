@@ -25,14 +25,4 @@ body.is-rrhh{background:#070b14;color:#f8fafc}
 :root[data-theme="light"] body.is-rrhh,:root[data-theme="light"] .rrhh-page{background:#f7f9fd;color:#0b1120}:root[data-theme="light"] .rrhh-hero{background:radial-gradient(circle at 78% 28%,rgba(49,91,255,.11),transparent 34%),linear-gradient(135deg,#f8fbff,#edf2fb);border-bottom-color:#d5deeb}:root[data-theme="light"] .rrhh-lead{color:#5e6c82}:root[data-theme="light"] .rrhh-kitbox{background:#fff;border-color:#d4deeb;box-shadow:0 24px 60px rgba(30,41,59,.08)}:root[data-theme="light"] .rrhh-kitbox input{background:#f7f9fc;color:#0b1120;border-color:#cad5e5}:root[data-theme="light"] .rrhh-section--dark{background:#eaf0f8;color:#0b1120}:root[data-theme="light"] .rrhh-section--dark .rrhh-section-head>p,:root[data-theme="light"] .rrhh-calendar-copy p:last-child{color:#65748b}:root[data-theme="light"] .rrhh-timeline{border-color:#cad6e5}:root[data-theme="light"] .rrhh-step{border-color:#d2dce9}:root[data-theme="light"] .rrhh-step p{color:#63728a}:root[data-theme="light"] .rrhh-cta{background:#0b1427;color:#f8fafc}
 @media(max-width:1100px){.rrhh-shell{width:min(100% - 40px,1540px)}.rrhh-hero-grid,.rrhh-section-head,.rrhh-calendar-wrap{grid-template-columns:1fr}.rrhh-calendar-copy{position:static}.rrhh-tools{grid-template-columns:repeat(2,1fr)}.rrhh-service-grid{grid-template-columns:repeat(2,1fr)}.rrhh-fundae-inner,.rrhh-cta-inner{align-items:flex-start;grid-template-columns:1fr;display:grid}}
 @media(max-width:760px){.rrhh-shell{width:calc(100% - 32px)}.rrhh-hero{padding:64px 0 70px}.rrhh-breadcrumb{margin-bottom:34px}.rrhh-section{padding:72px 0}.rrhh-tools,.rrhh-service-grid{grid-template-columns:1fr}.rrhh-tool{min-height:0}.rrhh-tool h3{margin-top:34px}.rrhh-step{grid-template-columns:1fr;gap:8px}.rrhh-fundae{padding:66px 0}.rrhh-cta{padding:72px 0}.rrhh-fundae a,.rrhh-cta a{width:100%}}
-
 /* RRHH uses the same final contact scale as Formación; no duplicate custom CTA. */
-body.is-rrhh > footer{background:#070b14;color:#f8fafc;border-top:1px solid #24314a}
-body.is-rrhh > footer .legacy-445{max-width:680px;font-size:clamp(34px,4vw,58px)!important;line-height:1.02!important;color:#f8fafc!important}
-body.is-rrhh > footer .legacy-226{max-width:720px;color:#b2bed2!important;font-size:16px!important;line-height:1.6!important}
-body.is-rrhh > footer .legacy-447,body.is-rrhh > footer .legacy-448{min-height:48px!important;padding:13px 16px!important;font-size:13px!important}
-body.is-rrhh > footer .legacy-447{background:#315bff!important;color:#fff!important;border:0!important}
-body.is-rrhh > footer .legacy-448{color:#f8fafc!important;border-color:#35435e!important}
-body.is-rrhh > footer .legacy-449{color:#c3cee1!important;font-size:13px!important}
-body.is-rrhh > footer .legacy-450{border-color:#24314a!important}
-body.is-rrhh > footer .wordmark,body.is-rrhh > footer a{color:#f8fafc}

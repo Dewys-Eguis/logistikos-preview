@@ -653,49 +653,7 @@
   background: linear-gradient(180deg, rgba(8, 14, 25, 0.65), rgba(10, 17, 31, 0.95));
   border-color: rgba(203, 213, 225, 0.1);
 }
-body.is-al-dia > footer {
-  background: #070b14;
-  color: #f8fafc;
-  border-top: 1px solid #24314a;
-}
-body.is-al-dia > footer .legacy-445 {
-  max-width: 680px;
-  font-size: clamp(34px, 4vw, 58px) !important;
-  line-height: 1.02 !important;
-  color: #f8fafc !important;
-}
-body.is-al-dia > footer .legacy-226 {
-  max-width: 720px;
-  color: #b2bed2 !important;
-  font-size: 16px !important;
-  line-height: 1.6 !important;
-}
-body.is-al-dia > footer .legacy-447,
-body.is-al-dia > footer .legacy-448 {
-  min-height: 48px !important;
-  padding: 13px 16px !important;
-  font-size: 13px !important;
-}
-body.is-al-dia > footer .legacy-447 {
-  background: #315bff !important;
-  color: #fff !important;
-  border: 0 !important;
-}
-body.is-al-dia > footer .legacy-448 {
-  color: #f8fafc !important;
-  border-color: #35435e !important;
-}
-body.is-al-dia > footer .legacy-449 {
-  color: #c3cee1 !important;
-  font-size: 13px !important;
-}
-body.is-al-dia > footer .legacy-450 {
-  border-color: #24314a !important;
-}
-body.is-al-dia > footer .wordmark,
-body.is-al-dia > footer a {
-  color: #f8fafc;
-}
+
 :root[data-theme="dark"] .alday-training-pill {
   background: rgba(111, 139, 255, 0.14);
   color: #dbe4ff;

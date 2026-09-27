@@ -49,6 +49,7 @@ class MainComponent extends DCLogic {
   var cleanupHome = () => {};
   var cleanupFormacion = () => {};
   var cleanupNosotros = () => {};
+  var cleanupTransporte = () => {};
   function keyed() {
     return app.querySelectorAll("input,select,textarea,details,button");
   }
@@ -67,6 +68,8 @@ class MainComponent extends DCLogic {
     cleanupFormacion = () => {};
     cleanupNosotros();
     cleanupNosotros = () => {};
+    cleanupTransporte();
+    cleanupTransporte = () => {};
     document.body.classList.toggle("is-home", tplId === "tpl-home");
     document.body.classList.toggle("is-programas", tplId === "tpl-page-programas");
     document.body.classList.toggle("is-a-medida", tplId === "tpl-page-a-medida");
@@ -99,6 +102,7 @@ class MainComponent extends DCLogic {
     renderNodes(tpl.content.childNodes, vals, frag);
     app.replaceChildren(frag);
     app.setAttribute("data-view", tplId);
+    if (window.syncThemeControls) syncThemeControls();
     if (tplId === "tpl-page-fundae") {
       app.querySelectorAll(".credit-choice").forEach(button => {
         button.setAttribute("aria-pressed", String(button.classList.contains("legacy-485")));
@@ -110,6 +114,7 @@ class MainComponent extends DCLogic {
     if (tplId === "tpl-home") cleanupHome = HomePage.mount(app, mainComp);
     if (tplId === "tpl-page-programas" && window.FormacionPage) cleanupFormacion = FormacionPage.mount(app);
     if (tplId === "tpl-page-quienes-somos" && window.NosotrosPage) cleanupNosotros = NosotrosPage.mount(app);
+    if (tplId === "tpl-area-transporte" && window.TransportePage) cleanupTransporte = TransportePage.mount(app);
     if (sameView) {
       var nw = keyed();
       open.forEach(function (i) {
@@ -135,6 +140,7 @@ class MainComponent extends DCLogic {
     var h = location.hash || "#/",
       m;
     if (h.indexOf("#/radar") === 0) h = "#/al-dia";
+    if (h.indexOf("#/de-jefe-a-lider") === 0 && PENDING_AREAS.has("#/area/liderazgo")) h = "#/area/liderazgo";
     if (Array.from(PENDING_AREAS).some(function (pending) { return h === pending || h.indexOf(pending + "#") === 0; })) {
       h = "#/programas";
       if (location.hash !== h) history.replaceState(null, "", h);
@@ -196,7 +202,7 @@ class MainComponent extends DCLogic {
         else a.removeAttribute("aria-current");
       });
   }
-  var PENDING_AREAS = new Set(["#/area/compras", "#/area/transporte", "#/area/comercio-internacional", "#/area/liderazgo", "#/area/ia-datos"]);
+  var PENDING_AREAS = new Set(["#/area/comercio-internacional", "#/area/liderazgo", "#/area/ia-datos"]);
   function disablePendingAreaLinks(root) {
     (root || document).querySelectorAll("a[href]").forEach(function (a) {
       var href = a.getAttribute("href") || "";
@@ -231,6 +237,7 @@ class MainComponent extends DCLogic {
       return;
     }
     var href = a.getAttribute("href") || "";
+    if (href === "#top") { e.preventDefault(); scrollToTop(); return; }
     if (href.charAt(0) === "#" && href.charAt(1) !== "/") {
       e.preventDefault();
       var t = href.length > 1 ? document.getElementById(href.slice(1)) : null;

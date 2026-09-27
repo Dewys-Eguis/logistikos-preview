@@ -7,9 +7,7 @@ body.is-programas .site-header .site-nav a:hover, body.is-programas .site-header
 body.is-programas .site-header .site-nav a[aria-current="page"]::after { background:#6f8bff; }
 body.is-programas .site-header .campus-link { border-color:#33415e; }
 body.is-programas .site-header .cta { background:#ff7a1a; color:#070b14; border-color:#ff7a1a; }
-body.is-programas #contacto { background:#070b14; color:#f8fafc; border-top:1px solid #1b2941; }
-body.is-programas #contacto a { color:inherit; }
-body.is-programas #contacto .legacy-450 { background:#050811 !important; border-color:#1b2941 !important; }
+
 body.is-programas #wa { background:#0f172a !important; border-color:#31415f !important; color:#f8fafc !important; }
 body.is-programas #app { background:#070b14; }
 
@@ -202,20 +200,6 @@ body.is-programas #app { background:#070b14; }
   .formation-section-heading h2,.formation-bridge-copy h2,.formation-final-inner h2 { font-size:clamp(32px,10vw,46px) !important; }
 }
 
-/* Keep the legacy contact footer elegant when reached from Formación. */
-body.is-programas > footer { background:#070b14; color:#f8fafc; border-top:1px solid #24314a; }
-body.is-programas > footer .legacy-445 { max-width:680px; font-size:clamp(34px,4vw,58px) !important; line-height:1.02 !important; color:#f8fafc !important; }
-body.is-programas > footer .legacy-226 { max-width:720px; color:#b2bed2 !important; font-size:16px !important; line-height:1.6 !important; }
-body.is-programas > footer .legacy-447,
-body.is-programas > footer .legacy-448 { min-height:48px !important; padding:13px 16px !important; font-size:13px !important; }
-body.is-programas > footer .legacy-447 { background:#315bff !important; color:#fff !important; }
-body.is-programas > footer .legacy-448 { color:#f8fafc !important; border-color:#35435e !important; }
-body.is-programas > footer .legacy-449 { color:#c3cee1 !important; font-size:13px !important; }
-body.is-programas > footer .legacy-450 { border-color:#24314a !important; }
-body.is-programas > footer .wordmark,
-body.is-programas > footer a { color:#f8fafc; }
-
-
 /* 2026-09-26 · visual editorial de operación real */
 .formation-bridge-side { display:grid; gap:22px; align-content:start; }
 .formation-operation-visual {
@@ -254,7 +238,7 @@ body.is-programas > footer a { color:#f8fafc; }
 /* Shared typography: values live in variables.css. Scoped away from navigation and WhatsApp.
    !important on headings bridges the existing legacy responsive declarations. */
 .formation-view .formation-hero-copy h1 { font-size:var(--type-hero) !important; line-height:var(--leading-hero); letter-spacing:var(--tracking-hero); font-weight:var(--weight-heading); max-width:var(--measure-hero); margin:0; text-wrap:balance; }
-.formation-view h2, body.is-programas #contacto .legacy-445 { font-size:var(--type-section) !important; line-height:var(--leading-section) !important; letter-spacing:var(--tracking-section) !important; font-weight:var(--weight-heading); text-wrap:balance; }
+.formation-view h2 { font-size:var(--type-section) !important; line-height:var(--leading-section) !important; letter-spacing:var(--tracking-section) !important; font-weight:var(--weight-heading); text-wrap:balance; }
 .formation-view h3, .formation-view .formation-flow-step strong { font-size:var(--type-subtitle); line-height:var(--leading-subtitle); letter-spacing:var(--tracking-subtitle); font-weight:var(--weight-heading); }
 .formation-view .formation-lead { font-size:var(--type-lead); line-height:var(--leading-body); max-width:var(--measure-lead); margin:var(--space-title-lead) 0 var(--space-lead-actions) !important; }
 .formation-view .formation-eyebrow { font-size:var(--type-eyebrow); line-height:var(--leading-body); letter-spacing:var(--tracking-eyebrow); }

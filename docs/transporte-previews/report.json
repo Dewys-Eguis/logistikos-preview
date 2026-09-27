@@ -1,0 +1,82 @@
+{
+  "contentPreserved": true,
+  "programMetadataPreserved": true,
+  "filtersAndKeyboard": true,
+  "transporteActive": true,
+  "publicRoutesBlocked": 3,
+  "errors": [],
+  "report": [
+    {
+      "width": 320,
+      "theme": "dark"
+    },
+    {
+      "width": 320,
+      "theme": "light"
+    },
+    {
+      "width": 375,
+      "theme": "dark"
+    },
+    {
+      "width": 375,
+      "theme": "light"
+    },
+    {
+      "width": 390,
+      "theme": "dark"
+    },
+    {
+      "width": 390,
+      "theme": "light"
+    },
+    {
+      "width": 430,
+      "theme": "dark"
+    },
+    {
+      "width": 430,
+      "theme": "light"
+    },
+    {
+      "width": 768,
+      "theme": "dark"
+    },
+    {
+      "width": 768,
+      "theme": "light"
+    },
+    {
+      "width": 900,
+      "theme": "dark"
+    },
+    {
+      "width": 900,
+      "theme": "light"
+    },
+    {
+      "width": 1024,
+      "theme": "dark"
+    },
+    {
+      "width": 1024,
+      "theme": "light"
+    },
+    {
+      "width": 1440,
+      "theme": "dark"
+    },
+    {
+      "width": 1440,
+      "theme": "light"
+    },
+    {
+      "width": 1920,
+      "theme": "dark"
+    },
+    {
+      "width": 1920,
+      "theme": "light"
+    }
+  ]
+}

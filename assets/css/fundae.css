@@ -181,23 +181,3 @@ body.is-fundae { overflow-x:visible; }
 @media(prefers-reduced-motion:reduce) {
   .credit-view :is(a,button,input,select) { transition:none; }
 }
-
-/* Same contact component treatment as Nosotros / Empresas, scoped to this route. */
-body.is-fundae #contacto { background:#0a0c1b; color:#f8fafc; border-top:1px solid #24314a; }
-body.is-fundae #contacto .legacy-443 { max-width:1240px; width:auto; margin:0 auto; padding:88px 40px 56px; display:grid; grid-template-columns:repeat(12,minmax(0,1fr)); column-gap:24px; row-gap:32px; align-items:end; }
-body.is-fundae #contacto .legacy-444 { grid-column:span 7; gap:18px; max-width:680px; }
-body.is-fundae #contacto .legacy-445 { max-width:680px; font-size:var(--type-section) !important; line-height:var(--leading-section) !important; letter-spacing:var(--tracking-section) !important; font-weight:var(--weight-heading); color:#f8fafc; text-wrap:balance; }
-body.is-fundae #contacto .legacy-226 { max-width:720px; color:#b2bed2; font-size:var(--type-body); line-height:1.6; }
-body.is-fundae #contacto .legacy-446 { grid-column:9 / span 4; min-width:0; gap:12px; }
-body.is-fundae #contacto .legacy-447 { min-height:48px; padding:13px 16px; font-size:var(--type-button-small); background:#315bff; color:#fff; border:0; box-shadow:none; }
-body.is-fundae #contacto .legacy-447:hover { background:#446aff; }
-body.is-fundae #contacto .legacy-448 { display:none; }
-body.is-fundae #contacto .legacy-449 { color:#c3cee1; font-size:var(--type-button-small); padding:8px 0; }
-body.is-fundae #contacto .legacy-450 { border-color:#24314a; }
-body.is-fundae #contacto .wordmark,body.is-fundae #contacto a { color:#f8fafc; }
-@media(max-width:1100px) {
-  body.is-fundae #contacto .legacy-443 { grid-template-columns:1fr; padding:72px 32px 48px; }
-  body.is-fundae #contacto .legacy-444,body.is-fundae #contacto .legacy-446 { grid-column:auto; }
-}
-@media(max-width:760px) { body.is-fundae #contacto .legacy-443 { padding:64px 20px 42px; } }
-:root[data-theme="light"] body.is-fundae #contacto { background:#09111f; }

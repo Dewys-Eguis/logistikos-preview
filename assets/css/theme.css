@@ -87,7 +87,6 @@
 :root[data-theme="light"] body:not(.is-home) .campus-link:hover { color:#09101f !important; }
 :root[data-theme="light"] body:not(.is-home) .cta { background:#ff7a1a; color:#09101f !important; }
 
-
 :root[data-theme="light"] #wa { background:#ffffff; color:#0b1120; border:1px solid #d8e0ef; box-shadow:0 12px 35px rgba(30,41,59,.08); }
 :root[data-theme="light"] #wa:hover { background:#f8fbff; border-color:#315bff; }
 
@@ -164,7 +163,6 @@
 
 /* Generic internal content: preserve white cards while harmonizing the page chrome. */
 :root[data-theme="light"] body:not(.is-home):not(.is-programas) main { background:#f7f8fb; color:#0b1120; }
-:root[data-theme="light"] body:not(.is-home) footer { background:#09111f; color:#f8fafc; }
 
 @media (max-width:1180px) {
   .theme-toggle-label { display:none; }
@@ -176,7 +174,6 @@
   .theme-toggle-thumb { width:20px; height:20px; }
   :root[data-theme="light"] .theme-toggle-thumb { transform:translateX(24px); }
 }
-
 
 /* ==========================================================
    LIGHT THEME V2 · contraste y jerarquía visual refinados
@@ -526,16 +523,6 @@
 :root[data-theme="light"] .home-final-cta p:not(.home-eyebrow) {
   color:#9aa8bd;
 }
-
-/* Footer: keep dark for closure and brand consistency */
-:root[data-theme="light"] .home-footer {
-  background:#070e1b;
-  color:#f8fafc;
-}
-:root[data-theme="light"] .home-footer a {
-  color:#d8e0ed;
-}
-
 
 /* Light theme V3 fixes */
 :root[data-theme="light"] .home-news .news-feature .news-feature-copy h3 {

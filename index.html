@@ -33,8 +33,11 @@
     <link rel="stylesheet" href="assets/css/rrhh.css" />
     <link rel="stylesheet" href="assets/css/universitarios.css" />
     <link rel="stylesheet" href="assets/css/supply-chain.css" />
+    <link rel="stylesheet" href="assets/css/compras.css" />
+    <link rel="stylesheet" href="assets/css/transporte.css" />
     <link rel="stylesheet" href="assets/css/campus.css" />
     <link rel="stylesheet" href="assets/css/navigation.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />
   </head>
   <body>
     <header class="site-header">
@@ -56,7 +59,7 @@
       <div class="architecture-menu-bottom"><a href="#/campus">Campus ↗</a><a href="#contacto" class="architecture-contact">Hablemos ↗</a><a href="#/a-medida#como-trabajamos">Cómo trabajamos ↗</a></div>
     </dialog>
     <main id="app" aria-live="off"></main>
-    <footer id="contacto" class="legacy-103">
+    <footer id="contacto" class="site-footer">
       <div class="legacy-443 layout-grid layout-container layout-section-88">
         <div class="legacy-444 layout-grid-item">
           <div class="legacy-063">HABLEMOS</div>
@@ -87,23 +90,22 @@
         </div>
       </div>
       <div class="legacy-450">
-        <div class="legacy-451 layout-grid layout-container">
+        <div class="legacy-451">
           <div class="legacy-452">
             <a class="wordmark legacy-453" href="#/">logístikos</a
             ><span class="legacy-454"
-              >Formación logística para inconformistas.<br />Every step
-              covered.</span
+              >Formación logística para inconformistas.<br />Transformación para organizaciones.<br />Every step covered.</span
             >
           </div>
           <div class="legacy-146">
             <span class="legacy-455">ÁREAS</span
-            ><a href="#/area/supply-chain" class="legacy-231">Supply Chain</a
-            ><a href="#/area/compras" class="legacy-231">Compras</a
-            ><a href="#/area/transporte" class="legacy-231">Transporte</a
+            ><a href="#/area/supply-chain" class="legacy-231">Supply Chain y Logística</a
+            ><a href="#/area/compras" class="legacy-231">Compras y Category Management</a
+            ><a href="#/area/transporte" class="legacy-231">Transporte y Distribución</a
             ><a href="#/area/comercio-internacional" class="legacy-231"
-              >Comercio internacional</a
-            ><a href="#/area/liderazgo" class="legacy-231">Liderazgo</a
-            ><a href="#/area/ia-datos" class="legacy-231">IA y datos</a>
+              >Comercio Internacional y Aduanas</a
+            ><a href="#/area/liderazgo" class="legacy-231">Liderazgo y Gestión de Equipos</a
+            ><a href="#/area/ia-datos" class="legacy-231">IA, Datos y Digitalización</a>
           </div>
           <div class="legacy-146">
             <span class="legacy-455">RECURSOS</span
@@ -111,7 +113,7 @@
             ><a href="#/quienes-somos" class="legacy-231">Quiénes somos</a
             ><a href="#/programas" class="legacy-231">Por departamento</a
             ><a href="#/fundae" class="legacy-231">Calculadora FUNDAE</a
-            ><a href="#/rrhh" class="legacy-231">Kit para RRHH</a
+            ><a href="#/rrhh" class="legacy-231">Recursos para RRHH</a
             ><a href="#/al-dia" class="legacy-231">Logístikos al día</a
             ><a href="#/campus" class="legacy-231">Campus virtual</a
             ><a href="#/universitarios" class="legacy-231"
@@ -120,11 +122,15 @@
           </div>
           <div class="legacy-456">
             <span class="legacy-424">IN COMPANY</span
-            ><span>Toda España y aula virtual</span
-            ><span>Bonificable por FUNDAE</span><span>© 2026 Logístikos</span>
+            ><span>Murcia · Toda España</span><span>Presencial y aula virtual</span><span>Bonificable por FUNDAE</span>
+            <a href="mailto:formacion@logistikos.es">formacion@logistikos.es</a>
+            <a href="tel:+34696348047">+34 696 34 80 47</a>
+            <a href="https://wa.me/34696348047" target="_blank" rel="noopener">WhatsApp ↗</a>
+            <a href="https://youtu.be/2Ji4mJ8o0eY" target="_blank" rel="noopener">YouTube ↗</a>
           </div>
         </div>
       </div>
+      <div class="site-footer-bottom"><span>© 2026 Logístikos</span><a href="mailto:formacion@logistikos.es?subject=Consulta%20legal%20o%20de%20privacidad">Consultas legales y de privacidad</a><a href="#top">Volver arriba ↑</a></div>
     </footer>
     <div id="toast" role="status"></div>
     <div id="fab" class="legacy-457">
@@ -232,6 +238,12 @@
 
   <section class="home-hero" id="top" aria-labelledby="hero-title">
     <div class="hero-grid" aria-hidden="true"></div><div class="hero-aura" aria-hidden="true"></div>
+    <div class="home-shell hero-content" id="home-content" tabindex="-1">
+      <p class="home-eyebrow hero-eyebrow"><span class="status-dot"></span> ESPECIALISTAS EN FORMACIÓN LOGÍSTICA · IN COMPANY EN TODA ESPAÑA</p>
+      <h1 id="hero-title">Formación<br /><span class="hero-accent-mark">logística</span> para<br /><span class="hero-title-accent">inconformistas.</span></h1>
+      <p class="hero-intro">Práctica, a medida e impartida por directivos en activo. Para que tu equipo rinda más y tu operación cueste menos, desde el primer día.</p>
+      <div class="home-actions"><a class="home-button home-button--blue" href="#contacto" data-magnetic>Pedir diagnóstico gratuito <span aria-hidden="true">↗</span></a></div>
+    </div>
     <div class="hero-logistics-art" aria-hidden="true" data-hero-visual>
       <div class="hero-logistics-orbit hero-logistics-orbit--one"></div>
       <div class="hero-logistics-orbit hero-logistics-orbit--two"></div>
@@ -250,12 +262,6 @@
       </div>
       <div class="hero-logistics-signal hero-logistics-signal--one"></div>
       <div class="hero-logistics-signal hero-logistics-signal--two"></div>
-    </div>
-    <div class="home-shell hero-content" id="home-content" tabindex="-1">
-      <p class="home-eyebrow hero-eyebrow"><span class="status-dot"></span> ESPECIALISTAS EN FORMACIÓN LOGÍSTICA · IN COMPANY EN TODA ESPAÑA</p>
-      <h1 id="hero-title">Formación<br /><span class="hero-accent-mark">logística</span> para<br /><span class="hero-title-accent">inconformistas.</span></h1>
-      <p class="hero-intro">Práctica, a medida e impartida por directivos en activo. Para que tu equipo rinda más y tu operación cueste menos, desde el primer día.</p>
-      <div class="home-actions"><a class="home-button home-button--blue" href="#contacto" data-magnetic>Pedir diagnóstico gratuito <span aria-hidden="true">↗</span></a></div>
     </div>
     <div class="home-shell hero-bottom"><a href="#impacto" class="hero-scroll"><span aria-hidden="true">↓</span> EXPLORA LO QUE VIENE</a><p>In company en toda España.<br /><span>Every step covered.</span></p><span class="hero-coordinate" aria-hidden="true">LGK / NEXT IS NOW</span></div>
   </section>
@@ -466,7 +472,6 @@
       </details></div></section>
 
   <section class="home-final-cta home-section" id="home-contacto" aria-labelledby="contact-title"><div class="cta-sphere" aria-hidden="true"></div><div class="home-shell" data-reveal><p class="home-eyebrow"><span class="status-dot"></span> EL FUTURO SE ACTIVA EN EL PRESENTE</p><h2 id="contact-title">El próximo cambio<br />de tu organización<br /><span>puede empezar aquí.</span></h2><p>30 minutos. Un reto compartido.<br />El primer paso hacia lo que viene.</p><div class="home-actions"><a class="home-button home-button--orange" href="https://calendly.com/logistikos/reunion" target="_blank" rel="noopener" data-magnetic>Hablemos <span aria-hidden="true">↗</span></a><a class="home-text-link" href="https://wa.me/34696348047" target="_blank" rel="noopener">Escribir por WhatsApp ↗</a></div></div></section>
-  <footer class="home-footer" role="contentinfo"><div class="home-shell"><div class="footer-top"><div class="footer-brand"><a class="wordmark home-wordmark" href="#/">logístikos</a><p>Formación para inconformistas.<br />Transformación para organizaciones.</p><span>Every step covered.</span></div><div class="footer-column"><h2>Formación</h2><a href="#/area/supply-chain">Supply Chain y Logística</a><a href="#/area/compras">Compras y Category Management</a><a href="#/area/transporte">Transporte y Distribución</a><a href="#/area/comercio-internacional">Comercio Internacional y Aduanas</a><a href="#/area/liderazgo">Liderazgo y Gestión de Equipos</a><a href="#/area/ia-datos">IA, Datos y Digitalización</a></div><div class="footer-column"><h2>Empresas</h2><a href="#/a-medida">Formación a medida</a><a href="#/programas">Por departamento</a><a href="#/universitarios">Cursos universitarios</a><a href="#/fundae">FUNDAE</a><a href="#/rrhh">Recursos para RRHH</a><a href="#/campus">Campus virtual</a></div><div class="footer-column footer-contact"><h2>Conectamos</h2><a href="mailto:formacion@logistikos.es">formacion@logistikos.es</a><a href="tel:+34696348047">+34 696 34 80 47</a><span>Murcia · Toda España<br />Presencial y aula virtual</span><div><a href="https://wa.me/34696348047" target="_blank" rel="noopener">WhatsApp ↗</a><a href="https://youtu.be/2Ji4mJ8o0eY" target="_blank" rel="noopener">YouTube ↗</a></div></div></div><div class="footer-bottom"><span>© 2026 Logístikos</span><div><a href="#/quienes-somos">Quiénes somos</a><a href="#/al-dia">Al día</a><a href="mailto:formacion@logistikos.es?subject=Consulta%20legal%20o%20de%20privacidad">Consultas legales y de privacidad</a></div><a href="#top" class="footer-back">Volver arriba ↑</a></div></div></footer>
 </div>
 </template>
 <template id="tpl-page-programas">
@@ -2315,259 +2320,329 @@
 </section>
 </template>
 <template id="tpl-area-compras">
-<div class="legacy-139 layout-container">
-  <a href="#/" class="legacy-010">Inicio</a> /
-  <a href="#/s/areas" class="legacy-010">Áreas</a> / Compras y Category
-  Management
+<div class="cp-page">
+  <section class="cp-hero">
+    <div class="sc-grid-bg" aria-hidden="true">
 </div>
-
-<div class="legacy-363">
-  <section class="legacy-103">
-    <div class="legacy-364 layout-container layout-section-88">
-      <div class="legacy-063">
-        ÁREA A2 · FORMACIÓN IN COMPANY PARA INCONFORMISTAS
-      </div>
-      <h1 class="legacy-004">Compras y Category Management</h1>
-      <div class="legacy-365">Comprar por coste total, no por precio.</div>
-      <p class="legacy-366">
-        Compradores que negocian con datos, homologan alternativas antes de
-        necesitarlas y firman contratos que aguantan aranceles, subidas de
-        materias primas y proveedores únicos.
-      </p>
-      <div class="legacy-367">
-        <span class="legacy-368">PARA</span
-        ><span class="legacy-369">Compradores</span
-        ><span class="legacy-369">Category managers</span
-        ><span class="legacy-369">Responsables de aprovisionamiento</span
-        ><span class="legacy-369">Dirección de compras</span>
-      </div>
-    </div>
-  </section>
-
-  <section class="legacy-370 layout-container layout-section-88">
-    <div class="legacy-054">01 / LO QUE NOS PIDEN RESOLVER</div>
-    <div class="legacy-296 layout-grid">
-      <div class="legacy-371">
-        <div class="legacy-213">R1</div>
-        <div class="legacy-078">Decidir por precio unitario</div>
-        <div class="legacy-299">
-          Ofertas baratas que salen caras en calidad, plazo o logística.
-        </div>
-      </div>
-      <div class="legacy-371">
-        <div class="legacy-213">R2</div>
-        <div class="legacy-078">Dependencia de un proveedor</div>
-        <div class="legacy-299">
-          Un único origen que para la operación si falla.
-        </div>
-      </div>
-      <div class="legacy-371">
-        <div class="legacy-213">R3</div>
-        <div class="legacy-078">Volatilidad y aranceles</div>
-        <div class="legacy-299">
-          Costes que cambian cada trimestre y contratos que no lo prevén.
-        </div>
-      </div>
-      <div class="legacy-371">
-        <div class="legacy-213">R4</div>
-        <div class="legacy-078">Datos dispersos</div>
-        <div class="legacy-299">
-          Evaluación de proveedores en Excel sueltos, sin histórico comparable.
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="programas" class="legacy-086">
-    <div class="legacy-339 layout-container layout-section-88">
-      <div class="legacy-328 layout-between">
-        <div class="legacy-300">
-          <div class="legacy-054">02 / PROGRAMAS DEL ÁREA</div>
-          <h2 class="legacy-255">
-            Algunos programas del área. Y cualquier otro, a medida.
-          </h2>
-        </div>
-        <div class="legacy-372">
-          Son ejemplos: diseñamos cualquier formación que necesite tu equipo,
-          con la duración y el formador adecuados.
-          <a href="#/a-medida" class="legacy-021">Cómo funciona →</a>
-        </div>
-      </div>
-      <div class="legacy-373">
-        <div class="legacy-374">
-          POR QUÉ ESTOS PROGRAMAS · DEMANDA COMPROBADA EN ESPAÑA
-        </div>
-        <ul class="legacy-375">
-          <li class="legacy-376">
-            Los técnicos de compras figuran entre los perfiles de logística más
-            demandados y mejor retribuidos en 2026.
-          </li>
-          <li class="legacy-376">
-            Casi la mitad del sector logístico y de packaging español está
-            renegociando contratos internacionales por la crisis arancelaria
-            (Empack y Logistics &amp; Automation).
-          </li>
-        </ul>
-      </div>
-      <div class="legacy-377 layout-grid">
-        <span>PROGRAMA</span><span>HORAS</span><span>MODALIDAD</span
-        ><span>NIVEL</span><span>INDICADOR</span><span></span>
-      </div>
-      <div class="legacy-378">
-        <div class="legacy-379 layout-grid">
-          <div class="legacy-380">
-            Negociación con proveedores basada en el coste total (TCO)
-          </div>
-          <div class="legacy-381">16 h</div>
-          <div class="legacy-382">Presencial</div>
-          <div class="legacy-157">Superior</div>
-          <div class="legacy-383">KPI: Ahorro TCO anual</div>
-          <div class="legacy-384">
-            <span class="legacy-333">MÁS DEMANDADO</span>
-          </div>
-        </div>
-        <div class="legacy-379 layout-grid">
-          <div class="legacy-380">
-            Renegociar contratos internacionales en plena crisis arancelaria
-          </div>
-          <div class="legacy-381">12 h</div>
-          <div class="legacy-382">Online Live</div>
-          <div class="legacy-157">Superior</div>
-          <div class="legacy-383">KPI: Contratos revisados</div>
-          <div class="legacy-384">
-            <span class="legacy-385">NUEVO 2026</span>
-          </div>
-        </div>
-        <div class="legacy-379 layout-grid">
-          <div class="legacy-380">Gestión de compras y aprovisionamiento</div>
-          <div class="legacy-381">20 h</div>
-          <div class="legacy-382">Híbrida</div>
-          <div class="legacy-157">Superior</div>
-          <div class="legacy-383">KPI: Roturas de suministro</div>
-          <div class="legacy-384">
-            <span class="legacy-333">MÁS DEMANDADO</span>
-          </div>
-        </div>
-        <div class="legacy-379 layout-grid">
-          <div class="legacy-380">
-            Riesgo de proveedor y proveedores alternativos
-          </div>
-          <div class="legacy-381">12 h</div>
-          <div class="legacy-382">Online Live</div>
-          <div class="legacy-157">Superior</div>
-          <div class="legacy-383">KPI: Proveedores homologados</div>
-          <div class="legacy-384"></div>
-        </div>
-        <div class="legacy-379 layout-grid">
-          <div class="legacy-380">Finanzas aplicadas a compras y logística</div>
-          <div class="legacy-381">12 h</div>
-          <div class="legacy-382">Online Live</div>
-          <div class="legacy-157">Superior</div>
-          <div class="legacy-383">KPI: Impacto en margen</div>
-          <div class="legacy-384"></div>
-        </div>
-        <div class="legacy-379 layout-grid">
-          <div class="legacy-380">
-            IA aplicada a compras: analizar ofertas y contratos
-          </div>
-          <div class="legacy-381">8 h</div>
-          <div class="legacy-382">Online Live</div>
-          <div class="legacy-157">Superior</div>
-          <div class="legacy-383">KPI: Tiempo por licitación</div>
-          <div class="legacy-384">
-            <span class="legacy-385">NUEVO 2026</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="legacy-386 layout-grid layout-container layout-section-88">
-    <div class="legacy-387 layout-grid-item">
-      <div class="legacy-054">03 / CÓMO ES UN PROGRAMA TIPO</div>
-      <h2 class="legacy-106">De vuestra operación al indicador.</h2>
-      <div class="legacy-151">
-        <div class="legacy-388">
-          <span class="legacy-298">S1</span
-          ><span class="legacy-389"
-            >Análisis de vuestras categorías y contratos actuales</span
-          >
-        </div>
-        <div class="legacy-388">
-          <span class="legacy-298">S2</span
-          ><span class="legacy-389">Modelo TCO con casos reales de compra</span>
-        </div>
-        <div class="legacy-388">
-          <span class="legacy-298">S3</span
-          ><span class="legacy-389"
-            >Simulación de negociación con proveedor</span
-          >
-        </div>
-        <div class="legacy-388">
-          <span class="legacy-298">S4</span
-          ><span class="legacy-389"
-            >Plan por categoría con ahorro objetivo y revisión a 60 días</span
-          >
-        </div>
-      </div>
-    </div>
-    <div class="legacy-390 layout-grid-item">
-      <div class="legacy-054">04 / NORMATIVA QUE TRABAJAMOS</div>
-      <div class="legacy-391">
-        <span class="legacy-392">CBAM</span><span class="legacy-392">EUDR</span
-        ><span class="legacy-392">Incoterms® 2020</span
-        ><span class="legacy-392"
-          >Diligencia debida en la cadena de suministro</span
-        >
-      </div>
-      <div class="legacy-393">
-        <div class="legacy-045">FORMADORES DEL ÁREA</div>
-        <div class="legacy-394">
-          Directivos en activo del área, asignados según vuestro sector y
-          vuestra mercancía. Si trabajamos con información de la empresa,
-          firmamos NDA.
-        </div>
-        <div class="legacy-157">
-          Para cada formación te proponemos dos perfiles y eliges tú.
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="fundae-area" class="legacy-159">
-    <div class="legacy-395 layout-grid layout-container">
-      <div class="legacy-053 layout-grid-item">
-        <div class="legacy-127">05 / BONIFICACIÓN FUNDAE</div>
-        <h2 class="legacy-106">Un ejemplo con números.</h2>
-        <p class="legacy-396">
-          Gestionamos el trámite completo sin coste añadido. Calcula tu caso
-          exacto en la calculadora de la página principal.
-        </p>
-        <a href="#/s/fundae" class="legacy-397">Ir a la calculadora →</a>
-      </div>
-      <div class="legacy-398 layout-grid-item">
-        <div class="legacy-045">NEGOCIACIÓN TCO · 16 H · PRESENCIAL</div>
-        <div class="legacy-344">8 participantes × 16 h × 13 €/h</div>
-        <div class="legacy-305">hasta 1.664 €</div>
-        <div class="legacy-157">
-          bonificables, sujeto al crédito disponible de la empresa.
-        </div>
-      </div>
-    </div>
-  </section>
+    <div class="sc-shell">
+      <nav class="cp-breadcrumb" aria-label="Ruta de navegación">
+<a href="#/">Inicio</a>
+<span>/</span>
+<a href="#/s/areas">Áreas</a>
+<span>/</span>
+<span>Compras y Category Management</span>
+</nav>
+      <div class="cp-hero-grid">
+        <div>
+<p class="cp-eyebrow">ÁREA A2 · FORMACIÓN IN COMPANY PARA INCONFORMISTAS</p>
+<h1>Compras y <span>Category Management</span>
+</h1>
+<p class="cp-claim">Comprar por coste total, no por precio.</p>
+<p class="cp-lead">Compradores que negocian con datos, homologan alternativas antes de necesitarlas y firman contratos que aguantan aranceles, subidas de materias primas y proveedores únicos.</p>
+<div class="sc-actions">
+<a href="#programas" class="sc-btn sc-btn-primary">Explorar programas ↗</a>
+<a href="#contacto" class="sc-btn sc-btn-ghost">Hablar de vuestro reto</a>
 </div>
-<section class="legacy-399 layout-container">
-  <div class="legacy-400">OTRAS ÁREAS</div>
-  <div class="legacy-391">
-    <a href="#/area/supply-chain" class="legacy-401">Supply Chain y Logística</a
-    ><a href="#/area/transporte" class="legacy-401">Transporte y Distribución</a
-    ><a href="#/area/comercio-internacional" class="legacy-401"
-      >Comercio Internacional y Aduanas</a
-    ><a href="#/area/liderazgo" class="legacy-401"
-      >Liderazgo y Gestión de Equipos</a
-    ><a href="#/area/ia-datos" class="legacy-401">IA, Datos y Digitalización</a>
-  </div>
+</div>
+        <aside class="cp-decision" aria-label="Factores de la decisión de compra">
+<div class="cp-decision-top">
+<span>CRITERIO DE COMPRA</span>
+<span class="cp-signal" aria-hidden="true">
+</span>
+</div>
+<div class="cp-tco">
+<span>TCO</span>
+<p>Coste total</p>
+</div>
+<div class="cp-factors">
+<span>Precio</span>
+<span>Calidad</span>
+<span>Plazo</span>
+<span>Logística</span>
+</div>
+<div class="cp-decision-bottom">Categorías <span>→</span> Proveedores <span>→</span> Contratos</div>
+</aside>
+      </div>
+      <div class="cp-audience">
+<span class="cp-eyebrow">PARA</span>
+<span>Compradores</span> <span>Category managers</span> <span>Responsables de aprovisionamiento</span> <span>Dirección de compras</span>
+</div>
+    </div>
+  </section>
+  <section class="cp-section">
+<div class="sc-shell cp-challenges-layout">
+<div>
+<p class="cp-eyebrow">01 / LO QUE NOS PIDEN RESOLVER</p>
+<h2>Comprar por coste total.</h2>
+<p class="cp-lead">Calidad, plazo y logística.</p>
+</div>
+<div class="cp-challenges">
+<details class="cp-challenge" open>
+<summary>
+<span class="cp-number">R1</span>
+<h3>Decidir por precio unitario</h3>
+<span class="cp-plus" aria-hidden="true">+</span>
+</summary>
+<p>Ofertas baratas que salen caras en calidad, plazo o logística.</p>
+</details>
+<details class="cp-challenge" >
+<summary>
+<span class="cp-number">R2</span>
+<h3>Dependencia de un proveedor</h3>
+<span class="cp-plus" aria-hidden="true">+</span>
+</summary>
+<p>Un único origen que para la operación si falla.</p>
+</details>
+<details class="cp-challenge" >
+<summary>
+<span class="cp-number">R3</span>
+<h3>Volatilidad y aranceles</h3>
+<span class="cp-plus" aria-hidden="true">+</span>
+</summary>
+<p>Costes que cambian cada trimestre y contratos que no lo prevén.</p>
+</details>
+<details class="cp-challenge" >
+<summary>
+<span class="cp-number">R4</span>
+<h3>Datos dispersos</h3>
+<span class="cp-plus" aria-hidden="true">+</span>
+</summary>
+<p>Evaluación de proveedores en Excel sueltos, sin histórico comparable.</p>
+</details>
+</div>
+</div>
 </section>
+  <section id="programas" class="cp-section cp-catalog">
+<div class="sc-shell">
+<div class="cp-section-head">
+<div>
+<p class="cp-eyebrow">02 / PROGRAMAS DEL ÁREA</p>
+<h2>Algunos programas del área. <span>Y cualquier otro, a medida.</span>
+</h2>
+</div>
+<p>Son ejemplos: diseñamos cualquier formación que necesite tu equipo, con la duración y el formador adecuados. <a href="#/a-medida">Cómo funciona →</a>
+</p>
+</div>
+<div class="cp-program-grid">
+<details class="cp-program" open>
+<summary>
+<span class="cp-number">01</span>
+<span class="cp-program-heading">
+<span class="cp-tag">MÁS DEMANDADO</span>
+<span class="cp-program-title">Negociación con proveedores basada en el coste total (TCO)</span>
+<span class="cp-meta">16 h <span>·</span> Presencial</span>
+</span>
+<span class="cp-plus" aria-hidden="true">+</span>
+</summary>
+<div class="cp-program-body">
+<p>
+<span>INDICADOR</span>
+<strong>KPI: Ahorro TCO anual</strong>
+</p>
+<p>
+<span>NIVEL</span>
+<strong>Superior</strong>
+</p>
+</div>
+</details>
+<details class="cp-program" >
+<summary>
+<span class="cp-number">02</span>
+<span class="cp-program-heading">
+<span class="cp-tag cp-tag-blue">NUEVO 2026</span>
+<span class="cp-program-title">Renegociar contratos internacionales en plena crisis arancelaria</span>
+<span class="cp-meta">12 h <span>·</span> Online Live</span>
+</span>
+<span class="cp-plus" aria-hidden="true">+</span>
+</summary>
+<div class="cp-program-body">
+<p>
+<span>INDICADOR</span>
+<strong>KPI: Contratos revisados</strong>
+</p>
+<p>
+<span>NIVEL</span>
+<strong>Superior</strong>
+</p>
+</div>
+</details>
+<details class="cp-program" >
+<summary>
+<span class="cp-number">03</span>
+<span class="cp-program-heading">
+<span class="cp-tag">MÁS DEMANDADO</span>
+<span class="cp-program-title">Gestión de compras y aprovisionamiento</span>
+<span class="cp-meta">20 h <span>·</span> Híbrida</span>
+</span>
+<span class="cp-plus" aria-hidden="true">+</span>
+</summary>
+<div class="cp-program-body">
+<p>
+<span>INDICADOR</span>
+<strong>KPI: Roturas de suministro</strong>
+</p>
+<p>
+<span>NIVEL</span>
+<strong>Superior</strong>
+</p>
+</div>
+</details>
+<details class="cp-program" >
+<summary>
+<span class="cp-number">04</span>
+<span class="cp-program-heading">
+<span class="cp-program-title">Riesgo de proveedor y proveedores alternativos</span>
+<span class="cp-meta">12 h <span>·</span> Online Live</span>
+</span>
+<span class="cp-plus" aria-hidden="true">+</span>
+</summary>
+<div class="cp-program-body">
+<p>
+<span>INDICADOR</span>
+<strong>KPI: Proveedores homologados</strong>
+</p>
+<p>
+<span>NIVEL</span>
+<strong>Superior</strong>
+</p>
+</div>
+</details>
+<details class="cp-program" >
+<summary>
+<span class="cp-number">05</span>
+<span class="cp-program-heading">
+<span class="cp-program-title">Finanzas aplicadas a compras y logística</span>
+<span class="cp-meta">12 h <span>·</span> Online Live</span>
+</span>
+<span class="cp-plus" aria-hidden="true">+</span>
+</summary>
+<div class="cp-program-body">
+<p>
+<span>INDICADOR</span>
+<strong>KPI: Impacto en margen</strong>
+</p>
+<p>
+<span>NIVEL</span>
+<strong>Superior</strong>
+</p>
+</div>
+</details>
+<details class="cp-program" >
+<summary>
+<span class="cp-number">06</span>
+<span class="cp-program-heading">
+<span class="cp-tag cp-tag-blue">NUEVO 2026</span>
+<span class="cp-program-title">IA aplicada a compras: analizar ofertas y contratos</span>
+<span class="cp-meta">8 h <span>·</span> Online Live</span>
+</span>
+<span class="cp-plus" aria-hidden="true">+</span>
+</summary>
+<div class="cp-program-body">
+<p>
+<span>INDICADOR</span>
+<strong>KPI: Tiempo por licitación</strong>
+</p>
+<p>
+<span>NIVEL</span>
+<strong>Superior</strong>
+</p>
+</div>
+</details>
+</div>
+<details class="cp-demand">
+<summary>
+<span>POR QUÉ ESTOS PROGRAMAS · DEMANDA COMPROBADA EN ESPAÑA</span>
+<span class="cp-plus" aria-hidden="true">+</span>
+</summary>
+<ul>
+<li>Los técnicos de compras figuran entre los perfiles de logística más demandados y mejor retribuidos en 2026.</li>
+<li>Casi la mitad del sector logístico y de packaging español está renegociando contratos internacionales por la crisis arancelaria (Empack y Logistics &amp; Automation).</li>
+</ul>
+</details>
+</div>
+</section>
+  <section class="cp-section">
+<div class="sc-shell">
+<p class="cp-eyebrow">03 / CÓMO ES UN PROGRAMA TIPO</p>
+<h2>De vuestra operación al indicador.</h2>
+<ol class="cp-timeline">
+<li>
+<span class="cp-step">S1</span>
+<h3>Análisis de vuestras categorías y contratos actuales</h3>
+</li>
+<li>
+<span class="cp-step">S2</span>
+<h3>Modelo TCO con casos reales de compra</h3>
+</li>
+<li>
+<span class="cp-step">S3</span>
+<h3>Simulación de negociación con proveedor</h3>
+</li>
+<li>
+<span class="cp-step">S4</span>
+<h3>Plan por categoría con ahorro objetivo y revisión a 60 días</h3>
+</li>
+</ol>
+</div>
+</section>
+  <section class="cp-section cp-context">
+<div class="sc-shell cp-context-grid">
+<div>
+<p class="cp-eyebrow">04 / NORMATIVA QUE TRABAJAMOS</p>
+<h2>Normativa en compras.</h2>
+<ul class="cp-standards">
+<li>CBAM<span aria-hidden="true">·</span>
+</li> <li>EUDR<span aria-hidden="true">·</span>
+</li> <li>Incoterms® 2020<span aria-hidden="true">·</span>
+</li> <li>Diligencia debida en la cadena de suministro<span aria-hidden="true">·</span>
+</li>
+</ul>
+</div>
+<aside class="cp-trainer">
+<p class="cp-eyebrow">FORMADORES DEL ÁREA</p>
+<h3>Directivos en activo.</h3>
+<p>Directivos en activo del área, asignados según vuestro sector y vuestra mercancía. Si trabajamos con información de la empresa, firmamos NDA.</p>
+<div class="cp-choice">
+<span aria-hidden="true">01 / 02</span>
+<strong>Para cada formación te proponemos dos perfiles y eliges tú.</strong>
+</div>
+</aside>
+</div>
+</section>
+  <section id="fundae-area" class="cp-section cp-fundae">
+<div class="sc-shell cp-fundae-grid">
+<div>
+<p class="cp-eyebrow">05 / BONIFICACIÓN FUNDAE</p>
+<h2>Un ejemplo con números.</h2>
+<p>Gestionamos el trámite completo sin coste añadido. Calcula tu caso exacto en la calculadora de la página principal.</p>
+<a href="#/s/fundae" class="sc-btn sc-btn-primary">Ir a la calculadora →</a>
+</div>
+<div class="cp-calculation">
+<p class="cp-eyebrow">NEGOCIACIÓN TCO · 16 H · PRESENCIAL</p>
+<p class="cp-formula">8 participantes × 16 h × 13 €/h</p>
+<strong>hasta 1.664 €</strong>
+<p>bonificables, sujeto al crédito disponible de la empresa.</p>
+</div>
+</div>
+</section>
+  <section class="cp-other">
+<div class="sc-shell">
+<p class="cp-eyebrow">OTRAS ÁREAS</p>
+<div class="cp-other-links">
+<a href="#/area/supply-chain">Supply Chain y Logística <span aria-hidden="true">↗</span>
+</a>
+<a href="#/area/transporte">Transporte y Distribución<span aria-hidden="true">↗</span>
+</a>
+<a aria-disabled="true" class="is-pending-link" data-pending-href="#/area/comercio-internacional" title="Próximamente">Comercio Internacional y Aduanas<small>Próximamente</small>
+</a>
+<a aria-disabled="true" class="is-pending-link" data-pending-href="#/area/liderazgo" title="Próximamente">Liderazgo y Gestión de Equipos<small>Próximamente</small>
+</a>
+<a aria-disabled="true" class="is-pending-link" data-pending-href="#/area/ia-datos" title="Próximamente">IA, Datos y Digitalización<small>Próximamente</small>
+</a>
+</div>
+</div>
+</section>
+</div>
 </template>
 <template id="tpl-area-ia-datos">
 <div class="legacy-139 layout-container">
@@ -3407,277 +3482,407 @@
 </div>
 </template>
 <template id="tpl-area-transporte">
-<div class="legacy-139 layout-container">
-  <a href="#/" class="legacy-010">Inicio</a> /
-  <a href="#/s/areas" class="legacy-010">Áreas</a> / Transporte y Distribución
+<div class="tr-page">
+  <section class="tr-hero">
+<div class="sc-grid-bg" aria-hidden="true">
 </div>
-
-<div class="legacy-363">
-  <section class="legacy-103">
-    <div class="legacy-364 layout-container layout-section-88">
-      <div class="legacy-063">
-        ÁREA A3 · FORMACIÓN IN COMPANY PARA INCONFORMISTAS
-      </div>
-      <h1 class="legacy-004">Transporte y Distribución</h1>
-      <div class="legacy-365">
-        Menos kilómetros en vacío. Más entregas al primer intento.
-      </div>
-      <p class="legacy-366">
-        Tráfico y distribución con el coste por kilómetro bajo control, facturas
-        de transportistas auditadas, documentación digital y la huella de
-        carbono que ya piden los clientes en cada licitación.
-      </p>
-      <div class="legacy-367">
-        <span class="legacy-368">PARA</span
-        ><span class="legacy-369">Jefes de tráfico</span
-        ><span class="legacy-369">Planificadores de rutas</span
-        ><span class="legacy-369">Gestores de flota</span
-        ><span class="legacy-369">Administración de transporte</span>
-      </div>
-    </div>
-  </section>
-
-  <section class="legacy-370 layout-container layout-section-88">
-    <div class="legacy-054">01 / LO QUE NOS PIDEN RESOLVER</div>
-    <div class="legacy-296 layout-grid">
-      <div class="legacy-371">
-        <div class="legacy-213">R1</div>
-        <div class="legacy-078">Urgentes que disparan el coste</div>
-        <div class="legacy-299">
-          Servicios exprés que se convierten en costumbre.
-        </div>
-      </div>
-      <div class="legacy-371">
-        <div class="legacy-213">R2</div>
-        <div class="legacy-078">Facturación sin auditar</div>
-        <div class="legacy-299">
-          Tarifas, recargos y esperas que nadie revisa.
-        </div>
-      </div>
-      <div class="legacy-371">
-        <div class="legacy-213">R3</div>
-        <div class="legacy-078">Incidencias sin cerrar</div>
-        <div class="legacy-299">
-          PODs perdidos, reclamaciones y clientes preguntando dónde está su
-          pedido.
-        </div>
-      </div>
-      <div class="legacy-371">
-        <div class="legacy-213">R4</div>
-        <div class="legacy-078">Huella en licitaciones</div>
-        <div class="legacy-299">
-          Clientes que exigen emisiones por envío y no hay cómo calcularlas.
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="programas" class="legacy-086">
-    <div class="legacy-339 layout-container layout-section-88">
-      <div class="legacy-328 layout-between">
-        <div class="legacy-300">
-          <div class="legacy-054">02 / PROGRAMAS DEL ÁREA</div>
-          <h2 class="legacy-255">
-            Algunos programas del área. Y cualquier otro, a medida.
-          </h2>
-        </div>
-        <div class="legacy-372">
-          Son ejemplos: diseñamos cualquier formación que necesite tu equipo,
-          con la duración y el formador adecuados.
-          <a href="#/a-medida" class="legacy-021">Cómo funciona →</a>
-        </div>
-      </div>
-      <div class="legacy-373">
-        <div class="legacy-374">
-          POR QUÉ ESTOS PROGRAMAS · DEMANDA COMPROBADA EN ESPAÑA
-        </div>
-        <ul class="legacy-375">
-          <li class="legacy-376">
-            Desde el 1 de julio de 2026, las furgonetas de 2,5 a 3,5 t que hacen
-            transporte internacional deben llevar tacógrafo inteligente.
-          </li>
-          <li class="legacy-376">
-            La Ley de Movilidad Sostenible impulsa la documentación digital, y
-            el Plan de Inspección 2026 vigila tiempos de conducción y descanso.
-          </li>
-          <li class="legacy-376">
-            El precio del gasóleo ha llegado a subir hasta un 30 % en la UE: el
-            control de costes de flota es prioritario.
-          </li>
-        </ul>
-      </div>
-      <div class="legacy-377 layout-grid">
-        <span>PROGRAMA</span><span>HORAS</span><span>MODALIDAD</span
-        ><span>NIVEL</span><span>INDICADOR</span><span></span>
-      </div>
-      <div class="legacy-378">
-        <div class="legacy-379 layout-grid">
-          <div class="legacy-380">
-            Tacógrafo inteligente y tiempos de conducción y descanso
-          </div>
-          <div class="legacy-381">8 h</div>
-          <div class="legacy-382">Presencial</div>
-          <div class="legacy-157">Básico</div>
-          <div class="legacy-383">KPI: Sanciones evitadas</div>
-          <div class="legacy-384">
-            <span class="legacy-402">OBLIGACIÓN 2026</span>
-          </div>
-        </div>
-        <div class="legacy-379 layout-grid">
-          <div class="legacy-380">
-            Gestión económica de la flota y control del combustible
-          </div>
-          <div class="legacy-381">16 h</div>
-          <div class="legacy-382">Híbrida</div>
-          <div class="legacy-157">Superior</div>
-          <div class="legacy-383">KPI: Coste por kilómetro</div>
-          <div class="legacy-384">
-            <span class="legacy-333">MÁS DEMANDADO</span>
-          </div>
-        </div>
-        <div class="legacy-379 layout-grid">
-          <div class="legacy-380">
-            Planificación de rutas y ocupación de la flota
-          </div>
-          <div class="legacy-381">16 h</div>
-          <div class="legacy-382">Híbrida</div>
-          <div class="legacy-157">Superior</div>
-          <div class="legacy-383">KPI: Kilómetros en vacío</div>
-          <div class="legacy-384">
-            <span class="legacy-333">MÁS DEMANDADO</span>
-          </div>
-        </div>
-        <div class="legacy-379 layout-grid">
-          <div class="legacy-380">
-            Documentación digital del transporte: e-CMR y Ley de Movilidad
-            Sostenible
-          </div>
-          <div class="legacy-381">8 h</div>
-          <div class="legacy-382">Online Live</div>
-          <div class="legacy-157">Superior</div>
-          <div class="legacy-383">KPI: Días de cobro</div>
-          <div class="legacy-384">
-            <span class="legacy-385">NUEVO 2026</span>
-          </div>
-        </div>
-        <div class="legacy-379 layout-grid">
-          <div class="legacy-380">
-            Mercancías peligrosas (ADR) y perecederas (ATP) para jefes de
-            tráfico
-          </div>
-          <div class="legacy-381">12 h</div>
-          <div class="legacy-382">Presencial</div>
-          <div class="legacy-157">Superior</div>
-          <div class="legacy-383">KPI: Incidencias en ruta</div>
-          <div class="legacy-384"></div>
-        </div>
-        <div class="legacy-379 layout-grid">
-          <div class="legacy-380">
-            Negociación y venta en el sector transporte
-          </div>
-          <div class="legacy-381">12 h</div>
-          <div class="legacy-382">Presencial</div>
-          <div class="legacy-157">Superior</div>
-          <div class="legacy-383">KPI: Margen por servicio</div>
-          <div class="legacy-384"></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="legacy-386 layout-grid layout-container layout-section-88">
-    <div class="legacy-387 layout-grid-item">
-      <div class="legacy-054">03 / CÓMO ES UN PROGRAMA TIPO</div>
-      <h2 class="legacy-106">De vuestra operación al indicador.</h2>
-      <div class="legacy-151">
-        <div class="legacy-388">
-          <span class="legacy-298">S1</span
-          ><span class="legacy-389"
-            >Revisión de cómo planificáis rutas, tarifas y facturas</span
-          >
-        </div>
-        <div class="legacy-388">
-          <span class="legacy-298">S2</span
-          ><span class="legacy-389"
-            >Planificación y costeo con casos reales de tráfico</span
-          >
-        </div>
-        <div class="legacy-388">
-          <span class="legacy-298">S3</span
-          ><span class="legacy-389"
-            >Protocolo de incidencias y automatización con IA</span
-          >
-        </div>
-        <div class="legacy-388">
-          <span class="legacy-298">S4</span
-          ><span class="legacy-389"
-            >Cuadro de mando de transporte y revisión a 60 días</span
-          >
-        </div>
-      </div>
-    </div>
-    <div class="legacy-390 layout-grid-item">
-      <div class="legacy-054">04 / NORMATIVA QUE TRABAJAMOS</div>
-      <div class="legacy-391">
-        <span class="legacy-392">LOTT</span
-        ><span class="legacy-392">Convenio CMR</span
-        ><span class="legacy-392">Acuerdo ATP</span
-        ><span class="legacy-392">ADR</span
-        ><span class="legacy-392">eFTI · e-CMR</span
-        ><span class="legacy-392">ISO 14083</span>
-      </div>
-      <div class="legacy-393">
-        <div class="legacy-045">FORMADORES DEL ÁREA</div>
-        <div class="legacy-394">
-          Directivos en activo del área, asignados según vuestro sector y
-          vuestra mercancía. Si trabajamos con información de la empresa,
-          firmamos NDA.
-        </div>
-        <div class="legacy-157">
-          Para cada formación te proponemos dos perfiles y eliges tú.
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="fundae-area" class="legacy-159">
-    <div class="legacy-395 layout-grid layout-container">
-      <div class="legacy-053 layout-grid-item">
-        <div class="legacy-127">05 / BONIFICACIÓN FUNDAE</div>
-        <h2 class="legacy-106">Un ejemplo con números.</h2>
-        <p class="legacy-396">
-          Gestionamos el trámite completo sin coste añadido. Calcula tu caso
-          exacto en la calculadora de la página principal.
-        </p>
-        <a href="#/s/fundae" class="legacy-397">Ir a la calculadora →</a>
-      </div>
-      <div class="legacy-398 layout-grid-item">
-        <div class="legacy-045">
-          RUTAS Y OCUPACIÓN DE FLOTA · 16 H · HÍBRIDA
-        </div>
-        <div class="legacy-344">12 participantes × 16 h × 13 €/h</div>
-        <div class="legacy-305">hasta 2.496 €</div>
-        <div class="legacy-157">
-          bonificables, sujeto al crédito disponible de la empresa. Online Live
-          se bonifica con el módulo presencial.
-        </div>
-      </div>
-    </div>
-  </section>
+<div class="sc-shell">
+    <nav class="tr-breadcrumb" aria-label="Ruta de navegación">
+<a href="#/">Inicio</a>
+<span>/</span>
+<a href="#/s/areas">Áreas</a>
+<span>/</span>
+<span>Transporte y Distribución</span>
+</nav>
+    <p class="tr-eyebrow">ÁREA A3 · FORMACIÓN IN COMPANY PARA INCONFORMISTAS</p>
+    <div class="tr-hero-heading">
+<h1>Transporte y <span>Distribución</span>
+</h1>
+<div>
+<p class="tr-claim">Menos kilómetros en vacío. Más entregas al primer intento.</p>
+<p class="tr-lead">Tráfico y distribución con el coste por kilómetro bajo control, facturas de transportistas auditadas, documentación digital y la huella de carbono que ya piden los clientes en cada licitación.</p>
+<div class="sc-actions">
+<a href="#programas" class="sc-btn sc-btn-primary">Explorar programas ↗</a>
+<a href="#contacto" class="sc-btn sc-btn-ghost">Hablar de vuestro reto</a>
 </div>
-<section class="legacy-399 layout-container">
-  <div class="legacy-400">OTRAS ÁREAS</div>
-  <div class="legacy-391">
-    <a href="#/area/supply-chain" class="legacy-401">Supply Chain y Logística</a
-    ><a href="#/area/compras" class="legacy-401"
-      >Compras y Category Management</a
-    ><a href="#/area/comercio-internacional" class="legacy-401"
-      >Comercio Internacional y Aduanas</a
-    ><a href="#/area/liderazgo" class="legacy-401"
-      >Liderazgo y Gestión de Equipos</a
-    ><a href="#/area/ia-datos" class="legacy-401">IA, Datos y Digitalización</a>
+</div>
+</div>
+    <div class="tr-route" aria-label="Del origen a la entrega">
+<div class="tr-route-header">
+<span>PLANIFICACIÓN · RUTA · ENTREGA</span>
+<span>TRANSPORTE Y DISTRIBUCIÓN</span>
+</div>
+<svg class="tr-route-path" viewBox="0 0 1200 220" preserveAspectRatio="none" aria-hidden="true">
+<path class="tr-path-secondary" d="M0 80 H280 Q310 80 310 110 V140 H850 Q880 140 880 110 V80 H1200"/>
+<path class="tr-path-base" d="M0 80 H260 Q290 80 290 50 V40 Q290 20 320 20 H530 Q560 20 560 50 V60 Q560 80 590 80 H1200"/>
+<path class="tr-path-moving" d="M0 80 H260 Q290 80 290 50 V40 Q290 20 320 20 H530 Q560 20 560 50 V60 Q560 80 590 80 H1200"/>
+</svg>
+<ol class="tr-nodes">
+<li>
+<span class="tr-node" aria-hidden="true">
+</span>
+<span>01 / ORIGEN</span>
+<strong>Planificar</strong>
+<small>Rutas y ocupación</small>
+</li>
+<li>
+<span class="tr-node" aria-hidden="true">
+</span>
+<span>02 / EN RUTA</span>
+<strong>Controlar</strong>
+<small>Costes e incidencias</small>
+</li>
+<li>
+<span class="tr-node" aria-hidden="true">
+</span>
+<span>03 / ENTREGA</span>
+<strong>Documentar</strong>
+<small>Documentación digital</small>
+</li>
+</ol>
+</div>
+    <div class="tr-audience">
+<span class="tr-eyebrow">PARA</span>
+<span>Jefes de tráfico</span> <span>Planificadores de rutas</span> <span>Gestores de flota</span> <span>Administración de transporte</span>
+</div>
   </div>
 </section>
+  <section class="tr-section">
+<div class="sc-shell">
+<div class="tr-section-head">
+<div>
+<p class="tr-eyebrow">01 / LO QUE NOS PIDEN RESOLVER</p>
+<h2>El coste también está<br />en las incidencias.</h2>
+</div>
+<a class="tr-text-link" href="#programas">Explorar formación del área ↗</a>
+</div>
+<div class="tr-challenges">
+<article>
+<span class="tr-index">R1</span>
+<div>
+<h3>Urgentes que disparan el coste</h3>
+<p>Servicios exprés que se convierten en costumbre.</p>
+</div>
+</article>
+<article>
+<span class="tr-index">R2</span>
+<div>
+<h3>Facturación sin auditar</h3>
+<p>Tarifas, recargos y esperas que nadie revisa.</p>
+</div>
+</article>
+<article>
+<span class="tr-index">R3</span>
+<div>
+<h3>Incidencias sin cerrar</h3>
+<p>PODs perdidos, reclamaciones y clientes preguntando dónde está su pedido.</p>
+</div>
+</article>
+<article>
+<span class="tr-index">R4</span>
+<div>
+<h3>Huella en licitaciones</h3>
+<p>Clientes que exigen emisiones por envío y no hay cómo calcularlas.</p>
+</div>
+</article>
+</div>
+</div>
+</section>
+  <section id="programas" class="tr-section tr-catalog">
+<div class="sc-shell">
+<div class="tr-section-head">
+<div>
+<p class="tr-eyebrow">02 / PROGRAMAS DEL ÁREA</p>
+<h2>Algunos programas del área.<br />
+<span>Y cualquier otro, a medida.</span>
+</h2>
+</div>
+<p>Son ejemplos: diseñamos cualquier formación que necesite tu equipo, con la duración y el formador adecuados. <a href="#/a-medida">Cómo funciona →</a>
+</p>
+</div>
+<div class="tr-catalog-tools" data-transport-tools hidden>
+<div class="tr-filters" role="group" aria-label="Filtrar programas de transporte">
+<button type="button" data-transport-filter="all" aria-pressed="true" aria-controls="tr-program-list">Todos</button>
+<button type="button" data-transport-filter="operacion" aria-pressed="false" aria-controls="tr-program-list">Operación</button>
+<button type="button" data-transport-filter="costes" aria-pressed="false" aria-controls="tr-program-list">Costes y negocio</button>
+<button type="button" data-transport-filter="cumplimiento" aria-pressed="false" aria-controls="tr-program-list">Cumplimiento</button>
+</div>
+<p role="status" aria-live="polite" data-transport-count>6 programas</p>
+</div>
+<div id="tr-program-list" class="tr-programs">
+<details class="tr-program" data-transport-category="cumplimiento" open>
+<summary>
+<span class="tr-program-number">01</span>
+<span class="tr-program-main">
+<span class="tr-program-category">Cumplimiento <span class="tr-badge">OBLIGACIÓN 2026</span>
+</span>
+<span class="tr-program-title">Tacógrafo inteligente y tiempos de conducción y descanso</span>
+</span>
+<span class="tr-program-meta">
+<span>8 h</span>
+<span>Presencial</span>
+</span>
+<span class="tr-expand" aria-hidden="true">+</span>
+</summary>
+<div class="tr-program-detail">
+<p>
+<span>NIVEL</span>
+<strong>Básico</strong>
+</p>
+<p>
+<span>INDICADOR</span>
+<strong>KPI: Sanciones evitadas</strong>
+</p>
+</div>
+</details>
+<details class="tr-program" data-transport-category="costes" >
+<summary>
+<span class="tr-program-number">02</span>
+<span class="tr-program-main">
+<span class="tr-program-category">Costes y negocio <span class="tr-badge">MÁS DEMANDADO</span>
+</span>
+<span class="tr-program-title">Gestión económica de la flota y control del combustible</span>
+</span>
+<span class="tr-program-meta">
+<span>16 h</span>
+<span>Híbrida</span>
+</span>
+<span class="tr-expand" aria-hidden="true">+</span>
+</summary>
+<div class="tr-program-detail">
+<p>
+<span>NIVEL</span>
+<strong>Superior</strong>
+</p>
+<p>
+<span>INDICADOR</span>
+<strong>KPI: Coste por kilómetro</strong>
+</p>
+</div>
+</details>
+<details class="tr-program" data-transport-category="operacion" >
+<summary>
+<span class="tr-program-number">03</span>
+<span class="tr-program-main">
+<span class="tr-program-category">Operación <span class="tr-badge">MÁS DEMANDADO</span>
+</span>
+<span class="tr-program-title">Planificación de rutas y ocupación de la flota</span>
+</span>
+<span class="tr-program-meta">
+<span>16 h</span>
+<span>Híbrida</span>
+</span>
+<span class="tr-expand" aria-hidden="true">+</span>
+</summary>
+<div class="tr-program-detail">
+<p>
+<span>NIVEL</span>
+<strong>Superior</strong>
+</p>
+<p>
+<span>INDICADOR</span>
+<strong>KPI: Kilómetros en vacío</strong>
+</p>
+</div>
+</details>
+<details class="tr-program" data-transport-category="operacion" >
+<summary>
+<span class="tr-program-number">04</span>
+<span class="tr-program-main">
+<span class="tr-program-category">Operación <span class="tr-badge">NUEVO 2026</span>
+</span>
+<span class="tr-program-title">Documentación digital del transporte: e-CMR y Ley de Movilidad Sostenible</span>
+</span>
+<span class="tr-program-meta">
+<span>8 h</span>
+<span>Online Live</span>
+</span>
+<span class="tr-expand" aria-hidden="true">+</span>
+</summary>
+<div class="tr-program-detail">
+<p>
+<span>NIVEL</span>
+<strong>Superior</strong>
+</p>
+<p>
+<span>INDICADOR</span>
+<strong>KPI: Días de cobro</strong>
+</p>
+</div>
+</details>
+<details class="tr-program" data-transport-category="cumplimiento" >
+<summary>
+<span class="tr-program-number">05</span>
+<span class="tr-program-main">
+<span class="tr-program-category">Cumplimiento</span>
+<span class="tr-program-title">Mercancías peligrosas (ADR) y perecederas (ATP) para jefes de tráfico</span>
+</span>
+<span class="tr-program-meta">
+<span>12 h</span>
+<span>Presencial</span>
+</span>
+<span class="tr-expand" aria-hidden="true">+</span>
+</summary>
+<div class="tr-program-detail">
+<p>
+<span>NIVEL</span>
+<strong>Superior</strong>
+</p>
+<p>
+<span>INDICADOR</span>
+<strong>KPI: Incidencias en ruta</strong>
+</p>
+</div>
+</details>
+<details class="tr-program" data-transport-category="costes" >
+<summary>
+<span class="tr-program-number">06</span>
+<span class="tr-program-main">
+<span class="tr-program-category">Costes y negocio</span>
+<span class="tr-program-title">Negociación y venta en el sector transporte</span>
+</span>
+<span class="tr-program-meta">
+<span>12 h</span>
+<span>Presencial</span>
+</span>
+<span class="tr-expand" aria-hidden="true">+</span>
+</summary>
+<div class="tr-program-detail">
+<p>
+<span>NIVEL</span>
+<strong>Superior</strong>
+</p>
+<p>
+<span>INDICADOR</span>
+<strong>KPI: Margen por servicio</strong>
+</p>
+</div>
+</details>
+</div>
+    <details class="tr-demand">
+<summary>
+<span>POR QUÉ ESTOS PROGRAMAS · DEMANDA COMPROBADA EN ESPAÑA</span>
+<span class="tr-expand" aria-hidden="true">+</span>
+</summary>
+<ul>
+<li>Desde el 1 de julio de 2026, las furgonetas de 2,5 a 3,5 t que hacen transporte internacional deben llevar tacógrafo inteligente.</li>
+<li>La Ley de Movilidad Sostenible impulsa la documentación digital, y el Plan de Inspección 2026 vigila tiempos de conducción y descanso.</li>
+<li>El precio del gasóleo ha llegado a subir hasta un 30 % en la UE: el control de costes de flota es prioritario.</li>
+</ul>
+</details>
+  </div>
+</section>
+  <section class="tr-section tr-process">
+<div class="sc-shell tr-process-grid">
+<div class="tr-process-intro">
+<p class="tr-eyebrow">03 / CÓMO ES UN PROGRAMA TIPO</p>
+<h2>De vuestra operación al indicador.</h2>
+<div class="tr-process-sign" aria-hidden="true">
+<span>RUTAS</span>
+<span>TARIFAS</span>
+<span>FACTURAS</span>
+<b>↓</b>
+<span>CUADRO DE MANDO</span>
+</div>
+</div>
+<ol class="tr-steps">
+<li>
+<span>S1</span>
+<h3>Revisión de cómo planificáis rutas, tarifas y facturas</h3>
+</li>
+<li>
+<span>S2</span>
+<h3>Planificación y costeo con casos reales de tráfico</h3>
+</li>
+<li>
+<span>S3</span>
+<h3>Protocolo de incidencias y automatización con IA</h3>
+</li>
+<li>
+<span>S4</span>
+<h3>Cuadro de mando de transporte y revisión a 60 días</h3>
+</li>
+</ol>
+</div>
+</section>
+  <section class="tr-section tr-compliance">
+<div class="sc-shell">
+<div class="tr-section-head">
+<div>
+<p class="tr-eyebrow">04 / NORMATIVA QUE TRABAJAMOS</p>
+<h2>Normativa en ruta.</h2>
+</div>
+</div>
+<ul class="tr-standards">
+<li>
+<span>01</span>
+<strong>LOTT</strong>
+</li>
+<li>
+<span>02</span>
+<strong>Convenio CMR</strong>
+</li>
+<li>
+<span>03</span>
+<strong>Acuerdo ATP</strong>
+</li>
+<li>
+<span>04</span>
+<strong>ADR</strong>
+</li>
+<li>
+<span>05</span>
+<strong>eFTI · e-CMR</strong>
+</li>
+<li>
+<span>06</span>
+<strong>ISO 14083</strong>
+</li>
+</ul>
+<div class="tr-trainers">
+<div>
+<p class="tr-eyebrow">FORMADORES DEL ÁREA</p>
+<h3>Directivos en activo.</h3>
+</div>
+<p>Directivos en activo del área, asignados según vuestro sector y vuestra mercancía. Si trabajamos con información de la empresa, firmamos NDA.</p>
+<p class="tr-trainer-choice">Para cada formación te proponemos dos perfiles y eliges tú.</p>
+</div>
+</div>
+</section>
+  <section id="fundae-area" class="tr-section tr-fundae">
+<div class="sc-shell tr-fundae-grid">
+<div>
+<p class="tr-eyebrow">05 / BONIFICACIÓN FUNDAE</p>
+<h2>Un ejemplo con números.</h2>
+<p>Gestionamos el trámite completo sin coste añadido. Calcula tu caso exacto en la calculadora de la página principal.</p>
+<a href="#/s/fundae" class="sc-btn sc-btn-light">Ir a la calculadora →</a>
+</div>
+<div class="tr-example">
+<p class="tr-eyebrow">RUTAS Y OCUPACIÓN DE FLOTA · 16 H · HÍBRIDA</p>
+<p class="tr-equation">12 participantes × 16 h × 13 €/h</p>
+<strong>hasta 2.496 €</strong>
+<p>bonificables, sujeto al crédito disponible de la empresa. Online Live se bonifica con el módulo presencial.</p>
+</div>
+</div>
+</section>
+  <section class="tr-other">
+<div class="sc-shell">
+<p class="tr-eyebrow">OTRAS ÁREAS</p>
+<div class="tr-other-links">
+<a href="#/area/supply-chain">Supply Chain y Logística<span aria-hidden="true">↗</span>
+</a>
+<a href="#/area/compras">Compras y Category Management<span aria-hidden="true">↗</span>
+</a>
+<a href="#/area/comercio-internacional">Comercio Internacional y Aduanas<span aria-hidden="true">↗</span>
+</a>
+<a href="#/area/liderazgo">Liderazgo y Gestión de Equipos<span aria-hidden="true">↗</span>
+</a>
+<a href="#/area/ia-datos">IA, Datos y Digitalización<span aria-hidden="true">↗</span>
+</a>
+</div>
+</div>
+</section>
+</div>
 </template>
 <template id="tpl-page-marca">
 <section class="legacy-429 layout-container">
@@ -3743,6 +3948,7 @@
     <script defer src="assets/js/formacion.js"></script>
     <script defer src="assets/js/nosotros.js"></script>
     <script defer src="assets/js/navigation.js"></script>
+    <script defer src="assets/js/transporte.js"></script>
     <script defer src="assets/js/main.js"></script>
   </body>
 </html>

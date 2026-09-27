@@ -40,14 +40,3 @@ body.is-universitarios{background:#070b14;color:#f8fafc}
 @media(max-width:1100px){.uni-shell{width:min(100% - 40px,1540px)}.uni-hero{min-height:auto}.uni-hero-layout,.uni-intro-grid,.uni-section-head,.uni-project-grid{grid-template-columns:1fr}.uni-diploma-card{max-width:760px}.uni-program-grid{grid-template-columns:1fr}.uni-custom-inner{align-items:flex-start;flex-direction:column}.uni-executive-grid{grid-template-columns:1fr}.uni-project-visual{max-width:900px}.uni-section-head{gap:24px}}
 @media(max-width:760px){.uni-shell{width:calc(100% - 32px)}.uni-hero{padding:62px 0 70px}.uni-breadcrumb{margin-bottom:34px}.uni-hero-layout{gap:42px}.uni-diploma-card{padding:24px}.uni-diploma-card>strong{font-size:26px}.uni-diploma-stats{grid-template-columns:1fr}.uni-intro,.uni-programs,.uni-project,.uni-executive{padding:72px 0}.uni-program-card{padding:24px;min-height:0}.uni-program-card h3{margin-top:38px;font-size:25px}.uni-program-meta{flex-direction:column;gap:5px}.uni-project-points{grid-template-columns:1fr}.uni-project-visual,.uni-project-visual img{min-height:360px}.uni-project-visual figcaption{align-items:flex-start;flex-direction:column}.uni-custom{padding:70px 0}.uni-btn{width:100%}.uni-hero-actions{flex-direction:column}.uni-executive-card{padding:26px}.uni-executive-card h3{margin-top:38px;font-size:26px}}
 @media(prefers-reduced-motion:reduce){.uni-orb{animation:none}.uni-program-card,.uni-btn{transition:none}}
-
-/* Final contact consistency */
-body.is-universitarios > footer{background:#070b14;color:#f8fafc;border-top:1px solid #24314a}
-body.is-universitarios > footer .legacy-445{max-width:680px;font-size:clamp(34px,4vw,58px)!important;line-height:1.02!important;color:#f8fafc!important}
-body.is-universitarios > footer .legacy-226{max-width:720px;color:#b2bed2!important;font-size:16px!important;line-height:1.6!important}
-body.is-universitarios > footer .legacy-447,body.is-universitarios > footer .legacy-448{min-height:48px!important;padding:13px 16px!important;font-size:13px!important}
-body.is-universitarios > footer .legacy-447{background:#315bff!important;color:#fff!important;border:0!important}
-body.is-universitarios > footer .legacy-448{color:#f8fafc!important;border-color:#35435e!important}
-body.is-universitarios > footer .legacy-449{color:#c3cee1!important;font-size:13px!important}
-body.is-universitarios > footer .legacy-450{border-color:#24314a!important}
-body.is-universitarios > footer .wordmark,body.is-universitarios > footer a{color:#f8fafc}

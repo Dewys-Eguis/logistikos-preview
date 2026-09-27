@@ -177,18 +177,6 @@
 .about-final h2 { max-width:760px; }
 .about-view .about-final .about-eyebrow { color:#90a1c5; margin-bottom:22px; }
 .about-view .about-final a.about-button { min-height:46px; padding:11px 16px; gap:14px; justify-content:center; border-radius:0; border-color:#ff7a1a; font-size:var(--type-button-small); font-weight:600; }
-body.is-nosotros #contacto { background:#0a0c1b; color:#f8fafc; border-top:1px solid #24314a; }
-body.is-nosotros #contacto .legacy-443 { max-width:1240px; width:auto; margin:0 auto; padding:88px 40px 56px; display:grid; grid-template-columns:repeat(12,minmax(0,1fr)); column-gap:24px; row-gap:32px; align-items:end; }
-body.is-nosotros #contacto .legacy-444 { grid-column:span 7; gap:18px; max-width:680px; }
-body.is-nosotros #contacto .legacy-445 { max-width:680px; font-size:var(--type-section) !important; line-height:var(--leading-section) !important; letter-spacing:var(--tracking-section) !important; font-weight:var(--weight-heading); color:#f8fafc; text-wrap:balance; }
-body.is-nosotros #contacto .legacy-226 { max-width:720px; color:#b2bed2; font-size:var(--type-body); line-height:1.6; }
-body.is-nosotros #contacto .legacy-446 { grid-column:9 / span 4; min-width:0; gap:12px; }
-body.is-nosotros #contacto .legacy-447 { min-height:48px; padding:13px 16px; font-size:var(--type-button-small); background:#315bff; color:#fff; border:0; box-shadow:none; }
-body.is-nosotros #contacto .legacy-447:hover { background:#446aff; }
-body.is-nosotros #contacto .legacy-448 { display:none; }
-body.is-nosotros #contacto .legacy-449 { color:#c3cee1; font-size:var(--type-button-small); padding:8px 0; }
-body.is-nosotros #contacto .legacy-450 { border-color:#24314a; }
-body.is-nosotros #contacto .wordmark,body.is-nosotros #contacto a { color:#f8fafc; }
 
 /* One count per visit; the thin line is decorative, not a target or percentage. */
 .about-metrics > div { position:relative; isolation:isolate; transition:background .3s; }
@@ -201,22 +189,19 @@ body.is-nosotros #contacto .wordmark,body.is-nosotros #contacto a { color:#f8faf
 }
 @media(max-width:1100px) {
   .about-final .about-final-inner { width:calc(100% - 40px); align-items:flex-start; flex-direction:column; }
-  body.is-nosotros #contacto .legacy-443 { grid-template-columns:1fr; padding:72px 32px 48px; }
-  body.is-nosotros #contacto .legacy-444,body.is-nosotros #contacto .legacy-446 { grid-column:auto; }
+
 }
 @media(max-width:760px) {
   .about-view .about-final { padding:clamp(70px,8vw,110px) 0; }
   .about-final .about-final-inner { width:calc(100% - 32px); }
   .about-view .about-final a.about-button { width:100%; }
-  body.is-nosotros #contacto .legacy-443 { padding:64px 20px 42px; }
+
 }
 @media(prefers-reduced-motion:reduce) {
   .about-metrics > div { transition:none; }
   .about-metrics > div::after { transform:scaleX(1); }
 }
 :root[data-theme="light"] .about-view .about-final .about-eyebrow { color:#90a1c5; }
-:root[data-theme="light"] body.is-nosotros #contacto { background:#09111f; }
-
 
 @media (max-width:1180px) and (min-width:761px){
   .about-metrics { grid-template-columns:repeat(2,minmax(0,1fr)); }
