@@ -22,23 +22,13 @@ const HomeMotion = {
     const on = (target, event, callback, options = {}) => target.addEventListener(event, callback, { ...options, signal:control.signal });
     const frames = new Set();
     const request = (callback) => { const id=requestAnimationFrame((time)=>{frames.delete(id);callback(time);}); frames.add(id); return id; };
-    const counters = [...view.querySelectorAll('[data-count]')];
+    const stopCounters = MetricCounters.mount(view);
     const revealed = [...view.querySelectorAll('[data-reveal]')];
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(({target,isIntersecting}) => {
         if (!isIntersecting) return;
         target.classList.add('is-visible'); observer.unobserve(target);
-        target.querySelectorAll('[data-count]').forEach(count => {
-          if (reduced.matches || count.dataset.counted) return;
-          count.dataset.counted='true';
-          const end=Number(count.dataset.count), start=performance.now();
-          const tick=time=>{
-            const progress=reduced.matches?1:Math.min(1,(time-start)/1200);
-            count.textContent=Math.round(end*(1-Math.pow(1-progress,3))).toLocaleString('es-ES');
-            if(progress<1)request(tick);
-          };
-          request(tick);
-        });
+
       });
     },{threshold:0.08,rootMargin:'0px 0px -24px 0px'});
     revealed.forEach(el=>observer.observe(el));
@@ -88,8 +78,8 @@ const HomeMotion = {
       header.classList.toggle('is-scrolled',scrollY>30);
       const available=document.documentElement.scrollHeight-innerHeight;
       header.style.setProperty('--page-progress',String(available>0?Math.min(1,scrollY/available):0));
-      const rect=manifesto.getBoundingClientRect();
-      const progress=Math.max(0,Math.min(1,(innerHeight*.55-rect.top)/Math.max(1,rect.height-innerHeight*.45)));
+      const rect=manifesto?.getBoundingClientRect();
+      const progress=rect ? Math.max(0,Math.min(1,(innerHeight*.55-rect.top)/Math.max(1,rect.height-innerHeight*.45))) : 0;
       statements.forEach((line,i)=>line.classList.toggle('is-active',reduced.matches || progress>i/3));
       let nearest=0,distance=Infinity;
       steps.forEach((step,i)=>{const d=Math.abs(step.getBoundingClientRect().top-innerHeight*.4);if(d<distance){nearest=i;distance=d;}});
@@ -99,7 +89,7 @@ const HomeMotion = {
     on(window,'scroll',scheduleScroll,{passive:true});on(window,'resize',scheduleScroll,{passive:true});
     function applyMotionPreference() {
       view.classList.toggle('motion-ready',!reduced.matches);
-      if(reduced.matches){revealed.forEach(el=>el.classList.add('is-visible'));counters.forEach(el=>{el.textContent=Number(el.dataset.count).toLocaleString('es-ES');});}
+      if(reduced.matches){revealed.forEach(el=>el.classList.add('is-visible'));}
       applyHeroMotionPreference();updateScroll();
     }
     on(reduced,'change',applyMotionPreference);applyMotionPreference();
@@ -113,9 +103,46 @@ const HomeMotion = {
       on(button,'pointerleave',()=>{animation?.cancel();});
     });
     return ()=>{
-      control.abort();observer.disconnect();visibility.disconnect();
+      stopCounters();control.abort();observer.disconnect();visibility.disconnect();
       frames.forEach(cancelAnimationFrame);cancelAnimationFrame(scrollFrame);
       view.getAnimations({subtree:true}).forEach(animation=>animation.cancel());
     };
   },
 };
+
+const MetricCounters = (() => {
+  const seen = new Set();
+  const format = n => String(n).replace(/\B(?=(\d{3})+(?!\d))/g,'.');
+  function mount(root) {
+    const preference=matchMedia('(prefers-reduced-motion: reduce)');
+    const frames=new Map();
+    const nodes=[...root.querySelectorAll('[data-count],[data-about-count]')].filter(n=>[130,1160,20000,4].includes(Number(n.dataset.count||n.dataset.aboutCount)));
+    const total=n=>Number(n.dataset.count||n.dataset.aboutCount);
+    const key=n=>(root.classList.contains('about-view')?'about':'home')+':'+total(n);
+    const finish=n=>{cancelAnimationFrame(frames.get(n));frames.delete(n);n.textContent=format(total(n));seen.add(key(n));};
+    const observer='IntersectionObserver' in window ? new IntersectionObserver(entries=>entries.forEach(({target:n,isIntersecting})=>{
+      if(!isIntersecting)return;
+      observer.unobserve(n);
+      if(seen.has(key(n))||preference.matches){finish(n);return;}
+      seen.add(key(n));let start;
+      function tick(time){
+        start ??= time;
+        const p=Math.min(1,(time-start)/1400);
+        n.textContent=format(Math.round(total(n)*(1-Math.pow(1-p,3))));
+        if(p<1)frames.set(n,requestAnimationFrame(tick));else finish(n);
+      }
+      frames.set(n,requestAnimationFrame(tick));
+    }),{threshold:0.25}) : null;
+    nodes.forEach(n=>{
+      // Reserve the final width before replacing digits; screen readers retain the final value.
+      n.style.display='inline-block';n.style.fontVariantNumeric='tabular-nums';n.style.minWidth=format(total(n)).length+'ch';
+      n.setAttribute('aria-label',format(total(n)));n.setAttribute('role','text');
+      if(preference.matches||seen.has(key(n))||!observer)finish(n);
+      else {n.textContent='0';observer.observe(n);}
+    });
+    const change=()=>{if(preference.matches){observer?.disconnect();nodes.forEach(finish);}};
+    preference.addEventListener('change',change);
+    return ()=>{observer?.disconnect();frames.forEach(cancelAnimationFrame);preference.removeEventListener('change',change);};
+  }
+  return {mount};
+})();

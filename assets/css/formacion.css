@@ -249,3 +249,20 @@ body.is-programas #app { background:#070b14; }
 .formation-view :is(.formation-intro-copy,.formation-bridge-copy) > p:not(.formation-eyebrow) { font-size:var(--type-body); line-height:var(--leading-body); }
 .formation-view :is(.formation-hero-aside,.formation-context-block) p { font-size:var(--type-secondary); line-height:var(--leading-body); }
 .formation-view .formation-panel-foot > p { font-size:var(--type-small); }
+
+/* Catalog search: native controls, scoped themes and fluid result cards. */
+.formation-search { margin-bottom:36px; padding:clamp(16px,3vw,32px); border:1px solid var(--f-line); background:var(--f-panel); border-radius:16px; }
+.formation-search-fields { display:grid; grid-template-columns:minmax(0,1.2fr) minmax(0,1fr) auto; gap:16px; align-items:end; }
+.formation-search label { display:grid; gap:8px; min-width:0; font-size:14px; }
+.formation-search input,.formation-search select { box-sizing:border-box; width:100%; min-width:0; min-height:52px; padding:12px; border:1px solid var(--f-line); border-radius:8px; background:var(--f-bg); color:inherit; font:inherit; }
+.formation-search :is(input,select,button,a):focus-visible { outline:3px solid var(--f-light); outline-offset:3px; }
+#program-status { margin:20px 0; font-size:14px; }
+.formation-search-results { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; max-height:640px; overflow-y:auto; overscroll-behavior:contain; }
+.formation-search-result { padding:20px; border:1px solid var(--f-line); border-radius:10px; overflow-wrap:anywhere; }
+.formation-search-result h3 { font-size:18px; line-height:1.4; letter-spacing:-.02em; margin-bottom:12px; }
+.formation-search-result p { font-size:13px; }
+.formation-search-result a,.formation-search-pending { display:inline-block; padding-block:8px; font-size:14px; }
+.formation-search-pending { color:var(--f-muted); }
+:root[data-theme="light"] .formation-search { --f-panel:#fff; --f-bg:#f7f9fd; --f-line:#ccd6e5; --f-muted:#526176; color:#0b1120; }
+:root[data-theme="light"] .formation-search .formation-ghost-btn { background:#edf2ff; color:#0b1120 !important; border-color:#ccd6e5; }
+@media(max-width:700px) { .formation-search-fields,.formation-search-results { grid-template-columns:minmax(0,1fr); } }

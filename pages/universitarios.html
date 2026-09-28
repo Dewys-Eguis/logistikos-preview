@@ -15,7 +15,7 @@
             <a class="uni-btn uni-btn--ghost" href="#contacto">Organizar un grupo <span>↗</span></a>
           </div>
         </div>
-        <aside class="uni-diploma-card" aria-label="Resumen del programa universitario">
+        <aside data-spain-only class="uni-diploma-card" aria-label="Resumen del programa universitario">
           <div class="uni-diploma-glow" aria-hidden="true"></div>
           <span class="uni-diploma-label">DIPLOMA UNIVERSITARIO</span>
           <strong>Fundación General de la Universidad de Salamanca</strong>
@@ -93,22 +93,23 @@
         <p class="uni-eyebrow">APRENDER · APLICAR · PRESENTAR</p>
         <h2>Cada programa termina con algo que la empresa puede usar.</h2>
         <p>La quinta sesión se dedica al proyecto final: una mejora, un cuadro de mando, un mapa entre departamentos o una aplicación real de IA sobre el trabajo del participante.</p>
-        <div class="uni-project-points"><span>01 · 5 sesiones de 5 h</span><span>02 · Proyecto final aplicado</span><span>03 · Diploma universitario</span><span>04 · Bonificable por FUNDAE</span></div>
+        <div class="uni-project-points"><span>01 · 5 sesiones de 5 h</span><span>02 · Proyecto final aplicado</span><span data-spain-only>03 · Diploma universitario</span><span data-spain-only>04 · Bonificable por FUNDAE</span></div>
       </div>
       <figure class="uni-project-visual">
-        <img src="assets/images/formation-operation.jpg" alt="Operación logística en almacén" loading="lazy" />
+        <img src="assets/images/formation-operation.webp" alt="Operación logística en almacén" loading="lazy" />
         <figcaption><span>25 H</span><strong>De la sesión al proyecto final.</strong></figcaption>
       </figure>
     </div>
   </section>
 
-  <section class="uni-custom">
+  <section class="uni-custom" data-spain-only>
     <div class="uni-shell uni-custom-inner">
       <div><p class="uni-eyebrow">¿OTRO TEMA TRANSVERSAL?</p><h2>También podemos diseñarlo a medida con el mismo diploma.</h2></div>
       <a class="uni-btn uni-btn--orange" href="#contacto">Organizar un curso en mi empresa <span>↗</span></a>
     </div>
   </section>
 
+<template id="executive-programs-inactive">
   <section class="uni-executive" aria-labelledby="uni-executive-title">
     <div class="uni-shell">
       <div class="uni-section-head uni-section-head--executive">
@@ -129,4 +130,5 @@
       </div>
     </div>
   </section>
+</template>
 </div>

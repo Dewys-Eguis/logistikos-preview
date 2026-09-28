@@ -1,0 +1,10 @@
+.guarantee-conditions { margin-top: .65rem; font-size: .85rem; line-height: 1.5; }
+.guarantee-conditions summary { cursor: pointer; text-decoration: underline; text-underline-offset: .2em; }
+.guarantee-conditions p { margin-top: .5rem; font-size: inherit; }
+.about-portrait-real { min-height: 0; }
+.about-director-photo { display: block; width: 200px; max-width: 100%; height: auto; margin: 1.5rem 0; border-radius: 4px; }
+.about-portrait-real h3 { font-size: 1.25rem; line-height: 1.35; }
+.about-view .about-portrait-real .about-profile-caption { max-width: none; }
+.trajectory-label { padding-top: var(--space-actions); }
+
+.monthly-metric { padding-top: 1rem; font-size: var(--type-secondary); }

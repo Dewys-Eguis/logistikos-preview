@@ -5,8 +5,8 @@ function getCourseValues() {
   const blue = "legacy-481";
   const none = "legacy-472 ";
   const badgeClass = (b) =>
-    b === "Más demandado" ? hot : b === "Nuevo 2026" ? blue : none;
-  const D = "Más demandado",
+    b === "Prioridad 2026" ? hot : b === "Nuevo 2026" ? blue : none;
+  const D = "Prioridad 2026",
     N = "Nuevo 2026",
     P = "Presencial",
     O = "Online Live",

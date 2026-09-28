@@ -35,7 +35,7 @@ class MainComponent extends DCLogic {
   "use strict";
 
   var AREANAMES = {
-    "comercio-internacional": "Comercio Internacional y Aduanas",
+    "comercio-internacional": "Comercio Internacional",
     compras: "Compras y Category Management",
     "ia-datos": "IA, Datos y Digitalización",
     liderazgo: "Liderazgo y Gestión de Equipos",
@@ -80,6 +80,7 @@ class MainComponent extends DCLogic {
     document.body.classList.toggle("is-al-dia", tplId === "tpl-page-al-dia");
     document.body.classList.toggle("is-supply-chain", tplId === "tpl-area-supply-chain");
     document.body.classList.toggle("is-campus", tplId === "tpl-page-campus");
+    document.body.classList.toggle("is-talento-internacional", tplId === "tpl-page-talento-internacional");
     // remember focus and open details
     var olds = keyed(),
       ae = document.activeElement,
@@ -110,6 +111,7 @@ class MainComponent extends DCLogic {
     }
     wireLinks();
     disablePendingAreaLinks(app);
+    disablePendingAreaLinks(document.querySelector("body > .site-header"));
     disablePendingAreaLinks(document.querySelector("body > footer"));
     if (tplId === "tpl-home") cleanupHome = HomePage.mount(app, mainComp);
     if (tplId === "tpl-page-programas" && window.FormacionPage) cleanupFormacion = FormacionPage.mount(app);
@@ -146,7 +148,7 @@ class MainComponent extends DCLogic {
       if (location.hash !== h) history.replaceState(null, "", h);
     }
     if ((m = h.match(/^#\/area\/([a-z-]+)/)))
-      return { tpl: "tpl-area-" + m[1], key: "area", title: AREANAMES[m[1]] };
+      return { tpl: "tpl-area-" + m[1], key: "area", title: AREANAMES[m[1]], section: h.includes("#", 1) ? h.split("#")[2] : null };
     if (h.indexOf("#/de-jefe-a-lider") === 0)
       return {
         tpl: "tpl-area-liderazgo",
@@ -173,6 +175,7 @@ class MainComponent extends DCLogic {
           "a-medida": "Formación a medida",
           "al-dia": "Logístikos al día",
           campus: "Campus",
+          "talento-internacional": "Talento Internacional",
         }[m[1]],
       };
     return { tpl: "tpl-home", key: "home" };
@@ -184,6 +187,9 @@ class MainComponent extends DCLogic {
     render();
     var target = r.section ? document.getElementById(r.section) : null;
     if (target) {
+      for (var node = target; node && node !== app; node = node.parentElement) {
+        if (node.tagName === "DETAILS") node.open = true;
+      }
       target.scrollIntoView({ behavior: "instant", block: "start" });
       document.fonts.ready.then(function () {
         if (current === r && target.isConnected) target.scrollIntoView({ behavior: "instant", block: "start" });
@@ -195,14 +201,14 @@ class MainComponent extends DCLogic {
       ? "Logístikos · " + r.title
       : "Logístikos · Formación, talento y transformación";
     document
-      .querySelectorAll(".site-nav a, .campus-link")
+      .querySelectorAll(".site-nav a, .home-desktop-nav a, .campus-link")
       .forEach(function (a) {
         if (a.getAttribute("data-r") === r.key)
           a.setAttribute("aria-current", "page");
         else a.removeAttribute("aria-current");
       });
   }
-  var PENDING_AREAS = new Set(["#/area/comercio-internacional", "#/area/liderazgo", "#/area/ia-datos"]);
+  var PENDING_AREAS = new Set();
   function disablePendingAreaLinks(root) {
     (root || document).querySelectorAll("a[href]").forEach(function (a) {
       var href = a.getAttribute("href") || "";
@@ -249,6 +255,7 @@ class MainComponent extends DCLogic {
     }
   });
   window.addEventListener("hashchange", go);
+  disablePendingAreaLinks(document.querySelector("body > .site-header"));
   disablePendingAreaLinks(document.querySelector("body > footer"));
   go();
 })();

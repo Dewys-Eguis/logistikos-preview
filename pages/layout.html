@@ -38,6 +38,12 @@
     <link rel="stylesheet" href="assets/css/campus.css" />
     <link rel="stylesheet" href="assets/css/navigation.css" />
     <link rel="stylesheet" href="assets/css/footer.css" />
+    <link rel="stylesheet" href="assets/css/content-summary.css" />
+    <link rel="stylesheet" href="assets/css/client-adjustments.css" />
+    <link rel="stylesheet" href="assets/css/talento-internacional.css" />
+    <link rel="stylesheet" href="assets/css/humanization.css" />
+    <link rel="stylesheet" href="assets/css/areas-completed.css" />
+    <link rel="stylesheet" href="assets/css/country.css" />
   </head>
   <body>
     <header class="site-header">
@@ -45,9 +51,25 @@
         <a class="wordmark" href="#/" aria-label="Logístikos, inicio"
           >logístikos</a
         >
-        <nav class="site-nav" aria-label="Principal"><a href="#/programas" data-r="programas">Formación</a><a href="#/a-medida" data-r="a-medida">Empresas</a><a href="#/quienes-somos" data-r="quienes-somos">Nosotros</a><div class="resource-nav"><button type="button" class="resource-toggle" aria-expanded="false" aria-controls="resources-inner">Recursos <span class="resource-chevron" aria-hidden="true"><svg viewBox="0 0 16 16" focusable="false"><path d="M4 6l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button><div class="resource-panel" id="resources-inner" hidden><a href="#/fundae" data-r="fundae">FUNDAE</a><a href="#/rrhh" data-r="rrhh">Para RRHH</a><a href="#/universitarios" data-r="universitarios">Cursos universitarios</a></div></div><a href="#/al-dia" data-r="al-dia">Al día</a></nav>
+        <nav class="site-nav" aria-label="Principal">
+          <a class="nav-home-link" href="#/" data-r="home" data-home-link>Inicio</a>
+          <div class="nav-disclosure"><button type="button" class="nav-toggle" aria-expanded="false" aria-controls="formation-menu">Formación <span class="nav-chevron" aria-hidden="true"><svg viewBox="0 0 16 16" focusable="false"><path d="M4 6l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button><div class="nav-panel nav-panel--wide" id="formation-menu" hidden><a class="nav-search-programs" href="#/programas" data-r="programas"><span>Buscar programas</span><span aria-hidden="true">↗</span></a><span class="nav-panel-separator"></span><span class="nav-panel-label">Áreas</span><a href="#/area/supply-chain">Supply Chain y Logística</a><a href="#/area/compras">Compras y Category Management</a><a href="#/area/transporte">Transporte y Distribución</a><a href="#/area/comercio-internacional">Comercio Internacional</a><a href="#/area/liderazgo">Liderazgo y Gestión de Equipos</a><a href="#/area/ia-datos">IA, Datos y Digitalización</a><span class="nav-panel-separator"></span><a href="#/universitarios" data-r="universitarios">Cursos universitarios</a><a href="#/al-dia#obligatorias" data-r="al-dia">Formaciones obligatorias</a></div></div>
+          <div class="nav-disclosure"><button type="button" class="nav-toggle" aria-expanded="false" aria-controls="companies-menu">Empresas <span class="nav-chevron" aria-hidden="true"><svg viewBox="0 0 16 16" focusable="false"><path d="M4 6l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button><div class="nav-panel" id="companies-menu" hidden><a href="#/a-medida" data-r="a-medida">Formación a medida</a><a href="#/programas" data-r="programas">Por departamento</a><a href="#/fundae" data-r="fundae">FUNDAE y calculadora</a><a href="#/rrhh" data-r="rrhh">Para RRHH</a><a href="#/talento-internacional" data-r="talento-internacional">Talento internacional</a><a href="#/a-medida#como-trabajamos">Cómo trabajamos</a><a href="#/a-medida#garantia">Garantía 60 días</a></div></div>
+          <div class="nav-disclosure"><button type="button" class="nav-toggle" aria-expanded="false" aria-controls="about-menu">Nosotros <span class="nav-chevron" aria-hidden="true"><svg viewBox="0 0 16 16" focusable="false"><path d="M4 6l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button><div class="nav-panel" id="about-menu" hidden><a href="#/quienes-somos" data-r="quienes-somos">Quiénes somos</a><a href="#/quienes-somos#formadores">Formadores</a><span class="nav-panel-pending" aria-disabled="true">Testimonios <small>Próximamente</small></span></div></div>
+          <div class="nav-disclosure"><button type="button" class="nav-toggle" aria-expanded="false" aria-controls="resources-inner">Recursos <span class="nav-chevron" aria-hidden="true"><svg viewBox="0 0 16 16" focusable="false"><path d="M4 6l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button><div class="nav-panel" id="resources-inner" hidden><a href="#/al-dia" data-r="al-dia">Logístikos al día</a><a href="#/al-dia#cambios" data-r="al-dia">Radar normativo</a><a href="#/rrhh#kit" data-r="rrhh">Kit RRHH</a><a href="#/campus" data-r="campus">Campus <small>Próximamente</small></a></div></div>
+        </nav>
         <div class="legacy-442 site-header-actions">
-          <button class="theme-toggle" type="button" data-theme-toggle aria-label="Cambiar a tema claro" aria-pressed="false"><span class="theme-toggle-track"><span class="theme-toggle-thumb"><span class="theme-toggle-sun" aria-hidden="true">☀</span><span class="theme-toggle-moon" aria-hidden="true">☾</span></span></span><span class="theme-toggle-label">Claro</span></button>
+          <div class="country-picker" data-country-picker>
+            <button class="country-picker-trigger" type="button" data-country-trigger aria-haspopup="menu" aria-expanded="false" aria-label="Seleccionar país">
+              <span class="country-picker-icon" aria-hidden="true">◎</span><span class="country-picker-code" data-country-code>ES</span><span class="country-picker-arrow" aria-hidden="true">⌄</span>
+            </button>
+            <div class="country-menu" data-country-menu role="menu" hidden>
+              <button type="button" role="menuitemradio" aria-checked="true" data-country-value="ES"><span class="country-option-code">ES</span><span>España</span><span class="country-option-check" aria-hidden="true">✓</span></button>
+              <button type="button" role="menuitemradio" aria-checked="false" data-country-value="PT"><span class="country-option-code">PT</span><span>Portugal</span><span class="country-option-check" aria-hidden="true">✓</span></button>
+              <button type="button" role="menuitemradio" aria-checked="false" data-country-value="CO"><span class="country-option-code">CO</span><span>Colombia</span><span class="country-option-check" aria-hidden="true">✓</span></button>
+              <button type="button" role="menuitemradio" aria-checked="false" data-country-value="MX"><span class="country-option-code">MX</span><span>México</span><span class="country-option-check" aria-hidden="true">✓</span></button>
+            </div>
+          </div>
           <a class="campus-link" href="#/campus" data-r="campus">Campus ↗</a>
           <a class="cta" href="#contacto">Hablemos <span aria-hidden="true">↗</span></a>
 <button class="architecture-burger" type="button" aria-label="Abrir menú" aria-controls="architecture-menu" aria-expanded="false" data-navigation-open><span></span><span></span></button>        </div>
@@ -55,7 +77,24 @@
     </header>
     <dialog class="architecture-menu" id="architecture-menu" aria-label="Navegación móvil">
       <div class="architecture-menu-top"><a class="wordmark" href="#/">logístikos</a><button type="button" data-navigation-close aria-label="Cerrar menú">Cerrar ×</button></div>
-      <nav aria-label="Principal móvil"><a href="#/programas" data-r="programas">Formación</a><a href="#/a-medida" data-r="a-medida">Empresas</a><a href="#/quienes-somos" data-r="quienes-somos">Nosotros</a><div class="resource-nav"><button type="button" class="resource-toggle" aria-expanded="false" aria-controls="resources-mobile">Recursos <span class="resource-chevron" aria-hidden="true"><svg viewBox="0 0 16 16" focusable="false"><path d="M4 6l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button><div class="resource-panel" id="resources-mobile" hidden><a href="#/fundae" data-r="fundae">FUNDAE</a><a href="#/rrhh" data-r="rrhh">Para RRHH</a><a href="#/universitarios" data-r="universitarios">Cursos universitarios</a></div></div><a href="#/al-dia" data-r="al-dia">Al día</a></nav>
+      <nav aria-label="Principal móvil">
+        <a class="nav-home-link" href="#/" data-r="home" data-home-link>Inicio</a>
+        <div class="nav-disclosure"><button type="button" class="nav-toggle" aria-expanded="false" aria-controls="formation-mobile">Formación <span class="nav-chevron" aria-hidden="true">⌄</span></button><div class="nav-panel" id="formation-mobile" hidden><a class="nav-search-programs" href="#/programas"><span>Buscar programas</span><span aria-hidden="true">↗</span></a><span class="nav-panel-separator"></span><span class="nav-panel-label">Áreas</span><a href="#/area/supply-chain">Supply Chain y Logística</a><a href="#/area/compras">Compras y Category Management</a><a href="#/area/transporte">Transporte y Distribución</a><a href="#/area/comercio-internacional">Comercio Internacional</a><a href="#/area/liderazgo">Liderazgo y Gestión de Equipos</a><a href="#/area/ia-datos">IA, Datos y Digitalización</a><a href="#/universitarios">Cursos universitarios</a><a href="#/al-dia#obligatorias">Formaciones obligatorias</a></div></div>
+        <div class="nav-disclosure"><button type="button" class="nav-toggle" aria-expanded="false" aria-controls="companies-mobile">Empresas <span class="nav-chevron" aria-hidden="true">⌄</span></button><div class="nav-panel" id="companies-mobile" hidden><a href="#/a-medida">Formación a medida</a><a href="#/programas">Por departamento</a><a href="#/fundae">FUNDAE y calculadora</a><a href="#/rrhh">Para RRHH</a><a href="#/talento-internacional" data-r="talento-internacional">Talento internacional</a><a href="#/a-medida#como-trabajamos">Cómo trabajamos</a><a href="#/a-medida#garantia">Garantía 60 días</a></div></div>
+        <div class="nav-disclosure"><button type="button" class="nav-toggle" aria-expanded="false" aria-controls="about-mobile">Nosotros <span class="nav-chevron" aria-hidden="true">⌄</span></button><div class="nav-panel" id="about-mobile" hidden><a href="#/quienes-somos">Quiénes somos</a><a href="#/quienes-somos#formadores">Formadores</a><span class="nav-panel-pending" aria-disabled="true">Testimonios <small>Próximamente</small></span></div></div>
+        <div class="nav-disclosure"><button type="button" class="nav-toggle" aria-expanded="false" aria-controls="resources-mobile">Recursos <span class="nav-chevron" aria-hidden="true">⌄</span></button><div class="nav-panel" id="resources-mobile" hidden><a href="#/al-dia">Logístikos al día</a><a href="#/al-dia#cambios">Radar normativo</a><a href="#/rrhh#kit">Kit RRHH</a><a href="#/campus">Campus <small>Próximamente</small></a></div></div>
+      </nav>
+      <div class="architecture-menu-country"><span>País</span><div class="country-picker country-picker--mobile" data-country-picker>
+            <button class="country-picker-trigger" type="button" data-country-trigger aria-haspopup="menu" aria-expanded="false" aria-label="Seleccionar país">
+              <span class="country-picker-icon" aria-hidden="true">◎</span><span class="country-picker-code" data-country-code>ES</span><span class="country-picker-arrow" aria-hidden="true">⌄</span>
+            </button>
+            <div class="country-menu" data-country-menu role="menu" hidden>
+              <button type="button" role="menuitemradio" aria-checked="true" data-country-value="ES"><span class="country-option-code">ES</span><span>España</span><span class="country-option-check" aria-hidden="true">✓</span></button>
+              <button type="button" role="menuitemradio" aria-checked="false" data-country-value="PT"><span class="country-option-code">PT</span><span>Portugal</span><span class="country-option-check" aria-hidden="true">✓</span></button>
+              <button type="button" role="menuitemradio" aria-checked="false" data-country-value="CO"><span class="country-option-code">CO</span><span>Colombia</span><span class="country-option-check" aria-hidden="true">✓</span></button>
+              <button type="button" role="menuitemradio" aria-checked="false" data-country-value="MX"><span class="country-option-code">MX</span><span>México</span><span class="country-option-check" aria-hidden="true">✓</span></button>
+            </div>
+          </div></div>
       <div class="architecture-menu-bottom"><a href="#/campus">Campus ↗</a><a href="#contacto" class="architecture-contact">Hablemos ↗</a><a href="#/a-medida#como-trabajamos">Cómo trabajamos ↗</a></div>
     </dialog>
     <main id="app" aria-live="off"></main>
@@ -90,47 +129,55 @@
         </div>
       </div>
       <div class="legacy-450">
-        <div class="legacy-451">
-          <div class="legacy-452">
-            <a class="wordmark legacy-453" href="#/">logístikos</a
-            ><span class="legacy-454"
-              >Formación logística para inconformistas.<br />Transformación para organizaciones.<br />Every step covered.</span
-            >
+        <div class="legacy-451 footer-nav-grid">
+          <div class="footer-brand">
+            <a class="wordmark legacy-453" href="#/">logístikos</a>
+            <span class="legacy-454">Formación logística para inconformistas.<br />Transformación para organizaciones.<br />Every step covered.</span>
           </div>
-          <div class="legacy-146">
-            <span class="legacy-455">ÁREAS</span
-            ><a href="#/area/supply-chain" class="legacy-231">Supply Chain y Logística</a
-            ><a href="#/area/compras" class="legacy-231">Compras y Category Management</a
-            ><a href="#/area/transporte" class="legacy-231">Transporte y Distribución</a
-            ><a href="#/area/comercio-internacional" class="legacy-231"
-              >Comercio Internacional y Aduanas</a
-            ><a href="#/area/liderazgo" class="legacy-231">Liderazgo y Gestión de Equipos</a
-            ><a href="#/area/ia-datos" class="legacy-231">IA, Datos y Digitalización</a>
+          <div class="footer-column">
+            <span class="footer-heading">FORMACIÓN</span>
+            <a href="#/area/supply-chain">Supply Chain y Logística</a>
+            <a href="#/area/compras">Compras y Category Management</a>
+            <a href="#/area/transporte">Transporte y Distribución</a>
+            <a href="#/area/comercio-internacional">Comercio Internacional</a>
+            <a href="#/area/liderazgo">Liderazgo y Gestión de Equipos</a>
+            <a href="#/area/ia-datos">IA, Datos y Digitalización</a>
+            <a href="#/universitarios">Cursos universitarios</a>
+            <a href="#/al-dia#obligatorias">Formaciones obligatorias</a>
           </div>
-          <div class="legacy-146">
-            <span class="legacy-455">RECURSOS</span
-            ><a href="#/a-medida" class="legacy-231">Formación a medida</a
-            ><a href="#/quienes-somos" class="legacy-231">Quiénes somos</a
-            ><a href="#/programas" class="legacy-231">Por departamento</a
-            ><a href="#/fundae" class="legacy-231">Calculadora FUNDAE</a
-            ><a href="#/rrhh" class="legacy-231">Recursos para RRHH</a
-            ><a href="#/al-dia" class="legacy-231">Logístikos al día</a
-            ><a href="#/campus" class="legacy-231">Campus virtual</a
-            ><a href="#/universitarios" class="legacy-231"
-              >Cursos universitarios</a
-            >
+          <div class="footer-column">
+            <span class="footer-heading">EMPRESAS</span>
+            <a href="#/a-medida">Formación a medida</a>
+            <a href="#/programas">Por departamento</a>
+            <a href="#/fundae">FUNDAE y calculadora</a>
+            <a href="#/rrhh">Para RRHH</a>
+            <a href="#/talento-internacional">Talento internacional</a>
+            <a href="#/a-medida#como-trabajamos">Cómo trabajamos</a>
+            <a href="#/a-medida#garantia">Garantía 60 días</a>
           </div>
-          <div class="legacy-456">
-            <span class="legacy-424">IN COMPANY</span
-            ><span>Murcia · Toda España</span><span>Presencial y aula virtual</span><span>Bonificable por FUNDAE</span>
+          <div class="footer-column">
+            <span class="footer-heading">NOSOTROS</span>
+            <a href="#/quienes-somos">Quiénes somos</a>
+            <a href="#/quienes-somos#formadores">Formadores</a>
+            <span class="footer-pending">Testimonios · Próximamente</span>
+          </div>
+          <div class="footer-column">
+            <span class="footer-heading">RECURSOS</span>
+            <a href="#/al-dia">Logístikos al día</a>
+            <a href="#/al-dia#cambios">Radar normativo</a>
+            <a href="#/rrhh#kit">Kit RRHH</a>
+            <a href="#/campus">Campus · Próximamente</a>
+          </div>
+          <div class="footer-column footer-contact-column">
+            <span class="footer-heading">CONTACTO</span>
             <a href="mailto:formacion@logistikos.es">formacion@logistikos.es</a>
             <a href="tel:+34696348047">+34 696 34 80 47</a>
             <a href="https://wa.me/34696348047" target="_blank" rel="noopener">WhatsApp ↗</a>
-            <a href="https://youtu.be/2Ji4mJ8o0eY" target="_blank" rel="noopener">YouTube ↗</a>
+            <a href="https://calendly.com/logistikos/reunion" target="_blank" rel="noopener">Agendar diagnóstico ↗</a>
           </div>
         </div>
       </div>
-      <div class="site-footer-bottom"><span>© 2026 Logístikos</span><a href="mailto:formacion@logistikos.es?subject=Consulta%20legal%20o%20de%20privacidad">Consultas legales y de privacidad</a><a href="#top">Volver arriba ↑</a></div>
+      <div class="site-footer-bottom"><span>© 2026 Logístikos</span><span class="footer-legal-pending">Aviso legal · Privacidad · Cookies <small>pendiente de textos definitivos</small></span><a href="mailto:formacion@logistikos.es?subject=Consulta%20legal%20o%20de%20privacidad">Consultas legales</a><a href="#top">Volver arriba ↑</a></div>
     </footer>
     <div id="toast" role="status"></div>
     <div id="fab" class="legacy-457">
@@ -240,6 +287,8 @@
     <script defer src="assets/js/nosotros.js"></script>
     <script defer src="assets/js/navigation.js"></script>
     <script defer src="assets/js/transporte.js"></script>
+    <script defer src="assets/js/areas-completed.js"></script>
+    <script defer src="assets/js/country.js"></script>
     <script defer src="assets/js/main.js"></script>
   </body>
 </html>

@@ -1,0 +1,63 @@
+{
+  "preservedSources": true,
+  "areas": {
+    "comercio-internacional": {
+      "programs": 6,
+      "contentPreserved": true,
+      "viewports": [
+        320,
+        390,
+        768,
+        1024,
+        1440
+      ],
+      "themes": [
+        "dark",
+        "light"
+      ],
+      "anchors": true,
+      "keyboard": true,
+      "image": true
+    },
+    "liderazgo": {
+      "programs": 7,
+      "contentPreserved": true,
+      "viewports": [
+        320,
+        390,
+        768,
+        1024,
+        1440
+      ],
+      "themes": [
+        "dark",
+        "light"
+      ],
+      "anchors": true,
+      "keyboard": true,
+      "image": true
+    },
+    "ia-datos": {
+      "programs": 6,
+      "contentPreserved": true,
+      "viewports": [
+        320,
+        390,
+        768,
+        1024,
+        1440
+      ],
+      "themes": [
+        "dark",
+        "light"
+      ],
+      "anchors": true,
+      "keyboard": true,
+      "image": true
+    }
+  },
+  "errors": [],
+  "searchPreserved": true,
+  "navigation": true,
+  "build": "npm run build"
+}

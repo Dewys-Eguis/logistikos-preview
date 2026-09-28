@@ -1,0 +1,246 @@
+{
+  "catalog": [
+    {
+      "title": "Productividad en picking: métodos, SGA y cero errores de preparación",
+      "area": "Supply Chain y Logística"
+    },
+    {
+      "title": "Lean warehouse y 5S con gestión visual diaria",
+      "area": "Supply Chain y Logística"
+    },
+    {
+      "title": "Gemelo digital y automatización: cuándo invertir en robótica",
+      "area": "Supply Chain y Logística"
+    },
+    {
+      "title": "Inventario: ABC, recuentos cíclicos y exactitud de stock",
+      "area": "Supply Chain y Logística"
+    },
+    {
+      "title": "Planificación de rutas y control del coste por kilómetro",
+      "area": "Transporte y Distribución"
+    },
+    {
+      "title": "Agentes de IA para tráfico e incidencias",
+      "area": "Transporte y Distribución"
+    },
+    {
+      "title": "Auditoría de facturas y negociación con transportistas",
+      "area": "Transporte y Distribución"
+    },
+    {
+      "title": "Transporte sin papel: e-CMR, eFTI y POD digital",
+      "area": "Transporte y Distribución"
+    },
+    {
+      "title": "Negociación basada en el Coste Total de Adquisición (TCO)",
+      "area": "Compras y Category Management"
+    },
+    {
+      "title": "Riesgo de proveedor, aranceles y nearshoring",
+      "area": "Compras y Category Management"
+    },
+    {
+      "title": "Homologación y evaluación de proveedores con datos",
+      "area": "Compras y Category Management"
+    },
+    {
+      "title": "IA aplicada a compras: comparar ofertas y revisar contratos",
+      "area": "Compras y Category Management"
+    },
+    {
+      "title": "Incoterms® 2020 y documentación sin retenciones en frontera",
+      "area": "Comercio Internacional"
+    },
+    {
+      "title": "CBAM y EUDR: cumplimiento 2026 para importadores y exportadores",
+      "area": "Comercio Internacional"
+    },
+    {
+      "title": "OEA: cómo obtenerlo y mantenerlo",
+      "area": "Comercio Internacional"
+    },
+    {
+      "title": "Medios de cobro internacional y riesgo país",
+      "area": "Comercio Internacional"
+    },
+    {
+      "title": "S&OP y previsión de demanda con machine learning",
+      "area": "Supply Chain y Logística"
+    },
+    {
+      "title": "Control tower y KPIs de supply chain con Power BI",
+      "area": "Supply Chain y Logística"
+    },
+    {
+      "title": "Dimensionamiento del stock de seguridad",
+      "area": "Supply Chain y Logística"
+    },
+    {
+      "title": "Huella ISO 14083 y envases PPWR en la cadena",
+      "area": "Supply Chain y Logística"
+    },
+    {
+      "title": "Liderazgo de primera línea en picos de actividad",
+      "area": "Liderazgo y Gestión de Equipos"
+    },
+    {
+      "title": "Alfabetización en IA para toda la plantilla (AI Act)",
+      "area": "Liderazgo y Gestión de Equipos"
+    },
+    {
+      "title": "Comunicación y feedback para jefes de turno",
+      "area": "Liderazgo y Gestión de Equipos"
+    },
+    {
+      "title": "Coste logístico total y defensa del margen",
+      "area": "Liderazgo y Gestión de Equipos"
+    },
+    {
+      "title": "Jefe de almacén: stocks, inventario y productividad",
+      "area": "Supply Chain y Logística"
+    },
+    {
+      "title": "Mejora de procesos logísticos: Lean y certificación Yellow Belt",
+      "area": "Supply Chain y Logística"
+    },
+    {
+      "title": "Analista de logística: KPIs y cuadros de mando",
+      "area": "Supply Chain y Logística"
+    },
+    {
+      "title": "Automatización del almacén: cuándo y cómo invertir",
+      "area": "Supply Chain y Logística"
+    },
+    {
+      "title": "Planificación S&OP y previsión de la demanda",
+      "area": "Supply Chain y Logística"
+    },
+    {
+      "title": "Análisis y reducción de costes logísticos",
+      "area": "Supply Chain y Logística"
+    },
+    {
+      "title": "Negociación con proveedores basada en el coste total (TCO)",
+      "area": "Compras y Category Management"
+    },
+    {
+      "title": "Renegociar contratos internacionales en plena crisis arancelaria",
+      "area": "Compras y Category Management"
+    },
+    {
+      "title": "Gestión de compras y aprovisionamiento",
+      "area": "Compras y Category Management"
+    },
+    {
+      "title": "Riesgo de proveedor y proveedores alternativos",
+      "area": "Compras y Category Management"
+    },
+    {
+      "title": "Finanzas aplicadas a compras y logística",
+      "area": "Compras y Category Management"
+    },
+    {
+      "title": "IA aplicada a compras: analizar ofertas y contratos",
+      "area": "Compras y Category Management"
+    },
+    {
+      "title": "Tacógrafo inteligente y tiempos de conducción y descanso",
+      "area": "Transporte y Distribución"
+    },
+    {
+      "title": "Gestión económica de la flota y control del combustible",
+      "area": "Transporte y Distribución"
+    },
+    {
+      "title": "Planificación de rutas y ocupación de la flota",
+      "area": "Transporte y Distribución"
+    },
+    {
+      "title": "Documentación digital del transporte: e-CMR y Ley de Movilidad Sostenible",
+      "area": "Transporte y Distribución"
+    },
+    {
+      "title": "Mercancías peligrosas (ADR) y perecederas (ATP) para jefes de tráfico",
+      "area": "Transporte y Distribución"
+    },
+    {
+      "title": "Negociación y venta en el sector transporte",
+      "area": "Transporte y Distribución"
+    },
+    {
+      "title": "Incoterms® 2020 y documentación sin retenciones",
+      "area": "Comercio Internacional"
+    },
+    {
+      "title": "Medios de pago internacional y créditos documentarios",
+      "area": "Comercio Internacional"
+    },
+    {
+      "title": "Gestión aduanera práctica: clasificación, origen, valor y DUA",
+      "area": "Comercio Internacional"
+    },
+    {
+      "title": "CBAM y EUDR: cumplimiento para importadores",
+      "area": "Comercio Internacional"
+    },
+    {
+      "title": "Reforma aduanera UE 2026: e-commerce y nuevos requisitos",
+      "area": "Comercio Internacional"
+    },
+    {
+      "title": "De jefe a líder: liderar sin amargar →",
+      "area": "Liderazgo y Gestión de Equipos"
+    },
+    {
+      "title": "Comunicación, feedback y conversaciones difíciles",
+      "area": "Liderazgo y Gestión de Equipos"
+    },
+    {
+      "title": "De operario a mando: los primeros 90 días",
+      "area": "Liderazgo y Gestión de Equipos"
+    },
+    {
+      "title": "Gestión del estrés y prevención del burnout en mandos",
+      "area": "Liderazgo y Gestión de Equipos"
+    },
+    {
+      "title": "Dirección compasiva y nuevos estilos de liderazgo",
+      "area": "Liderazgo y Gestión de Equipos"
+    },
+    {
+      "title": "Gestión de conflictos entre departamentos",
+      "area": "Liderazgo y Gestión de Equipos"
+    },
+    {
+      "title": "Delegación y gestión del tiempo del mando",
+      "area": "Liderazgo y Gestión de Equipos"
+    },
+    {
+      "title": "IA generativa para equipos de logística y administración",
+      "area": "IA, Datos y Digitalización"
+    },
+    {
+      "title": "Alfabetización en IA para toda la plantilla (AI Act)",
+      "area": "IA, Datos y Digitalización"
+    },
+    {
+      "title": "Power BI y cuadros de mando para la gestión logística",
+      "area": "IA, Datos y Digitalización"
+    },
+    {
+      "title": "SAP ERP para logística",
+      "area": "IA, Datos y Digitalización"
+    },
+    {
+      "title": "Automatizar documentos, correos e incidencias con IA",
+      "area": "IA, Datos y Digitalización"
+    },
+    {
+      "title": "E-logistics y e-commerce",
+      "area": "IA, Datos y Digitalización"
+    }
+  ],
+  "errors": [],
+  "checks": "Search, six filters, accents, empty state, active routes, counters, reduced motion, route revisits, 320/390/768/1440px dark/light overflow passed"
+}

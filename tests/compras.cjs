@@ -22,7 +22,9 @@ fs.mkdirSync(output,{recursive:true});
       const current=normalize(document.querySelector('.cp-page').textContent);
       const leaves=[...doc.body.querySelectorAll('*')].filter(el=>!el.children.length && normalize(el.textContent));
       // Column labels are now repeated within each program; sections keep their content.
-      return leaves.filter(el=>!['PROGRAMA','HORAS','MODALIDAD','NIVEL','INDICADOR'].includes(normalize(el.textContent))).map(el=>normalize(el.textContent)).filter(s=>!current.includes(s));
+      // Approved editorial simplification: intro, calculator pointer and its heading.
+      // Programs, conditions, figures, profiles and technical details remain checked verbatim.
+      return leaves.filter(el=>!el.matches('.legacy-366,.legacy-396') && normalize(el.textContent)!=='Un ejemplo con números.' && !['PROGRAMA','HORAS','MODALIDAD','NIVEL','INDICADOR'].includes(normalize(el.textContent))).map(el=>normalize(el.textContent)).filter(s=>!current.includes(s));
     },old);
     assert.deepEqual(preserved,[],'Original leaf content missing');
     assert.equal(await page.locator('.cp-program').count(),6);

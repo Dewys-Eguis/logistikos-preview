@@ -81,3 +81,38 @@ document.addEventListener("submit", function (e) {
       "El acceso al campus estará disponible en breve. Si necesitas entrar ahora, escríbenos a formacion@logistikos.es.";
   }
 });
+
+document.addEventListener("submit", function (e) {
+  if (!e.target || e.target.id !== "talent-form") return;
+  e.preventDefault();
+  var form = e.target;
+  var status = document.getElementById("talent-form-status");
+  var required = Array.from(form.querySelectorAll("[required]"));
+  var missing = required.find(function (field) { return !String(field.value || "").trim(); });
+  if (missing) {
+    status.textContent = "Completa los campos obligatorios para preparar la solicitud.";
+    status.dataset.tone = "warning";
+    missing.focus();
+    return;
+  }
+  var values = Object.fromEntries(new FormData(form).entries());
+  var body = [
+    "Hola Logístikos, quiero consultar una necesidad de Talento Internacional:",
+    "",
+    "Empresa: " + values.empresa,
+    "Puesto: " + values.puesto,
+    "Número de personas: " + values.personas,
+    "Ubicación: " + values.ubicacion,
+    "Turnos: " + values.turnos,
+    "Contacto: " + values.contacto,
+    "",
+    "Quedo atento/a para revisar los siguientes pasos."
+  ].join("\n");
+  status.textContent = "Solicitud preparada. Se abrirá WhatsApp con los datos de tu vacante.";
+  status.dataset.tone = "light";
+  window.open(
+    "https://wa.me/34696348047?text=" + encodeURIComponent(body),
+    "_blank",
+    "noopener"
+  );
+});

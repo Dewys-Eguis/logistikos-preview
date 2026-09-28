@@ -1,0 +1,566 @@
+{
+  "data": {
+    "comercio-internacional": {
+      "title": "Comercio Internacional",
+      "claim": "Despachos sin retenciones. Normativa sin sorpresas.",
+      "lead": "Equipos de exportación e importación que asignan bien los Incoterms, preparan la documentación a la primera y llegan preparados a las nuevas obligaciones europeas.",
+      "audience": [
+        "Técnicos de export/import",
+        "Responsables de aduanas",
+        "Administración de ventas",
+        "Compras internacionales"
+      ],
+      "problems": [
+        {
+          "title": "Retenciones en frontera",
+          "description": "Documentos incompletos, clasificaciones erróneas y demoras que cuestan dinero."
+        },
+        {
+          "title": "Incoterms mal asignados",
+          "description": "Riesgos y costes que la empresa asume sin saberlo."
+        },
+        {
+          "title": "Nuevas obligaciones UE",
+          "description": "CBAM y EUDR con datos que hay que pedir a proveedores de otros países."
+        },
+        {
+          "title": "Cobro internacional",
+          "description": "Medios de pago y riesgo país mal elegidos."
+        }
+      ],
+      "demand": [
+        "El sector reclama representantes aduaneros, técnicos de comercio exterior y expertos en normativa aduanera (ManpowerGroup).",
+        "La UE cerró en marzo de 2026 la mayor reforma de su Código Aduanero, y desde el 1 de julio de 2026 desaparece la franquicia de 150 € en e-commerce."
+      ],
+      "programIntro": "Son ejemplos: diseñamos cualquier formación que necesite tu equipo, con la duración y el formador adecuados. Cómo funciona →",
+      "programs": [
+        {
+          "title": "Gestión aduanera práctica: clasificación, origen, valor y DUA",
+          "hours": "20 h",
+          "mode": "Online Live",
+          "level": "Superior",
+          "kpi": "KPI: Expedientes sin incidencias",
+          "badge": "PRIORIDAD 2026",
+          "flagship": false
+        },
+        {
+          "title": "Reforma aduanera UE 2026: e-commerce y nuevos requisitos",
+          "hours": "8 h",
+          "mode": "Online Live",
+          "level": "Superior",
+          "kpi": "KPI: Operaciones adaptadas",
+          "badge": "NUEVO 2026",
+          "flagship": false
+        },
+        {
+          "title": "OEA: cómo obtenerlo y mantenerlo",
+          "hours": "12 h",
+          "mode": "Híbrida",
+          "level": "Superior",
+          "kpi": "KPI: Autorización OEA",
+          "badge": "PRIORIDAD 2026",
+          "flagship": false
+        },
+        {
+          "title": "Incoterms® 2020 y documentación sin retenciones",
+          "hours": "12 h",
+          "mode": "Online Live",
+          "level": "Superior",
+          "kpi": "KPI: Expedientes retenidos",
+          "badge": "PRIORIDAD 2026",
+          "flagship": false
+        },
+        {
+          "title": "Medios de pago internacional y créditos documentarios",
+          "hours": "8 h",
+          "mode": "Online Live",
+          "level": "Superior",
+          "kpi": "KPI: Impagos",
+          "badge": "",
+          "flagship": false
+        },
+        {
+          "title": "CBAM y EUDR: cumplimiento para importadores",
+          "hours": "12 h",
+          "mode": "Online Live",
+          "level": "Superior",
+          "kpi": "KPI: Declaraciones correctas",
+          "badge": "NUEVO 2026",
+          "flagship": false
+        }
+      ],
+      "steps": [
+        "Revisión de expedientes recientes y retenciones",
+        "Casos adaptados a vuestros países y productos",
+        "Mapa de obligaciones 2026 aplicable a vuestra empresa",
+        "Procedimiento interno y revisión a 60 días"
+      ],
+      "norms": [
+        "Código Aduanero de la Unión",
+        "Incoterms® 2020",
+        "OEA",
+        "CBAM",
+        "EUDR",
+        "Convenio SOLAS · VGM",
+        "IMDG"
+      ],
+      "trainer": "Directivos en activo del área, asignados según vuestro sector y vuestra mercancía. Si trabajamos con información de la empresa, firmamos NDA.",
+      "trainerChoice": "Para cada formación te proponemos dos perfiles y eliges tú.",
+      "funding": {
+        "intro": "Gestionamos el trámite completo sin coste añadido. Calcula tu caso exacto en la calculadora de la página principal.",
+        "title": "INCOTERMS® Y DOCUMENTACIÓN · 12 H · ONLINE LIVE",
+        "formula": "10 participantes × 12 h × 13 €/h",
+        "amount": "hasta 1.560 €",
+        "condition": "bonificables, sujeto al crédito disponible de la empresa. Online Live se bonifica con el módulo presencial."
+      },
+      "other": [
+        {
+          "title": "Supply Chain y Logística",
+          "href": "#/area/supply-chain"
+        },
+        {
+          "title": "Compras y Category Management",
+          "href": "#/area/compras"
+        },
+        {
+          "title": "Transporte y Distribución",
+          "href": "#/area/transporte"
+        },
+        {
+          "title": "Liderazgo y Gestión de Equipos",
+          "href": "#/area/liderazgo"
+        },
+        {
+          "title": "IA, Datos y Digitalización",
+          "href": "#/area/ia-datos"
+        }
+      ]
+    },
+    "liderazgo": {
+      "title": "Liderazgo y Gestión de Equipos",
+      "claim": "Mandos que deciden sin llamar a dirección.",
+      "lead": "Liderazgo operativo para jefes de turno y mandos intermedios: coordinar con calma en los picos, dar feedback, sostener rutinas de gestión visual y resolver sin escalar cada problema.",
+      "audience": [
+        "Jefes de turno",
+        "Encargados",
+        "Mandos intermedios",
+        "Dirección de operaciones"
+      ],
+      "problems": [
+        {
+          "title": "Apagar fuegos",
+          "description": "Mandos que resuelven urgencias todo el día y no gestionan."
+        },
+        {
+          "title": "Rotación y absentismo",
+          "description": "Equipos que se queman en campaña."
+        },
+        {
+          "title": "Dependencia de dirección",
+          "description": "Decisiones pequeñas que suben siempre al mismo despacho."
+        },
+        {
+          "title": "Mandos ascendidos sin formación",
+          "description": "El mejor operario convertido en jefe sin herramientas."
+        }
+      ],
+      "demand": [
+        "Las habilidades directivas fueron la segunda área más solicitada en formación bonificada en 2025 y son tendencia en 2026 (Finanfor).",
+        "Comunicación, trabajo en equipo y adaptabilidad lideran las competencias blandas que piden las empresas logísticas (ManpowerGroup).",
+        "Un estudio de 2026 en EE. UU. apunta que más de la mitad de los mandos intermedios sufre burnout (Benedictine University)."
+      ],
+      "programIntro": "Son ejemplos: diseñamos cualquier formación que necesite tu equipo, con la duración y el formador adecuados. Cómo funciona →",
+      "programs": [
+        {
+          "title": "De jefe a líder: liderar sin amargar →",
+          "hours": "25 h",
+          "mode": "Presencial",
+          "level": "Superior",
+          "kpi": "KPI: Evaluación 360",
+          "badge": "PROGRAMA INSIGNIA",
+          "flagship": true
+        },
+        {
+          "title": "Comunicación, feedback y conversaciones difíciles",
+          "hours": "12 h",
+          "mode": "Presencial",
+          "level": "Superior",
+          "kpi": "KPI: Clima del equipo",
+          "badge": "PRIORIDAD 2026",
+          "flagship": false
+        },
+        {
+          "title": "De operario a mando: los primeros 90 días",
+          "hours": "16 h",
+          "mode": "Híbrida",
+          "level": "Superior",
+          "kpi": "KPI: Autonomía del mando",
+          "badge": "PRIORIDAD 2026",
+          "flagship": false
+        },
+        {
+          "title": "Gestión del estrés y prevención del burnout en mandos",
+          "hours": "8 h",
+          "mode": "Híbrida",
+          "level": "Superior",
+          "kpi": "KPI: Absentismo",
+          "badge": "NUEVO 2026",
+          "flagship": false
+        },
+        {
+          "title": "Dirección compasiva y nuevos estilos de liderazgo",
+          "hours": "12 h",
+          "mode": "Presencial",
+          "level": "Superior",
+          "kpi": "KPI: Rotación",
+          "badge": "",
+          "flagship": false
+        },
+        {
+          "title": "Gestión de conflictos entre departamentos",
+          "hours": "8 h",
+          "mode": "Presencial",
+          "level": "Superior",
+          "kpi": "KPI: Incidencias escaladas",
+          "badge": "",
+          "flagship": false
+        },
+        {
+          "title": "Delegación y gestión del tiempo del mando",
+          "hours": "8 h",
+          "mode": "Presencial",
+          "level": "Superior",
+          "kpi": "KPI: Horas liberadas",
+          "badge": "",
+          "flagship": false
+        }
+      ],
+      "steps": [
+        "Entrevistas con los mandos y su dirección",
+        "Situaciones reales del turno trabajadas en sesión",
+        "Rutinas y herramientas para el día siguiente",
+        "Seguimiento individual y revisión a 60 días"
+      ],
+      "norms": [
+        "AI Act · alfabetización en IA",
+        "PRL · coordinación de actividades",
+        "Igualdad y comunicación inclusiva"
+      ],
+      "trainer": "Directivos en activo del área, asignados según vuestro sector y vuestra mercancía. Si trabajamos con información de la empresa, firmamos NDA.",
+      "trainerChoice": "Para cada formación te proponemos dos perfiles y eliges tú.",
+      "funding": {
+        "intro": "Gestionamos el trámite completo sin coste añadido. Calcula tu caso exacto en la calculadora de la página principal.",
+        "title": "COMUNICACIÓN Y FEEDBACK · 12 H · PRESENCIAL",
+        "formula": "10 participantes × 12 h × 13 €/h",
+        "amount": "hasta 1.560 €",
+        "condition": "bonificables, sujeto al crédito disponible de la empresa."
+      },
+      "other": [
+        {
+          "title": "Supply Chain y Logística",
+          "href": "#/area/supply-chain"
+        },
+        {
+          "title": "Compras y Category Management",
+          "href": "#/area/compras"
+        },
+        {
+          "title": "Transporte y Distribución",
+          "href": "#/area/transporte"
+        },
+        {
+          "title": "Comercio Internacional",
+          "href": "#/area/comercio-internacional"
+        },
+        {
+          "title": "IA, Datos y Digitalización",
+          "href": "#/area/ia-datos"
+        }
+      ],
+      "flagship": {
+        "eyebrow": "ÁREA A5 · PROGRAMA INSIGNIA PARA DIRECTIVOS Y MANDOS · 25 H",
+        "title": "De jefe a líder.",
+        "claim": "Liderar sin amargar.",
+        "lead": "Para directivos y mandos de operaciones que quieren dejar de mandar y empezar a liderar: equipos que deciden solos, conversaciones que cambian conductas y menos problemas que suben siempre al mismo despacho.",
+        "facts": [
+          "25 H · 5 SESIONES DE 5 H",
+          "GRUPOS DE 12 COMO MÁXIMO",
+          "PRESENCIAL O HÍBRIDA",
+          "EVALUACIÓN 360 INICIAL Y FINAL",
+          "BONIFICABLE POR FUNDAE"
+        ],
+        "comparisonTitle": "Un jefe hace que el equipo obedezca. Un líder hace que el equipo funcione sin él.",
+        "comparison": [
+          "EL JEFE",
+          "EL LÍDER",
+          "Da órdenes",
+          "Da contexto y criterio para decidir",
+          "Resuelve él todos los problemas",
+          "Hace que el equipo los resuelva",
+          "Controla lo que se hace",
+          "Desarrolla a quien lo hace",
+          "Busca culpables cuando algo falla",
+          "Busca la causa y la corrige con el equipo",
+          "Evita las conversaciones incómodas",
+          "Da feedback claro, a tiempo y con respeto",
+          "Es imprescindible",
+          "Hace que nadie lo sea"
+        ],
+        "sessions": [
+          {
+            "title": "De jefe a líder",
+            "description": "Autoridad frente a influencia. Resultados de vuestra evaluación 360 y el estilo de dirección de cada participante.",
+            "deliverable": "ENTREGABLE · AUTODIAGNÓSTICO 360"
+          },
+          {
+            "title": "Conversaciones que cambian conductas",
+            "description": "Feedback, conversaciones difíciles y cómo corregir sin romper la relación. Práctica con situaciones reales del turno.",
+            "deliverable": "ENTREGABLE · ROLE-PLAY CON CASOS PROPIOS"
+          },
+          {
+            "title": "Delegar para desarrollar",
+            "description": "Qué delegar, a quién y cómo. El mando que deja de hacerlo todo y empieza a formar a su relevo.",
+            "deliverable": "ENTREGABLE · PLAN DE DELEGACIÓN PERSONAL"
+          },
+          {
+            "title": "Liderar con datos",
+            "description": "Reunión diaria, gestión visual y decisiones con indicadores. Menos opiniones, más hechos.",
+            "deliverable": "ENTREGABLE · RUTINA DIARIA DEL EQUIPO"
+          },
+          {
+            "title": "Liderar bajo presión",
+            "description": "Picos de actividad, conflictos entre departamentos y gestión del cambio. Cierre con plan de acción individual.",
+            "deliverable": "ENTREGABLE · PLAN DE ACCIÓN A 60 DÍAS"
+          }
+        ],
+        "audience": [
+          "Directores de operaciones, logística y supply chain",
+          "Jefes de almacén, tráfico, compras y comercio exterior",
+          "Mandos intermedios y jefes de turno recién promocionados",
+          "Propietarios de pymes que quieren dejar de ser imprescindibles"
+        ],
+        "metrics": [
+          {
+            "title": "Evaluación 360",
+            "description": "Equipo, pares y dirección, antes y después"
+          },
+          {
+            "title": "Incidencias escaladas",
+            "description": "Problemas que suben a dirección"
+          },
+          {
+            "title": "Rotación y absentismo",
+            "description": "Del equipo que dirige cada participante"
+          },
+          {
+            "title": "Clima del equipo",
+            "description": "Encuesta de pulso de cinco preguntas"
+          }
+        ],
+        "fundingTitle": "EJEMPLO FUNDAE · 25 H · PRESENCIAL · 10 PERSONAS",
+        "fundingAmount": "hasta 3.250 €",
+        "fundingCondition": "bonificables, sujeto al crédito de la empresa. Calcula el tuyo →"
+      }
+    },
+    "ia-datos": {
+      "title": "IA, Datos y Digitalización",
+      "claim": "IA útil para operaciones. Sin humo.",
+      "lead": "Equipos que usan la IA para quitarse trabajo repetitivo, leen los datos de la operación y toman decisiones con ellos, dentro de una política de uso segura y conforme al AI Act.",
+      "audience": [
+        "Toda la plantilla",
+        "Tráfico y atención al cliente",
+        "Planificadores y analistas",
+        "Dirección"
+      ],
+      "problems": [
+        {
+          "title": "Uso de IA sin criterio",
+          "description": "Herramientas usadas por su cuenta, sin política ni control de datos."
+        },
+        {
+          "title": "Tareas manuales",
+          "description": "Horas copiando albaranes, respondiendo correos y cuadrando Excel."
+        },
+        {
+          "title": "Datos que nadie lee",
+          "description": "Informes que se generan y no cambian ninguna decisión."
+        },
+        {
+          "title": "Cumplimiento del AI Act",
+          "description": "Obligación de formar a quien usa IA, sin evidencia documental."
+        }
+      ],
+      "demand": [
+        "La inteligencia artificial es una de las formaciones bonificables con más demanda en 2026.",
+        "La IA es el área donde más talento falta a las empresas logísticas españolas, por delante de operaciones (ManpowerGroup).",
+        "El AI Act obliga a formar a quien usa sistemas de IA en la empresa."
+      ],
+      "programIntro": "Son ejemplos: diseñamos cualquier formación que necesite tu equipo, con la duración y el formador adecuados. Cómo funciona →",
+      "programs": [
+        {
+          "title": "IA generativa para equipos de logística y administración",
+          "hours": "8 h",
+          "mode": "Online Live",
+          "level": "Básico",
+          "kpi": "KPI: Horas ahorradas",
+          "badge": "PRIORIDAD 2026",
+          "flagship": false
+        },
+        {
+          "title": "Alfabetización en IA para toda la plantilla (AI Act)",
+          "hours": "8 h",
+          "mode": "Online Live",
+          "level": "Básico",
+          "kpi": "KPI: Cobertura de la plantilla",
+          "badge": "OBLIGACIÓN 2026",
+          "flagship": false
+        },
+        {
+          "title": "Power BI y cuadros de mando para la gestión logística",
+          "hours": "20 h",
+          "mode": "Híbrida",
+          "level": "Superior",
+          "kpi": "KPI: Tiempo de reporting",
+          "badge": "PRIORIDAD 2026",
+          "flagship": false
+        },
+        {
+          "title": "SAP ERP para logística",
+          "hours": "20 h",
+          "mode": "Online Live",
+          "level": "Superior",
+          "kpi": "KPI: Errores de registro",
+          "badge": "",
+          "flagship": false
+        },
+        {
+          "title": "Automatizar documentos, correos e incidencias con IA",
+          "hours": "12 h",
+          "mode": "Online Live",
+          "level": "Superior",
+          "kpi": "KPI: Tiempo por incidencia",
+          "badge": "NUEVO 2026",
+          "flagship": false
+        },
+        {
+          "title": "E-logistics y e-commerce",
+          "hours": "12 h",
+          "mode": "Online Live",
+          "level": "Superior",
+          "kpi": "KPI: Plazo de entrega",
+          "badge": "",
+          "flagship": false
+        }
+      ],
+      "steps": [
+        "Inventario de tareas repetitivas y herramientas en uso",
+        "Casos prácticos con documentos tipo de vuestra actividad",
+        "Política de uso de IA y plantillas de trabajo",
+        "Medición del tiempo ahorrado y revisión a 60 días"
+      ],
+      "norms": [
+        "AI Act",
+        "RGPD",
+        "NIS2",
+        "Ciberseguridad en proveedores"
+      ],
+      "trainer": "Directivos en activo del área, asignados según vuestro sector y vuestra mercancía. Si trabajamos con información de la empresa, firmamos NDA.",
+      "trainerChoice": "Para cada formación te proponemos dos perfiles y eliges tú.",
+      "funding": {
+        "intro": "Gestionamos el trámite completo sin coste añadido. Calcula tu caso exacto en la calculadora de la página principal.",
+        "title": "ALFABETIZACIÓN EN IA · 8 H · ONLINE LIVE",
+        "formula": "20 participantes × 8 h × 9 €/h",
+        "amount": "hasta 1.440 €",
+        "condition": "bonificables, sujeto al crédito disponible de la empresa. Online Live se bonifica con el módulo presencial."
+      },
+      "other": [
+        {
+          "title": "Supply Chain y Logística",
+          "href": "#/area/supply-chain"
+        },
+        {
+          "title": "Compras y Category Management",
+          "href": "#/area/compras"
+        },
+        {
+          "title": "Transporte y Distribución",
+          "href": "#/area/transporte"
+        },
+        {
+          "title": "Comercio Internacional",
+          "href": "#/area/comercio-internacional"
+        },
+        {
+          "title": "Liderazgo y Gestión de Equipos",
+          "href": "#/area/liderazgo"
+        }
+      ]
+    }
+  },
+  "hashes": {
+    "pages/a-medida.html": "56084e4cd0c6cf339fa1669e9392d62cd51a02f52e8060c3024b990c3a617b30",
+    "pages/al-dia.html": "10fb19204952b937e10000470b825ec2a90a83a0564ddc1632683cf23d5f8c75",
+    "pages/area-comercio-internacional.html": "83048ceedd526e62f31a32932ba46124351433dacf47c4d08dde1e0d8c428381",
+    "pages/area-compras.html": "fba1e8144905387dbeff86c4779363f47c51cebbe6cf03360556648f1a1ba648",
+    "pages/area-ia-datos.html": "e11ebacc4349a9136bb07261682c65966fe1684ed83de7be4f9860d8f96b6686",
+    "pages/area-liderazgo.html": "6340d368d4ba48da2bfdc98c8778d759f721705b6865e21efe491a741c9e3246",
+    "pages/area-supply-chain.html": "b39a5c1c5a0c02d248c9785f4d6ab06e50c87d48adca64d47cae86fad6823f56",
+    "pages/area-transporte.html": "1c4f2d2b6fb537f88aa0c23aaec92ff23f339800bb7bda5b6a029b3f3307bc64",
+    "pages/campus.html": "53ea3051ad1a66b7135e1e9ded55dd2f73f04ffd97e1f65000c1a72ea3f7d1d8",
+    "pages/fundae.html": "44b6fc72be2f38bb8eee387863b2283e7d8e4992b813edecfedd43909b4fc159",
+    "pages/home.html": "98bd5bdcb0763ea770ba3f08c9e6d9cb7018b8d9b357be3ba4f88efaeae69f01",
+    "pages/layout.html": "dde29ab86d72468c4452995d14bfd6778b7cf77711ff93a96ef60684c36d4588",
+    "pages/marca.html": "dcf098ca784696b621d787897f7987cd9b94e15f8bec64cc79f4d8cbefc2a117",
+    "pages/partials/home-areas.html": "3dab41e1f80e3053dd4cce35aa00794bb84f821bd784ebb052c9b53e6cdb7067",
+    "pages/partials/home-cases-faq.html": "22650ff8e16c7acdd83dd6433743d15aaa779e0e26fc521bbc5bc65225a4b195",
+    "pages/partials/home-partners.html": "eda257040792ef37ac5042e48c0af3dd7d3645b8ff3a732f4d0ad16a6d4c1bad",
+    "pages/partials/home-solutions.html": "4a3a3e98ae147a97d430cbe1f84a0321ab126b62f5f31285012056eb820133ff",
+    "pages/partials/partners.html": "6b66fa11a4d2c4822e6c1a9719255eae18c30866910b902f5ab9f4a64068224f",
+    "pages/programas.html": "53938df203b3bca052aa72f35a9f71732523fd34f416e3e3102a498b28a02fa0",
+    "pages/quienes-somos.html": "b470f41f2c6893f0e48319fb20a435c0d9d5d363a57867e382a85ab6c1a81ca0",
+    "pages/radar.html": "eba38b8f036c726c87b9a968cacfab5b84973b3035ec9544bfd19928a1abf38d",
+    "pages/rrhh.html": "c598de128b926b3f48b173097ae81e8daeaf3cc4f7f3133a744114c7ebe01f2b",
+    "pages/talento-internacional.html": "f11342437885b32958829468f5ff2cdf5fa00be971ed90ee9ab17bdffd6866f6",
+    "pages/universitarios.html": "a524159a023c3ef242e7b16b4f54f9845d082f3a9604a943709f403a4563e66b",
+    "assets/js/animations.js": "1bb66588c36689bf7d2436d76a993ba40a4b97cbd03b593eef148605e050e6e5",
+    "assets/js/assistant.js": "3c307c6a8d7a2df589d651ce3c1174b86fe665bf56f6ecec68bd04c38f4c99a5",
+    "assets/js/calculator.js": "02a842b67f48696829f81d998a9f8303760c8fb0e223ee4163c7a5eb37e70219",
+    "assets/js/courses.js": "838ff16517a33178f3944a3e38ca1fdd54df006c5b028bcbd305af9979ac2379",
+    "assets/js/downloads.js": "e338d0f660227e42ddd78460a8962db77613266208869aed6d31c15c0f4556b0",
+    "assets/js/formacion.js": "8bb90938f96e1fe80630f4434ec66894587249d395204ac74f30139622dea1f3",
+    "assets/js/forms.js": "9797f982520398fc781c9966b7c51ad42015466d9d4026d498cd36a9262860d6",
+    "assets/js/generated/download-data.js": "b3e08cb887fa3f42a223c0f87fe299cf7aca6dff50fa48ade6099fc5a4036321",
+    "assets/js/home.js": "d2bd6b040c046c4704b27d174a3c6f47b6d277ef725a3fb04c9ebd3924b9e6a3",
+    "assets/js/main.js": "0666a9211ef0f6f151ecffeedb9e104615ce17f8fbf029d46e689425304ea55f",
+    "assets/js/navigation.js": "3454a7c59a7a8b6fe9f30396f5858e10f0d43b66cc2e9ef8f2276663a24efbdd",
+    "assets/js/nosotros.js": "009269bc40b77a57f5b46231c4f410f442747c3182a248ab1a4ed0ca600fd275",
+    "assets/js/renderer.js": "b9f3228d9239b4a5e1a15ac7373a262f232f0390479ae4498eac52a18fbf9ca4",
+    "assets/js/theme-init.js": "2431bf3fc0f4dab444673b2e0af889581bfbe7dbdb081888b481d1c167e2fe06",
+    "assets/js/theme.js": "19328db1b073e9ef1edc4dfbe8c63af2bbe342e784a1032d82b2c49ee5da6de8",
+    "assets/js/transporte.js": "c494da087fa84fb8358006927b1811979ac7692f39a663c1f84306b71e398e49",
+    "assets/css/al-dia.css": "e882a5d26b2a59191c397befb5a2ca044c9136e04ad1da1935648754ac91e50b",
+    "assets/css/animations.css": "bf9a11fd26cae2f2dbb31208d818a7379bc9d699650c125f5f4007fa724a662f",
+    "assets/css/base.css": "6dd9ff78f85f9ba495d2a75b9fa2c72781cf40fbc0bf6ecda010618ac56030bc",
+    "assets/css/campus.css": "240480235de2b050f7583c65cf3a1f22e34a6c0f9c7ce079acb9d9bb066d1bd5",
+    "assets/css/client-adjustments.css": "1a1ec31151934b38302b9af412b9861b83c49854ea4312eae32ead1995d250a4",
+    "assets/css/components.css": "da34123a8d5151b301711ea7f31ec61744fffa641308cdfe4b0e61f217ae0327",
+    "assets/css/compras.css": "d2326da6b5b94c440b539a014c83327f3a446337b27822491d61e8321b7bb2de",
+    "assets/css/content-summary.css": "8ff5cbfd320bbdb5c0af05af50f8f9ce84ba03ca2d99668a3954435e889d81e4",
+    "assets/css/empresas.css": "b002292f35c569449b0d292c2a8da27796867810d873795b5eaf58b1be3b534d",
+    "assets/css/footer.css": "e62b1ea323d196ce3f05c42fe1b328b6d01d2a3e7cdf1d7df057755f1e269b3e",
+    "assets/css/formacion.css": "ac19c39895a81267c9914d350dc08850cf85ba9546a8fae2a9612ffebd99aabf",
+    "assets/css/fundae.css": "36aefb6344bfed0dc7cbed6aadc1866c19cec07a3174f60bc35bef5a86c1dd0a",
+    "assets/css/home.css": "eb8f9097fcf7e857fd39e49fc65dbcda2dd91e4760f1ee84d0b4c95a5480fe45",
+    "assets/css/humanization.css": "4782835ea26a458e7684cb456f7196fb94183676a3c200c963b1de37ac076245",
+    "assets/css/navigation.css": "8558bc711b05f0b16003dc061e24844f2891ac66f29caddad5220c17c98177c6",
+    "assets/css/nosotros.css": "b917a8c714ec791acfa94fab92b6821fb114e7bfb4632a82e8aa08bd791308a0",
+    "assets/css/responsive.css": "eeaddc39a15e767433961bd7e4228dbc9039c151fd1f32d7ea4cf685524277b8",
+    "assets/css/rrhh.css": "1655509b414b31c52a6b31f907f7a009343e58e58f4ec026548100762d642c90",
+    "assets/css/supply-chain.css": "4d20778618099c7b1d61e06f78704ca032ef60979ad57d18a15c071dd1cbb9ba",
+    "assets/css/talento-internacional.css": "f2ae5b1872c8a2771719487efc0ce7b86e8110c9e144a6f16efa44fc6a34d1c9",
+    "assets/css/theme.css": "d11dca80f9c77c17117f9e557fb72ac36a68ce7a201e5fb54661b2f8b5754e63",
+    "assets/css/transporte.css": "12ccdf3016747d81d0e7c524821b87c14f4a954404fd0ce351e344c13addf3e8",
+    "assets/css/universitarios.css": "df477e5dfd1ea08e6c838d1d16931b7943733d988efd0e92b0a173fff7fa74c2",
+    "assets/css/variables.css": "7af6e29da250f1afb88721b1756f90b6c83db649e3fc18674634310e0a9b31be"
+  }
+}

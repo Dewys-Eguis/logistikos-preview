@@ -64,7 +64,7 @@ const routes=['/','/programas','/a-medida','/quienes-somos','/fundae','/rrhh','/
    ['/area/supply-chain','.sc-other-grid a[href="#/area/transporte"]'],
    ['/al-dia','#app a[href="#/area/transporte"]'],
    ['/a-medida','footer a[href="#/area/transporte"]']
-  ]){await page.goto(base+'#'+route);await page.locator(selector).first().click();await page.locator('.tr-page').waitFor();assert.equal(await page.evaluate(()=>location.hash),'#/area/transporte');}
+  ]){await page.goto(base+'#'+route);if(selector.startsWith('.program-card'))await page.locator('#home-programs-detail>summary').click();await page.locator(selector).first().click();await page.locator('.tr-page').waitFor();assert.equal(await page.evaluate(()=>location.hash),'#/area/transporte');}
   await page.goto(base+'#/programas');
   await page.locator('.formation-dept-btn').filter({hasText:'Tráfico y transporte'}).click();
   await page.locator('.formation-text-link[href="#/area/transporte"]').click();await page.locator('.tr-page').waitFor();

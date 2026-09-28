@@ -58,57 +58,26 @@ const HomePage = {
       root.querySelector("#course-status").textContent = `${count} ${count === 1 ? "programa disponible" : "programas disponibles"}`;
     }));
 
-    const catalog = getCourseValues.call(component).data;
-    const calculatorFields = root.querySelectorAll("[data-calculator-field]");
-    const courseSelect = root.querySelector("[data-home-course]");
-    const modeButtons = [...root.querySelectorAll("[data-home-mode]")];
-    const levelButtons = [...root.querySelectorAll("[data-home-level]")];
-    const updateCalculator = () => {
-      const values = getCalculatorValues.call(component, catalog);
-      root.querySelector("#home-credit").textContent = values.creditoLabel;
-      root.querySelector("#home-available").textContent = values.disponibleLabel;
-      root.querySelector("#home-band-name").textContent = values.tramo;
-      root.querySelector("#home-band-pct").textContent = values.pctLabel;
-      root.querySelector("#home-bonif").textContent = values.bonifLabel;
-      root.querySelector("#home-calc-label").textContent = values.calcLabel;
-      root.querySelector("#home-use-label").textContent = values.usoLabel;
-      root.querySelector("#home-cofin").textContent = values.cofinLabel;
-      root.querySelector("#home-calc-progress").style.width = values.barWidth;
-      const compare = root.querySelector("#home-compare");
-      compare.replaceChildren(...values.compare.map((item) => {
-        const row = document.createElement("div");
-        row.className = "home-compare-row";
-        const label = document.createElement("span"); label.textContent = item.label;
-        const bar = document.createElement("span"); bar.className = "home-compare-bar";
-        const fill = document.createElement("i"); fill.style.width = item.barWidth; bar.appendChild(fill);
-        const amount = document.createElement("strong"); amount.textContent = item.amount;
-        row.append(label, bar, amount);
-        return row;
-      }));
-      modeButtons.forEach((button) => button.classList.toggle("is-active", button.dataset.homeMode === component.state.modo));
-      levelButtons.forEach((button) => button.classList.toggle("is-active", button.dataset.homeLevel === component.state.nivel));
-      if (courseSelect) courseSelect.value = component.state.courseIdx;
-    };
-    calculatorFields.forEach((input) => on(input, "input", () => {
-      component.state[input.dataset.calculatorField] = input.value;
-      if (input.dataset.calculatorField === "horas") component.state.courseIdx = "otra";
-      updateCalculator();
-    }));
-    if (courseSelect) on(courseSelect, "change", (event) => {
-      const values = getCalculatorValues.call(component, catalog);
-      values.onCourse(event);
-    });
-    modeButtons.forEach((button) => on(button, "click", () => { component.state.modo = button.dataset.homeMode; updateCalculator(); }));
-    levelButtons.forEach((button) => on(button, "click", () => { component.state.nivel = button.dataset.homeLevel; updateCalculator(); }));
-    updateCalculator();
-
     const roadmapButtons = [...root.querySelectorAll("[data-roadmap]")];
     function updateRoadmap(id) {
       component.state.hr = id;
       const { hr } = getCourseValues.call(component);
       roadmapButtons.forEach((button) => button.setAttribute("aria-pressed", String(button.dataset.roadmap === id)));
       root.querySelectorAll("[data-roadmap-value]").forEach((node) => { node.textContent = hr[node.dataset.roadmapValue]; });
-      root.querySelector("[data-roadmap-link]").href = hr.route;
+      const link = root.querySelector("[data-roadmap-link]");
+      const blocked = [...root.querySelectorAll(".area-card[data-pending-href]")].some(card => card.dataset.pendingHref === hr.route);
+      link.classList.toggle("is-pending-link", blocked);
+      if (blocked) {
+        link.removeAttribute("href");
+        link.dataset.pendingHref = hr.route;
+        link.setAttribute("aria-disabled", "true");
+        link.setAttribute("title", "Próximamente");
+      } else {
+        link.href = hr.route;
+        delete link.dataset.pendingHref;
+        link.removeAttribute("aria-disabled");
+        link.removeAttribute("title");
+      }
     }
     roadmapButtons.forEach((button) => on(button, "click", () => updateRoadmap(button.dataset.roadmap)));
     updateRoadmap(component.state.hr);

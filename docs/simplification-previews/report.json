@@ -1,0 +1,185 @@
+{
+  "protectedSourcesUnchanged": true,
+  "programsAndCommercialDetailsPreserved": true,
+  "progressiveContentKeyboard": true,
+  "activeAreas": 3,
+  "blockedAreas": 3,
+  "errors": [],
+  "report": [
+    {
+      "name": "home",
+      "reductions": [
+        {
+          "width": 390,
+          "before": {
+            "width": 390,
+            "height": 22196,
+            "visibleWords": 1871
+          },
+          "after": {
+            "width": 390,
+            "height": 13761,
+            "visibleWords": 786
+          },
+          "heightReductionPercent": 38,
+          "visibleWordsReductionPercent": 58
+        },
+        {
+          "width": 1440,
+          "before": {
+            "width": 1440,
+            "height": 15018,
+            "visibleWords": 1918
+          },
+          "after": {
+            "width": 1440,
+            "height": 10252,
+            "visibleWords": 833
+          },
+          "heightReductionPercent": 32,
+          "visibleWordsReductionPercent": 57
+        }
+      ]
+    },
+    {
+      "name": "formacion",
+      "reductions": [
+        {
+          "width": 390,
+          "before": {
+            "width": 390,
+            "height": 7103,
+            "visibleWords": 339
+          },
+          "after": {
+            "width": 390,
+            "height": 5966,
+            "visibleWords": 269
+          },
+          "heightReductionPercent": 16,
+          "visibleWordsReductionPercent": 21
+        },
+        {
+          "width": 1440,
+          "before": {
+            "width": 1440,
+            "height": 4614,
+            "visibleWords": 343
+          },
+          "after": {
+            "width": 1440,
+            "height": 3753,
+            "visibleWords": 273
+          },
+          "heightReductionPercent": 19,
+          "visibleWordsReductionPercent": 20
+        }
+      ]
+    },
+    {
+      "name": "supply",
+      "reductions": [
+        {
+          "width": 390,
+          "before": {
+            "width": 390,
+            "height": 10474,
+            "visibleWords": 616
+          },
+          "after": {
+            "width": 390,
+            "height": 8331,
+            "visibleWords": 393
+          },
+          "heightReductionPercent": 20,
+          "visibleWordsReductionPercent": 36
+        },
+        {
+          "width": 1440,
+          "before": {
+            "width": 1440,
+            "height": 5908,
+            "visibleWords": 616
+          },
+          "after": {
+            "width": 1440,
+            "height": 4884,
+            "visibleWords": 393
+          },
+          "heightReductionPercent": 17,
+          "visibleWordsReductionPercent": 36
+        }
+      ]
+    },
+    {
+      "name": "compras",
+      "reductions": [
+        {
+          "width": 390,
+          "before": {
+            "width": 390,
+            "height": 8593,
+            "visibleWords": 460
+          },
+          "after": {
+            "width": 390,
+            "height": 7079,
+            "visibleWords": 312
+          },
+          "heightReductionPercent": 18,
+          "visibleWordsReductionPercent": 32
+        },
+        {
+          "width": 1440,
+          "before": {
+            "width": 1440,
+            "height": 5428,
+            "visibleWords": 460
+          },
+          "after": {
+            "width": 1440,
+            "height": 4505,
+            "visibleWords": 312
+          },
+          "heightReductionPercent": 17,
+          "visibleWordsReductionPercent": 32
+        }
+      ]
+    },
+    {
+      "name": "transporte",
+      "reductions": [
+        {
+          "width": 390,
+          "before": {
+            "width": 390,
+            "height": 8864,
+            "visibleWords": 546
+          },
+          "after": {
+            "width": 390,
+            "height": 7321,
+            "visibleWords": 381
+          },
+          "heightReductionPercent": 17,
+          "visibleWordsReductionPercent": 30
+        },
+        {
+          "width": 1440,
+          "before": {
+            "width": 1440,
+            "height": 5742,
+            "visibleWords": 549
+          },
+          "after": {
+            "width": 1440,
+            "height": 4742,
+            "visibleWords": 384
+          },
+          "heightReductionPercent": 17,
+          "visibleWordsReductionPercent": 30
+        }
+      ]
+    }
+  ]
+}

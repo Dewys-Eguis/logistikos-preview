@@ -15,7 +15,8 @@ const preview='http://127.0.0.1:4173/#/area/transporte';
   const preservation=await page.evaluate(html=>{
    const doc=new DOMParser().parseFromString(html,'text/html');const normalize=s=>s.replace(/\s+/g,' ').trim();
    const current=normalize(document.querySelector('.tr-page').textContent);
-   const missing=[...doc.body.querySelectorAll('*')].filter(e=>!e.children.length&&normalize(e.textContent)&&!['PROGRAMA','HORAS','MODALIDAD','NIVEL','INDICADOR'].includes(normalize(e.textContent))).map(e=>normalize(e.textContent)).filter(s=>!current.includes(s));
+   // Only the introductory copy, calculator pointer and heading were editorially shortened.
+   const missing=[...doc.body.querySelectorAll('*')].filter(e=>!e.children.length&&!e.matches('.legacy-366,.legacy-396')&&normalize(e.textContent)!=='Un ejemplo con números.'&&normalize(e.textContent)&&!['PROGRAMA','HORAS','MODALIDAD','NIVEL','INDICADOR'].includes(normalize(e.textContent))).map(e=>normalize(e.textContent)).filter(s=>!current.includes(s));
    const programs=[...doc.querySelectorAll('.legacy-379')].map((row,i)=>({original:[...row.children].slice(0,5).map(e=>normalize(e.textContent)),present:normalize(document.querySelectorAll('.tr-program')[i].textContent)}));
    return {missing,programs};
   },old);
@@ -43,7 +44,7 @@ const preview='http://127.0.0.1:4173/#/area/transporte';
   await page.goto(preview);await page.getByRole('button',{name:'Operación',exact:true}).click();assert.equal(await page.locator('.tr-program:visible').count(),2);
   await page.getByRole('link',{name:'Explorar programas',exact:false}).first().click();assert.equal(await page.evaluate(()=>location.hash),'#/area/transporte');
   await page.getByRole('link',{name:'Hablar de vuestro reto'}).click();assert(await page.locator('footer').isVisible());
-  await page.getByRole('link',{name:'Ir a la calculadora'}).click();await page.waitForFunction(()=>location.hash==='#/s/fundae');await page.locator('#home-credit').waitFor();
+  await page.getByRole('link',{name:'Ir a la calculadora'}).click();await page.waitForFunction(()=>location.hash==='#/fundae');await page.locator('#fundae-calculadora').waitFor();
   // Assets are loaded over HTTP, the same relative paths GitHub Pages uses.
   const broken=[];await page.goto(preview);for(const image of await page.locator('img').all())if(!await image.evaluate(e=>e.complete&&e.naturalWidth>0))broken.push(await image.getAttribute('src'));assert.deepEqual(broken,[]);
   // Approved Transporte is reachable in the public build; the three other areas stay gated.

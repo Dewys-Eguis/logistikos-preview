@@ -38,5 +38,14 @@
     }
   ],
   "errors": [],
-  "checks": []
+  "checks": [
+    "No content overflow at all six requested widths; mobile menu opens and Escape closes",
+    "Solutions: mouse and keyboard tabs, focus, ARIA, only one visible panel",
+    "All seven program filters reuse the existing catalog",
+    "Dedicated FUNDAE calculator: minimum and consumed credit",
+    "All six roadmap examples, route and KPI update",
+    "13 distinct internal destinations and all local anchors resolve",
+    "Reduced motion: no marquee, no sticky timeline, all content visible",
+    "Motion: scrolled navbar, reveal lifecycle, active marquee"
+  ]
 }

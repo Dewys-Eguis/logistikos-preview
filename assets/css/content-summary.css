@@ -1,0 +1,32 @@
+/* Progressive editorial content, only in the five simplified views.
+   The existing palette, type scale, grids and motion remain in their own stylesheets. */
+:is(.home-view,.formation-view,.sc-page,.cp-page,.tr-page) .content-detail{
+  min-width:0;
+  border-top:1px solid color-mix(in srgb,currentColor 22%,transparent);
+  border-bottom:1px solid color-mix(in srgb,currentColor 22%,transparent);
+}
+.content-detail>summary{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) auto;
+  align-items:center;
+  gap:var(--space-actions);
+  padding:20px 0;
+  font:500 var(--type-body)/var(--leading-body) "IBM Plex Sans",sans-serif;
+  color:inherit;
+}
+.content-detail>summary::after{content:"+";font-size:var(--type-subtitle);line-height:1}
+.content-detail[open]>summary::after{content:"−"}
+.content-detail>summary:hover{text-decoration:underline;text-underline-offset:5px}
+.content-detail>.content-detail-body{padding:var(--space-actions) 0}
+.content-detail .content-more{margin:var(--space-actions) 0 0;line-height:var(--leading-body)}
+.content-detail .content-more a{color:inherit;text-underline-offset:4px}
+:is(.home-view,.formation-view,.sc-page,.cp-page,.tr-page) [data-content-secondary]{padding-block:calc(2 * var(--space-actions))}
+.home-view .content-method-brief .method-step{min-height:0;padding-bottom:var(--space-actions);margin-bottom:var(--space-actions)}
+.home-view .content-method-brief .method-step h3{margin:0 0 12px}
+.home-view .content-method-brief .method-intro .home-text-link:last-child{margin-top:16px}
+.formation-view .formation-area-links{display:flex;flex-wrap:wrap;gap:12px 24px;margin-top:var(--space-actions)}
+.formation-view .formation-area-links a{min-height:44px;display:inline-flex;align-items:center;font-size:var(--type-secondary);text-underline-offset:5px}
+.formation-view .formation-area-links a:hover{color:var(--color-electric-blue)}
+.sc-page .sc-section-light .content-detail{margin-bottom:28px}
+.tr-page .content-detail .tr-example{border-left:0;padding:0}
+.sc-page .sc-fundae .content-detail,.tr-page .tr-fundae .content-detail{color:#fff}

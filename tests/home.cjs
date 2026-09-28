@@ -39,6 +39,7 @@ const url=pathToFileURL(path.join(root,'index.html')).href;
     for(const viewport of report.widths){assert.equal(viewport.documentWidth,viewport.width);assert.deepEqual(viewport.overflow,[],`Overflow at ${viewport.width}`);}
     report.checks.push('No content overflow at all six requested widths; mobile menu opens and Escape closes');
     await page.setViewportSize({width:1440,height:1000});
+    await page.locator('#home-solutions-detail > summary').click();
     const tabs=page.locator('[role=tab]');
     await tabs.nth(1).click();assert.equal(await tabs.nth(1).getAttribute('aria-selected'),'true');
     assert(await page.locator('#solution-talent').isVisible());
@@ -46,32 +47,37 @@ const url=pathToFileURL(path.join(root,'index.html')).href;
     await page.keyboard.press('Home');assert.equal(await tabs.first().getAttribute('aria-selected'),'true');
     assert.equal(await page.locator('[role=tabpanel]:visible').count(),1);
     report.checks.push('Solutions: mouse and keyboard tabs, focus, ARIA, only one visible panel');
+    await page.locator('#home-programs-detail > summary').click();
     for(const filter of await page.locator('[data-course-filter]').all()){
       await filter.click();const id=await filter.getAttribute('data-course-filter');
       assert.equal(await page.locator('[data-course-area]:visible').count(),id==='all'?6:1);
     }
     await page.locator('[data-course-filter=all]').click();
     report.checks.push('All seven program filters reuse the existing catalog');
-    await page.locator('#home-employees').fill('5');await page.locator('#home-salary').fill('0');
-    assert.equal(await page.locator('#home-credit').textContent(),'420 €');
-    await page.locator('#home-used').fill('500');assert.equal(await page.locator('#home-available').textContent(),'0 €');
-    await page.getByRole('link',{name:'Ver detalle FUNDAE'}).click();
-    assert.equal(await page.locator('#app input').nth(0).inputValue(),'5');
-    assert.equal(await page.locator('#app input').nth(2).inputValue(),'500');
+    await page.locator('#fundae a[href="#/fundae"]').first().click();
+    await page.locator('#credit-employees').fill('5');await page.locator('#credit-employees').blur();
+    await page.locator('#credit-salary').fill('0');await page.locator('#credit-salary').blur();
+    assert.equal(await page.locator('#credit-annual').textContent(),'420 €');
+    await page.locator('#credit-used').fill('500');await page.locator('#credit-used').blur();
+    assert.equal(await page.locator('#credit-available').textContent(),'0 €');
     await page.goto(url+'#/');
-    report.checks.push('Mini calculator: minimum/consumed credit; values carried to full calculator');
+    await page.locator('#home-solutions-detail > summary').click();
+    report.checks.push('Dedicated FUNDAE calculator: minimum and consumed credit');
     for(const button of await page.locator('[data-roadmap]').all()){
       await button.click();assert.equal(await button.getAttribute('aria-pressed'),'true');
-      assert.match(await page.locator('[data-roadmap-link]').getAttribute('href'),/^#\/area\//);
+      const link=page.locator('[data-roadmap-link]');
+      const href=await link.getAttribute('href');
+      if(href)assert.match(href,/^#\/area\//);
+      else assert.equal(await link.getAttribute('aria-disabled'),'true');
     }
     report.checks.push('All six roadmap examples, route and KPI update');
     const links=await page.locator('.home-view a').evaluateAll(nodes=>nodes.map(n=>n.getAttribute('href')));
     const broken=[];
-    for(const href of [...new Set(links.filter(x=>x.startsWith('#')&&!x.startsWith('#/')))]){
+    for(const href of [...new Set(links.filter(x=>x&&x.startsWith('#')&&!x.startsWith('#/')))]){
       if(!await page.evaluate(id=>!!document.getElementById(id),href==='#contacto'?'home-contacto':href.slice(1)))broken.push(href);
     }
     assert.deepEqual(broken,[]);
-    const internalRoutes=[...new Set(links.filter(x=>x.startsWith('#/')))];
+    const internalRoutes=[...new Set(links.filter(x=>x&&x.startsWith('#/')))];
     for(const href of internalRoutes){await page.goto(url+href);assert(await page.locator('#app').innerText());assert(!/\{\{/.test(await page.locator('#app').innerHTML()));}
     report.checks.push(`${internalRoutes.length} distinct internal destinations and all local anchors resolve`);
     await page.goto(url+'#/');
@@ -83,8 +89,7 @@ const url=pathToFileURL(path.join(root,'index.html')).href;
     await page.locator('#metodo').scrollIntoViewIfNeeded();await page.waitForTimeout(850);
     assert(await page.locator('.home-header').evaluate(el=>el.classList.contains('is-scrolled')));
     assert.equal(await page.locator('.partner-track').first().evaluate(el=>getComputedStyle(el).animationName),'home-marquee');
-    await page.locator('[data-marquee-pause]').click();assert.equal(await page.locator('.partner-track').first().evaluate(el=>getComputedStyle(el).animationPlayState),'paused');
-    report.checks.push('Motion: scrolled navbar, reveal lifecycle, active marquee and pause control');
+    report.checks.push('Motion: scrolled navbar, reveal lifecycle, active marquee');
     await page.emulateMedia({reducedMotion:'reduce'});
     assert.deepEqual(errors,[]);
     fs.writeFileSync(path.join(root,'docs/verificacion-home.json'),JSON.stringify(report,null,2));

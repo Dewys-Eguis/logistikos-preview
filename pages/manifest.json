@@ -40,6 +40,10 @@
     "file": "pages/campus.html"
   },
   {
+    "id": "tpl-page-talento-internacional",
+    "file": "pages/talento-internacional.html"
+  },
+  {
     "id": "tpl-area-comercio-internacional",
     "file": "pages/area-comercio-internacional.html"
   },

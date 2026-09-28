@@ -1,0 +1,226 @@
+{
+  "pages": {
+    "home": {
+      "route": "/",
+      "protected": {
+        ".home-hero": [
+          "ESPECIALISTAS EN FORMACIÓN LOGÍSTICA · IN COMPANY EN TODA ESPAÑA Formaciónlogística parainconformistas. Práctica, a medida e impartida por directivos en activo. Para que tu equipo rinda más y tu operación cueste menos, desde el primer día. Pedir diagnóstico gratuito ↗ ↓ EXPLORA LO QUE VIENEIn company en toda España.Every step covered.LGK / NEXT IS NOW"
+        ],
+        ".home-audience-strip": [
+          "EMPIEZA POR TU CONTEXTO ¿Quién eres? 01Soy de RRHH→ 02Dirijo operaciones→ 03Otro perfil+ Cuéntanos quién eres Cuéntanoslo ↗ Garantía de resultado: lo medimos a los 60 días y, si no llega, reforzamos gratis."
+        ],
+        ".home-metrics": [
+          "20.000+horas de formaciónin company acreditadas 1160empresas formadas 130+formaciones al año 4países donde hemosformado equipos 100%formadores que dirigenoperaciones en activo 60díaspara medir resultados.Si no llegan, reforzamos gratis."
+        ],
+        ".program-card": [
+          "01LGK / KNOWLEDGE SYSTEMSupply ChainProductividad en picking: métodos, SGA y cero errores de preparación12 hPresencialExplorar programa ↗: Productividad en picking: métodos, SGA y cero errores de preparación",
+          "02LGK / KNOWLEDGE SYSTEMComprasNegociación basada en el Coste Total de Adquisición (TCO)16 hPresencialExplorar programa ↗: Negociación basada en el Coste Total de Adquisición (TCO)",
+          "03LGK / KNOWLEDGE SYSTEMTransportePlanificación de rutas y control del coste por kilómetro16 hHíbridaExplorar programa ↗: Planificación de rutas y control del coste por kilómetro",
+          "04LGK / KNOWLEDGE SYSTEMIA y DatosAlfabetización en IA para toda la plantilla (AI Act)8 hOnline LiveExplorar programa ↗: Alfabetización en IA para toda la plantilla (AI Act)",
+          "05LGK / KNOWLEDGE SYSTEMLiderazgoLiderazgo de primera línea en picos de actividad20 hPresencialExplorar programa ↗: Liderazgo de primera línea en picos de actividad",
+          "06LGK / KNOWLEDGE SYSTEMComercio exteriorIncoterms® 2020 y documentación sin retenciones en frontera12 hOnline LiveExplorar programa ↗: Incoterms® 2020 y documentación sin retenciones en frontera"
+        ],
+        ".program-university": [
+          "25HFORMACIÓN TRANSVERSAL · DIPLOMA UNIVERSITARIOUn nuevo horizonte para todo el equipo.5 sesiones de 5 horas. Grupo mínimo de 15 personas de la misma empresa. Diploma de la Fundación General de la Universidad de Salamanca.Cursos universitarios ↗"
+        ],
+        ".home-manifesto": [
+          "APRENDER ES SOLO EL PRINCIPIO.El conocimientocambia personas.Las personastransforman organizaciones.Las organizacionesconstruyen futuro.EL IMPACTO SE MULTIPLICA.↘"
+        ],
+        ".case-list": [
+          "01 / Almacén multiclienteMenos errores en cada campaña.+El reto: Errores de preparación y abonos a clientes en un operador de 180 personas.La formación: Jefe de almacén y Lean con Yellow Belt. 20 h, presencial y por turnos.El indicador: Reducir a la mitad los errores por 1.000 líneas en 60 días.02 / TransporteUna flota bajo control.+El reto: Tacógrafo y coste del combustible en una flota de 60 vehículos.La formación: Tacógrafo y tiempos de conducción (8 h), más gestión económica de flota (16 h). Híbrida.El indicador: Cero sanciones y coste por kilómetro bajo control.03 / Comercio exteriorDespachos sin incidencias.+El reto: Aranceles cambiantes y mercancía retenida en aduana.La formación: Renegociación de contratos internacionales y gestión aduanera práctica. Online Live.El indicador: Contratos adaptados y despachos sin incidencias."
+        ],
+        ".faq-list": [
+          "¿Trabajáis con pymes?+ Sí. Un Sprint de 8 horas puede bastar para un equipo de cinco personas. ¿Se bonifica por FUNDAE?+ Sí. Revisamos vuestro crédito, ajustamos el programa y gestionamos el trámite sin coste añadido. ¿Qué pasa con nuestros datos?+ Si trabajamos con documentación de la empresa, firmamos NDA antes de verla y vuestra dirección valida cada caso antes de la primera sesión. ¿Podéis formar a varios turnos o sedes?+ Sí. Repetimos sesiones por turno y combinamos presencial y Online Live. ¿Cómo funciona la formación online?+ Se imparte en directo a través de nuestro campus virtual. Las sesiones quedan grabadas y están disponibles hasta 15 días después de que finalice el curso. ¿Y si la formación no da resultados?+ Medimos el indicador pactado a los 60 días. Si los resultados no son los esperados, volvemos a reforzar la formación de forma gratuita."
+        ]
+      },
+      "sizes": [
+        {
+          "width": 390,
+          "height": 22196,
+          "visibleWords": 1871
+        },
+        {
+          "width": 1440,
+          "height": 15018,
+          "visibleWords": 1918
+        }
+      ]
+    },
+    "formacion": {
+      "route": "/programas",
+      "protected": {},
+      "sizes": [
+        {
+          "width": 390,
+          "height": 7103,
+          "visibleWords": 339
+        },
+        {
+          "width": 1440,
+          "height": 4614,
+          "visibleWords": 343
+        }
+      ],
+      "departments": [
+        "DEPARTAMENTO ACTIVO\nAlmacén e intralogística\nÁREA A1 · A5\nPERFILES\n\njefes de almacén, jefes de turno, preparadores, responsables de SGA\n\nRETO HABITUAL\n\nerrores de preparación, productividad por hora, roturas y exactitud de inventario en plena campaña.\n\nPROGRAMA\nDURACIÓN\nMODALIDAD\nSEÑAL\nProductividad en picking: métodos, SGA y cero errores de preparación\n12 h\nPresencial\nMÁS DEMANDADO\nLean warehouse y 5S con gestión visual diaria\n16 h\nPresencial\nMÁS DEMANDADO\nGemelo digital y automatización: cuándo invertir en robótica\n16 h\nHíbrida\nNUEVO 2026\nInventario: ABC, recuentos cíclicos y exactitud de stock\n8 h\nPresencial\n—\n\nHoras orientativas. Ajustamos duración y nivel tras el diagnóstico.\n\nVer área relacionada\n↗\nDiseñar el plan de almacén\n↗",
+        "DEPARTAMENTO ACTIVO\nTráfico y transporte\nÁREA A3 · A6\nPERFILES\n\njefes de tráfico, planificadores de rutas, gestores de flota\n\nRETO HABITUAL\n\nkilómetros en vacío, urgentes que disparan el coste, facturas de transportistas sin auditar e incidencias que nadie cierra.\n\nPROGRAMA\nDURACIÓN\nMODALIDAD\nSEÑAL\nPlanificación de rutas y control del coste por kilómetro\n16 h\nHíbrida\nMÁS DEMANDADO\nAgentes de IA para tráfico e incidencias\n16 h\nOnline Live\nNUEVO 2026\nAuditoría de facturas y negociación con transportistas\n12 h\nHíbrida\nMÁS DEMANDADO\nTransporte sin papel: e-CMR, eFTI y POD digital\n8 h\nOnline Live\nNUEVO 2026\n\nHoras orientativas. Ajustamos duración y nivel tras el diagnóstico.\n\nVer área relacionada\n↗\nDiseñar el plan de tráfico\n↗",
+        "DEPARTAMENTO ACTIVO\nCompras y aprovisionamiento\nÁREA A2\nPERFILES\n\ncompradores, category managers, responsables de aprovisionamiento\n\nRETO HABITUAL\n\ndecisiones por precio unitario, proveedores únicos y contratos que no aguantan subidas de aranceles o materias primas.\n\nPROGRAMA\nDURACIÓN\nMODALIDAD\nSEÑAL\nNegociación basada en el Coste Total de Adquisición (TCO)\n16 h\nPresencial\nMÁS DEMANDADO\nRiesgo de proveedor, aranceles y nearshoring\n16 h\nHíbrida\nNUEVO 2026\nHomologación y evaluación de proveedores con datos\n12 h\nOnline Live\n—\nIA aplicada a compras: comparar ofertas y revisar contratos\n8 h\nOnline Live\nNUEVO 2026\n\nHoras orientativas. Ajustamos duración y nivel tras el diagnóstico.\n\nVer área relacionada\n↗\nDiseñar el plan de compras\n↗",
+        "DEPARTAMENTO ACTIVO\nComercio exterior y aduanas\nÁREA A4\nPERFILES\n\ntécnicos de export/import, responsables de aduanas, administración de ventas\n\nRETO HABITUAL\n\nretenciones en frontera, Incoterms mal asignados y nuevas obligaciones europeas que llegan sin preparar.\n\nPROGRAMA\nDURACIÓN\nMODALIDAD\nSEÑAL\nIncoterms® 2020 y documentación sin retenciones en frontera\n12 h\nOnline Live\nMÁS DEMANDADO\nCBAM y EUDR: cumplimiento 2026 para importadores y exportadores\n12 h\nOnline Live\nNUEVO 2026\nOEA: cómo obtenerlo y mantenerlo\n12 h\nHíbrida\nMÁS DEMANDADO\nMedios de cobro internacional y riesgo país\n8 h\nOnline Live\n—\n\nHoras orientativas. Ajustamos duración y nivel tras el diagnóstico.\n\nVer área relacionada\n↗\nDiseñar el plan de comercio exterior\n↗",
+        "DEPARTAMENTO ACTIVO\nPlanificación y supply chain\nÁREA A1 · A6\nPERFILES\n\nplanificadores de demanda, supply chain managers, analistas\n\nRETO HABITUAL\n\nroturas y sobrestock a la vez, previsiones en Excel y cada departamento mirando un dato distinto.\n\nPROGRAMA\nDURACIÓN\nMODALIDAD\nSEÑAL\nS&OP y previsión de demanda con machine learning\n24 h\nHíbrida\nMÁS DEMANDADO\nControl tower y KPIs de supply chain con Power BI\n20 h\nHíbrida\nMÁS DEMANDADO\nDimensionamiento del stock de seguridad\n12 h\nOnline Live\n—\nHuella ISO 14083 y envases PPWR en la cadena\n12 h\nOnline Live\nNUEVO 2026\n\nHoras orientativas. Ajustamos duración y nivel tras el diagnóstico.\n\nVer área relacionada\n↗\nDiseñar el plan de planificación\n↗",
+        "DEPARTAMENTO ACTIVO\nMandos intermedios y dirección\nÁREA A5 · A6\nPERFILES\n\njefes de turno, mandos intermedios, dirección de operaciones\n\nRETO HABITUAL\n\nmandos que apagan fuegos, equipos que dependen de la dirección para decidir y márgenes que se escapan en la cadena.\n\nPROGRAMA\nDURACIÓN\nMODALIDAD\nSEÑAL\nLiderazgo de primera línea en picos de actividad\n20 h\nPresencial\nMÁS DEMANDADO\nAlfabetización en IA para toda la plantilla (AI Act)\n8 h\nOnline Live\nNUEVO 2026\nComunicación y feedback para jefes de turno\n12 h\nPresencial\nMÁS DEMANDADO\nCoste logístico total y defensa del margen\n12 h\nHíbrida\n—\n\nHoras orientativas. Ajustamos duración y nivel tras el diagnóstico.\n\nVer área relacionada\n↗\nDiseñar el plan de mandos\n↗"
+      ]
+    },
+    "supply": {
+      "route": "/area/supply-chain",
+      "protected": {
+        ".sc-program": [
+          "01MÁS DEMANDADOJefe de almacén: stocks, inventario y productividad20 hPresencial⌄ Programa para ordenar inventario, rutina diaria, productividad y gestión de equipo con foco en estabilidad operativa.KPIExactitud de inventarioNIVELSuperior",
+          "02MÁS DEMANDADOMejora de procesos logísticos: Lean y certificación Yellow Belt20 hPresencial⌄ Lean aplicado a flujos reales del almacén para eliminar esperas, movimientos innecesarios y retrabajos.KPITiempo de ciclo del pedidoNIVELSuperior",
+          "03NUEVO 2026Analista de logística: KPIs y cuadros de mando20 hHíbrida⌄ Construcción y lectura de indicadores para pasar del dato disperso a decisiones de operación.KPITiempo de reportingNIVELSuperior",
+          "04NUEVO 2026Automatización del almacén: cuándo y cómo invertir16 hHíbrida⌄ Criterios para dimensionar automatización, layout, capacidad, inversión y retorno antes de comprar tecnología.KPIRetorno de la inversiónNIVELSuperior",
+          "05PLANIFICACIÓNPlanificación S&OP y previsión de la demanda24 hHíbrida⌄ Conectar demanda, capacidad, inventario y decisiones comerciales con un proceso de planificación compartido.KPIExactitud del forecastNIVELSuperior",
+          "06COSTESAnálisis y reducción de costes logísticos16 hOnline Live⌄ Lectura económica de la operación para detectar palancas de ahorro sin degradar servicio ni capacidad.KPICoste logístico sobre ventasNIVELSuperior"
+        ],
+        ".sc-audience": [
+          "Jefes de almacénJefes de turnoPreparadores y carretillerosPlanificadores de demandaResponsables de SGA"
+        ],
+        ".sc-demand-strip": [
+          "DEMANDA COMPROBADA EN ESPAÑA Randstad destaca responsables de almacén e ingenieros de procesos; LinkedIn sitúa al analista de logística entre los empleos en auge en España en 2026; ManpowerGroup señala dificultades de talento en el sector."
+        ],
+        ".sc-process-steps": [
+          "01Diagnóstico en plantaCon el jefe de almacén y los responsables del proceso. 02Método aplicadoCasos reales y trabajo sobre vuestro flujo, layout y operación. 03Rutina de turnoGestión visual, responsabilidades y seguimiento operativo. 04Plan de mejoraKPI pactado, seguimiento y revisión a 60 días."
+        ],
+        ".sc-compliance-cloud": [
+          "PRL en almacénPPWR · envases y embalajeGDP · Buenas Prácticas de DistribuciónTrazabilidad alimentariaISO 9001"
+        ],
+        ".sc-trainer-card": [
+          "FORMADORES DEL ÁREADirectivos en activo.Asignados según vuestro sector y vuestra mercancía. Si trabajamos con información de la empresa, firmamos NDA.Para cada formación te proponemos dos perfiles y eliges tú."
+        ],
+        ".sc-fundae-card": [
+          "JEFE DE ALMACÉN · 20 H · PRESENCIAL10 participantes × 20 h × 13 €/hhasta 2.600 €bonificables, sujeto al crédito disponible de la empresa."
+        ]
+      },
+      "sizes": [
+        {
+          "width": 390,
+          "height": 10474,
+          "visibleWords": 616
+        },
+        {
+          "width": 1440,
+          "height": 5908,
+          "visibleWords": 616
+        }
+      ]
+    },
+    "compras": {
+      "route": "/area/compras",
+      "protected": {
+        ".cp-program": [
+          "01 MÁS DEMANDADO Negociación con proveedores basada en el coste total (TCO) 16 h · Presencial + INDICADOR KPI: Ahorro TCO anual NIVEL Superior",
+          "02 NUEVO 2026 Renegociar contratos internacionales en plena crisis arancelaria 12 h · Online Live + INDICADOR KPI: Contratos revisados NIVEL Superior",
+          "03 MÁS DEMANDADO Gestión de compras y aprovisionamiento 20 h · Híbrida + INDICADOR KPI: Roturas de suministro NIVEL Superior",
+          "04 Riesgo de proveedor y proveedores alternativos 12 h · Online Live + INDICADOR KPI: Proveedores homologados NIVEL Superior",
+          "05 Finanzas aplicadas a compras y logística 12 h · Online Live + INDICADOR KPI: Impacto en margen NIVEL Superior",
+          "06 NUEVO 2026 IA aplicada a compras: analizar ofertas y contratos 8 h · Online Live + INDICADOR KPI: Tiempo por licitación NIVEL Superior"
+        ],
+        ".cp-audience": [
+          "PARA Compradores Category managers Responsables de aprovisionamiento Dirección de compras"
+        ],
+        ".cp-challenge": [
+          "R1 Decidir por precio unitario + Ofertas baratas que salen caras en calidad, plazo o logística.",
+          "R2 Dependencia de un proveedor + Un único origen que para la operación si falla.",
+          "R3 Volatilidad y aranceles + Costes que cambian cada trimestre y contratos que no lo prevén.",
+          "R4 Datos dispersos + Evaluación de proveedores en Excel sueltos, sin histórico comparable."
+        ],
+        ".cp-demand": [
+          "POR QUÉ ESTOS PROGRAMAS · DEMANDA COMPROBADA EN ESPAÑA + Los técnicos de compras figuran entre los perfiles de logística más demandados y mejor retribuidos en 2026. Casi la mitad del sector logístico y de packaging español está renegociando contratos internacionales por la crisis arancelaria (Empack y Logistics & Automation)."
+        ],
+        ".cp-timeline": [
+          "S1 Análisis de vuestras categorías y contratos actuales S2 Modelo TCO con casos reales de compra S3 Simulación de negociación con proveedor S4 Plan por categoría con ahorro objetivo y revisión a 60 días"
+        ],
+        ".cp-standards": [
+          "CBAM· EUDR· Incoterms® 2020· Diligencia debida en la cadena de suministro·"
+        ],
+        ".cp-trainer": [
+          "FORMADORES DEL ÁREA Directivos en activo. Directivos en activo del área, asignados según vuestro sector y vuestra mercancía. Si trabajamos con información de la empresa, firmamos NDA. 01 / 02 Para cada formación te proponemos dos perfiles y eliges tú."
+        ],
+        ".cp-calculation": [
+          "NEGOCIACIÓN TCO · 16 H · PRESENCIAL 8 participantes × 16 h × 13 €/h hasta 1.664 € bonificables, sujeto al crédito disponible de la empresa."
+        ]
+      },
+      "sizes": [
+        {
+          "width": 390,
+          "height": 8593,
+          "visibleWords": 460
+        },
+        {
+          "width": 1440,
+          "height": 5428,
+          "visibleWords": 460
+        }
+      ]
+    },
+    "transporte": {
+      "route": "/area/transporte",
+      "protected": {
+        ".tr-program": [
+          "01 Cumplimiento OBLIGACIÓN 2026 Tacógrafo inteligente y tiempos de conducción y descanso 8 h Presencial + NIVEL Básico INDICADOR KPI: Sanciones evitadas",
+          "02 Costes y negocio MÁS DEMANDADO Gestión económica de la flota y control del combustible 16 h Híbrida + NIVEL Superior INDICADOR KPI: Coste por kilómetro",
+          "03 Operación MÁS DEMANDADO Planificación de rutas y ocupación de la flota 16 h Híbrida + NIVEL Superior INDICADOR KPI: Kilómetros en vacío",
+          "04 Operación NUEVO 2026 Documentación digital del transporte: e-CMR y Ley de Movilidad Sostenible 8 h Online Live + NIVEL Superior INDICADOR KPI: Días de cobro",
+          "05 Cumplimiento Mercancías peligrosas (ADR) y perecederas (ATP) para jefes de tráfico 12 h Presencial + NIVEL Superior INDICADOR KPI: Incidencias en ruta",
+          "06 Costes y negocio Negociación y venta en el sector transporte 12 h Presencial + NIVEL Superior INDICADOR KPI: Margen por servicio"
+        ],
+        ".tr-audience": [
+          "PARA Jefes de tráfico Planificadores de rutas Gestores de flota Administración de transporte"
+        ],
+        ".tr-challenges": [
+          "R1 Urgentes que disparan el coste Servicios exprés que se convierten en costumbre. R2 Facturación sin auditar Tarifas, recargos y esperas que nadie revisa. R3 Incidencias sin cerrar PODs perdidos, reclamaciones y clientes preguntando dónde está su pedido. R4 Huella en licitaciones Clientes que exigen emisiones por envío y no hay cómo calcularlas."
+        ],
+        ".tr-demand": [
+          "POR QUÉ ESTOS PROGRAMAS · DEMANDA COMPROBADA EN ESPAÑA + Desde el 1 de julio de 2026, las furgonetas de 2,5 a 3,5 t que hacen transporte internacional deben llevar tacógrafo inteligente. La Ley de Movilidad Sostenible impulsa la documentación digital, y el Plan de Inspección 2026 vigila tiempos de conducción y descanso. El precio del gasóleo ha llegado a subir hasta un 30 % en la UE: el control de costes de flota es prioritario."
+        ],
+        ".tr-steps": [
+          "S1 Revisión de cómo planificáis rutas, tarifas y facturas S2 Planificación y costeo con casos reales de tráfico S3 Protocolo de incidencias y automatización con IA S4 Cuadro de mando de transporte y revisión a 60 días"
+        ],
+        ".tr-standards": [
+          "01 LOTT 02 Convenio CMR 03 Acuerdo ATP 04 ADR 05 eFTI · e-CMR 06 ISO 14083"
+        ],
+        ".tr-trainers": [
+          "FORMADORES DEL ÁREA Directivos en activo. Directivos en activo del área, asignados según vuestro sector y vuestra mercancía. Si trabajamos con información de la empresa, firmamos NDA. Para cada formación te proponemos dos perfiles y eliges tú."
+        ],
+        ".tr-example": [
+          "RUTAS Y OCUPACIÓN DE FLOTA · 16 H · HÍBRIDA 12 participantes × 16 h × 13 €/h hasta 2.496 € bonificables, sujeto al crédito disponible de la empresa. Online Live se bonifica con el módulo presencial."
+        ]
+      },
+      "sizes": [
+        {
+          "width": 390,
+          "height": 8864,
+          "visibleWords": 546
+        },
+        {
+          "width": 1440,
+          "height": 5742,
+          "visibleWords": 549
+        }
+      ]
+    }
+  },
+  "files": {
+    "assets/js/courses.js": "36985fa4d7a85f78fad3ba927f89c391d7765024c753fd732774fd50f08e7040",
+    "assets/js/main.js": "28c5894ce6bc076cb6886c9038166e52b69bfbdacf772a9eb1f35e0cc3aae32b",
+    "assets/js/theme.js": "19328db1b073e9ef1edc4dfbe8c63af2bbe342e784a1032d82b2c49ee5da6de8",
+    "assets/js/animations.js": "261e8401c603d1aaadfba0e209fe99a4e41e69c6ef7e347be0b93c1a12e9f83b",
+    "assets/js/navigation.js": "f1480e669d80fd832e4007263af9d9cbd329d5a6294026336560b4b250f49dc7",
+    "assets/css/variables.css": "7af6e29da250f1afb88721b1756f90b6c83db649e3fc18674634310e0a9b31be",
+    "assets/css/navigation.css": "bbeca7d9915d3ca0e3ba9014d1db9a94c8bc0d9cc67ccb255852e5fea1317534",
+    "assets/css/footer.css": "443611f0217c75dd83f09eb472c91c237e749630c578be7205a29555022bc539",
+    "assets/css/theme.css": "d11dca80f9c77c17117f9e557fb72ac36a68ce7a201e5fb54661b2f8b5754e63",
+    "pages/area-comercio-internacional.html": "24cab21e252392c95daa33679be388ae4408200d83d8e6aad438b190b4e11397",
+    "pages/area-liderazgo.html": "dbe8773aff613744c4bef2b8cdc069d2897a4e747cf1233ba3e1513f03566211",
+    "pages/area-ia-datos.html": "baaca48ba8702d1a1c91382c99be1168bc1e9ecc771c0778bfcd26754bee0daa"
+  }
+}

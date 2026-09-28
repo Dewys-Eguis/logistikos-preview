@@ -1,0 +1,102 @@
+/* Photo accents only. No new editorial content is introduced here. */
+.home-talent-photo,
+.formation-human-photo,
+.talent-human-photo,
+.area-human-photo {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,.10);
+  background: #0d1424;
+}
+.home-talent-photo img,
+.formation-human-photo img,
+.talent-human-photo img,
+.area-human-photo img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  filter: saturate(.88) contrast(1.03);
+}
+.home-talent-photo::after,
+.formation-human-photo::after,
+.talent-human-photo::after,
+.area-human-photo::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(180deg, rgba(5,11,23,.02), rgba(5,11,23,.20));
+}
+
+/* Home: human photo is part of the existing Talento card. */
+.home-talent-photo {
+  z-index: 2;
+  min-height: 330px;
+  height: 100%;
+  max-height: 390px;
+  margin: 0;
+  align-self: stretch;
+  border-radius: 22px;
+  box-shadow: 0 24px 70px rgba(0,0,0,.22);
+}
+.home-talent-photo img { min-height: 330px; }
+
+/* Formation: photo is embedded in the existing intro. */
+.formation-intro { position: relative; overflow: hidden; }
+.formation-human-photo {
+  width: min(1180px, calc(100% - 64px));
+  height: clamp(240px, 28vw, 390px);
+  margin: 0 auto 46px;
+  border-radius: 26px;
+}
+
+/* Talento: image belongs to the existing intro section. */
+.talent-intro { position: relative; }
+.talent-human-photo {
+  width: min(1180px, calc(100% - 56px));
+  height: clamp(240px, 30vw, 400px);
+  margin: 0 auto 38px;
+  border-radius: 26px;
+}
+
+/* Areas: a photo accent directly below each existing hero. */
+.area-human-photo {
+  width: min(1180px, calc(100% - 64px));
+  height: clamp(220px, 24vw, 350px);
+  margin: 32px auto 24px;
+  border-radius: 24px;
+}
+
+:root[data-theme="light"] .home-talent-photo,
+:root[data-theme="light"] .formation-human-photo,
+:root[data-theme="light"] .talent-human-photo,
+:root[data-theme="light"] .area-human-photo {
+  border-color: rgba(13,24,44,.10);
+  box-shadow: 0 20px 54px rgba(17,30,54,.10);
+}
+
+@media (max-width: 1000px) {
+  .home-talent-photo { min-height: 280px; max-height: 340px; }
+  .formation-human-photo,
+  .talent-human-photo,
+  .area-human-photo { width: min(100% - 36px, 1180px); }
+}
+@media (max-width: 640px) {
+  .home-talent-photo { min-height: 230px; height: 250px; border-radius: 18px; }
+  .home-talent-photo img { min-height: 230px; }
+  .formation-human-photo,
+  .talent-human-photo,
+  .area-human-photo {
+    width: calc(100% - 28px);
+    height: 220px;
+    margin-bottom: 28px;
+    border-radius: 18px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .home-talent-photo img,
+  .formation-human-photo img,
+  .talent-human-photo img,
+  .area-human-photo img { transition: none !important; }
+}

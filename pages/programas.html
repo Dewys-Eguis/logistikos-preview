@@ -4,49 +4,58 @@
     <div class="formation-orb formation-orb-one" aria-hidden="true"></div>
     <div class="formation-orb formation-orb-two" aria-hidden="true"></div>
     <div class="formation-hero-inner layout-container">
-      <div class="formation-breadcrumb" data-formation-reveal>
+      <div class="formation-breadcrumb" data-formation-reveal="">
         <a href="#/">Inicio</a><span>/</span><span>Formación</span>
       </div>
-      <div class="formation-hero-copy" data-formation-reveal>
+      <div class="formation-hero-copy" data-formation-reveal="">
         <p class="formation-eyebrow">FORMACIÓN · TALENTO · TRANSFORMACIÓN</p>
         <h1 id="formation-title">Programas que convierten retos operativos en <span>capacidad real.</span></h1>
-        <p class="formation-lead">Partimos de lo que está frenando hoy a tu equipo y diseñamos formación in company práctica, medible y conectada con el negocio.</p>
+        <p class="formation-lead">Encuentra programas, perfiles, duración y modalidad para tu equipo.</p>
         <div class="formation-hero-actions">
           <a class="formation-primary-btn" href="#departamentos">Explorar programas <span>↘</span></a>
           <a class="formation-ghost-btn" href="#contacto">Diseñar un plan a medida <span>↗</span></a>
         </div>
       </div>
-      <div class="formation-hero-aside" data-formation-reveal>
+      <div class="formation-hero-aside" data-formation-reveal="">
         <span class="formation-code">LGK / PROGRAMAS / 2026</span>
-        <p>6 áreas de decisión. 24 programas de referencia. Una misma lógica: aprender haciendo.</p>
+        <p>6 áreas de decisión. 24 programas de referencia.</p>
       </div>
     </div>
     <div class="formation-scanline" aria-hidden="true"></div>
   </div>
 
-  <section class="formation-intro" aria-label="Cómo trabajamos">
+  <section class="formation-intro" aria-label="Cómo trabajamos" data-content-secondary="">
+    <div class="formation-human-photo" aria-hidden="true"><img src="https://images.pexels.com/photos/18999475/pexels-photo-18999475.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="" loading="lazy" decoding="async"></div>
     <div class="layout-container formation-intro-grid">
-      <div class="formation-intro-title" data-formation-reveal>
+      <div class="formation-intro-title" data-formation-reveal="">
         <span>01</span>
-        <h2>No vendemos un catálogo cerrado.</h2>
+        <h2>Explora por área.</h2>
       </div>
-      <div class="formation-intro-copy" data-formation-reveal>
-        <p>Estas son las formaciones que más nos solicitan este año. Funcionan como punto de partida: duración, nivel, modalidad y casos se ajustan después del diagnóstico.</p>
+      <div class="formation-intro-copy" data-formation-reveal="">
+        <p>Programas de referencia: ajustamos duración, nivel, modalidad y casos tras el diagnóstico.</p>
         <div class="formation-pill-row" aria-label="Características">
-          <span>In company</span><span>Bonificable FUNDAE</span><span>Presencial</span><span>Online Live</span><span>Híbrida</span>
+          <span>In company</span><span data-spain-only>Bonificable FUNDAE</span><span>Presencial</span><span>Online Live</span><span>Híbrida</span>
         </div>
-      </div>
+      <nav class="formation-area-links" aria-label="Áreas de formación"><a href="#/area/supply-chain">Supply Chain y Logística</a><a href="#/area/compras">Compras y Category Management</a><a href="#/area/transporte">Transporte y Distribución</a><a href="#/area/comercio-internacional">Comercio Internacional</a><a href="#/area/liderazgo">Liderazgo y Gestión de Equipos</a><a href="#/area/ia-datos">IA, Datos y Digitalización</a></nav></div>
     </div>
   </section>
-
   <section id="departamentos" class="formation-explorer">
     <div class="layout-container">
-      <div class="formation-section-heading" data-formation-reveal>
+      <div class="formation-section-heading" data-formation-reveal="">
         <p class="formation-eyebrow">EXPLORADOR DE FORMACIÓN</p>
-        <h2>Elige el departamento.<br><span>Te mostramos el siguiente paso.</span></h2>
+        <h2>Encuentra tu <span>programa.</span></h2>
       </div>
 
-      <div class="formation-workspace" data-formation-reveal>
+      <div class="formation-search" role="search" aria-label="Buscar programas">
+        <div class="formation-search-fields">
+          <label for="program-query">Tema o departamento<input id="program-query" type="search" placeholder="Buscar programas" autocomplete="off" aria-controls="program-results"></label>
+          <label for="program-area">Área<select id="program-area" aria-controls="program-results"><option value="">Todas las áreas</option></select></label>
+          <button type="button" id="program-clear" class="formation-ghost-btn">Limpiar</button>
+        </div>
+        <p id="program-status" role="status" aria-live="polite" aria-atomic="true"></p>
+        <div id="program-results" class="formation-search-results"></div>
+      </div>
+      <div class="formation-workspace" data-formation-reveal="">
         <aside class="formation-dept-nav" aria-label="Departamentos">
           <div class="formation-nav-label">ÁREAS / 06</div>
           <sc-for list="{{depts}}" as="d" hint-placeholder-count="6">
@@ -104,32 +113,32 @@
     </div>
   </section>
 
-  <section class="formation-bridge">
-    <div class="layout-container formation-bridge-grid">
-      <div class="formation-bridge-copy" data-formation-reveal>
+  <section class="formation-bridge" data-content-secondary="">
+    <div class="layout-container"><details class="content-detail"><summary>Cómo adaptamos la formación a tu equipo</summary><div class="content-detail-body"><div class="formation-bridge-grid">
+      <div class="formation-bridge-copy" data-formation-reveal="">
         <p class="formation-eyebrow">DEL PROGRAMA AL RESULTADO</p>
         <h2>La formación empieza antes del aula.</h2>
-        <p>Definimos el reto, el indicador y el contexto del equipo antes de diseñar contenidos. Después medimos si el aprendizaje se ha traducido en una mejora observable.</p>
+        <p>Del diagnóstico a la medición del resultado, con contenidos adaptados a vuestra operación.</p>
         <a class="formation-text-link formation-text-link-light" href="#/a-medida">Conoce cómo diseñamos a medida <span>↗</span></a>
       </div>
       <div class="formation-bridge-side">
-        <figure class="formation-operation-visual" data-formation-reveal>
-          <img src="assets/images/formation-operation.jpg" alt="Operación logística en almacén" loading="lazy" />
+        <figure class="formation-operation-visual" data-formation-reveal="">
+          <img src="assets/images/formation-operation.webp" alt="Operación logística en almacén" loading="lazy">
           <span class="formation-operation-line" aria-hidden="true"></span>
         </figure>
-        <div class="formation-flow" aria-label="Proceso de formación" data-formation-reveal>
+        <div class="formation-flow" aria-label="Proceso de formación" data-formation-reveal="">
           <div class="formation-flow-step"><span>01</span><strong>Diagnóstico</strong><small>Qué debe cambiar.</small></div>
           <div class="formation-flow-step"><span>02</span><strong>Diseño</strong><small>Contenido, formato y casos.</small></div>
           <div class="formation-flow-step"><span>03</span><strong>Activación</strong><small>Aprender haciendo.</small></div>
           <div class="formation-flow-step"><span>04</span><strong>Medición</strong><small>Impacto y siguiente acción.</small></div>
         </div>
       </div>
-    </div>
+    </div></div></details></div>
   </section>
 
   <section class="formation-final-cta">
     <div class="formation-final-glow" aria-hidden="true"></div>
-    <div class="layout-container formation-final-inner" data-formation-reveal>
+    <div class="layout-container formation-final-inner" data-formation-reveal="">
       <div>
         <p class="formation-eyebrow">¿NO VES EXACTAMENTE LO QUE NECESITAS?</p>
         <h2>Lo diseñamos alrededor de tu operación.</h2>
