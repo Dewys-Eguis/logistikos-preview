@@ -1,0 +1,41 @@
+/* Shared program facts and accessible information dialogs. */
+:root[data-theme] :is(.cp-section-head>p,.tr-section-head>p,.sc-section-head-light>p,.ap-page .ap-catalog-note){background:radial-gradient(ellipse at 0 0,#315bff23,transparent 75%),linear-gradient(135deg,#132449,#0d1728);border-color:#6387ff45;border-left-color:#7594ff99;box-shadow:inset 0 1px 0 #9db4ff0a,0 8px 28px #07102018}
+.program-duration-note{display:block;flex-basis:100%;font:400 12px/1.6 'IBM Plex Sans',sans-serif;color:inherit;opacity:.8;letter-spacing:0;text-transform:none}
+.program-info-trigger{display:inline-flex;align-items:center;justify-content:center;min-height:36px;padding:5px 10px;border:1px solid color-mix(in srgb,currentColor 30%,transparent);border-radius:999px;background:transparent;color:inherit;font:500 12px/1.5 'IBM Plex Sans',sans-serif;letter-spacing:0;text-transform:none;cursor:pointer;vertical-align:middle;text-align:left}
+.program-info-trigger:hover{background:#6387ff18}
+.program-info-trigger:focus-visible,.program-info-close:focus-visible{outline:2px solid #809dff;outline-offset:4px}
+.ects-trigger{border:0;padding:4px 0;text-decoration:underline;text-underline-offset:4px;margin-inline:8px}
+:root[data-theme] :is(.cp-meta,.tr-program-meta,.sc-program-meta,.ap-program-meta){align-items:center;gap:8px 12px}
+:root[data-theme] :is(.cp-meta,.tr-program-meta,.sc-program-meta,.ap-program-meta) .program-info-trigger{color:#b8c8ff;border-color:#7594ff45;background:#315bff0c}
+.program-info-dialog{box-sizing:border-box;width:min(480px,calc(100% - 40px));max-height:calc(100dvh - 48px);padding:32px;border:1px solid #6387ff55;border-radius:16px;background:linear-gradient(145deg,#142442,#0b1426);color:#f8fafc;box-shadow:0 24px 90px #0006;overflow:auto}
+.program-info-dialog::backdrop{background:#03091899;backdrop-filter:blur(5px)}
+.program-info-dialog h2{margin:8px 30px 20px 0;font:500 24px/1.25 Archivo,sans-serif;letter-spacing:-.025em}
+.program-info-dialog p{margin:0;color:#bdc9dc;font:400 16px/1.7 'IBM Plex Sans',sans-serif}
+.program-info-close{position:absolute;right:12px;top:12px;width:40px;height:40px;border:0;border-radius:50%;background:#6387ff12;color:inherit;font:400 26px/1 sans-serif;cursor:pointer}
+:root[data-theme="light"] .program-info-dialog{background:linear-gradient(145deg,#f4f7ff,#fff);color:#101d34;border-color:#c7d4f5}
+:root[data-theme="light"] .program-info-dialog p{color:#465771}
+.uni-diploma-stats .uni-ects-value{font-size:clamp(16px,1.5vw,23px);line-height:1.3}
+.uni-diploma-stats .ects-trigger{margin:6px 0 0;font-size:11px}
+.program-university .university-mark--ects{font-size:clamp(18px,2.2vw,30px);line-height:1.3;letter-spacing:-.025em}
+.program-meta{flex-wrap:wrap;align-items:center}
+@media(min-width:1101px){.formation-course-head,.formation-course-row{grid-template-columns:minmax(0,2fr) minmax(130px,1fr) 120px 110px;gap:14px}}
+.nav-talent-link{display:inline-flex;align-items:center;min-height:44px;padding:10px 0;border:0;border-radius:0;background:none;color:inherit;text-decoration:none;white-space:nowrap;font:inherit}
+.nav-talent-link:hover,.nav-talent-link[aria-current="page"]{color:#91a7ff}
+.nav-talent-link:focus-visible{outline:2px solid #809dff;outline-offset:4px}
+.architecture-menu nav>.nav-talent-link{display:flex;white-space:normal;margin:0;padding:18px 0;border-bottom:1px solid #29364d;font:500 24px/1.25 Archivo,sans-serif}
+:root[data-theme="light"] .nav-talent-link:hover,:root[data-theme="light"] .nav-talent-link[aria-current="page"]{color:#284edc}
+@media(min-width:1100px) and (max-width:1350px){body:not(.is-home) .site-nav,.home-desktop-nav{gap:12px!important}.site-nav,.home-desktop-nav{font-size:12px}.site-header-actions,.home-header-actions{gap:12px!important}}
+@media(max-width:480px){.program-info-dialog{padding:28px 24px}}
+
+:is(.site-nav,.home-desktop-nav)>.nav-talent-link{padding-inline:0;text-decoration:none!important;border:0;background:none}
+:root[data-theme="light"] .architecture-menu nav>.nav-talent-link{border-bottom-color:#d6deeb}
+.uni-hero-copy>.ects-trigger{margin-bottom:14px}
+
+/* Modalities stay visible in the program, with no overlay or extra click. */
+.program-modes-inline{display:inline-flex;flex-wrap:wrap;align-items:center;gap:6px;max-width:100%;vertical-align:middle}
+.program-modes-inline>span{display:inline-block;padding:4px 8px;border:1px solid color-mix(in srgb,currentColor 22%,transparent);border-radius:999px;background:#6387ff0a;color:inherit;font:400 11px/1.5 "IBM Plex Sans",sans-serif;letter-spacing:0;text-transform:none;white-space:nowrap}
+.uni-program-card>.program-modes-inline{margin-top:14px}
+.formation-search-result>.program-modes-inline{display:flex;margin:12px 0 4px}
+:root[data-theme] :is(.cp-meta,.tr-program-meta,.sc-program-meta,.ap-program-meta)>.program-modes-inline{padding:0;background:none;border-radius:0;color:#b8c8ff}
+
+.program-modes-inline>.program-modes-label{padding:0;margin-right:2px;border:0;border-radius:0;background:none;font-size:12px;color:inherit;opacity:.85}

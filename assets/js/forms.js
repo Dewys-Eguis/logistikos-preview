@@ -16,6 +16,14 @@ function getFormValues() {
         return;
       }
       this.setState({ kitSent: true, kitError: "" });
+      window.open(
+        "https://wa.me/34696348047?text=" +
+          encodeURIComponent(
+            "Hola Logístikos, quiero recibir el Kit RRHH completo. Mi email de trabajo es: " + v,
+          ),
+        "_blank",
+        "noopener",
+      );
     },
     onKitReset: () => this.setState({ kitSent: false, kitEmail: "" }),
   };
@@ -58,7 +66,15 @@ document.addEventListener("click", function (e) {
       return;
     }
     msg.dataset.tone = "light";
-    msg.textContent = "Hecho. Recibirás Logístikos al día en " + v + ".";
+    msg.textContent = "Suscripción preparada. Se abrirá WhatsApp con tu email para confirmar el alta.";
+    window.open(
+      "https://wa.me/34696348047?text=" +
+        encodeURIComponent(
+          "Hola Logístikos, quiero suscribirme a Logístikos al día. Mi email de trabajo es: " + v,
+        ),
+      "_blank",
+      "noopener",
+    );
     em.value = "";
     return;
   }
@@ -76,9 +92,9 @@ document.addEventListener("submit", function (e) {
       return;
     }
     p.value = "";
-    m.dataset.tone = "ink";
+    m.dataset.tone = "error";
     m.textContent =
-      "El acceso al campus estará disponible en breve. Si necesitas entrar ahora, escríbenos a formacion@logistikos.es.";
+      "No hemos podido validar esas credenciales en esta vista. Revisa los datos o solicita ayuda a formacion@logistikos.es.";
   }
 });
 

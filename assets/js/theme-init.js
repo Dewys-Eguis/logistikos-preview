@@ -1,9 +1,3 @@
 "use strict";
-(function () {
-  try {
-    var saved = localStorage.getItem("logistikos-theme");
-    document.documentElement.dataset.theme = saved === "light" ? "light" : "dark";
-  } catch (_) {
-    document.documentElement.dataset.theme = "dark";
-  }
-})();
+// The approved site uses a single navy palette, including saved light preferences.
+document.documentElement.dataset.theme = "dark";

@@ -17,6 +17,7 @@
   }
 
   function setTheme(theme) {
+    theme = "dark";
     root.dataset.theme = theme;
     try { localStorage.setItem("logistikos-theme", theme); } catch (_) {}
     syncControls();

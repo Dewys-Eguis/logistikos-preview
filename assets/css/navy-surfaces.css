@@ -1,0 +1,30 @@
+/* Consistent navy surfaces; preserve layouts, content and blue/orange accents. */
+:root :is(.rrhh-section--light,.formation-intro,.uni-intro,.uni-project,.companies-section--intro,.companies-section--process){background:linear-gradient(155deg,#0d1728,#0a1323);color:#f8fafc}
+:root :is(.rrhh-tool:not(.rrhh-tool--accent),.rrhh-service,.companies-need-card,.companies-process-step,.uni-project-points span){background:linear-gradient(145deg,#101e34,#0c1729);color:#f8fafc;border-color:#2a3c58}
+:root :is(.rrhh-service-grid,.companies-needs-grid,.uni-project-points){background:#293b56;border-color:#293b56}
+:root :is(.rrhh-section-head>p,.rrhh-tool:not(.rrhh-tool--accent) p,.rrhh-service p,.formation-intro-copy>p,.uni-intro-grid>p,.uni-project-copy>p:not(.uni-eyebrow),.companies-section-head>p,.companies-need-card p,.companies-process-step p){color:#aebbd0}
+:root :is(.rrhh-tool a,.companies-need-card h3,.companies-process-step h3){color:#f8fafc}
+:root :is(.rrhh-tool-top,.rrhh-service span,.formation-intro-title>span,.companies-need-card>span){color:#91a7ff}
+:root .rrhh-tool--accent .rrhh-tool-top{color:#dce4ff}
+:root :is(.rrhh-fundae a,.sc-btn-light){background:#142647;color:#f8fafc;border:1px solid #6585d5}
+:root .home-calc-segments button{background:#12213b;color:#dce6fb;border-color:#334969}
+:root .home-calc-segments button[aria-pressed="true"]{background:#315bff;color:#fff;border-color:#315bff}
+:root :is(.home-fundae,.fundae-calculator,.home-calc-controls){background:#0d1728;color:#f8fafc;border-color:#293b56}
+:root :is(.home-fundae h2,.home-fundae .home-calc-label){color:#f8fafc}
+:root :is(.home-calc-label select,.home-calc-label input,.fundae-inputs input){background:#101e34;color:#f8fafc;border-color:#334969}
+:root .program-filters [aria-pressed="true"]{background:#203b73;color:#f8fafc;border-color:#6387ff}
+/* RRHH interactive kit CTA contrast on navy cards */
+:root .rrhh-tool:not(.rrhh-tool--accent) .rrhh-tool-action{
+  color:#f8fafc;
+}
+:root .rrhh-tool:not(.rrhh-tool--accent) .rrhh-tool-action:hover{
+  color:#9eb3ff;
+}
+:root .rrhh-tool--accent .rrhh-tool-action{
+  color:#ffffff;
+}
+
+/* Final consistency pass: keep the approved hero scale aligned across pages. */
+@media (min-width:1600px){
+  .home-view h1{font-size:var(--type-hero)!important;}
+}

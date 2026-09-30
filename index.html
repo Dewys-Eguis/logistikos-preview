@@ -44,6 +44,9 @@
     <link rel="stylesheet" href="assets/css/humanization.css" />
     <link rel="stylesheet" href="assets/css/areas-completed.css" />
     <link rel="stylesheet" href="assets/css/country.css" />
+    <link rel="stylesheet" href="assets/css/area-catalog.css" />
+    <link rel="stylesheet" href="assets/css/program-info.css" />
+    <link rel="stylesheet" href="assets/css/navy-surfaces.css" />
   </head>
   <body>
     <header class="site-header">
@@ -55,13 +58,14 @@
           <a class="nav-home-link" href="#/" data-r="home" data-home-link>Inicio</a>
           <div class="nav-disclosure"><button type="button" class="nav-toggle" aria-expanded="false" aria-controls="formation-menu">Formación <span class="nav-chevron" aria-hidden="true"><svg viewBox="0 0 16 16" focusable="false"><path d="M4 6l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button><div class="nav-panel nav-panel--wide" id="formation-menu" hidden><a class="nav-search-programs" href="#/programas" data-r="programas"><span>Buscar programas</span><span aria-hidden="true">↗</span></a><span class="nav-panel-separator"></span><span class="nav-panel-label">Áreas</span><a href="#/area/supply-chain">Supply Chain y Logística</a><a href="#/area/compras">Compras y Category Management</a><a href="#/area/transporte">Transporte y Distribución</a><a href="#/area/comercio-internacional">Comercio Internacional</a><a href="#/area/liderazgo">Liderazgo y Gestión de Equipos</a><a href="#/area/ia-datos">IA, Datos y Digitalización</a><span class="nav-panel-separator"></span><a href="#/universitarios" data-r="universitarios">Cursos universitarios</a><a href="#/al-dia#obligatorias" data-r="al-dia">Formaciones obligatorias</a></div></div>
           <div class="nav-disclosure"><button type="button" class="nav-toggle" aria-expanded="false" aria-controls="companies-menu">Empresas <span class="nav-chevron" aria-hidden="true"><svg viewBox="0 0 16 16" focusable="false"><path d="M4 6l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button><div class="nav-panel" id="companies-menu" hidden><a href="#/a-medida" data-r="a-medida">Formación a medida</a><a href="#/programas" data-r="programas">Por departamento</a><a href="#/fundae" data-r="fundae">FUNDAE y calculadora</a><a href="#/rrhh" data-r="rrhh">Para RRHH</a><a href="#/talento-internacional" data-r="talento-internacional">Talento internacional</a><a href="#/a-medida#como-trabajamos">Cómo trabajamos</a><a href="#/a-medida#garantia">Garantía 60 días</a></div></div>
+          <a class="nav-talent-link" href="#/talento-internacional" data-r="talento-internacional">Talento Internacional</a>
           <div class="nav-disclosure"><button type="button" class="nav-toggle" aria-expanded="false" aria-controls="about-menu">Nosotros <span class="nav-chevron" aria-hidden="true"><svg viewBox="0 0 16 16" focusable="false"><path d="M4 6l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button><div class="nav-panel" id="about-menu" hidden><a href="#/quienes-somos" data-r="quienes-somos">Quiénes somos</a><a href="#/quienes-somos#formadores">Formadores</a><span class="nav-panel-pending" aria-disabled="true">Testimonios <small>Próximamente</small></span></div></div>
-          <div class="nav-disclosure"><button type="button" class="nav-toggle" aria-expanded="false" aria-controls="resources-inner">Recursos <span class="nav-chevron" aria-hidden="true"><svg viewBox="0 0 16 16" focusable="false"><path d="M4 6l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button><div class="nav-panel" id="resources-inner" hidden><a href="#/al-dia" data-r="al-dia">Logístikos al día</a><a href="#/al-dia#cambios" data-r="al-dia">Radar normativo</a><a href="#/rrhh#kit" data-r="rrhh">Kit RRHH</a><a href="#/campus" data-r="campus">Campus <small>Próximamente</small></a></div></div>
+          <div class="nav-disclosure"><button type="button" class="nav-toggle" aria-expanded="false" aria-controls="resources-inner">Recursos <span class="nav-chevron" aria-hidden="true"><svg viewBox="0 0 16 16" focusable="false"><path d="M4 6l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button><div class="nav-panel" id="resources-inner" hidden><a href="#/al-dia" data-r="al-dia">Logístikos al día</a><a href="#/al-dia#cambios" data-r="al-dia">Radar normativo</a><a href="#/rrhh#kit" data-r="rrhh">Kit RRHH</a><a href="#/campus" data-r="campus">Campus</a></div></div>
         </nav>
         <div class="legacy-442 site-header-actions">
           <div class="country-picker" data-country-picker>
             <button class="country-picker-trigger" type="button" data-country-trigger aria-haspopup="menu" aria-expanded="false" aria-label="Seleccionar país">
-              <span class="country-picker-icon" aria-hidden="true">◎</span><span class="country-picker-code" data-country-code>ES</span><span class="country-picker-arrow" aria-hidden="true">⌄</span>
+              <span class="country-picker-icon" aria-hidden="true">◎</span><span class="country-picker-code" data-country-code>ES</span><span class="country-picker-arrow" aria-hidden="true"><svg viewBox="0 0 16 16" focusable="false"><path d="M4 6l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
             </button>
             <div class="country-menu" data-country-menu role="menu" hidden>
               <button type="button" role="menuitemradio" aria-checked="true" data-country-value="ES"><span class="country-option-code">ES</span><span>España</span><span class="country-option-check" aria-hidden="true">✓</span></button>
@@ -81,12 +85,13 @@
         <a class="nav-home-link" href="#/" data-r="home" data-home-link>Inicio</a>
         <div class="nav-disclosure"><button type="button" class="nav-toggle" aria-expanded="false" aria-controls="formation-mobile">Formación <span class="nav-chevron" aria-hidden="true">⌄</span></button><div class="nav-panel" id="formation-mobile" hidden><a class="nav-search-programs" href="#/programas"><span>Buscar programas</span><span aria-hidden="true">↗</span></a><span class="nav-panel-separator"></span><span class="nav-panel-label">Áreas</span><a href="#/area/supply-chain">Supply Chain y Logística</a><a href="#/area/compras">Compras y Category Management</a><a href="#/area/transporte">Transporte y Distribución</a><a href="#/area/comercio-internacional">Comercio Internacional</a><a href="#/area/liderazgo">Liderazgo y Gestión de Equipos</a><a href="#/area/ia-datos">IA, Datos y Digitalización</a><a href="#/universitarios">Cursos universitarios</a><a href="#/al-dia#obligatorias">Formaciones obligatorias</a></div></div>
         <div class="nav-disclosure"><button type="button" class="nav-toggle" aria-expanded="false" aria-controls="companies-mobile">Empresas <span class="nav-chevron" aria-hidden="true">⌄</span></button><div class="nav-panel" id="companies-mobile" hidden><a href="#/a-medida">Formación a medida</a><a href="#/programas">Por departamento</a><a href="#/fundae">FUNDAE y calculadora</a><a href="#/rrhh">Para RRHH</a><a href="#/talento-internacional" data-r="talento-internacional">Talento internacional</a><a href="#/a-medida#como-trabajamos">Cómo trabajamos</a><a href="#/a-medida#garantia">Garantía 60 días</a></div></div>
+        <a class="nav-talent-link" href="#/talento-internacional" data-r="talento-internacional">Talento Internacional</a>
         <div class="nav-disclosure"><button type="button" class="nav-toggle" aria-expanded="false" aria-controls="about-mobile">Nosotros <span class="nav-chevron" aria-hidden="true">⌄</span></button><div class="nav-panel" id="about-mobile" hidden><a href="#/quienes-somos">Quiénes somos</a><a href="#/quienes-somos#formadores">Formadores</a><span class="nav-panel-pending" aria-disabled="true">Testimonios <small>Próximamente</small></span></div></div>
-        <div class="nav-disclosure"><button type="button" class="nav-toggle" aria-expanded="false" aria-controls="resources-mobile">Recursos <span class="nav-chevron" aria-hidden="true">⌄</span></button><div class="nav-panel" id="resources-mobile" hidden><a href="#/al-dia">Logístikos al día</a><a href="#/al-dia#cambios">Radar normativo</a><a href="#/rrhh#kit">Kit RRHH</a><a href="#/campus">Campus <small>Próximamente</small></a></div></div>
+        <div class="nav-disclosure"><button type="button" class="nav-toggle" aria-expanded="false" aria-controls="resources-mobile">Recursos <span class="nav-chevron" aria-hidden="true">⌄</span></button><div class="nav-panel" id="resources-mobile" hidden><a href="#/al-dia">Logístikos al día</a><a href="#/al-dia#cambios">Radar normativo</a><a href="#/rrhh#kit">Kit RRHH</a><a href="#/campus">Campus</a></div></div>
       </nav>
       <div class="architecture-menu-country"><span>País</span><div class="country-picker country-picker--mobile" data-country-picker>
             <button class="country-picker-trigger" type="button" data-country-trigger aria-haspopup="menu" aria-expanded="false" aria-label="Seleccionar país">
-              <span class="country-picker-icon" aria-hidden="true">◎</span><span class="country-picker-code" data-country-code>ES</span><span class="country-picker-arrow" aria-hidden="true">⌄</span>
+              <span class="country-picker-icon" aria-hidden="true">◎</span><span class="country-picker-code" data-country-code>ES</span><span class="country-picker-arrow" aria-hidden="true"><svg viewBox="0 0 16 16" focusable="false"><path d="M4 6l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
             </button>
             <div class="country-menu" data-country-menu role="menu" hidden>
               <button type="button" role="menuitemradio" aria-checked="true" data-country-value="ES"><span class="country-option-code">ES</span><span>España</span><span class="country-option-check" aria-hidden="true">✓</span></button>
@@ -97,6 +102,7 @@
           </div></div>
       <div class="architecture-menu-bottom"><a href="#/campus">Campus ↗</a><a href="#contacto" class="architecture-contact">Hablemos ↗</a><a href="#/a-medida#como-trabajamos">Cómo trabajamos ↗</a></div>
     </dialog>
+    <dialog id="program-ects-dialog" class="program-info-dialog" aria-labelledby="program-ects-title" aria-describedby="program-ects-description"><button type="button" class="program-info-close" data-program-info-close aria-label="Cerrar explicación">×</button><h2 id="program-ects-title">¿Qué es un ECTS?</h2><p id="program-ects-description">ECTS (European Credit Transfer and Accumulation System) es el sistema europeo utilizado para expresar la carga académica asociada a una formación.</p></dialog>
     <main id="app" aria-live="off"></main>
     <footer id="contacto" class="site-footer">
       <div class="legacy-443 layout-grid layout-container layout-section-88">
@@ -166,7 +172,7 @@
             <a href="#/al-dia">Logístikos al día</a>
             <a href="#/al-dia#cambios">Radar normativo</a>
             <a href="#/rrhh#kit">Kit RRHH</a>
-            <a href="#/campus">Campus · Próximamente</a>
+            <a href="#/campus">Campus</a>
           </div>
           <div class="footer-column footer-contact-column">
             <span class="footer-heading">CONTACTO</span>
@@ -282,8 +288,9 @@
       <a class="nav-home-link" href="#/" data-r="home" data-home-link>Inicio</a>
           <div class="nav-disclosure"><button type="button" class="nav-toggle" aria-expanded="false" aria-controls="formation-home">Formación <span class="nav-chevron" aria-hidden="true"><svg viewBox="0 0 16 16" focusable="false"><path d="M4 6l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button><div class="nav-panel nav-panel--wide" id="formation-home" hidden><a class="nav-search-programs" href="#/programas" data-r="programas"><span>Buscar programas</span><span aria-hidden="true">↗</span></a><span class="nav-panel-separator"></span><span class="nav-panel-label">Áreas</span><a href="#/area/supply-chain">Supply Chain y Logística</a><a href="#/area/compras">Compras y Category Management</a><a href="#/area/transporte">Transporte y Distribución</a><a href="#/area/comercio-internacional">Comercio Internacional</a><a href="#/area/liderazgo">Liderazgo y Gestión de Equipos</a><a href="#/area/ia-datos">IA, Datos y Digitalización</a><span class="nav-panel-separator"></span><a href="#/universitarios" data-r="universitarios">Cursos universitarios</a><a href="#/al-dia#obligatorias" data-r="al-dia">Formaciones obligatorias</a></div></div>
           <div class="nav-disclosure"><button type="button" class="nav-toggle" aria-expanded="false" aria-controls="companies-home">Empresas <span class="nav-chevron" aria-hidden="true"><svg viewBox="0 0 16 16" focusable="false"><path d="M4 6l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button><div class="nav-panel" id="companies-home" hidden><a href="#/a-medida" data-r="a-medida">Formación a medida</a><a href="#/programas" data-r="programas">Por departamento</a><a href="#/fundae" data-r="fundae">FUNDAE y calculadora</a><a href="#/rrhh" data-r="rrhh">Para RRHH</a><a href="#/talento-internacional" data-r="talento-internacional">Talento internacional</a><a href="#/a-medida#como-trabajamos">Cómo trabajamos</a><a href="#/a-medida#garantia">Garantía 60 días</a></div></div>
+          <a class="nav-talent-link" href="#/talento-internacional" data-r="talento-internacional">Talento Internacional</a>
           <div class="nav-disclosure"><button type="button" class="nav-toggle" aria-expanded="false" aria-controls="about-home">Nosotros <span class="nav-chevron" aria-hidden="true"><svg viewBox="0 0 16 16" focusable="false"><path d="M4 6l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button><div class="nav-panel" id="about-home" hidden><a href="#/quienes-somos" data-r="quienes-somos">Quiénes somos</a><a href="#/quienes-somos#formadores">Formadores</a><span class="nav-panel-pending" aria-disabled="true">Testimonios <small>Próximamente</small></span></div></div>
-          <div class="nav-disclosure"><button type="button" class="nav-toggle" aria-expanded="false" aria-controls="resources-home">Recursos <span class="nav-chevron" aria-hidden="true"><svg viewBox="0 0 16 16" focusable="false"><path d="M4 6l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button><div class="nav-panel" id="resources-home" hidden><a href="#/al-dia" data-r="al-dia">Logístikos al día</a><a href="#/al-dia#cambios" data-r="al-dia">Radar normativo</a><a href="#/rrhh#kit" data-r="rrhh">Kit RRHH</a><a href="#/campus" data-r="campus">Campus <small>Próximamente</small></a></div></div>
+          <div class="nav-disclosure"><button type="button" class="nav-toggle" aria-expanded="false" aria-controls="resources-home">Recursos <span class="nav-chevron" aria-hidden="true"><svg viewBox="0 0 16 16" focusable="false"><path d="M4 6l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button><div class="nav-panel" id="resources-home" hidden><a href="#/al-dia" data-r="al-dia">Logístikos al día</a><a href="#/al-dia#cambios" data-r="al-dia">Radar normativo</a><a href="#/rrhh#kit" data-r="rrhh">Kit RRHH</a><a href="#/campus" data-r="campus">Campus</a></div></div>
         </nav>
     <div class="home-header-actions"><div class="country-picker" data-country-picker>
             <button class="country-picker-trigger" type="button" data-country-trigger aria-haspopup="menu" aria-expanded="false" aria-label="Seleccionar país">
@@ -387,10 +394,10 @@
 <button data-spain-only id="solution-tab-fundae" role="tab" aria-selected="false" aria-controls="solution-fundae" tabindex="-1"><span>03</span> FUNDAE <b aria-hidden="true">↗</b></button>
 <button id="solution-tab-hr" role="tab" aria-selected="false" aria-controls="solution-hr" tabindex="-1"><span>04</span> RRHH <b aria-hidden="true">↗</b></button>
 <button id="solution-tab-campus" role="tab" aria-selected="false" aria-controls="solution-campus" tabindex="-1"><span>05</span> Campus <b aria-hidden="true">↗</b></button></div><div class="solution-panels"><section class="solution-panel" id="solution-custom" role="tabpanel" aria-labelledby="solution-tab-custom" tabindex="0" ><span class="solution-tag">VUESTRO RETO. VUESTRO PROGRAMA.</span><h3>La formación se adapta<br />a vosotros. No al revés.</h3><p>Partimos de vuestra operación para diseñar contenidos, elegir al experto y pactar el indicador que queremos mejorar. Cualquier tema, nivel o departamento.</p><ul><li>Diagnóstico inicial con un directivo del sector</li><li>Dos perfiles de formador para elegir</li><li>Presencial, Online Live o híbrida, adaptada a turnos</li></ul><a class="home-text-link" href="#/a-medida">Diseñar nuestro programa ↗</a><span class="solution-watermark" aria-hidden="true">a medida.</span></section>
-<section class="solution-panel" id="solution-talent" role="tabpanel" aria-labelledby="solution-tab-talent" tabindex="0" hidden><span class="solution-tag">PERSONAS QUE HACEN AVANZAR EQUIPOS</span><h3>El siguiente nivel<br />está en tu equipo.</h3><p>Desarrollamos capacidades para que los mandos decidan, los departamentos colaboren y las personas apliquen lo aprendido desde el primer día.</p><ul><li>Sprints de 8–12 h y programas de 20–40 h</li><li>Academias anuales e itinerarios por puesto</li><li>Cursos universitarios de 25 h</li></ul><a class="home-text-link" href="#/area/liderazgo">Descubrir desarrollo de talento ↗</a><span class="solution-watermark" aria-hidden="true">crecer.</span></section>
+<section class="solution-panel" id="solution-talent" role="tabpanel" aria-labelledby="solution-tab-talent" tabindex="0" hidden><span class="solution-tag">PERSONAS QUE HACEN AVANZAR EQUIPOS</span><h3>El siguiente nivel<br />está en tu equipo.</h3><p>Desarrollamos capacidades para que los mandos decidan, los departamentos colaboren y las personas apliquen lo aprendido desde el primer día.</p><ul><li>Sprints de 8–12 h y programas de 20–40 h</li><li>Academias anuales e itinerarios por puesto</li><li>Cursos universitarios de 25 h · 1 ECTS <button type="button" class="program-info-trigger ects-trigger" data-program-info="ects" aria-haspopup="dialog" aria-controls="program-ects-dialog">¿Qué es un ECTS?</button></li></ul><a class="home-text-link" href="#/area/liderazgo">Descubrir desarrollo de talento ↗</a><span class="solution-watermark" aria-hidden="true">crecer.</span></section>
 <section data-spain-only class="solution-panel" id="solution-fundae" role="tabpanel" aria-labelledby="solution-tab-fundae" tabindex="0" hidden><span class="solution-tag">ACTIVA TU CRÉDITO DE FORMACIÓN</span><h3>Invierte en talento.<br />Aprovecha tu crédito.</h3><p>Revisamos el crédito de vuestra empresa, ajustamos el programa y gestionamos la bonificación sin coste añadido. Con una propuesta clara desde el principio.</p><ul><li>Estimación inicial y revisión del crédito real</li><li>Gestión documental y seguimiento</li><li>Modalidades y duración adaptadas a vuestro equipo</li></ul><a class="home-text-link" href="#/fundae">Estimar mi crédito ↗</a><span class="solution-watermark" aria-hidden="true">activar.</span></section>
 <section class="solution-panel" id="solution-hr" role="tabpanel" aria-labelledby="solution-tab-hr" tabindex="0" hidden><span class="solution-tag">MÁS IMPACTO. MENOS TRÁMITES.</span><h3>Un aliado para RRHH.<br />De principio a fin.</h3><p>Un solo interlocutor, herramientas para planificar y un informe de resultados que habla el idioma de dirección: indicadores de negocio.</p><ul><li>Kit gratuito con siete herramientas prácticas</li><li>Plan anual y matriz de competencias</li><li>Medición del impacto y ROI de la formación</li></ul><a class="home-text-link" href="#/rrhh">Explorar recursos para RRHH ↗</a><span class="solution-watermark" aria-hidden="true">conectar.</span></section>
-<section class="solution-panel" id="solution-campus" role="tabpanel" aria-labelledby="solution-tab-campus" tabindex="0" hidden><span class="solution-tag">APRENDER, DESDE DONDE ESTÉS</span><h3>Un espacio digital.<br />Toda tu formación.</h3><p>Sesiones en directo con el formador, materiales y evaluaciones. El campus conecta a equipos de distintos turnos y sedes en una experiencia compartida.</p><ul><li>Clases participativas en Online Live</li><li>Grabaciones hasta 15 días después del curso</li><li>Registro de conexiones y asistencia para FUNDAE</li></ul><a class="home-text-link" href="#/campus">Conocer el campus ↗</a><span class="solution-watermark" aria-hidden="true">aprender.</span></section></div></div><div class="home-roadmap" data-reveal=""><div class="roadmap-heading"><p class="home-eyebrow">ASÍ PUEDE SER VUESTRO PROGRAMA</p><span class="roadmap-code" data-roadmap-value="code">{{hr.code}}</span></div><div class="roadmap-select" role="group" aria-label="Elegir ejemplo de programa"><sc-for list="{{roadmapOptions}}" as="option"><button type="button" data-roadmap="{{option.id}}" aria-pressed="false">{{option.label}}</button></sc-for></div><div class="roadmap-detail"><div><span class="home-eyebrow" data-roadmap-value="area">{{hr.area}}</span><h3 data-roadmap-value="title">{{hr.title}}</h3></div><dl><div><dt>Duración</dt><dd data-roadmap-value="hours">{{hr.hours}}</dd></div><div><dt>Modalidad</dt><dd data-roadmap-value="mode">{{hr.mode}}</dd></div><div><dt>Formador</dt><dd data-roadmap-value="trainer">{{hr.trainer}}</dd></div></dl></div><div class="roadmap-bottom"><p><span>KPI PACTADO · DÍA 60</span><strong data-roadmap-value="kpi">{{hr.kpi}}</strong></p><a class="home-text-link" href="{{hr.route}}" data-roadmap-link="">Ver área ↗</a></div></div></div></details>
+<section class="solution-panel" id="solution-campus" role="tabpanel" aria-labelledby="solution-tab-campus" tabindex="0" hidden><span class="solution-tag">APRENDER, DESDE DONDE ESTÉS</span><h3>Un espacio digital.<br />Toda tu formación.</h3><p>Sesiones en directo con el formador, materiales y evaluaciones. El campus conecta a equipos de distintos turnos y sedes en una experiencia compartida.</p><ul><li>Clases participativas en Online Live</li><li>Grabaciones hasta 15 días después del curso</li><li>Registro de conexiones y asistencia para FUNDAE</li></ul><a class="home-text-link" href="#/campus">Conocer el campus ↗</a><span class="solution-watermark" aria-hidden="true">aprender.</span></section></div></div><div class="home-roadmap" data-reveal=""><div class="roadmap-heading"><p class="home-eyebrow">ASÍ PUEDE SER VUESTRO PROGRAMA</p><span class="roadmap-code" data-roadmap-value="code">{{hr.code}}</span></div><div class="roadmap-select" role="group" aria-label="Elegir ejemplo de programa"><sc-for list="{{roadmapOptions}}" as="option"><button type="button" data-roadmap="{{option.id}}" aria-pressed="false">{{option.label}}</button></sc-for></div><div class="roadmap-detail"><div><span class="home-eyebrow" data-roadmap-value="area">{{hr.area}}</span><h3 data-roadmap-value="title">{{hr.title}}</h3></div><dl><div><dt>Duración</dt><dd><span data-roadmap-value="hours">{{hr.hours}}</span><small class="program-duration-note">Duración orientativa · sujeta a adaptación</small></dd></div><div><dt>Modalidad</dt><dd><span class="program-modes-inline" aria-label="Modalidades"><span class="program-modes-label">Modalidades:</span><span>Presencial</span><span>Online Live</span><span>Híbrida</span></span></dd></div><div><dt>Formador</dt><dd data-roadmap-value="trainer">{{hr.trainer}}</dd></div></dl></div><div class="roadmap-bottom"><p><span>KPI PACTADO · DÍA 60</span><strong data-roadmap-value="kpi">{{hr.kpi}}</strong></p><a class="home-text-link" href="{{hr.route}}" data-roadmap-link="">Ver área ↗</a></div></div></div></details>
 
   </div></section>
   <section class="home-talent-bridge" aria-labelledby="home-talent-title">
@@ -416,10 +423,10 @@
   </div></section>
 
   <section class="home-section home-programs" id="programas" aria-labelledby="programs-title"><div class="home-shell"><div class="home-section-head" data-reveal=""><div><p class="home-eyebrow">04 / EL SIGUIENTE PASO DE TU EQUIPO</p><h2 id="programs-title">Capacidades de hoy.<br><span>Ventajas de mañana.</span></h2></div><a class="home-text-link" href="#/programas">Todos los programas ↗</a></div>
-    <details class="content-detail" id="home-programs-detail"><summary>Ver 6 programas destacados</summary><div class="content-detail-body"><div class="program-filters" role="group" aria-label="Filtrar programas por área"><button type="button" data-course-filter="all" aria-pressed="true">Todos</button><button type="button" data-course-filter="supply-chain" aria-pressed="false">Supply Chain</button><button type="button" data-course-filter="compras" aria-pressed="false">Compras</button><button type="button" data-course-filter="transporte" aria-pressed="false">Transporte</button><button type="button" data-course-filter="ia-datos" aria-pressed="false">IA y Datos</button><button type="button" data-course-filter="liderazgo" aria-pressed="false">Liderazgo</button><button type="button" data-course-filter="comercio-internacional" aria-pressed="false">Comercio exterior</button></div><p id="course-status" class="home-sr-only" role="status" aria-live="polite">6 programas disponibles</p><div class="program-grid"><sc-for list="{{homePrograms}}" as="program"><article class="program-card" data-course-area="{{program.slug}}"><div class="program-visual" aria-hidden="true"><span class="program-orbit"></span><span class="program-visual-number">{{program.number}}</span><span class="program-visual-code">LGK / KNOWLEDGE SYSTEM</span></div><div class="program-card-content"><span class="program-category">{{program.area}}</span><h3>{{program.title}}</h3><div class="program-meta"><span>{{program.hours}}</span><span>{{program.mode}}</span></div><a href="{{program.route}}" class="home-text-link">Explorar programa <span aria-hidden="true">↗</span><span class="home-sr-only">: {{program.title}}</span></a></div></article></sc-for></div></div></details>
+    <details class="content-detail" id="home-programs-detail"><summary>Ver 6 programas destacados</summary><div class="content-detail-body"><div class="program-filters" role="group" aria-label="Filtrar programas por área"><button type="button" data-course-filter="all" aria-pressed="true">Todos</button><button type="button" data-course-filter="supply-chain" aria-pressed="false">Supply Chain</button><button type="button" data-course-filter="compras" aria-pressed="false">Compras</button><button type="button" data-course-filter="transporte" aria-pressed="false">Transporte</button><button type="button" data-course-filter="ia-datos" aria-pressed="false">IA y Datos</button><button type="button" data-course-filter="liderazgo" aria-pressed="false">Liderazgo</button><button type="button" data-course-filter="comercio-internacional" aria-pressed="false">Comercio exterior</button></div><p id="course-status" class="home-sr-only" role="status" aria-live="polite">6 programas disponibles</p><div class="program-grid"><sc-for list="{{homePrograms}}" as="program"><article class="program-card" data-course-area="{{program.slug}}"><div class="program-visual" aria-hidden="true"><span class="program-orbit"></span><span class="program-visual-number">{{program.number}}</span><span class="program-visual-code">LGK / KNOWLEDGE SYSTEM</span></div><div class="program-card-content"><span class="program-category">{{program.area}}</span><h3>{{program.title}}</h3><div class="program-meta"><span>{{program.hours}} recomendadas</span><span class="program-modes-inline" aria-label="Modalidades"><span class="program-modes-label">Modalidades:</span><span>Presencial</span><span>Online Live</span><span>Híbrida</span></span><small class="program-duration-note">Duración orientativa · sujeta a adaptación</small></div><a href="{{program.route}}" class="home-text-link">Explorar programa <span aria-hidden="true">↗</span><span class="home-sr-only">: {{program.title}}</span></a></div></article></sc-for></div></div></details>
 
 
-    <div class="program-university" data-spain-only><span class="university-mark" aria-hidden="true">25<span>H</span></span><div><p class="home-eyebrow">FORMACIÓN TRANSVERSAL · DIPLOMA UNIVERSITARIO</p><h3>Un nuevo horizonte para todo el equipo.</h3><p>5 sesiones de 5 horas. Grupo mínimo de 15 personas de la misma empresa. Diploma de la Fundación General de la Universidad de Salamanca.</p></div><a class="home-text-link" href="#/universitarios">Cursos universitarios ↗</a></div>
+    <div class="program-university" data-spain-only><span class="university-mark university-mark--ects">25 h · 1 ECTS</span><div><p class="home-eyebrow">FORMACIÓN TRANSVERSAL · DIPLOMA UNIVERSITARIO</p><button type="button" class="program-info-trigger ects-trigger" data-program-info="ects" aria-haspopup="dialog" aria-controls="program-ects-dialog">¿Qué es un ECTS?</button><h3>Un nuevo horizonte para todo el equipo.</h3><p>5 sesiones de 5 horas. Grupo mínimo de 15 personas de la misma empresa. Diploma de la Fundación General de la Universidad de Salamanca.</p></div><a class="home-text-link" href="#/universitarios">Cursos universitarios ↗</a></div>
   </div></section>
   <section class="home-section home-shell home-news" id="actualidad" aria-labelledby="news-title" data-content-secondary=""><div class="home-section-head" data-reveal=""><div><p class="home-eyebrow">06 / UN PASO POR DELANTE</p><h2 id="news-title">El mundo cambia.<br><span>Tu equipo también.</span></h2></div><a href="#/al-dia" class="home-text-link">Logístikos al día ↗</a></div><details class="content-detail" id="home-news-detail"><summary>Ver actualidad sobre IA, transporte y sostenibilidad</summary><div class="content-detail-body"><div class="news-grid">
     <a class="news-feature" href="#/al-dia" data-reveal=""><div class="news-art" aria-hidden="true"><span>AI</span><i></i><b>HUMAN KNOWLEDGE × ARTIFICIAL INTELLIGENCE</b></div><div class="news-feature-copy"><p class="home-eyebrow">INTELIGENCIA ARTIFICIAL / FORMACIÓN</p><h3>Usar IA es el principio.<br>Saber aplicarla es lo que cambia todo.</h3><p>Alfabetización en IA, uso responsable y nuevas capacidades para toda la plantilla.</p><span class="home-text-link">Explorar actualidad ↗</span></div></a>
@@ -609,8 +616,8 @@
             <sc-for list="{{cur.courses}}" as="c" hint-placeholder-count="4">
               <article class="formation-course-row">
                 <div class="formation-course-title">{{c.title}}</div>
-                <div class="formation-course-meta" data-label="Duración">{{c.hours}}</div>
-                <div class="formation-course-meta" data-label="Modalidad">{{c.mode}}</div>
+                <div class="formation-course-meta" data-label="Duración">{{c.hours}} recomendadas<small class="program-duration-note">Duración orientativa · sujeta a adaptación</small></div>
+                <div class="formation-course-meta" data-label="Modalidad"><span class="program-modes-inline" aria-label="Modalidades"><span class="program-modes-label">Modalidades:</span><span>Presencial</span><span>Online Live</span><span>Híbrida</span></span></div>
                 <div class="formation-course-badge-wrap"><span class="{{c.badgeClass}} formation-course-badge">{{c.badge}}</span></div>
               </article>
             </sc-for>
@@ -704,7 +711,7 @@
               <legend>2 · LA FORMACIÓN</legend>
               <label for="credit-course">Formación<select id="credit-course" value="{{courseIdx}}" data-on-change="{{onCourse}}">
                 <sc-for list="{{courseOptions}}" as="o" hint-placeholder-count="10"><option value="{{o.value}}">{{o.label}}</option></sc-for>
-              </select></label>
+              </select></label><button type="button" class="program-info-trigger ects-trigger" data-program-info="ects" aria-haspopup="dialog" aria-controls="program-ects-dialog">¿Qué es un ECTS?</button>
               <div class="credit-fields credit-fields--course">
                 <label for="credit-participants">Participantes<input id="credit-participants" type="number" min="1" inputmode="numeric" value="{{participantes}}" data-on-change="{{onParticipantes}}" /></label>
                 <label for="credit-hours">Horas por participante<input id="credit-hours" type="number" min="1" inputmode="decimal" value="{{horas}}" data-on-change="{{onHoras}}" /></label>
@@ -844,8 +851,8 @@
           </sc-if>
           <sc-if value="{{kitSent}}" hint-placeholder-val="{{ false }}">
             <div class="rrhh-kitsent">
-              <strong>Kit en camino.</strong>
-              <p>Registrado: {{kitEmail}}. Descarga ahora las 7 herramientas en un solo archivo.</p>
+              <strong>Solicitud preparada.</strong>
+              <p>Registrado: {{kitEmail}}. Hemos abierto WhatsApp para confirmar el contacto. También puedes descargar las herramientas aquí.</p>
               <a href="#rrhh" data-dl="Kit_RRHH_Logistikos.zip" class="rrhh-download-main">Descargar kit completo (ZIP) →</a>
               <button type="button" data-on-click="{{onKitReset}}" class="rrhh-reset">Usar otro email</button>
             </div>
@@ -859,15 +866,15 @@
     <div class="rrhh-shell">
       <div class="rrhh-section-head">
         <div><p class="rrhh-eyebrow">KIT RRHH</p><h2 id="rrhh-tools-title">De detectar el problema a demostrar el impacto.</h2></div>
-        <p>Seis recursos descargables para trabajar con incidencias reales, ordenar el plan anual, preparar FUNDAE y presentar resultados al comité.</p>
+        <p>Seis herramientas interactivas para trabajar con incidencias reales, ordenar el plan anual, preparar FUNDAE y presentar resultados al comité.</p>
       </div>
       <div class="rrhh-tools">
-        <article class="rrhh-tool"><div class="rrhh-tool-top"><span>KIT-01</span><span>EXCEL</span></div><h3>Detección de necesidades por departamento</h3><p>Cuestionario para mandos de almacén, tráfico, compras y comercio exterior. Cruza incidencias reales con carencias de formación.</p><a href="#rrhh" data-dl="KIT-01_Deteccion_necesidades_formativas.xlsx">Descargar Excel →</a></article>
-        <article class="rrhh-tool rrhh-tool--accent"><div class="rrhh-tool-top"><span>KIT-02</span><span>EXCEL</span></div><h3>Plan anual de formación listo para dirección</h3><p>Acciones, grupos, calendario por turnos y consumo de crédito FUNDAE en una sola hoja, con resumen ejecutivo.</p><a href="#rrhh" data-dl="KIT-02_Plan_anual_formacion.xlsx">Descargar Excel →</a></article>
-        <article class="rrhh-tool"><div class="rrhh-tool-top"><span>KIT-03</span><span>EXCEL</span></div><h3>Matriz de competencias de puestos logísticos</h3><p>Competencias técnicas y de gestión por puesto, de preparador a dirección de operaciones, con niveles para evaluar al equipo.</p><a href="#rrhh" data-dl="KIT-03_Matriz_competencias_logistica.xlsx">Descargar Excel →</a></article>
-        <article class="rrhh-tool"><div class="rrhh-tool-top"><span>KIT-04</span><span>PDF</span></div><h3>Checklist documental FUNDAE</h3><p>Todo lo que debe existir si llega una revisión: RLT, comunicaciones, controles de asistencia, evaluación y cuestionario de calidad.</p><a href="#rrhh" data-dl="KIT-04_Checklist_documental_FUNDAE.pdf">Descargar PDF →</a></article>
-        <article class="rrhh-tool"><div class="rrhh-tool-top"><span>KIT-05</span><span>AI ACT</span></div><h3>Registro de alfabetización en IA por puesto</h3><p>Qué herramientas de IA usa cada puesto, qué formación ha recibido y la evidencia documental que acredita el cumplimiento.</p><a href="#rrhh" data-dl="KIT-05_Registro_alfabetizacion_IA.xlsx">Descargar Excel →</a></article>
-        <article class="rrhh-tool"><div class="rrhh-tool-top"><span>KIT-06</span><span>PDF + EXCEL</span></div><h3>Medición de impacto y ROI de la formación</h3><p>Modelo de cuatro niveles —satisfacción, aprendizaje, aplicación y resultados— con KPIs logísticos para presentar al comité.</p><a href="#rrhh" data-dl="KIT-06_Impacto_ROI_y_guia.zip">Descargar Excel + guía →</a></article>
+        <article class="rrhh-tool"><div class="rrhh-tool-top"><span>KIT-01</span><span>EXCEL</span></div><h3>Detección de necesidades por departamento</h3><p>Cuestionario para mandos de almacén, tráfico, compras y comercio exterior. Cruza incidencias reales con carencias de formación.</p><button type="button" class="rrhh-tool-action" data-rrhh-kit="kit01">Completar plantilla →</button></article>
+        <article class="rrhh-tool rrhh-tool--accent"><div class="rrhh-tool-top"><span>KIT-02</span><span>EXCEL</span></div><h3>Plan anual de formación listo para dirección</h3><p>Acciones, grupos, calendario por turnos y consumo de crédito FUNDAE en una sola hoja, con resumen ejecutivo.</p><button type="button" class="rrhh-tool-action" data-rrhh-kit="kit02">Completar plantilla →</button></article>
+        <article class="rrhh-tool"><div class="rrhh-tool-top"><span>KIT-03</span><span>EXCEL</span></div><h3>Matriz de competencias de puestos logísticos</h3><p>Competencias técnicas y de gestión por puesto, de preparador a dirección de operaciones, con niveles para evaluar al equipo.</p><button type="button" class="rrhh-tool-action" data-rrhh-kit="kit03">Evaluar competencias →</button></article>
+        <article class="rrhh-tool"><div class="rrhh-tool-top"><span>KIT-04</span><span>PDF</span></div><h3>Checklist documental FUNDAE</h3><p>Todo lo que debe existir si llega una revisión: RLT, comunicaciones, controles de asistencia, evaluación y cuestionario de calidad.</p><button type="button" class="rrhh-tool-action" data-rrhh-kit="kit04">Revisar checklist →</button></article>
+        <article class="rrhh-tool"><div class="rrhh-tool-top"><span>KIT-05</span><span>AI ACT</span></div><h3>Registro de alfabetización en IA por puesto</h3><p>Qué herramientas de IA usa cada puesto, qué formación ha recibido y la evidencia documental que acredita el cumplimiento.</p><button type="button" class="rrhh-tool-action" data-rrhh-kit="kit05">Completar registro →</button></article>
+        <article class="rrhh-tool"><div class="rrhh-tool-top"><span>KIT-06</span><span>PDF + EXCEL</span></div><h3>Medición de impacto y ROI de la formación</h3><p>Modelo de cuatro niveles —satisfacción, aprendizaje, aplicación y resultados— con KPIs logísticos para presentar al comité.</p><button type="button" class="rrhh-tool-action" data-rrhh-kit="kit06">Medir impacto →</button></article>
       </div>
     </div>
   </section>
@@ -899,6 +906,29 @@
   <section class="rrhh-fundae">
     <div class="rrhh-shell rrhh-fundae-inner"><div><p class="rrhh-eyebrow">FUNDAE</p><h2>Antes de cerrar el plan, calcula cuánto crédito tiene disponible tu empresa.</h2><p>Usa el simulador del proyecto para estimar el crédito anual y comparar la bonificación según modalidad.</p></div><a href="#/fundae">Abrir calculadora FUNDAE →</a></div>
   </section>
+
+  <div class="rrhh-formmodal" id="rrhh-formmodal" hidden aria-hidden="true">
+    <div class="rrhh-formmodal__backdrop" data-rrhh-close></div>
+    <section class="rrhh-formmodal__dialog" role="dialog" aria-modal="true" aria-labelledby="rrhh-formmodal-title">
+      <button type="button" class="rrhh-formmodal__close" aria-label="Cerrar formulario" data-rrhh-close>×</button>
+      <div class="rrhh-formmodal__head">
+        <div>
+          <p class="rrhh-formmodal__eyebrow" id="rrhh-formmodal-code">KIT RRHH</p>
+          <h2 id="rrhh-formmodal-title">Completar plantilla</h2>
+          <p id="rrhh-formmodal-intro"></p>
+        </div>
+        <div class="rrhh-formmodal__step" id="rrhh-formmodal-step"></div>
+      </div>
+      <form class="rrhh-formmodal__form" id="rrhh-formmodal-form" novalidate>
+        <div id="rrhh-formmodal-fields"></div>
+        <div class="rrhh-formmodal__status" id="rrhh-formmodal-status" aria-live="polite"></div>
+        <div class="rrhh-formmodal__footer">
+          <button type="button" class="rrhh-formmodal__secondary" data-rrhh-close>Cancelar</button>
+          <button type="submit" class="rrhh-formmodal__submit">Enviar por WhatsApp <span>↗</span></button>
+        </div>
+      </form>
+    </section>
+  </div>
 
 
 </div>
@@ -952,7 +982,7 @@
       <div class="uni-breadcrumb"><a href="#/">Inicio</a><span>/</span><span>Cursos universitarios</span></div>
       <div class="uni-hero-layout">
         <div class="uni-hero-copy">
-          <p class="uni-eyebrow">CURSOS DE ESPECIALIZACIÓN UNIVERSITARIA · 25 H</p>
+          <p class="uni-eyebrow">CURSOS DE ESPECIALIZACIÓN UNIVERSITARIA · 25 h · 1 ECTS</p><button type="button" class="program-info-trigger ects-trigger" data-program-info="ects" aria-haspopup="dialog" aria-controls="program-ects-dialog">¿Qué es un ECTS?</button>
           <h1 id="uni-title">Un diploma universitario <span>para todo tu equipo.</span></h1>
           <p class="uni-lead">Cursos de temática transversal, pensados para formar a la vez a personas de distintos puestos y departamentos de una misma empresa. 5 sesiones de 5 horas con un proyecto final aplicado a vuestra actividad.</p>
           <div class="uni-hero-actions">
@@ -965,7 +995,7 @@
           <span class="uni-diploma-label">DIPLOMA UNIVERSITARIO</span>
           <strong>Fundación General de la Universidad de Salamanca</strong>
           <div class="uni-diploma-stats">
-            <div><span>25 H</span><small>Duración</small></div>
+            <div><span class="uni-ects-value">25 h · 1 ECTS</span><small>Duración</small><button type="button" class="program-info-trigger ects-trigger" data-program-info="ects" aria-haspopup="dialog" aria-controls="program-ects-dialog">¿Qué es un ECTS?</button></div>
             <div><span>5</span><small>Sesiones</small></div>
             <div><span>15</span><small>Grupo mínimo</small></div>
           </div>
@@ -988,42 +1018,42 @@
   <section id="programas-universitarios" class="uni-programs" aria-labelledby="uni-programs-title">
     <div class="uni-shell">
       <div class="uni-section-head">
-        <div><p class="uni-eyebrow">6 PROGRAMAS · 25 H · 5 SESIONES</p><h2 id="uni-programs-title">Especialización universitaria, aplicada al trabajo real.</h2></div>
+        <div><p class="uni-eyebrow">6 PROGRAMAS · 25 h · 1 ECTS · 5 SESIONES</p><button type="button" class="program-info-trigger ects-trigger" data-program-info="ects" aria-haspopup="dialog" aria-controls="program-ects-dialog">¿Qué es un ECTS?</button><h2 id="uni-programs-title">Especialización universitaria, aplicada al trabajo real.</h2></div>
         <p>Seis programas transversales para desarrollar capacidades compartidas entre departamentos sin separar a la empresa por silos.</p>
       </div>
       <div class="uni-program-grid">
         <article class="uni-program-card uni-program-card--accent">
-          <div class="uni-program-meta"><span>LGK-U01</span><span>TODA LA PLANTILLA</span></div>
+          <div class="uni-program-meta"><span>LGK-U01</span><span>TODA LA PLANTILLA</span></div><span class="program-modes-inline" aria-label="Modalidades"><span class="program-modes-label">Modalidades:</span><span>Presencial</span><span>Online Live</span><span>Híbrida</span></span>
           <h3>IA en el trabajo: productividad con inteligencia artificial</h3>
           <p>Cómo usar la IA generativa en el día a día de forma útil, segura y conforme al AI Act, sea cual sea el puesto.</p>
           <div class="uni-sessions"><span>S1 · Qué es la IA generativa y qué no puede hacer</span><span>S2 · Escribir buenas instrucciones: correos, informes y resúmenes</span><span>S3 · IA con documentos, hojas de cálculo y datos</span><span>S4 · Uso seguro: datos, confidencialidad y AI Act</span><span>S5 · Proyecto final: una tarea real de tu puesto con IA</span></div>
         </article>
         <article class="uni-program-card">
-          <div class="uni-program-meta"><span>LGK-U02</span><span>TODOS LOS DEPARTAMENTOS</span></div>
+          <div class="uni-program-meta"><span>LGK-U02</span><span>TODOS LOS DEPARTAMENTOS</span></div><span class="program-modes-inline" aria-label="Modalidades"><span class="program-modes-label">Modalidades:</span><span>Presencial</span><span>Online Live</span><span>Híbrida</span></span>
           <h3>Logística integral: cómo funciona la cadena de suministro</h3>
           <p>Una visión común de la cadena, de compras a la entrega, para que cada área entienda cómo su trabajo afecta a las demás.</p>
           <div class="uni-sessions"><span>S1 · De la compra a la entrega: el recorrido completo</span><span>S2 · Almacén, inventario y preparación de pedidos</span><span>S3 · Transporte, distribución y comercio exterior</span><span>S4 · Costes logísticos y cómo se generan</span><span>S5 · Proyecto final: mapa de mejora entre departamentos</span></div>
         </article>
         <article class="uni-program-card">
-          <div class="uni-program-meta"><span>LGK-U03</span><span>MANDOS Y EQUIPOS</span></div>
+          <div class="uni-program-meta"><span>LGK-U03</span><span>MANDOS Y EQUIPOS</span></div><span class="program-modes-inline" aria-label="Modalidades"><span class="program-modes-label">Modalidades:</span><span>Presencial</span><span>Online Live</span><span>Híbrida</span></span>
           <h3>Liderazgo, comunicación y trabajo en equipo</h3>
           <p>Liderar sin amargar: comunicación clara, feedback y colaboración para equipos que funcionan sin depender de un jefe.</p>
           <div class="uni-sessions"><span>S1 · Del jefe al líder: estilos y autodiagnóstico</span><span>S2 · Comunicación y feedback que cambian conductas</span><span>S3 · Trabajo en equipo y conflictos entre áreas</span><span>S4 · Gestión del estrés y del tiempo</span><span>S5 · Proyecto final: plan de mejora del equipo</span></div>
         </article>
         <article class="uni-program-card">
-          <div class="uni-program-meta"><span>LGK-U04</span><span>OPERACIONES Y OFICINAS</span></div>
+          <div class="uni-program-meta"><span>LGK-U04</span><span>OPERACIONES Y OFICINAS</span></div><span class="program-modes-inline" aria-label="Modalidades"><span class="program-modes-label">Modalidades:</span><span>Presencial</span><span>Online Live</span><span>Híbrida</span></span>
           <h3>Mejora continua y productividad: Lean en la empresa</h3>
           <p>Herramientas Lean aplicables en almacén, taller y oficina para eliminar desperdicios y trabajar mejor con los mismos recursos.</p>
           <div class="uni-sessions"><span>S1 · Qué es valor y qué es desperdicio</span><span>S2 · 5S y gestión visual del puesto</span><span>S3 · Resolución de problemas: causa raíz</span><span>S4 · Estandarizar y medir con indicadores</span><span>S5 · Proyecto final: mejora aplicada en tu área</span></div>
         </article>
         <article class="uni-program-card">
-          <div class="uni-program-meta"><span>LGK-U05</span><span>TODA LA PLANTILLA</span></div>
+          <div class="uni-program-meta"><span>LGK-U05</span><span>TODA LA PLANTILLA</span></div><span class="program-modes-inline" aria-label="Modalidades"><span class="program-modes-label">Modalidades:</span><span>Presencial</span><span>Online Live</span><span>Híbrida</span></span>
           <h3>Competencias digitales y datos para la toma de decisiones</h3>
           <p>Excel avanzado, cuadros de mando y lectura de datos para que todos decidan con información y no con intuiciones.</p>
           <div class="uni-sessions"><span>S1 · Excel avanzado para el trabajo diario</span><span>S2 · Tablas dinámicas y análisis rápido</span><span>S3 · Indicadores clave de la empresa</span><span>S4 · Cuadros de mando con Power BI</span><span>S5 · Proyecto final: tu propio cuadro de mando</span></div>
         </article>
         <article class="uni-program-card uni-program-card--dark">
-          <div class="uni-program-meta"><span>LGK-U06</span><span>TODA LA PLANTILLA</span></div>
+          <div class="uni-program-meta"><span>LGK-U06</span><span>TODA LA PLANTILLA</span></div><span class="program-modes-inline" aria-label="Modalidades"><span class="program-modes-label">Modalidades:</span><span>Presencial</span><span>Online Live</span><span>Híbrida</span></span>
           <h3>Sostenibilidad y logística responsable</h3>
           <p>Qué piden hoy clientes y normativa en huella de carbono, envases y residuos, y qué puede hacer cada puesto para cumplir y ahorrar.</p>
           <div class="uni-sessions"><span>S1 · Por qué la sostenibilidad ya es negocio</span><span>S2 · Huella de carbono de la empresa y del transporte</span><span>S3 · Envases, embalajes y residuos (PPWR)</span><span>S4 · Eficiencia energética y logística inversa</span><span>S5 · Proyecto final: plan de mejora sostenible</span></div>
@@ -1042,7 +1072,7 @@
       </div>
       <figure class="uni-project-visual">
         <img src="assets/images/formation-operation.webp" alt="Operación logística en almacén" loading="lazy" />
-        <figcaption><span>25 H</span><strong>De la sesión al proyecto final.</strong></figcaption>
+        <figcaption><span>25 h · 1 ECTS <button type="button" class="program-info-trigger ects-trigger" data-program-info="ects" aria-haspopup="dialog" aria-controls="program-ects-dialog">¿Qué es un ECTS?</button></span><strong>De la sesión al proyecto final.</strong></figcaption>
       </figure>
     </div>
   </section>
@@ -1874,12 +1904,6 @@
 </div>
 </template>
 <template id="tpl-page-campus">
-<div class="campus-page"><section class="campus-hero">
-<div class="campus-grid-bg" aria-hidden="true"></div><div class="campus-orb campus-orb-a" aria-hidden="true"></div>
-<div class="campus-shell"><div class="campus-breadcrumb"><a href="#/">Inicio</a><span>/</span><span>Campus virtual</span></div>
-<div class="campus-copy"><p class="campus-eyebrow">CAMPUS VIRTUAL</p><h1>Próximamente</h1><p class="campus-lead">Estamos preparando nuestro campus virtual. El acceso todavía no está disponible.</p><div class="campus-actions"><a href="#/programas" class="campus-btn campus-btn-primary">Explorar formación</a></div></div></div>
-</section></div>
-<template id="campus-prototype-inactive">
 <div class="campus-page">
   <section class="campus-hero">
     <div class="campus-grid-bg" aria-hidden="true"></div>
@@ -1988,8 +2012,6 @@
     </div>
   </section>
 </div>
-
-</template>
 </template>
 <template id="tpl-page-talento-internacional">
 <div class="talent-page">
@@ -2107,14 +2129,14 @@
 </div></section>
 <nav class="ap-section-nav" aria-label="En esta área"><div class="ap-shell"><a href="#retos-area">Retos</a><a href="#programas">Programas</a><a href="#metodo-area">Cómo trabajamos</a><a href="#fundae-area" data-spain-only>FUNDAE</a></div></nav>
 <section class="ap-section" id="retos-area"><div class="ap-shell"><div class="ap-section-heading"><p class="ap-eyebrow">01 / LO QUE NOS PIDEN RESOLVER</p><h2>Retos del área.</h2></div><div class="ap-challenges"><article><span class="ap-index">R1</span><h3>Incoterms mal asignados</h3><p>Riesgos y costes que la empresa asume sin saberlo.</p></article><article><span class="ap-index">R2</span><h3>Cobro internacional</h3><p>Medios de pago y riesgo país mal elegidos.</p></article><article><span class="ap-index">R3</span><h3>Retenciones en frontera</h3><p>Documentos incompletos, clasificaciones erróneas y demoras que cuestan dinero.</p></article><article><span class="ap-index">R4</span><h3>Nuevas obligaciones UE</h3><p>CBAM y EUDR con datos que hay que pedir a proveedores de otros países.</p></article></div></div></section>
-<section class="ap-section ap-catalog" id="programas"><div class="ap-shell"><div class="ap-section-heading"><p class="ap-eyebrow">02 / PROGRAMAS DEL ÁREA</p><h2>Programas del área.</h2><p class="ap-lead">Algunos programas del área. Y cualquier otro, a medida.</p></div>
-<div class="ap-programs"><details class="ap-program" id="program-3" open><summary><span class="ap-index">01</span><span class="ap-program-heading"><span class="ap-badge">PRIORIDAD 2026</span><span class="ap-program-title">Incoterms® 2020 y documentación sin retenciones</span></span><span class="ap-program-meta"><span data-program-hours>12 h</span><span data-program-mode>Online Live</span></span><span class="ap-toggle" aria-hidden="true">+</span></summary><div class="ap-program-body"><dl><div><dt>Nivel</dt><dd data-program-level>Superior</dd></div><div><dt>Indicador</dt><dd data-program-kpi>KPI: Expedientes retenidos</dd></div></dl></div></details>
-<details class="ap-program" id="program-4"><summary><span class="ap-index">02</span><span class="ap-program-heading"><span class="ap-program-title">Medios de pago internacional y créditos documentarios</span></span><span class="ap-program-meta"><span data-program-hours>8 h</span><span data-program-mode>Online Live</span></span><span class="ap-toggle" aria-hidden="true">+</span></summary><div class="ap-program-body"><dl><div><dt>Nivel</dt><dd data-program-level>Superior</dd></div><div><dt>Indicador</dt><dd data-program-kpi>KPI: Impagos</dd></div></dl></div></details>
-<details class="ap-program" id="program-0"><summary><span class="ap-index">03</span><span class="ap-program-heading"><span class="ap-badge">PRIORIDAD 2026</span><span class="ap-program-title">Gestión aduanera práctica: clasificación, origen, valor y DUA</span></span><span class="ap-program-meta"><span data-program-hours>20 h</span><span data-program-mode>Online Live</span></span><span class="ap-toggle" aria-hidden="true">+</span></summary><div class="ap-program-body"><dl><div><dt>Nivel</dt><dd data-program-level>Superior</dd></div><div><dt>Indicador</dt><dd data-program-kpi>KPI: Expedientes sin incidencias</dd></div></dl></div></details>
-<details class="ap-program" id="program-2"><summary><span class="ap-index">04</span><span class="ap-program-heading"><span class="ap-badge">PRIORIDAD 2026</span><span class="ap-program-title">OEA: cómo obtenerlo y mantenerlo</span></span><span class="ap-program-meta"><span data-program-hours>12 h</span><span data-program-mode>Híbrida</span></span><span class="ap-toggle" aria-hidden="true">+</span></summary><div class="ap-program-body"><dl><div><dt>Nivel</dt><dd data-program-level>Superior</dd></div><div><dt>Indicador</dt><dd data-program-kpi>KPI: Autorización OEA</dd></div></dl></div></details>
-<details class="ap-program" id="program-5"><summary><span class="ap-index">05</span><span class="ap-program-heading"><span class="ap-badge">NUEVO 2026</span><span class="ap-program-title">CBAM y EUDR: cumplimiento para importadores</span></span><span class="ap-program-meta"><span data-program-hours>12 h</span><span data-program-mode>Online Live</span></span><span class="ap-toggle" aria-hidden="true">+</span></summary><div class="ap-program-body"><dl><div><dt>Nivel</dt><dd data-program-level>Superior</dd></div><div><dt>Indicador</dt><dd data-program-kpi>KPI: Declaraciones correctas</dd></div></dl></div></details>
-<details class="ap-program" id="program-1"><summary><span class="ap-index">06</span><span class="ap-program-heading"><span class="ap-badge">NUEVO 2026</span><span class="ap-program-title">Reforma aduanera UE 2026: e-commerce y nuevos requisitos</span></span><span class="ap-program-meta"><span data-program-hours>8 h</span><span data-program-mode>Online Live</span></span><span class="ap-toggle" aria-hidden="true">+</span></summary><div class="ap-program-body"><dl><div><dt>Nivel</dt><dd data-program-level>Superior</dd></div><div><dt>Indicador</dt><dd data-program-kpi>KPI: Operaciones adaptadas</dd></div></dl></div></details></div>
-<p class="ap-catalog-note">Son ejemplos: diseñamos cualquier formación que necesite tu equipo, con la duración y el formador adecuados. <a href="#/a-medida">Cómo funciona →</a></p>
+<section class="ap-section ap-catalog" id="programas"><div class="ap-shell"><div class="ap-catalog-head"><div class="ap-section-heading"><p class="ap-eyebrow">02 / PROGRAMAS DEL ÁREA</p><h2>Programas del área.</h2><p class="ap-lead">Algunos programas del área. Y cualquier otro, a medida.</p></div><p class="ap-catalog-note">Algunas de nuestras formaciones más demandadas: diseñamos cualquier formación que necesite tu equipo, con la duración y el formador adecuados. <a href="#/a-medida">Cómo funciona →</a></p></div>
+<div class="ap-programs"><details class="ap-program" id="program-3" open><summary><span class="ap-index">01</span><span class="ap-program-heading"><span class="ap-badge">PRIORIDAD 2026</span><span class="ap-program-title">Incoterms® 2020 y documentación sin retenciones</span><span class="ap-program-meta"><span data-program-hours>12 h recomendadas</span><span class="program-modes-inline" aria-label="Modalidades"><span class="program-modes-label">Modalidades:</span><span>Presencial</span><span>Online Live</span><span>Híbrida</span></span><small class="program-duration-note">Duración orientativa · sujeta a adaptación</small></span></span><span class="ap-toggle" aria-hidden="true">+</span></summary><div class="ap-program-body"><dl><div><dt>Nivel</dt><dd data-program-level>Superior</dd></div><div><dt>Indicador</dt><dd data-program-kpi>KPI: Expedientes retenidos</dd></div></dl></div></details>
+<details class="ap-program" id="program-4"><summary><span class="ap-index">02</span><span class="ap-program-heading"><span class="ap-program-title">Medios de pago internacional y créditos documentarios</span><span class="ap-program-meta"><span data-program-hours>8 h recomendadas</span><span class="program-modes-inline" aria-label="Modalidades"><span class="program-modes-label">Modalidades:</span><span>Presencial</span><span>Online Live</span><span>Híbrida</span></span><small class="program-duration-note">Duración orientativa · sujeta a adaptación</small></span></span><span class="ap-toggle" aria-hidden="true">+</span></summary><div class="ap-program-body"><dl><div><dt>Nivel</dt><dd data-program-level>Superior</dd></div><div><dt>Indicador</dt><dd data-program-kpi>KPI: Impagos</dd></div></dl></div></details>
+<details class="ap-program" id="program-0"><summary><span class="ap-index">03</span><span class="ap-program-heading"><span class="ap-badge">PRIORIDAD 2026</span><span class="ap-program-title">Gestión aduanera práctica: clasificación, origen, valor y DUA</span><span class="ap-program-meta"><span data-program-hours>20 h recomendadas</span><span class="program-modes-inline" aria-label="Modalidades"><span class="program-modes-label">Modalidades:</span><span>Presencial</span><span>Online Live</span><span>Híbrida</span></span><small class="program-duration-note">Duración orientativa · sujeta a adaptación</small></span></span><span class="ap-toggle" aria-hidden="true">+</span></summary><div class="ap-program-body"><dl><div><dt>Nivel</dt><dd data-program-level>Superior</dd></div><div><dt>Indicador</dt><dd data-program-kpi>KPI: Expedientes sin incidencias</dd></div></dl></div></details>
+<details class="ap-program" id="program-2"><summary><span class="ap-index">04</span><span class="ap-program-heading"><span class="ap-badge">PRIORIDAD 2026</span><span class="ap-program-title">OEA: cómo obtenerlo y mantenerlo</span><span class="ap-program-meta"><span data-program-hours>12 h recomendadas</span><span class="program-modes-inline" aria-label="Modalidades"><span class="program-modes-label">Modalidades:</span><span>Presencial</span><span>Online Live</span><span>Híbrida</span></span><small class="program-duration-note">Duración orientativa · sujeta a adaptación</small></span></span><span class="ap-toggle" aria-hidden="true">+</span></summary><div class="ap-program-body"><dl><div><dt>Nivel</dt><dd data-program-level>Superior</dd></div><div><dt>Indicador</dt><dd data-program-kpi>KPI: Autorización OEA</dd></div></dl></div></details>
+<details class="ap-program" id="program-5"><summary><span class="ap-index">05</span><span class="ap-program-heading"><span class="ap-badge">NUEVO 2026</span><span class="ap-program-title">CBAM y EUDR: cumplimiento para importadores</span><span class="ap-program-meta"><span data-program-hours>12 h recomendadas</span><span class="program-modes-inline" aria-label="Modalidades"><span class="program-modes-label">Modalidades:</span><span>Presencial</span><span>Online Live</span><span>Híbrida</span></span><small class="program-duration-note">Duración orientativa · sujeta a adaptación</small></span></span><span class="ap-toggle" aria-hidden="true">+</span></summary><div class="ap-program-body"><dl><div><dt>Nivel</dt><dd data-program-level>Superior</dd></div><div><dt>Indicador</dt><dd data-program-kpi>KPI: Declaraciones correctas</dd></div></dl></div></details>
+<details class="ap-program" id="program-1"><summary><span class="ap-index">06</span><span class="ap-program-heading"><span class="ap-badge">NUEVO 2026</span><span class="ap-program-title">Reforma aduanera UE 2026: e-commerce y nuevos requisitos</span><span class="ap-program-meta"><span data-program-hours>8 h recomendadas</span><span class="program-modes-inline" aria-label="Modalidades"><span class="program-modes-label">Modalidades:</span><span>Presencial</span><span>Online Live</span><span>Híbrida</span></span><small class="program-duration-note">Duración orientativa · sujeta a adaptación</small></span></span><span class="ap-toggle" aria-hidden="true">+</span></summary><div class="ap-program-body"><dl><div><dt>Nivel</dt><dd data-program-level>Superior</dd></div><div><dt>Indicador</dt><dd data-program-kpi>KPI: Operaciones adaptadas</dd></div></dl></div></details></div>
+
 <details class="ap-disclosure"><summary>Por qué estos programas: demanda en España<span class="ap-toggle" aria-hidden="true">+</span></summary><div class="ap-disclosure-body"><ul class="ap-list"><li>El sector reclama representantes aduaneros, técnicos de comercio exterior y expertos en normativa aduanera (ManpowerGroup).</li><li>La UE cerró en marzo de 2026 la mayor reforma de su Código Aduanero, y desde el 1 de julio de 2026 desaparece la franquicia de 150 € en e-commerce.</li></ul></div></details>
 </div></section>
 
@@ -2229,7 +2251,7 @@
 <h2>Algunos programas del área. <span>Y cualquier otro, a medida.</span>
 </h2>
 </div>
-<p>Son ejemplos: diseñamos cualquier formación que necesite tu equipo, con la duración y el formador adecuados. <a href="#/a-medida">Cómo funciona →</a>
+<p>Algunas de nuestras formaciones más demandadas: diseñamos cualquier formación que necesite tu equipo, con la duración y el formador adecuados. <a href="#/a-medida">Cómo funciona →</a>
 </p>
 </div>
 <div class="cp-program-grid">
@@ -2239,7 +2261,7 @@
 <span class="cp-program-heading">
 <span class="cp-tag">PRIORIDAD 2026</span>
 <span class="cp-program-title">Negociación con proveedores basada en el coste total (TCO)</span>
-<span class="cp-meta">16 h <span>·</span> Presencial</span>
+<span class="cp-meta"><span>16 h recomendadas</span><span class="program-modes-inline" aria-label="Modalidades"><span class="program-modes-label">Modalidades:</span><span>Presencial</span><span>Online Live</span><span>Híbrida</span></span><small class="program-duration-note">Duración orientativa · sujeta a adaptación</small></span>
 </span>
 <span class="cp-plus" aria-hidden="true">+</span>
 </summary>
@@ -2260,7 +2282,7 @@
 <span class="cp-program-heading">
 <span class="cp-tag cp-tag-blue">NUEVO 2026</span>
 <span class="cp-program-title">Renegociar contratos internacionales en plena crisis arancelaria</span>
-<span class="cp-meta">12 h <span>·</span> Online Live</span>
+<span class="cp-meta"><span>12 h recomendadas</span><span class="program-modes-inline" aria-label="Modalidades"><span class="program-modes-label">Modalidades:</span><span>Presencial</span><span>Online Live</span><span>Híbrida</span></span><small class="program-duration-note">Duración orientativa · sujeta a adaptación</small></span>
 </span>
 <span class="cp-plus" aria-hidden="true">+</span>
 </summary>
@@ -2281,7 +2303,7 @@
 <span class="cp-program-heading">
 <span class="cp-tag">PRIORIDAD 2026</span>
 <span class="cp-program-title">Gestión de compras y aprovisionamiento</span>
-<span class="cp-meta">20 h <span>·</span> Híbrida</span>
+<span class="cp-meta"><span>20 h recomendadas</span><span class="program-modes-inline" aria-label="Modalidades"><span class="program-modes-label">Modalidades:</span><span>Presencial</span><span>Online Live</span><span>Híbrida</span></span><small class="program-duration-note">Duración orientativa · sujeta a adaptación</small></span>
 </span>
 <span class="cp-plus" aria-hidden="true">+</span>
 </summary>
@@ -2301,7 +2323,7 @@
 <span class="cp-number">04</span>
 <span class="cp-program-heading">
 <span class="cp-program-title">Riesgo de proveedor y proveedores alternativos</span>
-<span class="cp-meta">12 h <span>·</span> Online Live</span>
+<span class="cp-meta"><span>12 h recomendadas</span><span class="program-modes-inline" aria-label="Modalidades"><span class="program-modes-label">Modalidades:</span><span>Presencial</span><span>Online Live</span><span>Híbrida</span></span><small class="program-duration-note">Duración orientativa · sujeta a adaptación</small></span>
 </span>
 <span class="cp-plus" aria-hidden="true">+</span>
 </summary>
@@ -2321,7 +2343,7 @@
 <span class="cp-number">05</span>
 <span class="cp-program-heading">
 <span class="cp-program-title">Finanzas aplicadas a compras y logística</span>
-<span class="cp-meta">12 h <span>·</span> Online Live</span>
+<span class="cp-meta"><span>12 h recomendadas</span><span class="program-modes-inline" aria-label="Modalidades"><span class="program-modes-label">Modalidades:</span><span>Presencial</span><span>Online Live</span><span>Híbrida</span></span><small class="program-duration-note">Duración orientativa · sujeta a adaptación</small></span>
 </span>
 <span class="cp-plus" aria-hidden="true">+</span>
 </summary>
@@ -2342,7 +2364,7 @@
 <span class="cp-program-heading">
 <span class="cp-tag cp-tag-blue">NUEVO 2026</span>
 <span class="cp-program-title">IA aplicada a compras: analizar ofertas y contratos</span>
-<span class="cp-meta">8 h <span>·</span> Online Live</span>
+<span class="cp-meta"><span>8 h recomendadas</span><span class="program-modes-inline" aria-label="Modalidades"><span class="program-modes-label">Modalidades:</span><span>Presencial</span><span>Online Live</span><span>Híbrida</span></span><small class="program-duration-note">Duración orientativa · sujeta a adaptación</small></span>
 </span>
 <span class="cp-plus" aria-hidden="true">+</span>
 </summary>
@@ -2463,14 +2485,14 @@
 </div></section>
 <nav class="ap-section-nav" aria-label="En esta área"><div class="ap-shell"><a href="#retos-area">Retos</a><a href="#programas">Programas</a><a href="#metodo-area">Cómo trabajamos</a><a href="#fundae-area" data-spain-only>FUNDAE</a></div></nav>
 <section class="ap-section" id="retos-area"><div class="ap-shell"><div class="ap-section-heading"><p class="ap-eyebrow">01 / LO QUE NOS PIDEN RESOLVER</p><h2>Retos del área.</h2></div><div class="ap-challenges"><article><span class="ap-index">R1</span><h3>Uso de IA sin criterio</h3><p>Herramientas usadas por su cuenta, sin política ni control de datos.</p></article><article><span class="ap-index">R2</span><h3>Tareas manuales</h3><p>Horas copiando albaranes, respondiendo correos y cuadrando Excel.</p></article><article><span class="ap-index">R3</span><h3>Datos que nadie lee</h3><p>Informes que se generan y no cambian ninguna decisión.</p></article><article><span class="ap-index">R4</span><h3>Cumplimiento del AI Act</h3><p>Obligación de formar a quien usa IA, sin evidencia documental.</p></article></div></div></section>
-<section class="ap-section ap-catalog" id="programas"><div class="ap-shell"><div class="ap-section-heading"><p class="ap-eyebrow">02 / PROGRAMAS DEL ÁREA</p><h2>Programas del área.</h2><p class="ap-lead">Algunos programas del área. Y cualquier otro, a medida.</p></div>
-<div class="ap-programs"><details class="ap-program" id="program-0" open><summary><span class="ap-index">01</span><span class="ap-program-heading"><span class="ap-badge">PRIORIDAD 2026</span><span class="ap-program-title">IA generativa para equipos de logística y administración</span></span><span class="ap-program-meta"><span data-program-hours>8 h</span><span data-program-mode>Online Live</span></span><span class="ap-toggle" aria-hidden="true">+</span></summary><div class="ap-program-body"><dl><div><dt>Nivel</dt><dd data-program-level>Básico</dd></div><div><dt>Indicador</dt><dd data-program-kpi>KPI: Horas ahorradas</dd></div></dl></div></details>
-<details class="ap-program" id="program-1"><summary><span class="ap-index">02</span><span class="ap-program-heading"><span class="ap-badge">OBLIGACIÓN 2026</span><span class="ap-program-title">Alfabetización en IA para toda la plantilla (AI Act)</span></span><span class="ap-program-meta"><span data-program-hours>8 h</span><span data-program-mode>Online Live</span></span><span class="ap-toggle" aria-hidden="true">+</span></summary><div class="ap-program-body"><dl><div><dt>Nivel</dt><dd data-program-level>Básico</dd></div><div><dt>Indicador</dt><dd data-program-kpi>KPI: Cobertura de la plantilla</dd></div></dl></div></details>
-<details class="ap-program" id="program-2"><summary><span class="ap-index">03</span><span class="ap-program-heading"><span class="ap-badge">PRIORIDAD 2026</span><span class="ap-program-title">Power BI y cuadros de mando para la gestión logística</span></span><span class="ap-program-meta"><span data-program-hours>20 h</span><span data-program-mode>Híbrida</span></span><span class="ap-toggle" aria-hidden="true">+</span></summary><div class="ap-program-body"><dl><div><dt>Nivel</dt><dd data-program-level>Superior</dd></div><div><dt>Indicador</dt><dd data-program-kpi>KPI: Tiempo de reporting</dd></div></dl></div></details>
-<details class="ap-program" id="program-3"><summary><span class="ap-index">04</span><span class="ap-program-heading"><span class="ap-program-title">SAP ERP para logística</span></span><span class="ap-program-meta"><span data-program-hours>20 h</span><span data-program-mode>Online Live</span></span><span class="ap-toggle" aria-hidden="true">+</span></summary><div class="ap-program-body"><dl><div><dt>Nivel</dt><dd data-program-level>Superior</dd></div><div><dt>Indicador</dt><dd data-program-kpi>KPI: Errores de registro</dd></div></dl></div></details>
-<details class="ap-program" id="program-4"><summary><span class="ap-index">05</span><span class="ap-program-heading"><span class="ap-badge">NUEVO 2026</span><span class="ap-program-title">Automatizar documentos, correos e incidencias con IA</span></span><span class="ap-program-meta"><span data-program-hours>12 h</span><span data-program-mode>Online Live</span></span><span class="ap-toggle" aria-hidden="true">+</span></summary><div class="ap-program-body"><dl><div><dt>Nivel</dt><dd data-program-level>Superior</dd></div><div><dt>Indicador</dt><dd data-program-kpi>KPI: Tiempo por incidencia</dd></div></dl></div></details>
-<details class="ap-program" id="program-5"><summary><span class="ap-index">06</span><span class="ap-program-heading"><span class="ap-program-title">E-logistics y e-commerce</span></span><span class="ap-program-meta"><span data-program-hours>12 h</span><span data-program-mode>Online Live</span></span><span class="ap-toggle" aria-hidden="true">+</span></summary><div class="ap-program-body"><dl><div><dt>Nivel</dt><dd data-program-level>Superior</dd></div><div><dt>Indicador</dt><dd data-program-kpi>KPI: Plazo de entrega</dd></div></dl></div></details></div>
-<p class="ap-catalog-note">Son ejemplos: diseñamos cualquier formación que necesite tu equipo, con la duración y el formador adecuados. <a href="#/a-medida">Cómo funciona →</a></p>
+<section class="ap-section ap-catalog" id="programas"><div class="ap-shell"><div class="ap-catalog-head"><div class="ap-section-heading"><p class="ap-eyebrow">02 / PROGRAMAS DEL ÁREA</p><h2>Programas del área.</h2><p class="ap-lead">Algunos programas del área. Y cualquier otro, a medida.</p></div><p class="ap-catalog-note">Algunas de nuestras formaciones más demandadas: diseñamos cualquier formación que necesite tu equipo, con la duración y el formador adecuados. <a href="#/a-medida">Cómo funciona →</a></p></div>
+<div class="ap-programs"><details class="ap-program" id="program-0" open><summary><span class="ap-index">01</span><span class="ap-program-heading"><span class="ap-badge">PRIORIDAD 2026</span><span class="ap-program-title">IA generativa para equipos de logística y administración</span><span class="ap-program-meta"><span data-program-hours>8 h recomendadas</span><span class="program-modes-inline" aria-label="Modalidades"><span class="program-modes-label">Modalidades:</span><span>Presencial</span><span>Online Live</span><span>Híbrida</span></span><small class="program-duration-note">Duración orientativa · sujeta a adaptación</small></span></span><span class="ap-toggle" aria-hidden="true">+</span></summary><div class="ap-program-body"><dl><div><dt>Nivel</dt><dd data-program-level>Básico</dd></div><div><dt>Indicador</dt><dd data-program-kpi>KPI: Horas ahorradas</dd></div></dl></div></details>
+<details class="ap-program" id="program-1"><summary><span class="ap-index">02</span><span class="ap-program-heading"><span class="ap-badge">OBLIGACIÓN 2026</span><span class="ap-program-title">Alfabetización en IA para toda la plantilla (AI Act)</span><span class="ap-program-meta"><span data-program-hours>8 h recomendadas</span><span class="program-modes-inline" aria-label="Modalidades"><span class="program-modes-label">Modalidades:</span><span>Presencial</span><span>Online Live</span><span>Híbrida</span></span><small class="program-duration-note">Duración orientativa · sujeta a adaptación</small></span></span><span class="ap-toggle" aria-hidden="true">+</span></summary><div class="ap-program-body"><dl><div><dt>Nivel</dt><dd data-program-level>Básico</dd></div><div><dt>Indicador</dt><dd data-program-kpi>KPI: Cobertura de la plantilla</dd></div></dl></div></details>
+<details class="ap-program" id="program-2"><summary><span class="ap-index">03</span><span class="ap-program-heading"><span class="ap-badge">PRIORIDAD 2026</span><span class="ap-program-title">Power BI y cuadros de mando para la gestión logística</span><span class="ap-program-meta"><span data-program-hours>20 h recomendadas</span><span class="program-modes-inline" aria-label="Modalidades"><span class="program-modes-label">Modalidades:</span><span>Presencial</span><span>Online Live</span><span>Híbrida</span></span><small class="program-duration-note">Duración orientativa · sujeta a adaptación</small></span></span><span class="ap-toggle" aria-hidden="true">+</span></summary><div class="ap-program-body"><dl><div><dt>Nivel</dt><dd data-program-level>Superior</dd></div><div><dt>Indicador</dt><dd data-program-kpi>KPI: Tiempo de reporting</dd></div></dl></div></details>
+<details class="ap-program" id="program-3"><summary><span class="ap-index">04</span><span class="ap-program-heading"><span class="ap-program-title">SAP ERP para logística</span><span class="ap-program-meta"><span data-program-hours>20 h recomendadas</span><span class="program-modes-inline" aria-label="Modalidades"><span class="program-modes-label">Modalidades:</span><span>Presencial</span><span>Online Live</span><span>Híbrida</span></span><small class="program-duration-note">Duración orientativa · sujeta a adaptación</small></span></span><span class="ap-toggle" aria-hidden="true">+</span></summary><div class="ap-program-body"><dl><div><dt>Nivel</dt><dd data-program-level>Superior</dd></div><div><dt>Indicador</dt><dd data-program-kpi>KPI: Errores de registro</dd></div></dl></div></details>
+<details class="ap-program" id="program-4"><summary><span class="ap-index">05</span><span class="ap-program-heading"><span class="ap-badge">NUEVO 2026</span><span class="ap-program-title">Automatizar documentos, correos e incidencias con IA</span><span class="ap-program-meta"><span data-program-hours>12 h recomendadas</span><span class="program-modes-inline" aria-label="Modalidades"><span class="program-modes-label">Modalidades:</span><span>Presencial</span><span>Online Live</span><span>Híbrida</span></span><small class="program-duration-note">Duración orientativa · sujeta a adaptación</small></span></span><span class="ap-toggle" aria-hidden="true">+</span></summary><div class="ap-program-body"><dl><div><dt>Nivel</dt><dd data-program-level>Superior</dd></div><div><dt>Indicador</dt><dd data-program-kpi>KPI: Tiempo por incidencia</dd></div></dl></div></details>
+<details class="ap-program" id="program-5"><summary><span class="ap-index">06</span><span class="ap-program-heading"><span class="ap-program-title">E-logistics y e-commerce</span><span class="ap-program-meta"><span data-program-hours>12 h recomendadas</span><span class="program-modes-inline" aria-label="Modalidades"><span class="program-modes-label">Modalidades:</span><span>Presencial</span><span>Online Live</span><span>Híbrida</span></span><small class="program-duration-note">Duración orientativa · sujeta a adaptación</small></span></span><span class="ap-toggle" aria-hidden="true">+</span></summary><div class="ap-program-body"><dl><div><dt>Nivel</dt><dd data-program-level>Superior</dd></div><div><dt>Indicador</dt><dd data-program-kpi>KPI: Plazo de entrega</dd></div></dl></div></details></div>
+
 <details class="ap-disclosure"><summary>Por qué estos programas: demanda en España<span class="ap-toggle" aria-hidden="true">+</span></summary><div class="ap-disclosure-body"><ul class="ap-list"><li>La inteligencia artificial es una de las formaciones bonificables con más demanda en 2026.</li><li>La IA es el área donde más talento falta a las empresas logísticas españolas, por delante de operaciones (ManpowerGroup).</li><li>El AI Act obliga a formar a quien usa sistemas de IA en la empresa.</li></ul></div></details>
 </div></section>
 
@@ -2492,19 +2514,19 @@
 </div></section>
 <nav class="ap-section-nav" aria-label="En esta área"><div class="ap-shell"><a href="#retos-area">Retos</a><a href="#programas">Programas</a><a href="#de-jefe-a-lider">De jefe a líder</a><a href="#metodo-area">Cómo trabajamos</a><a href="#fundae-area" data-spain-only>FUNDAE</a></div></nav>
 <section class="ap-section" id="retos-area"><div class="ap-shell"><div class="ap-section-heading"><p class="ap-eyebrow">01 / LO QUE NOS PIDEN RESOLVER</p><h2>Retos del área.</h2></div><div class="ap-challenges"><article><span class="ap-index">R1</span><h3>Apagar fuegos</h3><p>Mandos que resuelven urgencias todo el día y no gestionan.</p></article><article><span class="ap-index">R2</span><h3>Rotación y absentismo</h3><p>Equipos que se queman en campaña.</p></article><article><span class="ap-index">R3</span><h3>Dependencia de dirección</h3><p>Decisiones pequeñas que suben siempre al mismo despacho.</p></article><article><span class="ap-index">R4</span><h3>Mandos ascendidos sin formación</h3><p>El mejor operario convertido en jefe sin herramientas.</p></article></div></div></section>
-<section class="ap-section ap-catalog" id="programas"><div class="ap-shell"><div class="ap-section-heading"><p class="ap-eyebrow">02 / PROGRAMAS DEL ÁREA</p><h2>Programas del área.</h2><p class="ap-lead">Algunos programas del área. Y cualquier otro, a medida.</p></div>
-<div class="ap-programs"><details class="ap-program" id="program-0" open><summary><span class="ap-index">01</span><span class="ap-program-heading"><span class="ap-badge">PROGRAMA INSIGNIA</span><span class="ap-program-title">De jefe a líder: liderar sin amargar →</span></span><span class="ap-program-meta"><span data-program-hours>25 h</span><span data-program-mode>Presencial</span></span><span class="ap-toggle" aria-hidden="true">+</span></summary><div class="ap-program-body"><dl><div><dt>Nivel</dt><dd data-program-level>Superior</dd></div><div><dt>Indicador</dt><dd data-program-kpi>KPI: Evaluación 360</dd></div></dl><a href="#de-jefe-a-lider">Ver las 5 sesiones →</a></div></details>
-<details class="ap-program" id="program-1"><summary><span class="ap-index">02</span><span class="ap-program-heading"><span class="ap-badge">PRIORIDAD 2026</span><span class="ap-program-title">Comunicación, feedback y conversaciones difíciles</span></span><span class="ap-program-meta"><span data-program-hours>12 h</span><span data-program-mode>Presencial</span></span><span class="ap-toggle" aria-hidden="true">+</span></summary><div class="ap-program-body"><dl><div><dt>Nivel</dt><dd data-program-level>Superior</dd></div><div><dt>Indicador</dt><dd data-program-kpi>KPI: Clima del equipo</dd></div></dl></div></details>
-<details class="ap-program" id="program-2"><summary><span class="ap-index">03</span><span class="ap-program-heading"><span class="ap-badge">PRIORIDAD 2026</span><span class="ap-program-title">De operario a mando: los primeros 90 días</span></span><span class="ap-program-meta"><span data-program-hours>16 h</span><span data-program-mode>Híbrida</span></span><span class="ap-toggle" aria-hidden="true">+</span></summary><div class="ap-program-body"><dl><div><dt>Nivel</dt><dd data-program-level>Superior</dd></div><div><dt>Indicador</dt><dd data-program-kpi>KPI: Autonomía del mando</dd></div></dl></div></details>
-<details class="ap-program" id="program-3"><summary><span class="ap-index">04</span><span class="ap-program-heading"><span class="ap-badge">NUEVO 2026</span><span class="ap-program-title">Gestión del estrés y prevención del burnout en mandos</span></span><span class="ap-program-meta"><span data-program-hours>8 h</span><span data-program-mode>Híbrida</span></span><span class="ap-toggle" aria-hidden="true">+</span></summary><div class="ap-program-body"><dl><div><dt>Nivel</dt><dd data-program-level>Superior</dd></div><div><dt>Indicador</dt><dd data-program-kpi>KPI: Absentismo</dd></div></dl></div></details>
-<details class="ap-program" id="program-4"><summary><span class="ap-index">05</span><span class="ap-program-heading"><span class="ap-program-title">Dirección compasiva y nuevos estilos de liderazgo</span></span><span class="ap-program-meta"><span data-program-hours>12 h</span><span data-program-mode>Presencial</span></span><span class="ap-toggle" aria-hidden="true">+</span></summary><div class="ap-program-body"><dl><div><dt>Nivel</dt><dd data-program-level>Superior</dd></div><div><dt>Indicador</dt><dd data-program-kpi>KPI: Rotación</dd></div></dl></div></details>
-<details class="ap-program" id="program-5"><summary><span class="ap-index">06</span><span class="ap-program-heading"><span class="ap-program-title">Gestión de conflictos entre departamentos</span></span><span class="ap-program-meta"><span data-program-hours>8 h</span><span data-program-mode>Presencial</span></span><span class="ap-toggle" aria-hidden="true">+</span></summary><div class="ap-program-body"><dl><div><dt>Nivel</dt><dd data-program-level>Superior</dd></div><div><dt>Indicador</dt><dd data-program-kpi>KPI: Incidencias escaladas</dd></div></dl></div></details>
-<details class="ap-program" id="program-6"><summary><span class="ap-index">07</span><span class="ap-program-heading"><span class="ap-program-title">Delegación y gestión del tiempo del mando</span></span><span class="ap-program-meta"><span data-program-hours>8 h</span><span data-program-mode>Presencial</span></span><span class="ap-toggle" aria-hidden="true">+</span></summary><div class="ap-program-body"><dl><div><dt>Nivel</dt><dd data-program-level>Superior</dd></div><div><dt>Indicador</dt><dd data-program-kpi>KPI: Horas liberadas</dd></div></dl></div></details></div>
-<p class="ap-catalog-note">Son ejemplos: diseñamos cualquier formación que necesite tu equipo, con la duración y el formador adecuados. <a href="#/a-medida">Cómo funciona →</a></p>
+<section class="ap-section ap-catalog" id="programas"><div class="ap-shell"><div class="ap-catalog-head"><div class="ap-section-heading"><p class="ap-eyebrow">02 / PROGRAMAS DEL ÁREA</p><h2>Programas del área.</h2><p class="ap-lead">Algunos programas del área. Y cualquier otro, a medida.</p></div><p class="ap-catalog-note">Algunas de nuestras formaciones más demandadas: diseñamos cualquier formación que necesite tu equipo, con la duración y el formador adecuados. <a href="#/a-medida">Cómo funciona →</a></p></div>
+<div class="ap-programs"><details class="ap-program" id="program-0" open><summary><span class="ap-index">01</span><span class="ap-program-heading"><span class="ap-badge">PROGRAMA INSIGNIA</span><span class="ap-program-title">De jefe a líder: liderar sin amargar →</span><span class="ap-program-meta"><span data-program-hours>25 h recomendadas</span><span class="program-modes-inline" aria-label="Modalidades"><span class="program-modes-label">Modalidades:</span><span>Presencial</span><span>Online Live</span><span>Híbrida</span></span><small class="program-duration-note">Duración orientativa · sujeta a adaptación</small></span></span><span class="ap-toggle" aria-hidden="true">+</span></summary><div class="ap-program-body"><dl><div><dt>Nivel</dt><dd data-program-level>Superior</dd></div><div><dt>Indicador</dt><dd data-program-kpi>KPI: Evaluación 360</dd></div></dl><a href="#de-jefe-a-lider">Ver las 5 sesiones →</a></div></details>
+<details class="ap-program" id="program-1"><summary><span class="ap-index">02</span><span class="ap-program-heading"><span class="ap-badge">PRIORIDAD 2026</span><span class="ap-program-title">Comunicación, feedback y conversaciones difíciles</span><span class="ap-program-meta"><span data-program-hours>12 h recomendadas</span><span class="program-modes-inline" aria-label="Modalidades"><span class="program-modes-label">Modalidades:</span><span>Presencial</span><span>Online Live</span><span>Híbrida</span></span><small class="program-duration-note">Duración orientativa · sujeta a adaptación</small></span></span><span class="ap-toggle" aria-hidden="true">+</span></summary><div class="ap-program-body"><dl><div><dt>Nivel</dt><dd data-program-level>Superior</dd></div><div><dt>Indicador</dt><dd data-program-kpi>KPI: Clima del equipo</dd></div></dl></div></details>
+<details class="ap-program" id="program-2"><summary><span class="ap-index">03</span><span class="ap-program-heading"><span class="ap-badge">PRIORIDAD 2026</span><span class="ap-program-title">De operario a mando: los primeros 90 días</span><span class="ap-program-meta"><span data-program-hours>16 h recomendadas</span><span class="program-modes-inline" aria-label="Modalidades"><span class="program-modes-label">Modalidades:</span><span>Presencial</span><span>Online Live</span><span>Híbrida</span></span><small class="program-duration-note">Duración orientativa · sujeta a adaptación</small></span></span><span class="ap-toggle" aria-hidden="true">+</span></summary><div class="ap-program-body"><dl><div><dt>Nivel</dt><dd data-program-level>Superior</dd></div><div><dt>Indicador</dt><dd data-program-kpi>KPI: Autonomía del mando</dd></div></dl></div></details>
+<details class="ap-program" id="program-3"><summary><span class="ap-index">04</span><span class="ap-program-heading"><span class="ap-badge">NUEVO 2026</span><span class="ap-program-title">Gestión del estrés y prevención del burnout en mandos</span><span class="ap-program-meta"><span data-program-hours>8 h recomendadas</span><span class="program-modes-inline" aria-label="Modalidades"><span class="program-modes-label">Modalidades:</span><span>Presencial</span><span>Online Live</span><span>Híbrida</span></span><small class="program-duration-note">Duración orientativa · sujeta a adaptación</small></span></span><span class="ap-toggle" aria-hidden="true">+</span></summary><div class="ap-program-body"><dl><div><dt>Nivel</dt><dd data-program-level>Superior</dd></div><div><dt>Indicador</dt><dd data-program-kpi>KPI: Absentismo</dd></div></dl></div></details>
+<details class="ap-program" id="program-4"><summary><span class="ap-index">05</span><span class="ap-program-heading"><span class="ap-program-title">Dirección compasiva y nuevos estilos de liderazgo</span><span class="ap-program-meta"><span data-program-hours>12 h recomendadas</span><span class="program-modes-inline" aria-label="Modalidades"><span class="program-modes-label">Modalidades:</span><span>Presencial</span><span>Online Live</span><span>Híbrida</span></span><small class="program-duration-note">Duración orientativa · sujeta a adaptación</small></span></span><span class="ap-toggle" aria-hidden="true">+</span></summary><div class="ap-program-body"><dl><div><dt>Nivel</dt><dd data-program-level>Superior</dd></div><div><dt>Indicador</dt><dd data-program-kpi>KPI: Rotación</dd></div></dl></div></details>
+<details class="ap-program" id="program-5"><summary><span class="ap-index">06</span><span class="ap-program-heading"><span class="ap-program-title">Gestión de conflictos entre departamentos</span><span class="ap-program-meta"><span data-program-hours>8 h recomendadas</span><span class="program-modes-inline" aria-label="Modalidades"><span class="program-modes-label">Modalidades:</span><span>Presencial</span><span>Online Live</span><span>Híbrida</span></span><small class="program-duration-note">Duración orientativa · sujeta a adaptación</small></span></span><span class="ap-toggle" aria-hidden="true">+</span></summary><div class="ap-program-body"><dl><div><dt>Nivel</dt><dd data-program-level>Superior</dd></div><div><dt>Indicador</dt><dd data-program-kpi>KPI: Incidencias escaladas</dd></div></dl></div></details>
+<details class="ap-program" id="program-6"><summary><span class="ap-index">07</span><span class="ap-program-heading"><span class="ap-program-title">Delegación y gestión del tiempo del mando</span><span class="ap-program-meta"><span data-program-hours>8 h recomendadas</span><span class="program-modes-inline" aria-label="Modalidades"><span class="program-modes-label">Modalidades:</span><span>Presencial</span><span>Online Live</span><span>Híbrida</span></span><small class="program-duration-note">Duración orientativa · sujeta a adaptación</small></span></span><span class="ap-toggle" aria-hidden="true">+</span></summary><div class="ap-program-body"><dl><div><dt>Nivel</dt><dd data-program-level>Superior</dd></div><div><dt>Indicador</dt><dd data-program-kpi>KPI: Horas liberadas</dd></div></dl></div></details></div>
+
 <details class="ap-disclosure"><summary>Por qué estos programas: demanda en España<span class="ap-toggle" aria-hidden="true">+</span></summary><div class="ap-disclosure-body"><ul class="ap-list"><li>Las habilidades directivas fueron la segunda área más solicitada en formación bonificada en 2025 y son tendencia en 2026 (Finanfor).</li><li>Comunicación, trabajo en equipo y adaptabilidad lideran las competencias blandas que piden las empresas logísticas (ManpowerGroup).</li><li>Un estudio de 2026 en EE. UU. apunta que más de la mitad de los mandos intermedios sufre burnout (Benedictine University).</li></ul></div></details>
 </div></section>
 <section class="ap-section ap-flagship" id="de-jefe-a-lider"><div class="ap-shell">
-<div class="ap-feature-grid"><div><p class="ap-eyebrow">ÁREA A5 · PROGRAMA INSIGNIA PARA DIRECTIVOS Y MANDOS · 25 H</p><h2>De jefe a líder.</h2><p class="ap-claim">Liderar sin amargar.</p><p class="ap-lead">Para directivos y mandos de operaciones que quieren dejar de mandar y empezar a liderar: equipos que deciden solos, conversaciones que cambian conductas y menos problemas que suben siempre al mismo despacho.</p><div class="ap-actions"><a class="ap-button ap-button-primary" href="#contacto">Solicitar el programa</a><a class="ap-button" href="#estructura-lider">Ver las 5 sesiones ↓</a></div></div><ul class="ap-facts"><li>25 H · 5 SESIONES DE 5 H</li><li>GRUPOS DE 12 COMO MÁXIMO</li><li>PRESENCIAL O HÍBRIDA</li><li>EVALUACIÓN 360 INICIAL Y FINAL</li><li>BONIFICABLE POR FUNDAE</li></ul></div>
+<div class="ap-feature-grid"><div><p class="ap-eyebrow">ÁREA A5 · PROGRAMA INSIGNIA PARA DIRECTIVOS Y MANDOS · 25 h recomendadas</p><h2>De jefe a líder.</h2><p class="ap-claim">Liderar sin amargar.</p><p class="ap-lead">Para directivos y mandos de operaciones que quieren dejar de mandar y empezar a liderar: equipos que deciden solos, conversaciones que cambian conductas y menos problemas que suben siempre al mismo despacho.</p><div class="ap-actions"><a class="ap-button ap-button-primary" href="#contacto">Solicitar el programa</a><a class="ap-button" href="#estructura-lider">Ver las 5 sesiones ↓</a></div></div><ul class="ap-facts"><li>25 h recomendadas · 5 SESIONES DE 5 H<small class="program-duration-note">Duración orientativa · sujeta a adaptación</small></li><li>GRUPOS DE 12 COMO MÁXIMO</li><li><span class="program-modes-inline" aria-label="Modalidades"><span class="program-modes-label">Modalidades:</span><span>Presencial</span><span>Online Live</span><span>Híbrida</span></span></li><li>EVALUACIÓN 360 INICIAL Y FINAL</li><li>BONIFICABLE POR FUNDAE</li></ul></div>
 <div id="estructura-lider" class="ap-sessions"><h3>Cinco sesiones. Una forma distinta de dirigir.</h3><details class="ap-disclosure"><summary>01 / De jefe a líder<span class="ap-toggle" aria-hidden="true">+</span></summary><div class="ap-disclosure-body"><p>Autoridad frente a influencia. Resultados de vuestra evaluación 360 y el estilo de dirección de cada participante.</p><p class="ap-deliverable">ENTREGABLE · AUTODIAGNÓSTICO 360</p></div></details>
 <details class="ap-disclosure"><summary>02 / Conversaciones que cambian conductas<span class="ap-toggle" aria-hidden="true">+</span></summary><div class="ap-disclosure-body"><p>Feedback, conversaciones difíciles y cómo corregir sin romper la relación. Práctica con situaciones reales del turno.</p><p class="ap-deliverable">ENTREGABLE · ROLE-PLAY CON CASOS PROPIOS</p></div></details>
 <details class="ap-disclosure"><summary>03 / Delegar para desarrollar<span class="ap-toggle" aria-hidden="true">+</span></summary><div class="ap-disclosure-body"><p>Qué delegar, a quién y cómo. El mando que deja de hacerlo todo y empieza a formar a su relevo.</p><p class="ap-deliverable">ENTREGABLE · PLAN DE DELEGACIÓN PERSONAL</p></div></details>
@@ -2581,7 +2603,7 @@
     <div class="sc-shell">
       <div class="sc-section-head sc-section-head-light">
         <div><p class="sc-eyebrow">02 / PROGRAMAS DEL ÁREA</p><h2>Seis programas. Un criterio: que cambie la operación.</h2></div>
-        <p>Son ejemplos. Diseñamos cualquier formación que necesite tu equipo, con la duración, modalidad y formador adecuados. <a href="#/a-medida">Cómo funciona →</a></p>
+        <p>Algunas de nuestras formaciones más demandadas: diseñamos cualquier formación que necesite tu equipo, con la duración, modalidad y formador adecuados. <a href="#/a-medida">Cómo funciona →</a></p>
       </div>
 
       <details class="content-detail"><summary>Por qué estos programas: demanda en España</summary><div class="content-detail-body"><div class="sc-demand-strip">
@@ -2591,27 +2613,27 @@
 
       <div class="sc-programs">
         <details class="sc-program" open="">
-          <summary><div class="sc-program-index">01</div><div><span class="sc-program-tag">PRIORIDAD 2026</span><h3>Jefe de almacén: stocks, inventario y productividad</h3></div><div class="sc-program-meta"><span>20 h</span><span>Presencial</span></div><span class="sc-program-arrow">⌄</span></summary>
+          <summary><div class="sc-program-index">01</div><div><span class="sc-program-tag">PRIORIDAD 2026</span><h3>Jefe de almacén: stocks, inventario y productividad</h3><div class="sc-program-meta"><span>20 h recomendadas</span><span class="program-modes-inline" aria-label="Modalidades"><span class="program-modes-label">Modalidades:</span><span>Presencial</span><span>Online Live</span><span>Híbrida</span></span><small class="program-duration-note">Duración orientativa · sujeta a adaptación</small></div></div><span class="sc-program-arrow" aria-hidden="true">+</span></summary>
           <div class="sc-program-body"><p>Programa para ordenar inventario, rutina diaria, productividad y gestión de equipo con foco en estabilidad operativa.</p><div><span>KPI</span><strong>Exactitud de inventario</strong></div><div><span>NIVEL</span><strong>Superior</strong></div></div>
         </details>
         <details class="sc-program">
-          <summary><div class="sc-program-index">02</div><div><span class="sc-program-tag">PRIORIDAD 2026</span><h3>Mejora de procesos logísticos: Lean y certificación Yellow Belt</h3></div><div class="sc-program-meta"><span>20 h</span><span>Presencial</span></div><span class="sc-program-arrow">⌄</span></summary>
+          <summary><div class="sc-program-index">02</div><div><span class="sc-program-tag">PRIORIDAD 2026</span><h3>Mejora de procesos logísticos: Lean y certificación Yellow Belt</h3><div class="sc-program-meta"><span>20 h recomendadas</span><span class="program-modes-inline" aria-label="Modalidades"><span class="program-modes-label">Modalidades:</span><span>Presencial</span><span>Online Live</span><span>Híbrida</span></span><small class="program-duration-note">Duración orientativa · sujeta a adaptación</small></div></div><span class="sc-program-arrow" aria-hidden="true">+</span></summary>
           <div class="sc-program-body"><p>Lean aplicado a flujos reales del almacén para eliminar esperas, movimientos innecesarios y retrabajos.</p><div><span>KPI</span><strong>Tiempo de ciclo del pedido</strong></div><div><span>NIVEL</span><strong>Superior</strong></div></div>
         </details>
         <details class="sc-program">
-          <summary><div class="sc-program-index">03</div><div><span class="sc-program-tag sc-program-tag-blue">NUEVO 2026</span><h3>Analista de logística: KPIs y cuadros de mando</h3></div><div class="sc-program-meta"><span>20 h</span><span>Híbrida</span></div><span class="sc-program-arrow">⌄</span></summary>
+          <summary><div class="sc-program-index">03</div><div><span class="sc-program-tag sc-program-tag-blue">NUEVO 2026</span><h3>Analista de logística: KPIs y cuadros de mando</h3><div class="sc-program-meta"><span>20 h recomendadas</span><span class="program-modes-inline" aria-label="Modalidades"><span class="program-modes-label">Modalidades:</span><span>Presencial</span><span>Online Live</span><span>Híbrida</span></span><small class="program-duration-note">Duración orientativa · sujeta a adaptación</small></div></div><span class="sc-program-arrow" aria-hidden="true">+</span></summary>
           <div class="sc-program-body"><p>Construcción y lectura de indicadores para pasar del dato disperso a decisiones de operación.</p><div><span>KPI</span><strong>Tiempo de reporting</strong></div><div><span>NIVEL</span><strong>Superior</strong></div></div>
         </details>
         <details class="sc-program">
-          <summary><div class="sc-program-index">04</div><div><span class="sc-program-tag sc-program-tag-blue">NUEVO 2026</span><h3>Automatización del almacén: cuándo y cómo invertir</h3></div><div class="sc-program-meta"><span>16 h</span><span>Híbrida</span></div><span class="sc-program-arrow">⌄</span></summary>
+          <summary><div class="sc-program-index">04</div><div><span class="sc-program-tag sc-program-tag-blue">NUEVO 2026</span><h3>Automatización del almacén: cuándo y cómo invertir</h3><div class="sc-program-meta"><span>16 h recomendadas</span><span class="program-modes-inline" aria-label="Modalidades"><span class="program-modes-label">Modalidades:</span><span>Presencial</span><span>Online Live</span><span>Híbrida</span></span><small class="program-duration-note">Duración orientativa · sujeta a adaptación</small></div></div><span class="sc-program-arrow" aria-hidden="true">+</span></summary>
           <div class="sc-program-body"><p>Criterios para dimensionar automatización, layout, capacidad, inversión y retorno antes de comprar tecnología.</p><div><span>KPI</span><strong>Retorno de la inversión</strong></div><div><span>NIVEL</span><strong>Superior</strong></div></div>
         </details>
         <details class="sc-program">
-          <summary><div class="sc-program-index">05</div><div><span class="sc-program-tag sc-program-tag-muted">PLANIFICACIÓN</span><h3>Planificación S&amp;OP y previsión de la demanda</h3></div><div class="sc-program-meta"><span>24 h</span><span>Híbrida</span></div><span class="sc-program-arrow">⌄</span></summary>
+          <summary><div class="sc-program-index">05</div><div><span class="sc-program-tag sc-program-tag-muted">PLANIFICACIÓN</span><h3>Planificación S&amp;OP y previsión de la demanda</h3><div class="sc-program-meta"><span>24 h recomendadas</span><span class="program-modes-inline" aria-label="Modalidades"><span class="program-modes-label">Modalidades:</span><span>Presencial</span><span>Online Live</span><span>Híbrida</span></span><small class="program-duration-note">Duración orientativa · sujeta a adaptación</small></div></div><span class="sc-program-arrow" aria-hidden="true">+</span></summary>
           <div class="sc-program-body"><p>Conectar demanda, capacidad, inventario y decisiones comerciales con un proceso de planificación compartido.</p><div><span>KPI</span><strong>Exactitud del forecast</strong></div><div><span>NIVEL</span><strong>Superior</strong></div></div>
         </details>
         <details class="sc-program">
-          <summary><div class="sc-program-index">06</div><div><span class="sc-program-tag sc-program-tag-muted">COSTES</span><h3>Análisis y reducción de costes logísticos</h3></div><div class="sc-program-meta"><span>16 h</span><span>Online Live</span></div><span class="sc-program-arrow">⌄</span></summary>
+          <summary><div class="sc-program-index">06</div><div><span class="sc-program-tag sc-program-tag-muted">COSTES</span><h3>Análisis y reducción de costes logísticos</h3><div class="sc-program-meta"><span>16 h recomendadas</span><span class="program-modes-inline" aria-label="Modalidades"><span class="program-modes-label">Modalidades:</span><span>Presencial</span><span>Online Live</span><span>Híbrida</span></span><small class="program-duration-note">Duración orientativa · sujeta a adaptación</small></div></div><span class="sc-program-arrow" aria-hidden="true">+</span></summary>
           <div class="sc-program-body"><p>Lectura económica de la operación para detectar palancas de ahorro sin degradar servicio ni capacidad.</p><div><span>KPI</span><strong>Coste logístico sobre ventas</strong></div><div><span>NIVEL</span><strong>Superior</strong></div></div>
         </details>
       </div>
@@ -2771,7 +2793,7 @@
 <span>Y cualquier otro, a medida.</span>
 </h2>
 </div>
-<p>Son ejemplos: diseñamos cualquier formación que necesite tu equipo, con la duración y el formador adecuados. <a href="#/a-medida">Cómo funciona →</a>
+<p>Algunas de nuestras formaciones más demandadas: diseñamos cualquier formación que necesite tu equipo, con la duración y el formador adecuados. <a href="#/a-medida">Cómo funciona →</a>
 </p>
 </div>
 <div class="tr-catalog-tools" data-transport-tools="" hidden="">
@@ -2791,11 +2813,10 @@
 <span class="tr-program-category">Cumplimiento <span class="tr-badge">OBLIGACIÓN 2026</span>
 </span>
 <span class="tr-program-title">Tacógrafo inteligente y tiempos de conducción y descanso</span>
-</span>
 <span class="tr-program-meta">
-<span>8 h</span>
-<span>Presencial</span>
-</span>
+<span>8 h recomendadas</span>
+<span class="program-modes-inline" aria-label="Modalidades"><span class="program-modes-label">Modalidades:</span><span>Presencial</span><span>Online Live</span><span>Híbrida</span></span>
+<small class="program-duration-note">Duración orientativa · sujeta a adaptación</small></span></span>
 <span class="tr-expand" aria-hidden="true">+</span>
 </summary>
 <div class="tr-program-detail">
@@ -2816,11 +2837,10 @@
 <span class="tr-program-category">Costes y negocio <span class="tr-badge">PRIORIDAD 2026</span>
 </span>
 <span class="tr-program-title">Gestión económica de la flota y control del combustible</span>
-</span>
 <span class="tr-program-meta">
-<span>16 h</span>
-<span>Híbrida</span>
-</span>
+<span>16 h recomendadas</span>
+<span class="program-modes-inline" aria-label="Modalidades"><span class="program-modes-label">Modalidades:</span><span>Presencial</span><span>Online Live</span><span>Híbrida</span></span>
+<small class="program-duration-note">Duración orientativa · sujeta a adaptación</small></span></span>
 <span class="tr-expand" aria-hidden="true">+</span>
 </summary>
 <div class="tr-program-detail">
@@ -2841,11 +2861,10 @@
 <span class="tr-program-category">Operación <span class="tr-badge">PRIORIDAD 2026</span>
 </span>
 <span class="tr-program-title">Planificación de rutas y ocupación de la flota</span>
-</span>
 <span class="tr-program-meta">
-<span>16 h</span>
-<span>Híbrida</span>
-</span>
+<span>16 h recomendadas</span>
+<span class="program-modes-inline" aria-label="Modalidades"><span class="program-modes-label">Modalidades:</span><span>Presencial</span><span>Online Live</span><span>Híbrida</span></span>
+<small class="program-duration-note">Duración orientativa · sujeta a adaptación</small></span></span>
 <span class="tr-expand" aria-hidden="true">+</span>
 </summary>
 <div class="tr-program-detail">
@@ -2866,11 +2885,10 @@
 <span class="tr-program-category">Operación <span class="tr-badge">NUEVO 2026</span>
 </span>
 <span class="tr-program-title">Documentación digital del transporte: e-CMR y Ley de Movilidad Sostenible</span>
-</span>
 <span class="tr-program-meta">
-<span>8 h</span>
-<span>Online Live</span>
-</span>
+<span>8 h recomendadas</span>
+<span class="program-modes-inline" aria-label="Modalidades"><span class="program-modes-label">Modalidades:</span><span>Presencial</span><span>Online Live</span><span>Híbrida</span></span>
+<small class="program-duration-note">Duración orientativa · sujeta a adaptación</small></span></span>
 <span class="tr-expand" aria-hidden="true">+</span>
 </summary>
 <div class="tr-program-detail">
@@ -2890,11 +2908,10 @@
 <span class="tr-program-main">
 <span class="tr-program-category">Cumplimiento</span>
 <span class="tr-program-title">Mercancías peligrosas (ADR) y perecederas (ATP) para jefes de tráfico</span>
-</span>
 <span class="tr-program-meta">
-<span>12 h</span>
-<span>Presencial</span>
-</span>
+<span>12 h recomendadas</span>
+<span class="program-modes-inline" aria-label="Modalidades"><span class="program-modes-label">Modalidades:</span><span>Presencial</span><span>Online Live</span><span>Híbrida</span></span>
+<small class="program-duration-note">Duración orientativa · sujeta a adaptación</small></span></span>
 <span class="tr-expand" aria-hidden="true">+</span>
 </summary>
 <div class="tr-program-detail">
@@ -2914,11 +2931,10 @@
 <span class="tr-program-main">
 <span class="tr-program-category">Costes y negocio</span>
 <span class="tr-program-title">Negociación y venta en el sector transporte</span>
-</span>
 <span class="tr-program-meta">
-<span>12 h</span>
-<span>Presencial</span>
-</span>
+<span>12 h recomendadas</span>
+<span class="program-modes-inline" aria-label="Modalidades"><span class="program-modes-label">Modalidades:</span><span>Presencial</span><span>Online Live</span><span>Híbrida</span></span>
+<small class="program-duration-note">Duración orientativa · sujeta a adaptación</small></span></span>
 <span class="tr-expand" aria-hidden="true">+</span>
 </summary>
 <div class="tr-program-detail">
@@ -3115,6 +3131,7 @@
     <script defer src="assets/js/courses.js"></script>
     <script defer src="assets/js/calculator.js"></script>
     <script defer src="assets/js/forms.js"></script>
+    <script defer src="assets/js/rrhh-tools.js"></script>
     <script defer src="assets/js/animations.js"></script>
     <script defer src="assets/js/assistant.js"></script>
     <script defer src="assets/js/downloads.js"></script>
@@ -3125,6 +3142,7 @@
     <script defer src="assets/js/transporte.js"></script>
     <script defer src="assets/js/areas-completed.js"></script>
     <script defer src="assets/js/country.js"></script>
+    <script defer src="assets/js/program-info.js"></script>
     <script defer src="assets/js/main.js"></script>
   </body>
 </html>

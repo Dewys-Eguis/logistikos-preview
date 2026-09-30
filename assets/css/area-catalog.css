@@ -1,0 +1,38 @@
+/* Approved Compras catalog pattern, scoped to the six area pages. */
+:is(.cp-page,.tr-page,.sc-page,.ap-page){--catalog-bg:#070b14;--catalog-panel:#0d1728;--catalog-text:#f8fafc;--catalog-muted:#aebbd0;--catalog-line:#2a3952;--catalog-blue:#91a7ff;--catalog-orange:#ff9447}
+:root[data-theme] :is(.cp-page,.tr-page,.ap-page){--cp-bg:#070b14;--cp-panel:#0d1728;--cp-text:#f8fafc;--cp-muted:#aebbd0;--cp-line:#2a3952;--cp-blue:#91a7ff;--cp-orange:#ff9447;--tr-bg:#070b14;--tr-panel:#0d1728;--tr-text:#f8fafc;--tr-muted:#aebbd0;--tr-line:#2a3952;--tr-blue:#91a7ff;--tr-orange:#ff9447;--ap-bg:#070b14;--ap-panel:#0d1728;--ap-soft:#101c30;--ap-ink:#f8fafc;--ap-muted:#aebbd0;--ap-line:#2a3952;--ap-accent:#91a7ff}
+:root[data-theme] .ap-leadership{--ap-accent:#ffac70}
+:root[data-theme] .ap-data{--ap-accent:#88c7df}
+:root[data-theme] .sc-page{background:#070b14;color:#f8fafc}
+:root[data-theme] .sc-page :is(.sc-hero,.sc-section-dark,.sc-section-process,.sc-other){background:linear-gradient(160deg,#070b14,#0b172b);color:#f8fafc}
+:root[data-theme] .sc-page :is(.sc-section-light,.sc-section-compliance){background:linear-gradient(160deg,#0d1728,#0b1424);color:#f8fafc}
+:root[data-theme] .sc-page :is(.sc-problem-card,.sc-demand-strip,.sc-compliance-copy,.sc-compliance-cloud,.sc-compliance-cloud span,.sc-audience span,.sc-other-grid a){background:#0d1728;border-color:#2a3952;color:#f8fafc}
+:root[data-theme] .sc-page :is(.sc-hero-claim,.sc-problem-card b,.sc-btn-ghost){color:#f8fafc}
+:root[data-theme] .sc-page :is(.sc-lead,.sc-section-head>p,.sc-problem-card p,.sc-process-lead,.sc-process-steps p,.sc-demand-strip p,.sc-compliance-copy p:last-child){color:#aebbd0}
+:root[data-theme] :is(.cp-catalog,.tr-catalog,.ap-catalog,.sc-section-light){background:linear-gradient(160deg,#315bff0b,transparent 65%),var(--catalog-panel);color:var(--catalog-text)}
+:root[data-theme] :is(.cp-section-head>p,.tr-section-head>p,.sc-section-head-light>p,.ap-page .ap-catalog-note){margin:0;padding:22px 24px;background:linear-gradient(135deg,#315bff14,#315bff04);border:1px solid var(--catalog-line);border-left:2px solid #91a7ff80;border-radius:8px;color:var(--catalog-muted);font-size:var(--type-body);line-height:var(--leading-body)}
+:root[data-theme] :is(.cp-section-head,.tr-section-head,.sc-section-head-light,.ap-catalog-head){display:grid;grid-template-columns:1.15fr .7fr;align-items:end;gap:80px;margin-bottom:44px}
+:root[data-theme] .ap-catalog-head .ap-section-heading{margin:0}
+:root[data-theme] :is(.cp-section-head,.tr-section-head,.sc-section-head-light,.ap-catalog-head) a{display:inline-block;margin-top:12px;color:var(--catalog-blue)}
+:root[data-theme] :is(.tr-programs,.sc-programs,.ap-programs){display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:start;border:0}
+:root[data-theme] :is(.tr-program,.sc-program,.ap-program){min-width:0;border:1px solid var(--catalog-line);background:var(--catalog-bg);color:var(--catalog-text);border-radius:8px;transition:border-color .2s,box-shadow .2s}
+:root[data-theme] :is(.tr-program,.sc-program,.ap-program):is(:hover,[open]){border-color:var(--catalog-blue);box-shadow:0 14px 36px #0000000d}
+:root[data-theme] :is(.tr-program,.sc-program,.ap-program) summary{display:grid;grid-template-columns:30px minmax(0,1fr) 22px;gap:16px;padding:28px;min-height:180px;align-items:start;background:transparent;list-style:none}
+:root[data-theme] :is(.tr-program-main,.sc-program summary>div:nth-child(2),.ap-program-heading){display:flex;flex-direction:column;gap:12px;min-width:0;overflow-wrap:anywhere}
+:root[data-theme] :is(.tr-program-title,.sc-program h3,.ap-program-title){margin:0;font:500 var(--type-subtitle)/var(--leading-subtitle) Archivo,sans-serif;letter-spacing:var(--tracking-subtitle)}
+:root[data-theme] :is(.tr-program-meta,.sc-program-meta,.ap-program-meta){display:flex;flex-wrap:wrap;justify-content:flex-start;gap:10px;color:var(--catalog-muted);font-size:var(--type-secondary)}
+:root[data-theme] :is(.tr-program-meta,.sc-program-meta,.ap-program-meta)>span{padding:0;background:transparent;color:inherit;font-size:inherit;border-radius:0}
+:root[data-theme] :is(.tr-program-number,.sc-program-index,.ap-program .ap-index){font:500 var(--type-small)/1.5 'IBM Plex Mono',monospace;color:var(--catalog-blue)}
+:root[data-theme] :is(.tr-program-category,.sc-program-tag,.ap-badge){font:500 var(--type-eyebrow)/1.5 'IBM Plex Mono',monospace;letter-spacing:.08em;color:var(--catalog-orange)}
+:root[data-theme] :is(.sc-program-tag-blue,.sc-program-tag-muted){color:var(--catalog-blue)}
+:root[data-theme] :is(.tr-expand,.sc-program-arrow,.ap-program .ap-toggle){grid-column:3;grid-row:1;justify-self:end;font-size:24px;line-height:1;color:var(--catalog-blue);transition:transform .25s}
+:root[data-theme] :is(.tr-program,.sc-program,.ap-program)[open]>summary :is(.tr-expand,.sc-program-arrow,.ap-toggle){transform:rotate(45deg);color:var(--catalog-orange)}
+:root[data-theme] :is(.tr-program-detail,.sc-program-body,.ap-program-body){border-top:1px solid var(--catalog-line);margin:0 28px;padding:20px 0;display:grid;grid-template-columns:1fr auto;gap:20px}
+:root[data-theme] .ap-program-body dl{display:contents}
+:root[data-theme] .sc-program-body>p{grid-column:1/-1;margin:0;padding:0;color:var(--catalog-muted)}
+:root[data-theme] .sc-program-body>div{padding:0}
+:root[data-theme] :is(.tr-program-detail p>span,.sc-program-body span,.ap-program-body dt){display:block;color:var(--catalog-muted);font:500 var(--type-eyebrow)/1.5 'IBM Plex Mono',monospace;letter-spacing:var(--tracking-eyebrow);margin:0 0 8px}
+:root[data-theme] :is(.tr-program-detail strong,.sc-program-body strong,.ap-program-body dd){font-size:var(--type-secondary);font-weight:500;margin:0}
+@media(max-width:1100px){:root[data-theme] :is(.cp-section-head,.tr-section-head,.sc-section-head-light,.ap-catalog-head){gap:40px}:root[data-theme] :is(.tr-program,.sc-program,.ap-program) summary{padding:22px;gap:12px}}
+@media(max-width:800px){:root[data-theme] :is(.cp-section-head,.tr-section-head,.sc-section-head-light,.ap-catalog-head,.tr-programs,.sc-programs,.ap-programs){grid-template-columns:1fr}:root[data-theme] :is(.cp-section-head,.tr-section-head,.sc-section-head-light,.ap-catalog-head){margin-bottom:32px}:root[data-theme] :is(.tr-program,.sc-program,.ap-program) summary{min-height:0}}
+@media(max-width:480px){:root[data-theme] :is(.tr-program-detail,.sc-program-body,.ap-program-body){grid-template-columns:1fr;margin:0 22px}}

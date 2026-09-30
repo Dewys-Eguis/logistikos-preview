@@ -5,7 +5,7 @@
 .country-picker[data-open="true"] .country-picker-trigger{border-color:#6f8bff;background:#111d33;box-shadow:0 0 0 3px rgba(111,139,255,.12)}
 .country-picker-icon{width:13px;height:13px;display:grid;place-items:center;border:1px solid rgba(255,255,255,.32);border-radius:50%;font:500 7px/1 "IBM Plex Mono",monospace;opacity:.78}
 .country-picker-code{font:600 10px/1 "IBM Plex Mono",monospace;letter-spacing:.05em}
-.country-picker-arrow{font-size:11px;line-height:1;opacity:.72;transition:transform .2s ease}
+.country-picker-arrow{flex:none;width:14px;height:14px;display:inline-flex;align-items:center;justify-content:center;opacity:.78;transform:translateY(1px);transition:transform .2s ease}.country-picker-arrow svg{display:block;width:14px;height:14px}
 .country-picker[data-open="true"] .country-picker-arrow{transform:rotate(180deg)}
 .country-menu{position:absolute;top:calc(100% + 8px);right:0;width:188px;padding:8px;border:1px solid rgba(139,157,190,.22);border-radius:16px;background:rgba(12,21,37,.98);box-shadow:0 20px 46px rgba(0,0,0,.34),0 0 0 1px rgba(75,99,145,.06) inset;backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);z-index:1000;overflow:hidden}
 .country-menu[hidden]{display:none!important}

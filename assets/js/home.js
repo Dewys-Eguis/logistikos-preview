@@ -63,7 +63,7 @@ const HomePage = {
       component.state.hr = id;
       const { hr } = getCourseValues.call(component);
       roadmapButtons.forEach((button) => button.setAttribute("aria-pressed", String(button.dataset.roadmap === id)));
-      root.querySelectorAll("[data-roadmap-value]").forEach((node) => { node.textContent = hr[node.dataset.roadmapValue]; });
+      root.querySelectorAll("[data-roadmap-value]").forEach((node) => { node.textContent = node.dataset.roadmapValue === "hours" ? hr.hours.replace(/(\d+ h)/, "$1 recomendadas") : hr[node.dataset.roadmapValue]; });
       const link = root.querySelector("[data-roadmap-link]");
       const blocked = [...root.querySelectorAll(".area-card[data-pending-href]")].some(card => card.dataset.pendingHref === hr.route);
       link.classList.toggle("is-pending-link", blocked);

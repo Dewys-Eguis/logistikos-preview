@@ -53,7 +53,11 @@ window.FormacionPage = (function () {
         action.textContent=p.area[2]?'Ver área →':'Próximamente';
         if(p.area[2]) {action.href='#/area/'+p.area[0];action.setAttribute('aria-label','Ver área: '+p.title);}
         else action.className='formation-search-pending';
-        card.append(title,area,action);fragment.append(card);
+        const modes=document.createElement("span");
+        modes.className="program-modes-inline";modes.setAttribute("aria-label","Modalidades");
+        const modesLabel=document.createElement("span");modesLabel.className="program-modes-label";modesLabel.textContent="Modalidades:";modes.append(modesLabel);
+        ["Presencial","Online Live","Híbrida"].forEach(label=>{const chip=document.createElement("span");chip.textContent=label;modes.append(chip);});
+        card.append(title,area,modes,action);fragment.append(card);
       });
       results.replaceChildren(fragment);
       status.textContent=matches.length ? matches.length+' programas encontrados' : 'No se encontraron programas. Prueba otro tema o área.';

@@ -38,7 +38,7 @@
               <legend>2 · LA FORMACIÓN</legend>
               <label for="credit-course">Formación<select id="credit-course" value="{{courseIdx}}" data-on-change="{{onCourse}}">
                 <sc-for list="{{courseOptions}}" as="o" hint-placeholder-count="10"><option value="{{o.value}}">{{o.label}}</option></sc-for>
-              </select></label>
+              </select></label><button type="button" class="program-info-trigger ects-trigger" data-program-info="ects" aria-haspopup="dialog" aria-controls="program-ects-dialog">¿Qué es un ECTS?</button>
               <div class="credit-fields credit-fields--course">
                 <label for="credit-participants">Participantes<input id="credit-participants" type="number" min="1" inputmode="numeric" value="{{participantes}}" data-on-change="{{onParticipantes}}" /></label>
                 <label for="credit-hours">Horas por participante<input id="credit-hours" type="number" min="1" inputmode="decimal" value="{{horas}}" data-on-change="{{onHoras}}" /></label>

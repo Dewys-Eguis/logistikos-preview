@@ -18,8 +18,8 @@
           </sc-if>
           <sc-if value="{{kitSent}}" hint-placeholder-val="{{ false }}">
             <div class="rrhh-kitsent">
-              <strong>Kit en camino.</strong>
-              <p>Registrado: {{kitEmail}}. Descarga ahora las 7 herramientas en un solo archivo.</p>
+              <strong>Solicitud preparada.</strong>
+              <p>Registrado: {{kitEmail}}. Hemos abierto WhatsApp para confirmar el contacto. También puedes descargar las herramientas aquí.</p>
               <a href="#rrhh" data-dl="Kit_RRHH_Logistikos.zip" class="rrhh-download-main">Descargar kit completo (ZIP) →</a>
               <button type="button" data-on-click="{{onKitReset}}" class="rrhh-reset">Usar otro email</button>
             </div>
@@ -33,15 +33,15 @@
     <div class="rrhh-shell">
       <div class="rrhh-section-head">
         <div><p class="rrhh-eyebrow">KIT RRHH</p><h2 id="rrhh-tools-title">De detectar el problema a demostrar el impacto.</h2></div>
-        <p>Seis recursos descargables para trabajar con incidencias reales, ordenar el plan anual, preparar FUNDAE y presentar resultados al comité.</p>
+        <p>Seis herramientas interactivas para trabajar con incidencias reales, ordenar el plan anual, preparar FUNDAE y presentar resultados al comité.</p>
       </div>
       <div class="rrhh-tools">
-        <article class="rrhh-tool"><div class="rrhh-tool-top"><span>KIT-01</span><span>EXCEL</span></div><h3>Detección de necesidades por departamento</h3><p>Cuestionario para mandos de almacén, tráfico, compras y comercio exterior. Cruza incidencias reales con carencias de formación.</p><a href="#rrhh" data-dl="KIT-01_Deteccion_necesidades_formativas.xlsx">Descargar Excel →</a></article>
-        <article class="rrhh-tool rrhh-tool--accent"><div class="rrhh-tool-top"><span>KIT-02</span><span>EXCEL</span></div><h3>Plan anual de formación listo para dirección</h3><p>Acciones, grupos, calendario por turnos y consumo de crédito FUNDAE en una sola hoja, con resumen ejecutivo.</p><a href="#rrhh" data-dl="KIT-02_Plan_anual_formacion.xlsx">Descargar Excel →</a></article>
-        <article class="rrhh-tool"><div class="rrhh-tool-top"><span>KIT-03</span><span>EXCEL</span></div><h3>Matriz de competencias de puestos logísticos</h3><p>Competencias técnicas y de gestión por puesto, de preparador a dirección de operaciones, con niveles para evaluar al equipo.</p><a href="#rrhh" data-dl="KIT-03_Matriz_competencias_logistica.xlsx">Descargar Excel →</a></article>
-        <article class="rrhh-tool"><div class="rrhh-tool-top"><span>KIT-04</span><span>PDF</span></div><h3>Checklist documental FUNDAE</h3><p>Todo lo que debe existir si llega una revisión: RLT, comunicaciones, controles de asistencia, evaluación y cuestionario de calidad.</p><a href="#rrhh" data-dl="KIT-04_Checklist_documental_FUNDAE.pdf">Descargar PDF →</a></article>
-        <article class="rrhh-tool"><div class="rrhh-tool-top"><span>KIT-05</span><span>AI ACT</span></div><h3>Registro de alfabetización en IA por puesto</h3><p>Qué herramientas de IA usa cada puesto, qué formación ha recibido y la evidencia documental que acredita el cumplimiento.</p><a href="#rrhh" data-dl="KIT-05_Registro_alfabetizacion_IA.xlsx">Descargar Excel →</a></article>
-        <article class="rrhh-tool"><div class="rrhh-tool-top"><span>KIT-06</span><span>PDF + EXCEL</span></div><h3>Medición de impacto y ROI de la formación</h3><p>Modelo de cuatro niveles —satisfacción, aprendizaje, aplicación y resultados— con KPIs logísticos para presentar al comité.</p><a href="#rrhh" data-dl="KIT-06_Impacto_ROI_y_guia.zip">Descargar Excel + guía →</a></article>
+        <article class="rrhh-tool"><div class="rrhh-tool-top"><span>KIT-01</span><span>EXCEL</span></div><h3>Detección de necesidades por departamento</h3><p>Cuestionario para mandos de almacén, tráfico, compras y comercio exterior. Cruza incidencias reales con carencias de formación.</p><button type="button" class="rrhh-tool-action" data-rrhh-kit="kit01">Completar plantilla →</button></article>
+        <article class="rrhh-tool rrhh-tool--accent"><div class="rrhh-tool-top"><span>KIT-02</span><span>EXCEL</span></div><h3>Plan anual de formación listo para dirección</h3><p>Acciones, grupos, calendario por turnos y consumo de crédito FUNDAE en una sola hoja, con resumen ejecutivo.</p><button type="button" class="rrhh-tool-action" data-rrhh-kit="kit02">Completar plantilla →</button></article>
+        <article class="rrhh-tool"><div class="rrhh-tool-top"><span>KIT-03</span><span>EXCEL</span></div><h3>Matriz de competencias de puestos logísticos</h3><p>Competencias técnicas y de gestión por puesto, de preparador a dirección de operaciones, con niveles para evaluar al equipo.</p><button type="button" class="rrhh-tool-action" data-rrhh-kit="kit03">Evaluar competencias →</button></article>
+        <article class="rrhh-tool"><div class="rrhh-tool-top"><span>KIT-04</span><span>PDF</span></div><h3>Checklist documental FUNDAE</h3><p>Todo lo que debe existir si llega una revisión: RLT, comunicaciones, controles de asistencia, evaluación y cuestionario de calidad.</p><button type="button" class="rrhh-tool-action" data-rrhh-kit="kit04">Revisar checklist →</button></article>
+        <article class="rrhh-tool"><div class="rrhh-tool-top"><span>KIT-05</span><span>AI ACT</span></div><h3>Registro de alfabetización en IA por puesto</h3><p>Qué herramientas de IA usa cada puesto, qué formación ha recibido y la evidencia documental que acredita el cumplimiento.</p><button type="button" class="rrhh-tool-action" data-rrhh-kit="kit05">Completar registro →</button></article>
+        <article class="rrhh-tool"><div class="rrhh-tool-top"><span>KIT-06</span><span>PDF + EXCEL</span></div><h3>Medición de impacto y ROI de la formación</h3><p>Modelo de cuatro niveles —satisfacción, aprendizaje, aplicación y resultados— con KPIs logísticos para presentar al comité.</p><button type="button" class="rrhh-tool-action" data-rrhh-kit="kit06">Medir impacto →</button></article>
       </div>
     </div>
   </section>
@@ -73,6 +73,29 @@
   <section class="rrhh-fundae">
     <div class="rrhh-shell rrhh-fundae-inner"><div><p class="rrhh-eyebrow">FUNDAE</p><h2>Antes de cerrar el plan, calcula cuánto crédito tiene disponible tu empresa.</h2><p>Usa el simulador del proyecto para estimar el crédito anual y comparar la bonificación según modalidad.</p></div><a href="#/fundae">Abrir calculadora FUNDAE →</a></div>
   </section>
+
+  <div class="rrhh-formmodal" id="rrhh-formmodal" hidden aria-hidden="true">
+    <div class="rrhh-formmodal__backdrop" data-rrhh-close></div>
+    <section class="rrhh-formmodal__dialog" role="dialog" aria-modal="true" aria-labelledby="rrhh-formmodal-title">
+      <button type="button" class="rrhh-formmodal__close" aria-label="Cerrar formulario" data-rrhh-close>×</button>
+      <div class="rrhh-formmodal__head">
+        <div>
+          <p class="rrhh-formmodal__eyebrow" id="rrhh-formmodal-code">KIT RRHH</p>
+          <h2 id="rrhh-formmodal-title">Completar plantilla</h2>
+          <p id="rrhh-formmodal-intro"></p>
+        </div>
+        <div class="rrhh-formmodal__step" id="rrhh-formmodal-step"></div>
+      </div>
+      <form class="rrhh-formmodal__form" id="rrhh-formmodal-form" novalidate>
+        <div id="rrhh-formmodal-fields"></div>
+        <div class="rrhh-formmodal__status" id="rrhh-formmodal-status" aria-live="polite"></div>
+        <div class="rrhh-formmodal__footer">
+          <button type="button" class="rrhh-formmodal__secondary" data-rrhh-close>Cancelar</button>
+          <button type="submit" class="rrhh-formmodal__submit">Enviar por WhatsApp <span>↗</span></button>
+        </div>
+      </form>
+    </section>
+  </div>
 
 
 </div>

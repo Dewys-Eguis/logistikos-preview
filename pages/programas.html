@@ -94,8 +94,8 @@
             <sc-for list="{{cur.courses}}" as="c" hint-placeholder-count="4">
               <article class="formation-course-row">
                 <div class="formation-course-title">{{c.title}}</div>
-                <div class="formation-course-meta" data-label="Duración">{{c.hours}}</div>
-                <div class="formation-course-meta" data-label="Modalidad">{{c.mode}}</div>
+                <div class="formation-course-meta" data-label="Duración">{{c.hours}} recomendadas<small class="program-duration-note">Duración orientativa · sujeta a adaptación</small></div>
+                <div class="formation-course-meta" data-label="Modalidad"><span class="program-modes-inline" aria-label="Modalidades"><span class="program-modes-label">Modalidades:</span><span>Presencial</span><span>Online Live</span><span>Híbrida</span></span></div>
                 <div class="formation-course-badge-wrap"><span class="{{c.badgeClass}} formation-course-badge">{{c.badge}}</span></div>
               </article>
             </sc-for>
