@@ -123,7 +123,7 @@ function getCalculatorValues(data) {
     ["Logística sostenible: ISO 14083 y PPWR", "live"],
   ].forEach((u) =>
     catalog.push({
-      label: "Universitario · " + u[0] + " (25 h · 1 ECTS)",
+      label: "Universitario · " + u[0] + " (25 h)",
       hours: 25,
       mode: u[1],
     }),

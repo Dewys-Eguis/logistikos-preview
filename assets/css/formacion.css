@@ -266,3 +266,6 @@ body.is-programas #app { background:#070b14; }
 :root[data-theme="light"] .formation-search { --f-panel:#fff; --f-bg:#f7f9fd; --f-line:#ccd6e5; --f-muted:#526176; color:#0b1120; }
 :root[data-theme="light"] .formation-search .formation-ghost-btn { background:#edf2ff; color:#0b1120 !important; border-color:#ccd6e5; }
 @media(max-width:700px) { .formation-search-fields,.formation-search-results { grid-template-columns:minmax(0,1fr); } }
+
+/* 2026-09-30: buscador sin selector lateral repetido de areas */
+.formation-workspace{grid-template-columns:1fr;}

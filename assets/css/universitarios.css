@@ -40,3 +40,10 @@ body.is-universitarios{background:#070b14;color:#f8fafc}
 @media(max-width:1100px){.uni-shell{width:min(100% - 40px,1540px)}.uni-hero{min-height:auto}.uni-hero-layout,.uni-intro-grid,.uni-section-head,.uni-project-grid{grid-template-columns:1fr}.uni-diploma-card{max-width:760px}.uni-program-grid{grid-template-columns:1fr}.uni-custom-inner{align-items:flex-start;flex-direction:column}.uni-executive-grid{grid-template-columns:1fr}.uni-project-visual{max-width:900px}.uni-section-head{gap:24px}}
 @media(max-width:760px){.uni-shell{width:calc(100% - 32px)}.uni-hero{padding:62px 0 70px}.uni-breadcrumb{margin-bottom:34px}.uni-hero-layout{gap:42px}.uni-diploma-card{padding:24px}.uni-diploma-card>strong{font-size:26px}.uni-diploma-stats{grid-template-columns:1fr}.uni-intro,.uni-programs,.uni-project,.uni-executive{padding:72px 0}.uni-program-card{padding:24px;min-height:0}.uni-program-card h3{margin-top:38px;font-size:25px}.uni-program-meta{flex-direction:column;gap:5px}.uni-project-points{grid-template-columns:1fr}.uni-project-visual,.uni-project-visual img{min-height:360px}.uni-project-visual figcaption{align-items:flex-start;flex-direction:column}.uni-custom{padding:70px 0}.uni-btn{width:100%}.uni-hero-actions{flex-direction:column}.uni-executive-card{padding:26px}.uni-executive-card h3{margin-top:38px;font-size:26px}}
 @media(prefers-reduced-motion:reduce){.uni-orb{animation:none}.uni-program-card,.uni-btn{transition:none}}
+
+/* 2026-09-30: identidad visual de la Fundacion General USAL */
+
+
+/* Cleaner university seal treatment: smaller, sharper and visually balanced. */
+.uni-salamanca-logo{position:relative;display:block;width:148px;max-width:42%;height:auto;margin:0 0 26px;padding:0;background:#fff;border:1px solid rgba(255,255,255,.14);border-radius:2px;box-shadow:0 12px 30px rgba(0,0,0,.2)}
+@media(max-width:760px){.uni-salamanca-logo{width:132px;max-width:48%;margin-bottom:20px}}

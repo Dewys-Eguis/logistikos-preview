@@ -8,3 +8,6 @@
 .trajectory-label { padding-top: var(--space-actions); }
 
 .monthly-metric { padding-top: 1rem; font-size: var(--type-secondary); }
+
+.guarantee-pdf-link{display:inline-flex;align-items:center;gap:.4rem;margin-top:.7rem;color:inherit;font-size:.88rem;font-weight:600;text-decoration:underline;text-underline-offset:.22em;text-decoration-thickness:1px;transition:color .2s ease,transform .2s ease}
+.guarantee-pdf-link:hover{color:#ff9447;transform:translateX(2px)}

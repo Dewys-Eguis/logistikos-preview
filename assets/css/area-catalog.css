@@ -36,3 +36,17 @@
 @media(max-width:1100px){:root[data-theme] :is(.cp-section-head,.tr-section-head,.sc-section-head-light,.ap-catalog-head){gap:40px}:root[data-theme] :is(.tr-program,.sc-program,.ap-program) summary{padding:22px;gap:12px}}
 @media(max-width:800px){:root[data-theme] :is(.cp-section-head,.tr-section-head,.sc-section-head-light,.ap-catalog-head,.tr-programs,.sc-programs,.ap-programs){grid-template-columns:1fr}:root[data-theme] :is(.cp-section-head,.tr-section-head,.sc-section-head-light,.ap-catalog-head){margin-bottom:32px}:root[data-theme] :is(.tr-program,.sc-program,.ap-program) summary{min-height:0}}
 @media(max-width:480px){:root[data-theme] :is(.tr-program-detail,.sc-program-body,.ap-program-body){grid-template-columns:1fr;margin:0 22px}}
+
+/* 2026-09-30 · Cliente: acento naranja y conector entre titular y nota */
+:root[data-theme] :is(.cp-section-head>p,.tr-section-head>p,.sc-section-head-light>p,.ap-page .ap-catalog-note){
+  border-color:#ff944780;
+  border-left:3px solid var(--catalog-orange);
+  box-shadow:inset 0 1px 0 #ffb27a12,0 10px 30px #ff7a1112;
+}
+:root[data-theme] :is(.cp-section-head,.tr-section-head,.sc-section-head-light,.ap-catalog-head)>:first-child{position:relative}
+@media(min-width:801px){
+  :root[data-theme] :is(.cp-section-head,.tr-section-head,.sc-section-head-light,.ap-catalog-head)>:first-child::after{
+    content:"⟶";position:absolute;right:-66px;top:58%;transform:translateY(-50%);
+    color:var(--catalog-orange);font-size:34px;line-height:1;font-weight:400;opacity:.95;
+  }
+}

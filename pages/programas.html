@@ -23,23 +23,7 @@
     </div>
     <div class="formation-scanline" aria-hidden="true"></div>
   </div>
-
-  <section class="formation-intro" aria-label="Cómo trabajamos" data-content-secondary="">
-    <div class="formation-human-photo" aria-hidden="true"><img src="https://images.pexels.com/photos/18999475/pexels-photo-18999475.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="" loading="lazy" decoding="async"></div>
-    <div class="layout-container formation-intro-grid">
-      <div class="formation-intro-title" data-formation-reveal="">
-        <span>01</span>
-        <h2>Explora por área.</h2>
-      </div>
-      <div class="formation-intro-copy" data-formation-reveal="">
-        <p>Programas de referencia: ajustamos duración, nivel, modalidad y casos tras el diagnóstico.</p>
-        <div class="formation-pill-row" aria-label="Características">
-          <span>In company</span><span data-spain-only>Bonificable FUNDAE</span><span>Presencial</span><span>Online Live</span><span>Híbrida</span>
-        </div>
-      <nav class="formation-area-links" aria-label="Áreas de formación"><a href="#/area/supply-chain">Supply Chain y Logística</a><a href="#/area/compras">Compras y Category Management</a><a href="#/area/transporte">Transporte y Distribución</a><a href="#/area/comercio-internacional">Comercio Internacional</a><a href="#/area/liderazgo">Liderazgo y Gestión de Equipos</a><a href="#/area/ia-datos">IA, Datos y Digitalización</a></nav></div>
-    </div>
-  </section>
-  <section id="departamentos" class="formation-explorer">
+<section id="departamentos" class="formation-explorer">
     <div class="layout-container">
       <div class="formation-section-heading" data-formation-reveal="">
         <p class="formation-eyebrow">EXPLORADOR DE FORMACIÓN</p>
@@ -55,62 +39,7 @@
         <p id="program-status" role="status" aria-live="polite" aria-atomic="true"></p>
         <div id="program-results" class="formation-search-results"></div>
       </div>
-      <div class="formation-workspace" data-formation-reveal="">
-        <aside class="formation-dept-nav" aria-label="Departamentos">
-          <div class="formation-nav-label">ÁREAS / 06</div>
-          <sc-for list="{{depts}}" as="d" hint-placeholder-count="6">
-            <button type="button" data-on-click="{{d.pick}}" class="{{d.tabClass}} formation-dept-btn">
-              <span class="formation-dept-num">{{d.num}}</span>
-              <span class="formation-dept-name">{{d.name}}</span>
-              <span class="formation-dept-arrow" aria-hidden="true">↗</span>
-            </button>
-          </sc-for>
-        </aside>
-
-        <div class="formation-panel">
-          <div class="formation-panel-head">
-            <div>
-              <span class="formation-panel-kicker">DEPARTAMENTO ACTIVO</span>
-              <h3>{{cur.name}}</h3>
-            </div>
-            <span class="formation-panel-code">ÁREA {{cur.area}}</span>
-          </div>
-
-          <div class="formation-context-grid">
-            <div class="formation-context-block">
-              <span>PERFILES</span>
-              <p>{{cur.profiles}}</p>
-            </div>
-            <div class="formation-context-block formation-context-accent">
-              <span>RETO HABITUAL</span>
-              <p>{{cur.pain}}</p>
-            </div>
-          </div>
-
-          <div class="formation-course-list" aria-label="Programas recomendados">
-            <div class="formation-course-head" aria-hidden="true">
-              <span>PROGRAMA</span><span>DURACIÓN</span><span>MODALIDAD</span><span>SEÑAL</span>
-            </div>
-            <sc-for list="{{cur.courses}}" as="c" hint-placeholder-count="4">
-              <article class="formation-course-row">
-                <div class="formation-course-title">{{c.title}}</div>
-                <div class="formation-course-meta" data-label="Duración">{{c.hours}} recomendadas<small class="program-duration-note">Duración orientativa · sujeta a adaptación</small></div>
-                <div class="formation-course-meta" data-label="Modalidad"><span class="program-modes-inline" aria-label="Modalidades"><span class="program-modes-label">Modalidades:</span><span>Presencial</span><span>Online Live</span><span>Híbrida</span></span></div>
-                <div class="formation-course-badge-wrap"><span class="{{c.badgeClass}} formation-course-badge">{{c.badge}}</span></div>
-              </article>
-            </sc-for>
-          </div>
-
-          <div class="formation-panel-foot">
-            <p>Horas orientativas. Ajustamos duración y nivel tras el diagnóstico.</p>
-            <div class="formation-panel-actions">
-              <a class="formation-text-link" href="{{cur.route}}">Ver área relacionada <span>↗</span></a>
-              <a class="formation-primary-btn formation-primary-btn-small" href="#contacto">Diseñar el plan de {{cur.short}} <span>↗</span></a>
-            </div>
-          </div>
-        </div>
       </div>
-    </div>
   </section>
 
   <section class="formation-bridge" data-content-secondary="">
