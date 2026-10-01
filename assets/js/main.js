@@ -81,6 +81,8 @@ class MainComponent extends DCLogic {
     document.body.classList.toggle("is-supply-chain", tplId === "tpl-area-supply-chain");
     document.body.classList.toggle("is-campus", tplId === "tpl-page-campus");
     document.body.classList.toggle("is-talento-internacional", tplId === "tpl-page-talento-internacional");
+    document.body.classList.toggle("is-webinar", tplId === "tpl-page-webinar");
+    document.body.classList.toggle("is-diagnostico", tplId === "tpl-page-diagnostico");
     // remember focus and open details
     var olds = keyed(),
       ae = document.activeElement,
@@ -176,6 +178,8 @@ class MainComponent extends DCLogic {
           "al-dia": "Logístikos al día",
           campus: "Campus",
           "talento-internacional": "Talento Internacional",
+          webinar: "Webinar · Jornadas empresariales",
+          diagnostico: "Diagnóstico gratuito",
         }[m[1]],
       };
     return { tpl: "tpl-home", key: "home" };

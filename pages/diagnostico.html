@@ -1,0 +1,96 @@
+<div class="diagnostic-page">
+  <section class="diagnostic-hero" aria-labelledby="diagnostic-title">
+    <div class="diagnostic-grid" aria-hidden="true"></div>
+    <div class="diagnostic-glow diagnostic-glow--one" aria-hidden="true"></div>
+    <div class="diagnostic-glow diagnostic-glow--two" aria-hidden="true"></div>
+    <div class="diagnostic-shell diagnostic-hero-inner">
+      <div class="diagnostic-hero-copy">
+        <p class="diagnostic-eyebrow"><span></span> DIAGNÓSTICO GRATUITO · LOGÍSTIKOS</p>
+        <h1 id="diagnostic-title">Cuéntanos el reto.<br><span>Nosotros buscamos la causa.</span></h1>
+        <p class="diagnostic-lead">Describa la situación de su organización y, en un plazo de 24 horas laborables, recibirá un análisis elaborado por nuestro equipo de expertos.</p>
+        <div class="diagnostic-trust" aria-label="Características del diagnóstico">
+          <span><b>01</b> Gratuito</span>
+          <span><b>02</b> Individualizado</span>
+          <span><b>03</b> En 24 h laborables</span>
+        </div>
+      </div>
+      <div class="diagnostic-hero-mark" aria-hidden="true">
+        <div class="diagnostic-mark-orbit"></div>
+        <div class="diagnostic-mark-core"><span>24</span><small>HORAS</small></div>
+        <span class="diagnostic-mark-node diagnostic-mark-node--a"></span>
+        <span class="diagnostic-mark-node diagnostic-mark-node--b"></span>
+        <span class="diagnostic-mark-node diagnostic-mark-node--c"></span>
+      </div>
+    </div>
+  </section>
+
+  <section class="diagnostic-main" aria-label="Información y formulario de diagnóstico">
+    <div class="diagnostic-shell diagnostic-layout">
+      <div class="diagnostic-content">
+        <div class="diagnostic-intro">
+          <p>Explique, con sus propias palabras, las incidencias que afectan al desempeño de su área logística: errores en la preparación de pedidos, mandos intermedios absorbidos por la gestión de urgencias, incrementos no previstos en el coste de transporte u otras disfunciones operativas.</p>
+          <p>A partir de la información facilitada, nuestro equipo realizará un análisis individualizado que incluirá:</p>
+        </div>
+
+        <div class="diagnostic-deliverables" aria-label="Qué incluye el diagnóstico">
+          <article><span>01</span><div><h2>Causas probables</h2><p>La identificación de las causas más probables del problema.</p></div></article>
+          <article><span>02</span><div><h2>Intervención formativa</h2><p>Una primera propuesta de intervención formativa ajustada a su contexto.</p></div></article>
+          <article><span>03</span><div><h2>Indicadores</h2><p>Los indicadores recomendados para evaluar el impacto de la formación.</p></div></article>
+          <article><span>04</span><div><h2>FUNDAE</h2><p>Una estimación de la cuantía bonificable a través de FUNDAE.</p></div></article>
+        </div>
+
+        <div class="diagnostic-process">
+          <div class="diagnostic-section-heading">
+            <p class="diagnostic-eyebrow">CÓMO ES EL PROCESO</p>
+            <h2>Tres pasos.<br><span>Sin rodeos.</span></h2>
+          </div>
+          <ol class="diagnostic-route">
+            <li>
+              <div class="diagnostic-route-number">01</div>
+              <div class="diagnostic-route-copy"><span>Aproximadamente dos minutos</span><h3>Descripción del caso</h3><p>Cumplimentación del formulario con la información básica de su organización y del problema detectado.</p></div>
+            </li>
+            <li>
+              <div class="diagnostic-route-number">02</div>
+              <div class="diagnostic-route-copy"><span>En 24 horas laborables</span><h3>Análisis técnico</h3><p>Nuestro equipo de expertos estudia el caso y le remite el diagnóstico por correo electrónico.</p></div>
+            </li>
+            <li>
+              <div class="diagnostic-route-number diagnostic-route-number--accent">03</div>
+              <div class="diagnostic-route-copy"><span>En la fecha que usted elija</span><h3>Reunión de trabajo</h3><p>Valoración conjunta de las alternativas de intervención más adecuadas para su organización.</p></div>
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <aside class="diagnostic-form-card" aria-labelledby="diagnostic-form-title">
+        <div class="diagnostic-form-head">
+          <p class="diagnostic-eyebrow">EMPEZAMOS AQUÍ</p>
+          <h2 id="diagnostic-form-title">Solicitar diagnóstico</h2>
+          <p>Todos los campos son necesarios para preparar un análisis riguroso.</p>
+        </div>
+        <form class="diagnostic-form" data-diagnostic-form novalidate>
+          <input type="hidden" name="origen" value="Diagnóstico gratuito web Logístikos">
+          <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;opacity:0;pointer-events:none">
+          <div class="diagnostic-form-row">
+            <label><span>Nombre y apellidos *</span><input name="nombre" autocomplete="name" required></label>
+            <label><span>Cargo *</span><input name="cargo" autocomplete="organization-title" required></label>
+          </div>
+          <div class="diagnostic-form-row">
+            <label><span>Empresa *</span><input name="empresa" autocomplete="organization" required></label>
+            <label><span>Plantilla *</span><select name="plantilla" required><option value="">Seleccione</option><option value="Menos de 50">Menos de 50</option><option value="50 a 249">50 a 249</option><option value="250 o más">250 o más</option></select></label>
+          </div>
+          <label><span>Correo electrónico *</span><input name="email" type="email" autocomplete="email" required></label>
+          <label><span>Describa el problema *</span><textarea name="problema" required placeholder="Por ejemplo: en temporada alta aumentan los errores de preparación y los encargados dedican la mayor parte de la jornada a resolver incidencias."></textarea></label>
+          <div class="diagnostic-form-status" data-diagnostic-status aria-live="polite"></div>
+          <button type="submit">Solicitar diagnóstico <span aria-hidden="true">↗</span></button>
+          <p class="diagnostic-form-note">Sus datos se utilizarán únicamente para elaborar el diagnóstico y contactar con usted.</p>
+        </form>
+        <div class="diagnostic-success" data-diagnostic-success hidden>
+          <span class="diagnostic-success-icon" aria-hidden="true">✓</span>
+          <p class="diagnostic-eyebrow">SOLICITUD REGISTRADA</p>
+          <h2>Gracias. Ya tenemos el contexto.</h2>
+          <p>Nuestro equipo de expertos procederá a analizar la información y, en un plazo máximo de 24 horas laborables, le remitiremos por correo electrónico el diagnóstico, junto con una propuesta de fecha para la reunión de trabajo.</p>
+        </div>
+      </aside>
+    </div>
+  </section>
+</div>

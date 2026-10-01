@@ -98,37 +98,43 @@ document.addEventListener("submit", function (e) {
   }
 });
 
-document.addEventListener("submit", function (e) {
+document.addEventListener("submit", async function (e) {
   if (!e.target || e.target.id !== "talent-form") return;
   e.preventDefault();
   var form = e.target;
   var status = document.getElementById("talent-form-status");
-  var required = Array.from(form.querySelectorAll("[required]"));
-  var missing = required.find(function (field) { return !String(field.value || "").trim(); });
-  if (missing) {
+  var button = form.querySelector('button[type="submit"]');
+  if (!form.checkValidity()) {
     status.textContent = "Completa los campos obligatorios para preparar la solicitud.";
     status.dataset.tone = "warning";
-    missing.focus();
+    form.reportValidity();
+    return;
+  }
+  var config = window.LOGISTIKOS_FORMS && window.LOGISTIKOS_FORMS.talento;
+  if (!config || !config.endpoint) {
+    status.textContent = "Formulario preparado. Falta activar el servicio de envío.";
+    status.dataset.tone = "warning";
     return;
   }
   var values = Object.fromEntries(new FormData(form).entries());
-  var body = [
-    "Hola Logístikos, quiero consultar una necesidad de Talento Internacional:",
-    "",
-    "Empresa: " + values.empresa,
-    "Puesto: " + values.puesto,
-    "Número de personas: " + values.personas,
-    "Ubicación: " + values.ubicacion,
-    "Turnos: " + values.turnos,
-    "Contacto: " + values.contacto,
-    "",
-    "Quedo atento/a para revisar los siguientes pasos."
-  ].join("\n");
-  status.textContent = "Solicitud preparada. Se abrirá WhatsApp con los datos de tu vacante.";
+  if (button) button.disabled = true;
+  status.textContent = "Enviando solicitud…";
   status.dataset.tone = "light";
-  window.open(
-    "https://wa.me/34696348047?text=" + encodeURIComponent(body),
-    "_blank",
-    "noopener"
-  );
+  try {
+    var response = await fetch(config.endpoint, {
+      method: config.method || "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(values)
+    });
+    var result = await response.json().catch(function () { return {}; });
+    if (!response.ok) throw new Error(result.error || ("HTTP " + response.status));
+    form.reset();
+    status.textContent = "Solicitud enviada correctamente. Logístikos ha recibido los datos de tu necesidad.";
+    status.dataset.tone = "light";
+  } catch (error) {
+    status.textContent = "No hemos podido enviar la solicitud. Inténtalo de nuevo.";
+    status.dataset.tone = "warning";
+  } finally {
+    if (button) button.disabled = false;
+  }
 });

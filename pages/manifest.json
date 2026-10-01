@@ -36,6 +36,14 @@
     "file": "pages/al-dia.html"
   },
   {
+    "id": "tpl-page-diagnostico",
+    "file": "pages/diagnostico.html"
+  },
+  {
+    "id": "tpl-page-webinar",
+    "file": "pages/webinar.html"
+  },
+  {
     "id": "tpl-page-campus",
     "file": "pages/campus.html"
   },

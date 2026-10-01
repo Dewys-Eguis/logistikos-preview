@@ -87,6 +87,7 @@
         <div class="talent-contact-meta"><span>Empresa</span><span>Puesto</span><span>Personas</span><span>Ubicación</span><span>Turnos</span></div>
       </div>
       <form class="talent-form" id="talent-form" novalidate>
+        <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;opacity:0;pointer-events:none">
         <div class="talent-field talent-field--wide"><label for="talent-company">Empresa</label><input id="talent-company" name="empresa" type="text" autocomplete="organization" required placeholder="Nombre de la empresa"></div>
         <div class="talent-field"><label for="talent-role">Puesto</label><input id="talent-role" name="puesto" type="text" required placeholder="Ej.: operario de almacén"></div>
         <div class="talent-field"><label for="talent-count">Número de personas</label><input id="talent-count" name="personas" type="number" min="1" step="1" required placeholder="Ej.: 8"></div>
@@ -97,7 +98,7 @@
           <button type="submit" class="talent-btn talent-btn--primary">Enviar solicitud <span aria-hidden="true">↗</span></button>
           <p id="talent-form-status" role="status" aria-live="polite"></p>
         </div>
-        <p class="talent-form-note">Al enviar, abriremos WhatsApp con los datos de tu solicitud preparados para contactar directamente con Logístikos.</p>
+        <p class="talent-form-note">Al enviar, Logístikos recibirá los datos de tu solicitud para contactar contigo y revisar los siguientes pasos.</p>
       </form>
     </div>
   </section>

@@ -1,0 +1,13 @@
+{
+  "name": "logistikos-form-api",
+  "version": "1.0.0",
+  "private": true,
+  "description": "API segura para formularios de Logistikos",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
