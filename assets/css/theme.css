@@ -73,19 +73,19 @@
 :root[data-theme="light"] a { color:inherit; }
 
 /* Shared header on internal views. */
-:root[data-theme="light"] body:not(.is-home) .site-header {
+:root[data-theme="light"] body .site-header {
   background:rgba(255,255,255,.91);
   border-color:rgba(15,23,42,.10);
   color:#0b1120;
   box-shadow:0 8px 28px rgba(15,23,42,.04);
 }
-:root[data-theme="light"] body:not(.is-home) .site-header .wordmark { color:#09101f; }
-:root[data-theme="light"] body:not(.is-home) .site-nav a { color:#526078; }
-:root[data-theme="light"] body:not(.is-home) .site-nav a:hover,
-:root[data-theme="light"] body:not(.is-home) .site-nav a[aria-current="page"] { color:#09101f; }
-:root[data-theme="light"] body:not(.is-home) .campus-link { color:#526078 !important; }
-:root[data-theme="light"] body:not(.is-home) .campus-link:hover { color:#09101f !important; }
-:root[data-theme="light"] body:not(.is-home) .cta { background:#ff7a1a; color:#09101f !important; }
+:root[data-theme="light"] body .site-header .wordmark { color:#09101f; }
+:root[data-theme="light"] body .site-nav a { color:#526078; }
+:root[data-theme="light"] body .site-nav a:hover,
+:root[data-theme="light"] body .site-nav a[aria-current="page"] { color:#09101f; }
+:root[data-theme="light"] body .campus-link { color:#526078 !important; }
+:root[data-theme="light"] body .campus-link:hover { color:#09101f !important; }
+:root[data-theme="light"] body .cta { background:#ff7a1a; color:#09101f !important; }
 
 :root[data-theme="light"] #wa { background:#ffffff; color:#0b1120; border:1px solid #d8e0ef; box-shadow:0 12px 35px rgba(30,41,59,.08); }
 :root[data-theme="light"] #wa:hover { background:#f8fbff; border-color:#315bff; }

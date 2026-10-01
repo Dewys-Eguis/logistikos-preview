@@ -24,7 +24,7 @@
 .nav-talent-link:focus-visible{outline:2px solid #809dff;outline-offset:4px}
 .architecture-menu nav>.nav-talent-link{display:flex;white-space:normal;margin:0;padding:18px 0;border-bottom:1px solid #29364d;font:500 24px/1.25 Archivo,sans-serif}
 :root[data-theme="light"] .nav-talent-link:hover,:root[data-theme="light"] .nav-talent-link[aria-current="page"]{color:#284edc}
-@media(min-width:1100px) and (max-width:1350px){body:not(.is-home) .site-nav,.home-desktop-nav{gap:12px!important}.site-nav,.home-desktop-nav{font-size:12px}.site-header-actions,.home-header-actions{gap:12px!important}}
+@media(min-width:1100px) and (max-width:1350px){.site-nav,.home-desktop-nav{gap:12px!important}.site-nav,.home-desktop-nav{font-size:12px}.site-header-actions,.home-header-actions{gap:12px!important}}
 @media(max-width:480px){.program-info-dialog{padding:28px 24px}}
 
 :is(.site-nav,.home-desktop-nav)>.nav-talent-link{padding-inline:0;text-decoration:none!important;border:0;background:none}
