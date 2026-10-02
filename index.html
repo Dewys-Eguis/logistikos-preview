@@ -289,9 +289,6 @@
     <template id="tpl-home">
 <div class="home-view">
   <a class="home-skip" href="#home-content">Saltar al contenido</a>
-
-
-
   <section class="home-hero" id="top" aria-labelledby="hero-title">
     <div class="hero-grid" aria-hidden="true"></div><div class="hero-aura" aria-hidden="true"></div>
     <div class="home-shell hero-content" id="home-content" tabindex="-1">
@@ -319,7 +316,26 @@
       <div class="hero-logistics-signal hero-logistics-signal--one"></div>
       <div class="hero-logistics-signal hero-logistics-signal--two"></div>
     </div>
-    <div class="home-shell hero-bottom"><a href="#areas" class="hero-scroll"><span aria-hidden="true">↓</span> EXPLORA LO QUE VIENE</a><p>In company en toda España.<br><span>Every step covered.</span></p><span class="hero-coordinate" aria-hidden="true">LGK / NEXT IS NOW</span></div>
+    <div class="home-shell hero-bottom"><a href="#trayectoria" class="hero-scroll"><span aria-hidden="true">↓</span> NUESTRA TRAYECTORIA</a><p>In company en toda España.<br><span>Every step covered.</span></p><span class="hero-coordinate" aria-hidden="true">LGK / NEXT IS NOW</span></div>
+  </section>
+
+  <section class="home-shell home-metrics" id="trayectoria" aria-label="Nuestra trayectoria" data-reveal>
+    <article class="metric">
+      <strong><span data-count="130" aria-label="130">130</span><em>+</em></strong>
+      <p>Formaciones anuales</p>
+    </article>
+    <article class="metric">
+      <strong><span data-count="20000" aria-label="20.000">20.000</span><em>+</em></strong>
+      <p>Horas de formación acumuladas</p>
+    </article>
+    <article class="metric">
+      <strong><span data-count="1160" aria-label="1.160">1.160</span></strong>
+      <p>Empresas con las que hemos trabajado</p>
+    </article>
+    <article class="metric">
+      <strong><span data-count="4" aria-label="4">4</span></strong>
+      <p>Países donde estamos formando equipos</p>
+    </article>
   </section>
 
   <section class="home-section home-shell home-areas" id="areas" aria-labelledby="areas-title">
@@ -335,7 +351,6 @@
 </div>
     <div class="home-area-note"><span>¿Tu reto no encaja en una categoría?</span><a href="#/a-medida">Diseñamos la formación que necesitas ↗</a></div>
   </section>
-
   <section class="home-solutions home-section" id="soluciones" aria-labelledby="solutions-title" data-content-secondary=""><div class="home-shell">
     <div class="home-section-head" data-reveal=""><div><p class="home-eyebrow">02 / UNA SOLUCIÓN PARA CADA RETO</p><h2 id="solutions-title">A medida de <span>tu equipo.</span></h2></div><a class="home-text-link" href="#/a-medida">Diseñar mi formación a medida ↗</a></div>
     <details class="content-detail" id="home-solutions-detail"><summary>Ver modalidades, formatos y ejemplos de programa</summary><div class="content-detail-body"><div class="solutions-layout" data-reveal><div class="solution-tabs" role="tablist" aria-label="Soluciones para empresas" aria-orientation="vertical"><button id="solution-tab-custom" role="tab" aria-selected="true" aria-controls="solution-custom" tabindex="0"><span>01</span> Formación a medida <b aria-hidden="true">↗</b></button>
@@ -345,9 +360,9 @@
 <section class="solution-panel" id="solution-talent" role="tabpanel" aria-labelledby="solution-tab-talent" tabindex="0" hidden><span class="solution-tag">PERSONAS QUE HACEN AVANZAR EQUIPOS</span><h3>El siguiente nivel<br />está en tu equipo.</h3><p>Desarrollamos capacidades para que los mandos decidan, los departamentos colaboren y las personas apliquen lo aprendido desde el primer día.</p><ul><li>Sprints de 8–12 h y programas de 20–40 h</li><li>Academias anuales e itinerarios por puesto</li><li>Cursos universitarios de 25 h </li></ul><a class="home-text-link" href="#/area/liderazgo">Descubrir desarrollo de talento ↗</a><span class="solution-watermark" aria-hidden="true">crecer.</span></section>
 <section data-spain-only class="solution-panel" id="solution-fundae" role="tabpanel" aria-labelledby="solution-tab-fundae" tabindex="0" hidden><span class="solution-tag">ACTIVA TU CRÉDITO DE FORMACIÓN</span><h3>Invierte en talento.<br />Aprovecha tu crédito.</h3><p>Revisamos el crédito de vuestra empresa, ajustamos el programa y gestionamos la bonificación sin coste añadido. Con una propuesta clara desde el principio.</p><ul><li>Estimación inicial y revisión del crédito real</li><li>Gestión documental y seguimiento</li><li>Modalidades y duración adaptadas a vuestro equipo</li></ul><a class="home-text-link" href="#/fundae">Estimar mi crédito ↗</a><span class="solution-watermark" aria-hidden="true">activar.</span></section>
 <section class="solution-panel" id="solution-campus" role="tabpanel" aria-labelledby="solution-tab-campus" tabindex="0" hidden><span class="solution-tag">APRENDER, DESDE DONDE ESTÉS</span><h3>Un espacio digital.<br />Toda tu formación.</h3><p>Sesiones en directo con el formador, materiales y evaluaciones. El campus conecta a equipos de distintos turnos y sedes en una experiencia compartida.</p><ul><li>Clases participativas en Online Live</li><li>Grabaciones hasta 15 días después del curso</li><li>Registro de conexiones y asistencia para FUNDAE</li></ul><a class="home-text-link" href="#/campus">Conocer el campus ↗</a><span class="solution-watermark" aria-hidden="true">aprender.</span></section></div></div><div class="home-roadmap" data-reveal=""><div class="roadmap-heading"><p class="home-eyebrow">ASÍ PUEDE SER VUESTRO PROGRAMA</p><span class="roadmap-code" data-roadmap-value="code">{{hr.code}}</span></div><div class="roadmap-select" role="group" aria-label="Elegir ejemplo de programa"><sc-for list="{{roadmapOptions}}" as="option"><button type="button" data-roadmap="{{option.id}}" aria-pressed="false">{{option.label}}</button></sc-for></div><div class="roadmap-detail"><div><span class="home-eyebrow" data-roadmap-value="area">{{hr.area}}</span><h3 data-roadmap-value="title">{{hr.title}}</h3></div><dl><div><dt>Duración</dt><dd><span data-roadmap-value="hours">{{hr.hours}}</span><small class="program-duration-note">Duración orientativa · sujeta a adaptación</small></dd></div><div><dt>Modalidad</dt><dd><span class="program-modes-inline" aria-label="Modalidades"><span class="program-modes-label">Modalidades:</span><span>Presencial</span><span>Online Live</span><span>Híbrida</span></span></dd></div><div><dt>Formador</dt><dd data-roadmap-value="trainer">{{hr.trainer}}</dd></div></dl></div><div class="roadmap-bottom"><p><span>KPI PACTADO · DÍA 60</span><strong data-roadmap-value="kpi">{{hr.kpi}}</strong></p><a class="home-text-link" href="{{hr.route}}" data-roadmap-link="">Ver área ↗</a></div></div></div></details>
-
   </div></section>
-  <section class="home-final-cta home-section" id="home-contacto" aria-labelledby="contact-title"><div class="cta-sphere" aria-hidden="true"></div><div class="home-shell" data-reveal=""><p class="home-eyebrow"><span class="status-dot"></span> EL FUTURO SE ACTIVA EN EL PRESENTE</p><h2 id="contact-title">El próximo cambio<br>de tu organización<br><span>puede empezar aquí.</span></h2><p>30 minutos. Un reto compartido.<br>El primer paso hacia lo que viene.</p><div class="home-actions"><a class="home-button home-button--orange" href="#/diagnostico?tema=inicio-cierre" data-magnetic="">Cuéntanos tu reto <span aria-hidden="true">↗</span></a><a class="home-text-link" href="https://calendly.com/logistikos/reunion" target="_blank" rel="noopener">Agendar reunión <span aria-hidden="true">↗</span></a><a class="home-text-link" href="https://wa.me/34696348047" target="_blank" rel="noopener">Escribir por WhatsApp ↗</a></div><p class="cta-benefit"><span aria-hidden="true"></span>Diagnóstico gratuito en 24 h · Sin compromiso</p></div></section>
+  <section class="home-final-cta home-section" id="home-contacto" aria-labelledby="contact-title"><div class="cta-sphere" aria-hidden="true"></div><div class="home-shell" data-reveal=""><p class="home-eyebrow"><span class="status-dot"></span> EL FUTURO SE ACTIVA EN EL PRESENTE</p><h2 id="contact-title">El próximo cambio<br>de tu organización<br><span>puede empezar aquí.</span></h2><p>30 minutos.
+Un reto compartido.<br>El primer paso hacia lo que viene.</p><div class="home-actions"><a class="home-button home-button--orange" href="#/diagnostico?tema=inicio-cierre" data-magnetic="">Cuéntanos tu reto <span aria-hidden="true">↗</span></a><a class="home-text-link" href="https://calendly.com/logistikos/reunion" target="_blank" rel="noopener">Agendar reunión <span aria-hidden="true">↗</span></a><a class="home-text-link" href="https://wa.me/34696348047" target="_blank" rel="noopener">Escribir por WhatsApp ↗</a></div><p class="cta-benefit"><span aria-hidden="true"></span>Diagnóstico gratuito en 24 h · Sin compromiso</p></div></section>
 </div>
 </template>
 <template id="tpl-page-programas">
@@ -840,7 +855,7 @@
 
   <section class="uni-custom" data-spain-only>
     <div class="uni-shell uni-custom-inner">
-      <div><p class="uni-eyebrow">¿OTRO TEMA TRANSVERSAL?</p><h2>También podemos diseñarlo a medida con el mismo diploma.</h2></div>
+      <div><p class="uni-eyebrow">¿OTRO TEMA TRANSVERSAL?</p><h2>También podemos diseñarlo a medida con diploma universitario.</h2></div>
       <a class="uni-btn uni-btn--orange" href="#/diagnostico?tema=universitarios">Organizar un curso en mi empresa <span>↗</span></a>
     </div>
   </section>
@@ -1071,6 +1086,64 @@
             <div><dt>Beneficio para la empresa</dt><dd>Procesos más rápidos y con menos errores, ahorro de horas medible y una implantación de la IA con criterio, no a base de pruebas.</dd></div>
           </dl>
         </article>
+        <article class="trainer-card" data-about-reveal>
+          <div class="trainer-top">
+            <figure class="trainer-photo-wrap">
+              <img class="trainer-photo trainer-photo--sonia" src="assets/images/sonia-montagud.png" alt="Sonia Montagud" loading="lazy" decoding="async">
+              <span class="trainer-number" aria-hidden="true">06</span>
+            </figure>
+            <div class="trainer-body trainer-intro">
+              <p class="trainer-kicker">ESTRATEGIA DE NEGOCIO · TECNOLOGÍA · LIDERAZGO</p>
+              <h3>Sonia Montagud</h3>
+              <p class="trainer-role">Founder - Virtual Mentor</p>
+            </div>
+          </div>
+          <dl class="trainer-facts">
+            <div><dt>Especialidad</dt><dd>Estrategia de negocio, tecnología y liderazgo para empresas que quieren funcionar mejor.</dd></div>
+            <div><dt>Perfil</dt><dd>Ingeniera Informática, Máster en Ingeniería del Software, Máster en Administración de Startups, Doctoranda en IA aplicada a negocio y titulada universitaria en Coaching Dialógico.</dd></div>
+            <div><dt>En una frase</dt><dd>Aporto experiencia, conocimiento contrastado y una visión actual de negocio, tecnología y personas para transformar problemas complejos en decisiones claras y nuevas formas de actuar que os acerquen a vuestros objetivos.</dd></div>
+            <div><dt>Beneficio para el trabajador</dt><dd>Más claridad para decidir, priorizar y actuar con autonomía. Mejores herramientas para resolver problemas.</dd></div>
+            <div><dt>Beneficio para la empresa</dt><dd>Decisiones más ágiles, mejor coordinación y menos tiempo perdido en problemas recurrentes. Aumento de la productividad.</dd></div>
+          </dl>
+        </article>
+        <article class="trainer-card" data-about-reveal>
+          <div class="trainer-top">
+            <figure class="trainer-photo-wrap">
+              <img class="trainer-photo trainer-photo--miguel" src="assets/images/miguel-egea-gomez.png" alt="Miguel Egea Gómez" loading="lazy" decoding="async">
+              <span class="trainer-number" aria-hidden="true">07</span>
+            </figure>
+            <div class="trainer-body trainer-intro">
+              <p class="trainer-kicker">DATOS · INTELIGENCIA ARTIFICIAL · BUSINESS INTELLIGENCE</p>
+              <h3>Miguel Egea Gómez</h3>
+              <p class="trainer-role">Data &amp; AI Technical Lead en Altia · Once veces Microsoft MVP</p>
+            </div>
+          </div>
+          <dl class="trainer-facts">
+            <div><dt>Especialidad</dt><dd>Datos, inteligencia artificial y Business Intelligence aplicados a la empresa: cuadros de mando con Power BI, bases de datos SQL Server y análisis de datos para la toma de decisiones. Más de 25 años en el sector, reconocido por Microsoft como uno de los profesionales de referencia en datos y ponente habitual en conferencias del ecosistema Microsoft.</dd></div>
+            <div><dt>Problema y solución</dt><dd>Muchas empresas tienen sus datos repartidos entre el ERP, el SGA y decenas de Excel, y deciden por intuición porque nadie los cruza. En la formación conectamos esos datos, construimos los indicadores que importan y aprendemos a usar la IA para analizarlos y anticiparse.</dd></div>
+            <div><dt>Beneficio para el trabajador</dt><dd>Deja de perder horas preparando informes y sabe convertir los datos de su operación en conclusiones útiles.</dd></div>
+            <div><dt>Beneficio para la empresa</dt><dd>Indicadores fiables y actualizados, decisiones más rápidas basadas en datos y un uso real de la IA sin depender de terceros.</dd></div>
+          </dl>
+        </article>
+        <article class="trainer-card" data-about-reveal>
+          <div class="trainer-top">
+            <figure class="trainer-photo-wrap">
+              <img class="trainer-photo trainer-photo--mamen" src="assets/images/mamen-fernandez-diez-de-los-rios.png" alt="Mamen Fernández Díez de los Ríos" loading="lazy" decoding="async">
+              <span class="trainer-number" aria-hidden="true">08</span>
+            </figure>
+            <div class="trainer-body trainer-intro">
+              <p class="trainer-kicker">LIDERAZGO · DIRECCIÓN COMPASIVA · GESTIÓN DEL ESTRÉS</p>
+              <h3>Mamen Fernández Díez de los Ríos</h3>
+              <p class="trainer-role">CEO de Human Balance · Autora de «Liderar sin amargar: Manual de Dirección compasiva»</p>
+            </div>
+          </div>
+          <dl class="trainer-facts">
+            <div><dt>Especialidad</dt><dd>Liderazgo de equipos, dirección compasiva y gestión del estrés con mindfulness, aplicados a mandos intermedios y equipos de operaciones que trabajan bajo presión.</dd></div>
+            <div><dt>Problema y solución</dt><dd>En logística, muchos mandos llegan al puesto por su conocimiento técnico, no por su manera de dirigir personas, y la presión diaria acaba en tensión, conflictos y rotación. En la formación aprendemos a liderar con exigencia y sin desgastar al equipo, a gestionar el estrés propio y a manejar las conversaciones difíciles.</dd></div>
+            <div><dt>Beneficio para el trabajador</dt><dd>Gestiona mejor la presión y su propio estrés, y aprende a dirigir a su equipo con más calma y menos conflictos.</dd></div>
+            <div><dt>Beneficio para la empresa</dt><dd>Mejor clima en los equipos, menos rotación y absentismo, y mandos que obtienen resultados sin quemar a las personas.</dd></div>
+          </dl>
+        </article>
       </div>
     </div>
   </section>
@@ -1082,7 +1155,7 @@
         <div data-about-reveal><dt>formaciones anuales</dt><dd aria-label="130+"><span data-about-count="130" aria-hidden="true">130</span><span aria-hidden="true">+</span></dd></div>
         <div data-about-reveal><dt>horas de formación acumuladas</dt><dd aria-label="20.000+"><span data-about-count="20000" aria-hidden="true">20.000</span><span aria-hidden="true">+</span></dd></div>
         <div data-about-reveal><dt>empresas con las que hemos trabajado</dt><dd aria-label="1.160"><span data-about-count="1160" aria-hidden="true">1.160</span></dd></div>
-        <div data-about-reveal><dt>países donde hemos formado equipos</dt><dd aria-label="4"><span data-about-count="4" aria-hidden="true">4</span></dd></div>
+        <div data-about-reveal><dt>países donde estamos formando equipos</dt><dd aria-label="4"><span data-about-count="4" aria-hidden="true">4</span></dd></div>
       </dl>
     </div>
   </section>
@@ -1949,7 +2022,7 @@
               <div><h4>Para quién</h4><p>Jefes de turno, encargados, mandos intermedios y directores de operaciones.</p></div>
               <div><h4>Qué te llevas</h4><ul><li>Cómo distinguir lo urgente de lo importante cuando todo arde.</li><li>Claves para delegar sin perder el control.</li><li>Herramientas sencillas para gestionar el estrés propio y el del equipo.</li></ul></div>
             </div>
-            <div class="webinar-speaker webinar-speaker--no-photo"><div><span>Ponente</span><strong>Mamen Fernández Díez de los Ríos</strong><small>CEO de Human Balance · Autora de «Liderar sin amargar»</small></div></div>
+            <div class="webinar-speaker"><img src="assets/images/mamen-fernandez-diez-de-los-rios.png" alt="Mamen Fernández Díez de los Ríos"><div><span>Ponente</span><strong>Mamen Fernández Díez de los Ríos</strong><small>CEO de Human Balance · Autora de «Liderar sin amargar»</small></div></div>
             <button class="webinar-register" type="button" data-webinar-register>Inscribirme <span aria-hidden="true">↗</span></button>
           </div>
         </article>
@@ -1964,7 +2037,7 @@
               <div><h4>Para quién</h4><p>Directores generales, de operaciones, de compras y de comercio exterior de empresas que exportan o importan.</p></div>
               <div><h4>Qué te llevas</h4><ul><li>Los cambios del entorno internacional que más están afectando al margen.</li><li>Cómo revisar Incoterms, contratos y transporte para repartir mejor costes y riesgos.</li><li>Las decisiones clave para diversificar mercados y proveedores sin perder control.</li></ul></div>
             </div>
-            <div class="webinar-speaker webinar-speaker--no-photo"><div><span>Ponente</span><strong>Javier Fernández Díez de los Ríos</strong><small>Economista · Director de Logístikos · Especialista en logística y comercio internacional</small></div></div>
+            <div class="webinar-speaker"><img src="assets/images/javier-fernandez-diez-de-los-rios.jpeg" alt="Javier Fernández Díez de los Ríos"><div><span>Ponente</span><strong>Javier Fernández Díez de los Ríos</strong><small>Economista · Director de Logístikos · Especialista en logística y comercio internacional</small></div></div>
             <button class="webinar-register" type="button" data-webinar-register>Inscribirme <span aria-hidden="true">↗</span></button>
           </div>
         </article>

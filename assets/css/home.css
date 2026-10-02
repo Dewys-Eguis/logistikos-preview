@@ -795,3 +795,238 @@ body.is-home #wa { background:#101a30; border:1px solid #35415a; border-radius:3
     padding-top:104px;
   }
 }
+
+/* 2026-10-02 · Nuestra trayectoria a ancho completo y distribución uniforme */
+.home-view .home-metrics.home-shell{
+  width:100vw;
+  max-width:none;
+  margin-left:calc(50% - 50vw);
+  margin-right:calc(50% - 50vw);
+  padding:clamp(38px,4.5vw,68px) clamp(28px,5vw,88px);
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:0;
+  border-top:1px solid var(--home-line);
+  border-bottom:1px solid var(--home-line);
+  background:
+    radial-gradient(circle at 18% 18%, rgba(49,91,255,.10), transparent 34%),
+    linear-gradient(180deg, rgba(9,16,29,.96), rgba(6,11,21,.98));
+}
+.home-view .home-metrics .metric{
+  min-width:0;
+  min-height:168px;
+  padding:12px clamp(24px,2.7vw,46px);
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:flex-start;
+  position:relative;
+  border:0;
+}
+.home-view .home-metrics .metric + .metric{
+  border-left:0;
+  padding-left:clamp(24px,2.7vw,46px);
+}
+.home-view .home-metrics .metric:not(:last-child)::after{
+  content:"";
+  position:absolute;
+  top:12%;
+  right:0;
+  bottom:12%;
+  width:1px;
+  background:linear-gradient(to bottom,transparent,rgba(148,163,184,.26),transparent);
+}
+.home-view .home-metrics .metric strong{
+  display:flex;
+  align-items:baseline;
+  gap:8px;
+  margin:0 0 16px;
+  font:500 clamp(46px,4.6vw,74px)/.95 var(--home-heading);
+  letter-spacing:-.05em;
+  color:var(--color-white);
+  white-space:nowrap;
+}
+.home-view .home-metrics .metric em{
+  margin:0;
+  font-size:.38em;
+  line-height:1;
+  font-style:normal;
+  color:var(--color-light-blue);
+}
+.home-view .home-metrics .metric p{
+  margin:0;
+  max-width:24ch;
+  font-size:clamp(14px,1.05vw,18px);
+  line-height:1.5;
+  color:#9facc2;
+}
+@media (max-width:1050px){
+  .home-view .home-metrics.home-shell{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    padding:30px 28px;
+  }
+  .home-view .home-metrics .metric{
+    min-height:145px;
+    padding:24px 26px;
+  }
+  .home-view .home-metrics .metric:nth-child(2)::after{
+    display:none;
+  }
+  .home-view .home-metrics .metric:nth-child(-n+2){
+    border-bottom:1px solid var(--home-line);
+  }
+}
+@media (max-width:640px){
+  .home-view .home-metrics.home-shell{
+    grid-template-columns:1fr;
+    padding:14px 22px;
+  }
+  .home-view .home-metrics .metric,
+  .home-view .home-metrics .metric + .metric{
+    min-height:auto;
+    padding:26px 4px;
+  }
+  .home-view .home-metrics .metric::after{
+    display:none!important;
+  }
+  .home-view .home-metrics .metric:not(:last-child){
+    border-bottom:1px solid var(--home-line);
+  }
+  .home-view .home-metrics .metric strong{
+    font-size:clamp(44px,13vw,60px);
+  }
+  .home-view .home-metrics .metric p{
+    max-width:none;
+    font-size:15px;
+  }
+}
+
+/* 2026-10-02 FINAL FIX - Nuestra trayectoria: 4 columnas reales a ancho completo */
+@media (min-width:1100px){
+  .home-view .home-metrics.home-shell,
+  .home-view #trayectoria.home-metrics.home-shell{
+    width:100vw !important;
+    max-width:none !important;
+    margin-left:calc(50% - 50vw) !important;
+    margin-right:calc(50% - 50vw) !important;
+    padding:clamp(40px,4.5vw,70px) clamp(36px,5vw,92px) !important;
+    display:grid !important;
+    grid-template-columns:repeat(4,minmax(0,1fr)) !important;
+    gap:0 !important;
+  }
+  .home-view #trayectoria .metric{
+    width:auto !important;
+    min-width:0 !important;
+    max-width:none !important;
+    padding:12px clamp(26px,2.8vw,48px) !important;
+  }
+  .home-view #trayectoria .metric + .metric{
+    padding-left:clamp(26px,2.8vw,48px) !important;
+  }
+}
+
+/* 2026-10-02 ULTIMO AJUSTE - trayectoria full width real, sin depender de .home-view */
+#trayectoria.home-metrics,
+section#trayectoria.home-metrics,
+.home-metrics#trayectoria{
+  width:100% !important;
+  max-width:none !important;
+  margin:0 !important;
+  padding:clamp(42px,4.6vw,76px) clamp(32px,5vw,96px) !important;
+  display:grid !important;
+  grid-template-columns:repeat(4,minmax(0,1fr)) !important;
+  gap:0 !important;
+  box-sizing:border-box !important;
+}
+
+#trayectoria.home-metrics > .metric{
+  width:auto !important;
+  min-width:0 !important;
+  max-width:none !important;
+  padding:10px clamp(24px,2.4vw,44px) !important;
+  box-sizing:border-box !important;
+  border-left:0 !important;
+  position:relative !important;
+}
+
+#trayectoria.home-metrics > .metric + .metric{
+  padding-left:clamp(24px,2.4vw,44px) !important;
+  border-left:0 !important;
+}
+
+#trayectoria.home-metrics > .metric:not(:last-child)::after{
+  content:"" !important;
+  position:absolute !important;
+  top:10% !important;
+  right:0 !important;
+  bottom:10% !important;
+  width:1px !important;
+  background:linear-gradient(
+    to bottom,
+    transparent,
+    rgba(148,163,184,.28),
+    transparent
+  ) !important;
+}
+
+#trayectoria.home-metrics > .metric strong{
+  font-size:clamp(48px,4vw,72px) !important;
+  line-height:.95 !important;
+  white-space:nowrap !important;
+}
+
+#trayectoria.home-metrics > .metric p{
+  max-width:22ch !important;
+  font-size:clamp(15px,1vw,18px) !important;
+  line-height:1.5 !important;
+}
+
+@media (max-width:1050px){
+  #trayectoria.home-metrics,
+  section#trayectoria.home-metrics,
+  .home-metrics#trayectoria{
+    grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+    padding:28px 28px !important;
+  }
+
+  #trayectoria.home-metrics > .metric{
+    padding:28px 26px !important;
+  }
+
+  #trayectoria.home-metrics > .metric:nth-child(2)::after{
+    display:none !important;
+  }
+
+  #trayectoria.home-metrics > .metric:nth-child(-n+2){
+    border-bottom:1px solid rgba(148,163,184,.16) !important;
+  }
+}
+
+@media (max-width:640px){
+  #trayectoria.home-metrics,
+  section#trayectoria.home-metrics,
+  .home-metrics#trayectoria{
+    grid-template-columns:1fr !important;
+    padding:14px 22px !important;
+  }
+
+  #trayectoria.home-metrics > .metric{
+    padding:26px 4px !important;
+  }
+
+  #trayectoria.home-metrics > .metric::after{
+    display:none !important;
+  }
+
+  #trayectoria.home-metrics > .metric:not(:last-child){
+    border-bottom:1px solid rgba(148,163,184,.16) !important;
+  }
+
+  #trayectoria.home-metrics > .metric strong{
+    font-size:clamp(44px,13vw,60px) !important;
+  }
+
+  #trayectoria.home-metrics > .metric p{
+    max-width:none !important;
+  }
+}

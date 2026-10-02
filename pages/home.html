@@ -1,8 +1,5 @@
 <div class="home-view">
   <a class="home-skip" href="#home-content">Saltar al contenido</a>
-
-
-
   <section class="home-hero" id="top" aria-labelledby="hero-title">
     <div class="hero-grid" aria-hidden="true"></div><div class="hero-aura" aria-hidden="true"></div>
     <div class="home-shell hero-content" id="home-content" tabindex="-1">
@@ -30,7 +27,26 @@
       <div class="hero-logistics-signal hero-logistics-signal--one"></div>
       <div class="hero-logistics-signal hero-logistics-signal--two"></div>
     </div>
-    <div class="home-shell hero-bottom"><a href="#areas" class="hero-scroll"><span aria-hidden="true">↓</span> EXPLORA LO QUE VIENE</a><p>In company en toda España.<br><span>Every step covered.</span></p><span class="hero-coordinate" aria-hidden="true">LGK / NEXT IS NOW</span></div>
+    <div class="home-shell hero-bottom"><a href="#trayectoria" class="hero-scroll"><span aria-hidden="true">↓</span> NUESTRA TRAYECTORIA</a><p>In company en toda España.<br><span>Every step covered.</span></p><span class="hero-coordinate" aria-hidden="true">LGK / NEXT IS NOW</span></div>
+  </section>
+
+  <section class="home-shell home-metrics" id="trayectoria" aria-label="Nuestra trayectoria" data-reveal>
+    <article class="metric">
+      <strong><span data-count="130" aria-label="130">130</span><em>+</em></strong>
+      <p>Formaciones anuales</p>
+    </article>
+    <article class="metric">
+      <strong><span data-count="20000" aria-label="20.000">20.000</span><em>+</em></strong>
+      <p>Horas de formación acumuladas</p>
+    </article>
+    <article class="metric">
+      <strong><span data-count="1160" aria-label="1.160">1.160</span></strong>
+      <p>Empresas con las que hemos trabajado</p>
+    </article>
+    <article class="metric">
+      <strong><span data-count="4" aria-label="4">4</span></strong>
+      <p>Países donde estamos formando equipos</p>
+    </article>
   </section>
 
   <section class="home-section home-shell home-areas" id="areas" aria-labelledby="areas-title">
@@ -39,11 +55,10 @@
     <!-- include: pages/partials/home-areas.html -->
     <div class="home-area-note"><span>¿Tu reto no encaja en una categoría?</span><a href="#/a-medida">Diseñamos la formación que necesitas ↗</a></div>
   </section>
-
   <section class="home-solutions home-section" id="soluciones" aria-labelledby="solutions-title" data-content-secondary=""><div class="home-shell">
     <div class="home-section-head" data-reveal=""><div><p class="home-eyebrow">02 / UNA SOLUCIÓN PARA CADA RETO</p><h2 id="solutions-title">A medida de <span>tu equipo.</span></h2></div><a class="home-text-link" href="#/a-medida">Diseñar mi formación a medida ↗</a></div>
     <details class="content-detail" id="home-solutions-detail"><summary>Ver modalidades, formatos y ejemplos de programa</summary><div class="content-detail-body"><!-- include: pages/partials/home-solutions.html --><div class="home-roadmap" data-reveal=""><div class="roadmap-heading"><p class="home-eyebrow">ASÍ PUEDE SER VUESTRO PROGRAMA</p><span class="roadmap-code" data-roadmap-value="code">{{hr.code}}</span></div><div class="roadmap-select" role="group" aria-label="Elegir ejemplo de programa"><sc-for list="{{roadmapOptions}}" as="option"><button type="button" data-roadmap="{{option.id}}" aria-pressed="false">{{option.label}}</button></sc-for></div><div class="roadmap-detail"><div><span class="home-eyebrow" data-roadmap-value="area">{{hr.area}}</span><h3 data-roadmap-value="title">{{hr.title}}</h3></div><dl><div><dt>Duración</dt><dd><span data-roadmap-value="hours">{{hr.hours}}</span><small class="program-duration-note">Duración orientativa · sujeta a adaptación</small></dd></div><div><dt>Modalidad</dt><dd><span class="program-modes-inline" aria-label="Modalidades"><span class="program-modes-label">Modalidades:</span><span>Presencial</span><span>Online Live</span><span>Híbrida</span></span></dd></div><div><dt>Formador</dt><dd data-roadmap-value="trainer">{{hr.trainer}}</dd></div></dl></div><div class="roadmap-bottom"><p><span>KPI PACTADO · DÍA 60</span><strong data-roadmap-value="kpi">{{hr.kpi}}</strong></p><a class="home-text-link" href="{{hr.route}}" data-roadmap-link="">Ver área ↗</a></div></div></div></details>
-
   </div></section>
-  <section class="home-final-cta home-section" id="home-contacto" aria-labelledby="contact-title"><div class="cta-sphere" aria-hidden="true"></div><div class="home-shell" data-reveal=""><p class="home-eyebrow"><span class="status-dot"></span> EL FUTURO SE ACTIVA EN EL PRESENTE</p><h2 id="contact-title">El próximo cambio<br>de tu organización<br><span>puede empezar aquí.</span></h2><p>30 minutos. Un reto compartido.<br>El primer paso hacia lo que viene.</p><div class="home-actions"><a class="home-button home-button--orange" href="#/diagnostico?tema=inicio-cierre" data-magnetic="">Cuéntanos tu reto <span aria-hidden="true">↗</span></a><a class="home-text-link" href="https://calendly.com/logistikos/reunion" target="_blank" rel="noopener">Agendar reunión <span aria-hidden="true">↗</span></a><a class="home-text-link" href="https://wa.me/34696348047" target="_blank" rel="noopener">Escribir por WhatsApp ↗</a></div><p class="cta-benefit"><span aria-hidden="true"></span>Diagnóstico gratuito en 24 h · Sin compromiso</p></div></section>
+  <section class="home-final-cta home-section" id="home-contacto" aria-labelledby="contact-title"><div class="cta-sphere" aria-hidden="true"></div><div class="home-shell" data-reveal=""><p class="home-eyebrow"><span class="status-dot"></span> EL FUTURO SE ACTIVA EN EL PRESENTE</p><h2 id="contact-title">El próximo cambio<br>de tu organización<br><span>puede empezar aquí.</span></h2><p>30 minutos.
+Un reto compartido.<br>El primer paso hacia lo que viene.</p><div class="home-actions"><a class="home-button home-button--orange" href="#/diagnostico?tema=inicio-cierre" data-magnetic="">Cuéntanos tu reto <span aria-hidden="true">↗</span></a><a class="home-text-link" href="https://calendly.com/logistikos/reunion" target="_blank" rel="noopener">Agendar reunión <span aria-hidden="true">↗</span></a><a class="home-text-link" href="https://wa.me/34696348047" target="_blank" rel="noopener">Escribir por WhatsApp ↗</a></div><p class="cta-benefit"><span aria-hidden="true"></span>Diagnóstico gratuito en 24 h · Sin compromiso</p></div></section>
 </div>

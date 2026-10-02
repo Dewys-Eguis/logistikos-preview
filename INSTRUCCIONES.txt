@@ -1,0 +1,26 @@
+CAMBIOS CLIENTE - BLOQUE 2
+
+1. Copia TODO el contenido de esta carpeta dentro de:
+   C:\Users\ESTUDIANTE\Downloads\Logistikos_FINAL_GITHUB
+   y acepta combinar/reemplazar las 3 imagenes nuevas.
+
+2. Abre PowerShell dentro de Logistikos_FINAL_GITHUB.
+
+3. Ejecuta:
+   powershell -ExecutionPolicy Bypass -File .\aplicar-cambios-cliente-02.ps1
+
+4. Luego ejecuta:
+   npm run build
+
+5. Revisa en local:
+   - Home: indicadores justo despues del hero y animacion de numeros al hacer scroll.
+   - Cursos universitarios: "Tambien podemos disenarlo a medida con diploma universitario".
+   - Webinar: Mireia, Mamen y Javier con foto y el mismo formato.
+   - Nosotros > Formadores: Sonia, Miguel y Mamen agregados; 3 columnas escritorio, 2 tablet, 1 movil.
+
+6. Si todo esta bien, elimina aplicar-cambios-cliente-02.ps1 e INSTRUCCIONES.txt antes del commit si no quieres subirlos al repo.
+
+7. Git:
+   git add -A
+   git commit -m "Actualizar trayectoria, universitarios y formadores"
+   git push origin main
