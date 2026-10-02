@@ -11,3 +11,5 @@ body.is-diagnostico .site-header{background:#07101f!important;border-bottom-colo
 .diagnostic-success p{color:var(--dg-copy);font-size:15px;line-height:1.7}
 .diagnostic-success-cta{display:flex;align-items:center;justify-content:center;gap:8px;min-height:52px;margin-top:22px;background:var(--dg-orange);color:#07101f;font:700 14px/1 "Archivo",sans-serif;text-decoration:none;transition:background .2s ease}
 .diagnostic-success-cta:hover{background:#ff8d3b;color:#07101f}
+/* Oculta la sección "HABLEMOS" del footer solo en la página de diagnóstico (repetitiva con el formulario) */
+body.is-diagnostico .legacy-443{display:none}
