@@ -116,8 +116,18 @@
         <label><span>Provincia</span><input name="provincia" autocomplete="address-level1"></label>
         <label><span>Código postal</span><input name="cp" autocomplete="postal-code"></label>
         <label><span>Email *</span><input name="email" type="email" autocomplete="email" required></label>
-        <label class="webinar-consent"><input type="checkbox" name="consentimiento" required><span>Acepto que Logístikos utilice estos datos para gestionar mi inscripción y enviarme la información de acceso.</span></label>
-        <div class="webinar-form-actions"><p class="webinar-form-status" data-webinar-status aria-live="polite"></p><button type="submit">Enviar inscripción <span aria-hidden="true">↗</span></button></div>
+          <div class="legal-form-consent" data-legal-consent>
+            <label class="legal-check legal-check--required">
+              <input type="checkbox" name="privacidad" value="aceptada" required>
+              <span>He leído y acepto la <a href="#/politica-privacidad">Política de privacidad</a>. <b aria-hidden="true">*</b></span>
+            </label>
+            <label class="legal-check">
+              <input type="checkbox" name="comunicaciones" value="si">
+              <span>Quiero recibir información sobre formaciones, webinars y eventos de Logístikos.</span>
+            </label>
+            <p class="legal-basic-info"><strong>Información básica sobre protección de datos.</strong> Responsable: Javier Fernández Díez de los Ríos (Logístikos). Finalidad: atender tu solicitud y, si lo autorizas, enviarte información de nuestras formaciones. Legitimación: tu consentimiento. Destinatarios: no se ceden datos a terceros salvo obligación legal. Derechos: acceso, rectificación, supresión y otros, escribiendo a <a href="mailto:formacion@logistikos.es">formacion@logistikos.es</a>. Más información en nuestra <a href="#/politica-privacidad">Política de privacidad</a>.</p>
+          </div>
+<div class="webinar-form-actions"><p class="webinar-form-status" data-webinar-status aria-live="polite"></p><button type="submit">Enviar inscripción <span aria-hidden="true">↗</span></button></div>
       </form>
     </div>
   </dialog>

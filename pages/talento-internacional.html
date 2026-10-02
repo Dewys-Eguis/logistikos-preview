@@ -94,11 +94,22 @@
         <div class="talent-field"><label for="talent-location">Ubicación</label><input id="talent-location" name="ubicacion" type="text" required placeholder="Ciudad / centro de trabajo"></div>
         <div class="talent-field"><label for="talent-shifts">Turnos</label><input id="talent-shifts" name="turnos" type="text" required placeholder="Ej.: mañana y tarde"></div>
         <div class="talent-field talent-field--wide"><label for="talent-contact">Contacto</label><input id="talent-contact" name="contacto" type="text" required placeholder="Email o teléfono"></div>
+                  <div class="legal-form-consent" data-legal-consent>
+                    <label class="legal-check legal-check--required">
+                      <input type="checkbox" name="privacidad" value="aceptada" required>
+                      <span>He leído y acepto la <a href="#/politica-privacidad">Política de privacidad</a>. <b aria-hidden="true">*</b></span>
+                    </label>
+                    <label class="legal-check">
+                      <input type="checkbox" name="comunicaciones" value="si">
+                      <span>Quiero recibir información sobre formaciones, webinars y eventos de Logístikos.</span>
+                    </label>
+                    <p class="legal-basic-info"><strong>Información básica sobre protección de datos.</strong> Responsable: Javier Fernández Díez de los Ríos (Logístikos). Finalidad: atender tu solicitud y, si lo autorizas, enviarte información de nuestras formaciones. Legitimación: tu consentimiento. Destinatarios: no se ceden datos a terceros salvo obligación legal. Derechos: acceso, rectificación, supresión y otros, escribiendo a <a href="mailto:formacion@logistikos.es">formacion@logistikos.es</a>. Más información en nuestra <a href="#/politica-privacidad">Política de privacidad</a>.</p>
+                  </div>
         <div class="talent-form-footer">
           <button type="submit" class="talent-btn talent-btn--primary">Enviar solicitud <span aria-hidden="true">↗</span></button>
           <p id="talent-form-status" role="status" aria-live="polite"></p>
         </div>
-        <p class="talent-form-note">Al enviar, Logístikos recibirá los datos de tu solicitud para contactar contigo y revisar los siguientes pasos.</p>
+        <p class="talent-form-note">La aceptación de la política de privacidad es obligatoria para enviar la solicitud.</p>
       </form>
     </div>
   </section>

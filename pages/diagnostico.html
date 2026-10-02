@@ -84,9 +84,20 @@
             <label><span>Teléfono (opcional)</span><input name="telefono" type="tel" autocomplete="tel"></label>
           </div>
           <label><span>Cuéntanos tu necesidad o problema *</span><textarea name="problema" required data-diagnostic-problem placeholder="Por ejemplo: en temporada alta aumentan los errores de preparación y los encargados dedican la mayor parte de la jornada a resolver incidencias."></textarea></label>
+                    <div class="legal-form-consent" data-legal-consent>
+                      <label class="legal-check legal-check--required">
+                        <input type="checkbox" name="privacidad" value="aceptada" required>
+                        <span>He leído y acepto la <a href="#/politica-privacidad">Política de privacidad</a>. <b aria-hidden="true">*</b></span>
+                      </label>
+                      <label class="legal-check">
+                        <input type="checkbox" name="comunicaciones" value="si">
+                        <span>Quiero recibir información sobre formaciones, webinars y eventos de Logístikos.</span>
+                      </label>
+                      <p class="legal-basic-info"><strong>Información básica sobre protección de datos.</strong> Responsable: Javier Fernández Díez de los Ríos (Logístikos). Finalidad: atender tu solicitud y, si lo autorizas, enviarte información de nuestras formaciones. Legitimación: tu consentimiento. Destinatarios: no se ceden datos a terceros salvo obligación legal. Derechos: acceso, rectificación, supresión y otros, escribiendo a <a href="mailto:formacion@logistikos.es">formacion@logistikos.es</a>. Más información en nuestra <a href="#/politica-privacidad">Política de privacidad</a>.</p>
+                    </div>
           <div class="diagnostic-form-status" data-diagnostic-status aria-live="polite"></div>
           <button type="submit">Enviar mi reto <span aria-hidden="true">↗</span></button>
-          <p class="diagnostic-form-note">Tus datos se utilizarán únicamente para elaborar el informe y contactar contigo.</p>
+          <p class="diagnostic-form-note">La aceptación de la política de privacidad es obligatoria para enviar la solicitud.</p>
           <p class="diagnostic-form-alt">¿Prefieres hablarlo directamente? <a href="https://calendly.com/logistikos/reunion" target="_blank" rel="noopener">Agendar reunión ↗</a></p>
         </form>
         <div class="diagnostic-success" data-diagnostic-success hidden>

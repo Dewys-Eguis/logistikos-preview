@@ -49,6 +49,7 @@
     <link rel="stylesheet" href="assets/css/navy-surfaces.css" />
     <link rel="stylesheet" href="assets/css/webinar.css" />
     <link rel="stylesheet" href="assets/css/diagnostico.css" />
+    <link rel="stylesheet" href="assets/css/legal.css" />
   </head>
   <body>
     <header class="site-header">
@@ -190,7 +191,7 @@
           </div>
         </div>
       </div>
-      <div class="site-footer-bottom"><span>© 2026 Logístikos</span><span class="footer-legal-pending">Aviso legal · Privacidad · Cookies <small>pendiente de textos definitivos</small></span><a href="mailto:formacion@logistikos.es?subject=Consulta%20legal%20o%20de%20privacidad">Consultas legales</a><a href="#top">Volver arriba ↑</a></div>
+      <div class="site-footer-bottom"><span>© 2026 Logístikos</span><a href="#/aviso-legal">Aviso legal</a><a href="#/politica-privacidad">Política de privacidad</a><a href="#/politica-cookies">Política de cookies</a><button type="button" class="footer-cookie-settings" data-cookie-settings>Configurar cookies</button><a href="#top">Volver arriba ↑</a></div>
     </footer>
     <div id="toast" role="status"></div>
     <div id="fab" class="legacy-457">
@@ -699,6 +700,17 @@ Un reto compartido.<br>El primer paso hacia lo que viene.</p><div class="home-ac
       </div>
       <form class="rrhh-formmodal__form" id="rrhh-formmodal-form" novalidate>
         <div id="rrhh-formmodal-fields"></div>
+                  <div class="legal-form-consent" data-legal-consent>
+                    <label class="legal-check legal-check--required">
+                      <input type="checkbox" name="privacidad" value="aceptada" required>
+                      <span>He leído y acepto la <a href="#/politica-privacidad">Política de privacidad</a>. <b aria-hidden="true">*</b></span>
+                    </label>
+                    <label class="legal-check">
+                      <input type="checkbox" name="comunicaciones" value="si">
+                      <span>Quiero recibir información sobre formaciones, webinars y eventos de Logístikos.</span>
+                    </label>
+                    <p class="legal-basic-info"><strong>Información básica sobre protección de datos.</strong> Responsable: Javier Fernández Díez de los Ríos (Logístikos). Finalidad: atender tu solicitud y, si lo autorizas, enviarte información de nuestras formaciones. Legitimación: tu consentimiento. Destinatarios: no se ceden datos a terceros salvo obligación legal. Derechos: acceso, rectificación, supresión y otros, escribiendo a <a href="mailto:formacion@logistikos.es">formacion@logistikos.es</a>. Más información en nuestra <a href="#/politica-privacidad">Política de privacidad</a>.</p>
+                  </div>
         <div class="rrhh-formmodal__status" id="rrhh-formmodal-status" aria-live="polite"></div>
         <div class="rrhh-formmodal__footer">
           <button type="button" class="rrhh-formmodal__secondary" data-rrhh-close>Cancelar</button>
@@ -1938,9 +1950,20 @@ Un reto compartido.<br>El primer paso hacia lo que viene.</p><div class="home-ac
             <label><span>Teléfono (opcional)</span><input name="telefono" type="tel" autocomplete="tel"></label>
           </div>
           <label><span>Cuéntanos tu necesidad o problema *</span><textarea name="problema" required data-diagnostic-problem placeholder="Por ejemplo: en temporada alta aumentan los errores de preparación y los encargados dedican la mayor parte de la jornada a resolver incidencias."></textarea></label>
+                    <div class="legal-form-consent" data-legal-consent>
+                      <label class="legal-check legal-check--required">
+                        <input type="checkbox" name="privacidad" value="aceptada" required>
+                        <span>He leído y acepto la <a href="#/politica-privacidad">Política de privacidad</a>. <b aria-hidden="true">*</b></span>
+                      </label>
+                      <label class="legal-check">
+                        <input type="checkbox" name="comunicaciones" value="si">
+                        <span>Quiero recibir información sobre formaciones, webinars y eventos de Logístikos.</span>
+                      </label>
+                      <p class="legal-basic-info"><strong>Información básica sobre protección de datos.</strong> Responsable: Javier Fernández Díez de los Ríos (Logístikos). Finalidad: atender tu solicitud y, si lo autorizas, enviarte información de nuestras formaciones. Legitimación: tu consentimiento. Destinatarios: no se ceden datos a terceros salvo obligación legal. Derechos: acceso, rectificación, supresión y otros, escribiendo a <a href="mailto:formacion@logistikos.es">formacion@logistikos.es</a>. Más información en nuestra <a href="#/politica-privacidad">Política de privacidad</a>.</p>
+                    </div>
           <div class="diagnostic-form-status" data-diagnostic-status aria-live="polite"></div>
           <button type="submit">Enviar mi reto <span aria-hidden="true">↗</span></button>
-          <p class="diagnostic-form-note">Tus datos se utilizarán únicamente para elaborar el informe y contactar contigo.</p>
+          <p class="diagnostic-form-note">La aceptación de la política de privacidad es obligatoria para enviar la solicitud.</p>
           <p class="diagnostic-form-alt">¿Prefieres hablarlo directamente? <a href="https://calendly.com/logistikos/reunion" target="_blank" rel="noopener">Agendar reunión ↗</a></p>
         </form>
         <div class="diagnostic-success" data-diagnostic-success hidden>
@@ -2075,8 +2098,18 @@ Un reto compartido.<br>El primer paso hacia lo que viene.</p><div class="home-ac
         <label><span>Provincia</span><input name="provincia" autocomplete="address-level1"></label>
         <label><span>Código postal</span><input name="cp" autocomplete="postal-code"></label>
         <label><span>Email *</span><input name="email" type="email" autocomplete="email" required></label>
-        <label class="webinar-consent"><input type="checkbox" name="consentimiento" required><span>Acepto que Logístikos utilice estos datos para gestionar mi inscripción y enviarme la información de acceso.</span></label>
-        <div class="webinar-form-actions"><p class="webinar-form-status" data-webinar-status aria-live="polite"></p><button type="submit">Enviar inscripción <span aria-hidden="true">↗</span></button></div>
+          <div class="legal-form-consent" data-legal-consent>
+            <label class="legal-check legal-check--required">
+              <input type="checkbox" name="privacidad" value="aceptada" required>
+              <span>He leído y acepto la <a href="#/politica-privacidad">Política de privacidad</a>. <b aria-hidden="true">*</b></span>
+            </label>
+            <label class="legal-check">
+              <input type="checkbox" name="comunicaciones" value="si">
+              <span>Quiero recibir información sobre formaciones, webinars y eventos de Logístikos.</span>
+            </label>
+            <p class="legal-basic-info"><strong>Información básica sobre protección de datos.</strong> Responsable: Javier Fernández Díez de los Ríos (Logístikos). Finalidad: atender tu solicitud y, si lo autorizas, enviarte información de nuestras formaciones. Legitimación: tu consentimiento. Destinatarios: no se ceden datos a terceros salvo obligación legal. Derechos: acceso, rectificación, supresión y otros, escribiendo a <a href="mailto:formacion@logistikos.es">formacion@logistikos.es</a>. Más información en nuestra <a href="#/politica-privacidad">Política de privacidad</a>.</p>
+          </div>
+<div class="webinar-form-actions"><p class="webinar-form-status" data-webinar-status aria-live="polite"></p><button type="submit">Enviar inscripción <span aria-hidden="true">↗</span></button></div>
       </form>
     </div>
   </dialog>
@@ -2289,11 +2322,22 @@ Un reto compartido.<br>El primer paso hacia lo que viene.</p><div class="home-ac
         <div class="talent-field"><label for="talent-location">Ubicación</label><input id="talent-location" name="ubicacion" type="text" required placeholder="Ciudad / centro de trabajo"></div>
         <div class="talent-field"><label for="talent-shifts">Turnos</label><input id="talent-shifts" name="turnos" type="text" required placeholder="Ej.: mañana y tarde"></div>
         <div class="talent-field talent-field--wide"><label for="talent-contact">Contacto</label><input id="talent-contact" name="contacto" type="text" required placeholder="Email o teléfono"></div>
+                  <div class="legal-form-consent" data-legal-consent>
+                    <label class="legal-check legal-check--required">
+                      <input type="checkbox" name="privacidad" value="aceptada" required>
+                      <span>He leído y acepto la <a href="#/politica-privacidad">Política de privacidad</a>. <b aria-hidden="true">*</b></span>
+                    </label>
+                    <label class="legal-check">
+                      <input type="checkbox" name="comunicaciones" value="si">
+                      <span>Quiero recibir información sobre formaciones, webinars y eventos de Logístikos.</span>
+                    </label>
+                    <p class="legal-basic-info"><strong>Información básica sobre protección de datos.</strong> Responsable: Javier Fernández Díez de los Ríos (Logístikos). Finalidad: atender tu solicitud y, si lo autorizas, enviarte información de nuestras formaciones. Legitimación: tu consentimiento. Destinatarios: no se ceden datos a terceros salvo obligación legal. Derechos: acceso, rectificación, supresión y otros, escribiendo a <a href="mailto:formacion@logistikos.es">formacion@logistikos.es</a>. Más información en nuestra <a href="#/politica-privacidad">Política de privacidad</a>.</p>
+                  </div>
         <div class="talent-form-footer">
           <button type="submit" class="talent-btn talent-btn--primary">Enviar solicitud <span aria-hidden="true">↗</span></button>
           <p id="talent-form-status" role="status" aria-live="polite"></p>
         </div>
-        <p class="talent-form-note">Al enviar, Logístikos recibirá los datos de tu solicitud para contactar contigo y revisar los siguientes pasos.</p>
+        <p class="talent-form-note">La aceptación de la política de privacidad es obligatoria para enviar la solicitud.</p>
       </form>
     </div>
   </section>
@@ -3306,6 +3350,128 @@ Un reto compartido.<br>El primer paso hacia lo que viene.</p><div class="home-ac
   </div>
 </section>
 </template>
+<template id="tpl-page-aviso-legal">
+<div class="legal-page">
+  <section class="legal-hero">
+    <div class="legal-shell">
+      <p class="legal-kicker">INFORMACIÓN LEGAL</p>
+      <h1>Aviso <span>legal.</span></h1>
+      <p class="legal-lead">Información sobre el titular, las condiciones de uso y la responsabilidad del sitio web de Logístikos.</p>
+    </div>
+  </section>
+
+  <section class="legal-content">
+    <div class="legal-shell legal-layout">
+      <aside class="legal-index" aria-label="Índice de la página">
+        <span>AVISO LEGAL</span>
+        <a href="#datos-titular">Datos del titular</a>
+        <a href="#objeto-aceptacion">Objeto y aceptación</a>
+        <a href="#uso-web">Uso del sitio web</a>
+        <a href="#propiedad">Propiedad intelectual</a>
+        <a href="#responsabilidad">Responsabilidad</a>
+        <a href="#jurisdiccion">Legislación y jurisdicción</a>
+      </aside>
+      <article class="legal-document">
+        <section id="datos-titular">
+          <span class="legal-number">01</span><h2>Datos del titular</h2>
+          <p>En cumplimiento del artículo 10 de la Ley 34/2002, de Servicios de la Sociedad de la Información y de Comercio Electrónico (LSSI-CE), se informa de los datos del titular de este sitio web:</p>
+          <dl class="legal-data-grid">
+            <div><dt>Titular</dt><dd>Javier Fernández Díez de los Ríos (nombre comercial: Logístikos)</dd></div>
+            <div><dt>NIF</dt><dd>34802009L</dd></div>
+            <div><dt>Domicilio</dt><dd>Plaza Santa Isabel, nº 7, 30004 Murcia (España)</dd></div>
+            <div><dt>Email</dt><dd><a href="mailto:formacion@logistikos.es">formacion@logistikos.es</a></dd></div>
+            <div><dt>Sitio web</dt><dd>logistikos.es</dd></div>
+            <div><dt>Actividad</dt><dd>Formación y consultoría en logística, transporte, comercio internacional y supply chain.</dd></div>
+          </dl>
+        </section>
+        <section id="objeto-aceptacion"><span class="legal-number">02</span><h2>Objeto y aceptación</h2><p>Este aviso legal regula el acceso y uso del sitio web. Navegar por él atribuye la condición de usuario e implica la aceptación de estas condiciones.</p></section>
+        <section id="uso-web"><span class="legal-number">03</span><h2>Uso del sitio web</h2><p>El usuario se compromete a hacer un uso adecuado de los contenidos y a no emplearlos para actividades ilícitas o contrarias a la buena fe. El titular podrá modificar en cualquier momento la información, los servicios y la presentación de la web.</p></section>
+        <section id="propiedad"><span class="legal-number">04</span><h2>Propiedad intelectual e industrial</h2><p>Los textos, imágenes, logotipos, marcas y diseño de esta web pertenecen al titular o a terceros que han autorizado su uso. Queda prohibida su reproducción, distribución o modificación sin autorización expresa. Los logotipos de entidades colaboradoras se muestran con su consentimiento y son propiedad de sus respectivos titulares.</p></section>
+        <section id="responsabilidad"><span class="legal-number">05</span><h2>Responsabilidad</h2><p>El titular no se hace responsable de los daños derivados de interrupciones técnicas, virus o del uso indebido de la web. Los enlaces a sitios de terceros se ofrecen solo como información; el titular no controla ni responde de sus contenidos.</p></section>
+        <section id="jurisdiccion"><span class="legal-number">06</span><h2>Legislación y jurisdicción</h2><p>Estas condiciones se rigen por la legislación española. Para cualquier controversia, las partes se someten a los juzgados y tribunales de Murcia, salvo que la normativa aplicable establezca otro fuero.</p></section>
+      </article>
+    </div>
+  </section>
+</div>
+</template>
+<template id="tpl-page-politica-privacidad">
+<div class="legal-page">
+  <section class="legal-hero">
+    <div class="legal-shell">
+      <p class="legal-kicker">PROTECCIÓN DE DATOS</p>
+      <h1>Política de <span>privacidad.</span></h1>
+      <p class="legal-lead">Cómo tratamos tus datos personales, para qué los utilizamos y qué derechos puedes ejercer.</p>
+    </div>
+  </section>
+
+  <section class="legal-content">
+    <div class="legal-shell legal-layout">
+      <aside class="legal-index" aria-label="Índice de la página">
+        <span>PRIVACIDAD</span>
+        <a href="#responsable">Responsable</a>
+        <a href="#datos-finalidades">Datos y finalidades</a>
+        <a href="#destinatarios">Destinatarios</a>
+        <a href="#derechos">Derechos</a>
+        <a href="#seguridad">Seguridad y veracidad</a>
+      </aside>
+      <article class="legal-document">
+        <section id="responsable"><span class="legal-number">01</span><h2>Responsable del tratamiento</h2><p>Javier Fernández Díez de los Ríos (Logístikos), NIF 34802009L, Plaza Santa Isabel, nº 7, 30004 Murcia. Email: <a href="mailto:formacion@logistikos.es">formacion@logistikos.es</a>.</p></section>
+        <section id="datos-finalidades"><span class="legal-number">02</span><h2>Qué datos tratamos y para qué</h2>
+          <div class="legal-table-wrap"><table class="legal-table"><thead><tr><th>Finalidad</th><th>Datos</th><th>Base legal</th><th>Conservación</th></tr></thead><tbody>
+            <tr><td>Responder consultas y solicitudes de diagnóstico</td><td>Nombre, empresa, cargo, email, teléfono y descripción del reto</td><td>Consentimiento del usuario y medidas precontractuales a petición del interesado</td><td>El tiempo necesario para atender la solicitud y, como máximo, 2 años si no hay relación comercial</td></tr>
+            <tr><td>Agendar reuniones con nuestro equipo de expertos</td><td>Nombre, email, empresa y fecha elegida</td><td>Medidas precontractuales a petición del interesado</td><td>Hasta 2 años desde la última comunicación</td></tr>
+            <tr><td>Gestionar formaciones contratadas</td><td>Datos de la empresa y de los alumnos</td><td>Ejecución del contrato y obligaciones legales</td><td>Mientras dure la relación y los plazos legales posteriores (fiscales, hasta 6 años)</td></tr>
+            <tr><td>Inscripción en webinars y eventos</td><td>Nombre, email y empresa</td><td>Consentimiento</td><td>Hasta que el usuario lo retire</td></tr>
+            <tr><td>Enviar comunicaciones comerciales</td><td>Nombre y email</td><td>Consentimiento expreso</td><td>Hasta que el usuario se dé de baja</td></tr>
+          </tbody></table></div>
+          <p>No se toman decisiones automatizadas ni se elaboran perfiles con efectos jurídicos sobre el usuario.</p>
+        </section>
+        <section id="destinatarios"><span class="legal-number">03</span><h2>Destinatarios</h2><p>Los datos no se ceden a terceros salvo obligación legal. Podrán acceder a ellos los proveedores que prestan servicios al responsable (alojamiento web, correo electrónico, herramientas de agenda), con contrato de encargo de tratamiento. Para los cursos con diploma universitario, los datos de los alumnos se comunican a la Fundación General de la Universidad de Salamanca para emitir el diploma.</p><p>Si algún proveedor está fuera del Espacio Económico Europeo, la transferencia se ampara en las garantías del RGPD (decisiones de adecuación o cláusulas contractuales tipo).</p></section>
+        <section id="derechos"><span class="legal-number">04</span><h2>Derechos del usuario</h2><p>El usuario puede ejercer sus derechos de acceso, rectificación, supresión, oposición, limitación del tratamiento y portabilidad escribiendo a <a href="mailto:formacion@logistikos.es">formacion@logistikos.es</a> o a la dirección postal indicada, adjuntando copia de su documento identificativo. También puede retirar en cualquier momento el consentimiento prestado.</p><p>Si considera que sus derechos no se han respetado, puede presentar una reclamación ante la Agencia Española de Protección de Datos (www.aepd.es).</p></section>
+        <section id="seguridad"><span class="legal-number">05</span><h2>Seguridad y veracidad</h2><p>El responsable aplica medidas técnicas y organizativas adecuadas para proteger los datos. El usuario garantiza que los datos facilitados son veraces y se compromete a comunicar cualquier cambio.</p></section>
+      </article>
+    </div>
+  </section>
+</div>
+</template>
+<template id="tpl-page-politica-cookies">
+<div class="legal-page">
+  <section class="legal-hero">
+    <div class="legal-shell">
+      <p class="legal-kicker">PREFERENCIAS Y CONSENTIMIENTO</p>
+      <h1>Política de <span>cookies.</span></h1>
+      <p class="legal-lead">Información sobre las cookies utilizadas por Logístikos y cómo puedes cambiar tu elección en cualquier momento.</p>
+    </div>
+  </section>
+
+  <section class="legal-content">
+    <div class="legal-shell legal-layout">
+      <aside class="legal-index" aria-label="Índice de la página">
+        <span>COOKIES</span>
+        <a href="#que-son">Qué son</a>
+        <a href="#cookies-utilizadas">Cookies utilizadas</a>
+        <a href="#consentimiento">Consentimiento</a>
+        <a href="#cambiar">Cambiar o retirar</a>
+        <a href="#actualizaciones">Actualizaciones</a>
+        <button type="button" data-cookie-settings>Configurar cookies ↗</button>
+      </aside>
+      <article class="legal-document">
+        <section id="que-son"><span class="legal-number">01</span><h2>Qué son las cookies</h2><p>Las cookies son pequeños archivos que la web guarda en el navegador del usuario para que funcione correctamente, recordar sus preferencias o medir cómo se usa. Esta política se aplica conforme al artículo 22.2 de la LSSI-CE y la Guía sobre el uso de cookies de la AEPD.</p></section>
+        <section id="cookies-utilizadas"><span class="legal-number">02</span><h2>Cookies que utiliza esta web</h2><p>En la versión actual de la web no se cargan cookies de analítica ni publicidad antes del consentimiento. La preferencia del usuario se guarda mediante una cookie técnica.</p>
+          <div class="legal-table-wrap"><table class="legal-table"><thead><tr><th>Cookie</th><th>Titular</th><th>Tipo y finalidad</th><th>Duración</th></tr></thead><tbody>
+            <tr><td><code>logistikos_cookie_consent</code></td><td>Propia</td><td>Técnica: necesaria para recordar la elección del usuario sobre cookies y evitar mostrar el banner en cada visita.</td><td>12 meses</td></tr>
+            <tr><td>Analítica</td><td>-</td><td>No activa actualmente. Si en el futuro se incorpora una herramienta de analítica, solo podrá cargarse tras el consentimiento.</td><td>-</td></tr>
+            <tr><td>Publicidad</td><td>-</td><td>No activa actualmente. Cualquier píxel o tecnología publicitaria requerirá consentimiento previo.</td><td>-</td></tr>
+          </tbody></table></div>
+        </section>
+        <section id="consentimiento"><span class="legal-number">03</span><h2>Consentimiento</h2><p>Las cookies técnicas no requieren consentimiento. Las de analítica y publicidad solo se instalan si el usuario las acepta en el banner de cookies, que permite aceptarlas, rechazarlas o configurarlas.</p></section>
+        <section id="cambiar"><span class="legal-number">04</span><h2>Cómo cambiar o retirar el consentimiento</h2><p>El usuario puede cambiar su elección en cualquier momento desde el enlace «Configurar cookies» del pie de página. También puede borrarlas o bloquearlas desde la configuración de su navegador (Chrome, Firefox, Safari o Edge).</p><button class="legal-settings-button" type="button" data-cookie-settings>Configurar cookies <span aria-hidden="true">↗</span></button></section>
+        <section id="actualizaciones"><span class="legal-number">05</span><h2>Actualizaciones</h2><p>Esta política puede modificarse si cambian las cookies utilizadas o la normativa. Se recomienda revisarla periódicamente.</p></section>
+      </article>
+    </div>
+  </section>
+</div>
+</template>
     <script defer src="assets/js/theme.js"></script>
     <script defer src="assets/js/renderer.js"></script>
     <script defer src="assets/js/courses.js"></script>
@@ -3326,6 +3492,7 @@ Un reto compartido.<br>El primer paso hacia lo que viene.</p><div class="home-ac
     <script defer src="assets/js/program-info.js"></script>
     <script defer src="assets/js/webinar.js"></script>
     <script defer src="assets/js/diagnostico.js"></script>
+    <script defer src="assets/js/cookies-consent.js"></script>
     <script defer src="assets/js/main.js"></script>
   </body>
 </html>

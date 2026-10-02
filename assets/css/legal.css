@@ -1,0 +1,81 @@
+/* Logístikos · páginas legales, consentimiento y textos de formulario */
+.legal-page{background:#050b18;color:#f7f9ff;min-height:70vh}
+.legal-shell{width:min(1220px,calc(100% - 48px));margin-inline:auto}
+.legal-hero{position:relative;overflow:hidden;padding:clamp(80px,9vw,138px) 0 clamp(58px,7vw,96px);border-bottom:1px solid rgba(148,163,184,.16);background:radial-gradient(circle at 82% 18%,rgba(2,25,252,.18),transparent 32%),linear-gradient(180deg,#071226 0%,#050b18 100%)}
+.legal-hero:after{content:"";position:absolute;inset:auto -8% -70% 46%;height:420px;border:1px solid rgba(99,124,255,.16);border-radius:50%;transform:rotate(-11deg);pointer-events:none}
+.legal-kicker{margin:0 0 22px;color:#ff7a1a;font:600 12px/1.2 "IBM Plex Mono",monospace;letter-spacing:.18em}
+.legal-hero h1{margin:0;max-width:900px;font-size:clamp(54px,7.2vw,108px);line-height:.92;letter-spacing:-.055em;font-weight:700}.legal-hero h1 span{color:#6f88ff}
+.legal-lead{max-width:780px;margin:28px 0 0;color:#aebbd1;font-size:clamp(18px,1.5vw,23px);line-height:1.58}
+.legal-content{padding:clamp(54px,7vw,96px) 0 clamp(80px,10vw,150px)}
+.legal-layout{display:grid;grid-template-columns:240px minmax(0,1fr);gap:clamp(48px,7vw,108px);align-items:start}
+.legal-index{position:sticky;top:112px;display:flex;flex-direction:column;gap:4px;padding:18px 0;border-top:1px solid rgba(148,163,184,.2);border-bottom:1px solid rgba(148,163,184,.2)}
+.legal-index>span{margin-bottom:12px;color:#7891ff;font:600 11px/1.2 "IBM Plex Mono",monospace;letter-spacing:.16em}.legal-index a,.legal-index button{appearance:none;border:0;background:none;padding:9px 0;text-align:left;color:#8f9db4;font:500 14px/1.4 "IBM Plex Sans",sans-serif;text-decoration:none;cursor:pointer;transition:color .2s ease,transform .2s ease}.legal-index a:hover,.legal-index button:hover{color:#ff7a1a;transform:translateX(3px)}
+.legal-document{min-width:0}.legal-document>section{scroll-margin-top:120px;padding:0 0 42px;margin:0 0 42px;border-bottom:1px solid rgba(148,163,184,.14)}.legal-document>section:last-child{border-bottom:0;margin-bottom:0}
+.legal-number{display:block;margin-bottom:13px;color:#647cff;font:600 12px/1 "IBM Plex Mono",monospace;letter-spacing:.12em}.legal-document h2{margin:0 0 18px;font-size:clamp(28px,3vw,44px);line-height:1.03;letter-spacing:-.035em}.legal-document p{max-width:880px;margin:0 0 16px;color:#b8c4d8;font-size:17px;line-height:1.75}.legal-document a{color:#ff9b55;text-underline-offset:4px}.legal-document code{color:#b9c6ff}
+.legal-data-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;margin:28px 0 0;background:rgba(148,163,184,.14);border:1px solid rgba(148,163,184,.14)}.legal-data-grid>div{padding:20px;background:#0b172b}.legal-data-grid dt{margin-bottom:7px;color:#7489ad;font:600 11px/1.2 "IBM Plex Mono",monospace;letter-spacing:.12em;text-transform:uppercase}.legal-data-grid dd{margin:0;color:#f3f6fc;font-size:15px;line-height:1.5}
+.legal-table-wrap{overflow-x:auto;margin:28px 0 24px;border:1px solid rgba(148,163,184,.16);border-radius:2px}.legal-table{width:100%;min-width:760px;border-collapse:collapse;background:#091428}.legal-table th,.legal-table td{padding:18px 20px;border-bottom:1px solid rgba(148,163,184,.14);vertical-align:top;text-align:left;line-height:1.55}.legal-table th{background:#0f2342;color:#f5f7fc;font-size:13px}.legal-table td{color:#b7c3d5;font-size:14px}.legal-table tr:last-child td{border-bottom:0}
+.legal-settings-button{margin-top:8px;border:1px solid rgba(255,122,26,.55);background:rgba(255,122,26,.08);color:#ff9345;padding:13px 18px;font:700 14px/1 "IBM Plex Sans",sans-serif;cursor:pointer;transition:.2s ease}.legal-settings-button:hover{background:#ff7a1a;color:#07101e;transform:translateY(-1px)}
+.footer-cookie-settings{appearance:none;border:0;background:none;padding:0;color:inherit;font:inherit;cursor:pointer}.footer-cookie-settings:hover{color:#ff7a1a}
+.guarantee-pdf-link{color:var(--color-orange-accent,#ff7a1a)!important;text-decoration-color:rgba(255,122,26,.65)!important;font-weight:700!important}.guarantee-pdf-link:hover{color:#ffad73!important;text-decoration-color:#ffad73!important}
+.legal-form-consent{margin:18px 0 8px;padding:18px;border:1px solid rgba(148,163,184,.16);background:rgba(5,14,30,.38)}.legal-check{display:grid!important;grid-template-columns:18px minmax(0,1fr);gap:11px;align-items:start;margin:0 0 12px!important;color:#b8c4d8!important;font-size:13px!important;line-height:1.5!important}.legal-check input{width:16px!important;height:16px!important;margin:2px 0 0!important;accent-color:#ff7a1a}.legal-check a{color:#ff9953;text-underline-offset:3px}.legal-basic-info{margin:10px 0 0!important;color:#75849c!important;font-size:11px!important;line-height:1.6!important}.legal-basic-info a{color:#9eabbd;text-underline-offset:3px}
+.cookie-banner{position:fixed;z-index:9998;left:50%;bottom:22px;transform:translateX(-50%);width:min(1180px,calc(100% - 32px));padding:22px 24px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:28px;align-items:center;border:1px solid rgba(137,156,190,.26);background:rgba(6,15,31,.97);box-shadow:0 22px 70px rgba(0,0,0,.46);backdrop-filter:blur(18px)}.cookie-banner[hidden]{display:none}.cookie-banner-kicker{margin:0 0 7px;color:#ff7a1a;font:600 10px/1 "IBM Plex Mono",monospace;letter-spacing:.16em}.cookie-banner h2{margin:0 0 7px;font-size:20px;letter-spacing:-.02em}.cookie-banner p{margin:0;max-width:720px;color:#9faec4;font-size:13px;line-height:1.55}.cookie-banner p a{color:#d5def0}.cookie-banner-actions{display:grid;grid-template-columns:repeat(3,minmax(112px,1fr));gap:8px}.cookie-action{min-height:44px;padding:10px 15px;border:1px solid rgba(148,163,184,.28);background:#0a172c;color:#f5f7fb;font-weight:700;cursor:pointer}.cookie-action--accept{border-color:#ff7a1a;background:#ff7a1a;color:#07101e}.cookie-action:hover{transform:translateY(-1px)}
+.cookie-dialog{width:min(700px,calc(100% - 32px));padding:0;border:1px solid rgba(137,156,190,.28);background:#071226;color:#f5f7fb;box-shadow:0 30px 100px rgba(0,0,0,.62)}.cookie-dialog::backdrop{background:rgba(1,5,13,.74);backdrop-filter:blur(5px)}.cookie-dialog-inner{padding:28px}.cookie-dialog-head{display:flex;justify-content:space-between;gap:20px;align-items:flex-start;margin-bottom:25px}.cookie-dialog-head h2{margin:5px 0 0;font-size:30px;letter-spacing:-.035em}.cookie-dialog-close{border:0;background:transparent;color:#b7c4d6;font-size:28px;cursor:pointer}.cookie-option{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:20px;padding:19px 0;border-top:1px solid rgba(148,163,184,.15)}.cookie-option h3{margin:0 0 7px;font-size:16px}.cookie-option p{margin:0;color:#8f9db3;font-size:13px;line-height:1.55}.cookie-option input{width:20px;height:20px;accent-color:#ff7a1a}.cookie-option small{color:#6f809a}.cookie-dialog-actions{display:flex;justify-content:flex-end;gap:9px;padding-top:24px;border-top:1px solid rgba(148,163,184,.15)}
+@media(max-width:820px){.legal-layout{grid-template-columns:1fr}.legal-index{position:static;display:none}.legal-data-grid{grid-template-columns:1fr}.cookie-banner{grid-template-columns:1fr}.cookie-banner-actions{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:560px){.legal-shell{width:min(100% - 30px,1220px)}.legal-hero{padding-top:58px}.legal-hero h1{font-size:48px}.legal-document p{font-size:15px}.cookie-banner{bottom:10px;padding:18px}.cookie-banner-actions{grid-template-columns:1fr}.cookie-action{width:100%}.cookie-dialog-inner{padding:20px}.cookie-dialog-actions{flex-direction:column}.cookie-dialog-actions .cookie-action{width:100%}}
+
+/* LOGISTIKOS_FORMULARIOS_LEGALES_COMPLETO */
+.legal-form-consent[data-legal-consent]{
+  grid-column:1/-1;
+  width:100%;
+  box-sizing:border-box;
+  margin:18px 0 10px;
+  padding:18px 20px;
+  border:1px solid rgba(148,163,184,.18);
+  background:linear-gradient(135deg,rgba(10,26,51,.78),rgba(6,17,35,.7));
+  box-shadow:inset 3px 0 0 rgba(255,122,26,.82);
+}
+.legal-check{
+  display:grid!important;
+  grid-template-columns:18px minmax(0,1fr);
+  gap:11px;
+  align-items:start;
+  margin:0 0 12px!important;
+  color:#c5d0e1!important;
+  font-size:13px!important;
+  line-height:1.55!important;
+  cursor:pointer;
+}
+.legal-check:last-of-type{margin-bottom:14px!important}
+.legal-check input[type="checkbox"]{
+  appearance:auto!important;
+  width:16px!important;
+  height:16px!important;
+  min-width:16px!important;
+  margin:3px 0 0!important;
+  padding:0!important;
+  accent-color:#ff7a1a;
+  cursor:pointer;
+}
+.legal-check a{color:#ff9a50!important;text-decoration:underline;text-underline-offset:3px}
+.legal-check a:hover{color:#ffb47d!important}
+.legal-check b{color:#ff7a1a;font-weight:800}
+.legal-basic-info{
+  margin:0!important;
+  padding-top:13px;
+  border-top:1px solid rgba(148,163,184,.12);
+  color:#8594aa!important;
+  font-size:11px!important;
+  line-height:1.65!important;
+}
+.legal-basic-info strong{color:#aebbd0!important}
+.legal-basic-info a{color:#aab7ca!important;text-decoration:underline;text-underline-offset:3px}
+.diagnostic-form .legal-form-consent,
+.webinar-form .legal-form-consent,
+.talent-form .legal-form-consent,
+.rrhh-formmodal__form .legal-form-consent{grid-column:1/-1!important}
+@media(max-width:640px){
+  .legal-form-consent[data-legal-consent]{padding:16px;margin-top:15px}
+  .legal-check{font-size:12px!important;gap:10px}
+  .legal-basic-info{font-size:10.5px!important}
+}
+

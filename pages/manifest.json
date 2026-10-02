@@ -78,5 +78,17 @@
   {
     "id": "tpl-page-marca",
     "file": "pages/marca.html"
+  },
+  {
+    "id": "tpl-page-aviso-legal",
+    "file": "pages/aviso-legal.html"
+  },
+  {
+    "id": "tpl-page-politica-privacidad",
+    "file": "pages/politica-privacidad.html"
+  },
+  {
+    "id": "tpl-page-politica-cookies",
+    "file": "pages/politica-cookies.html"
   }
 ]

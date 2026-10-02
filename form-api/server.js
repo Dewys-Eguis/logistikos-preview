@@ -84,6 +84,11 @@ function email(value) {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(candidate) ? candidate : "";
 }
 
+function consentOk(value) {
+  const normalized = text(value, 50).toLowerCase();
+  return ["aceptada", "aceptado", "si", "sí", "on", "true", "1", "accepted"].includes(normalized);
+}
+
 function escapeHtml(value) {
   return text(value, 12000)
     .replace(/&/g, "&amp;")
@@ -106,6 +111,7 @@ function diagnosticMessage(data) {
   const replyTo = email(data.email);
   const required = ["nombre", "cargo", "empresa", "plantilla", "email", "problema"];
   if (required.some((key) => !text(data[key]))) return { error: "Faltan campos obligatorios." };
+  if (!consentOk(data.privacidad)) return { error: "Debes aceptar la Politica de privacidad." };
   if (!replyTo) return { error: "El correo electronico no es valido." };
   return {
     subject: `[Logistikos] Nuevo reto · ${text(data.empresa, 120)}`,
@@ -119,14 +125,17 @@ function diagnosticMessage(data) {
       row("Telefono", data.telefono || "No indicado"),
       row("Problema / reto", data.problema),
       row("Origen", data.origen || "Diagnostico gratuito web Logistikos"),
+      row("Politica de privacidad", "Aceptada"),
+      row("Comunicaciones comerciales", consentOk(data.comunicaciones) ? "Autorizadas" : "No autorizadas"),
     ]),
   };
 }
 
 function webinarMessage(data) {
   const replyTo = email(data.email);
-  const required = ["webinar", "nombre", "apellido1", "telefono", "empresa", "cargo", "email", "consentimiento"];
+  const required = ["webinar", "nombre", "apellido1", "telefono", "empresa", "cargo", "email"];
   if (required.some((key) => !text(data[key]))) return { error: "Faltan campos obligatorios." };
+  if (!consentOk(data.privacidad || data.consentimiento)) return { error: "Debes aceptar la Politica de privacidad." };
   if (!replyTo) return { error: "El correo electronico no es valido." };
   return {
     subject: `[Logistikos] Inscripcion webinar · ${text(data.webinar, 140)}`,
@@ -143,7 +152,8 @@ function webinarMessage(data) {
       row("Provincia", data.provincia),
       row("Codigo postal", data.cp),
       row("Email", data.email),
-      row("Consentimiento", "Aceptado"),
+      row("Politica de privacidad", "Aceptada"),
+      row("Comunicaciones comerciales", consentOk(data.comunicaciones) ? "Autorizadas" : "No autorizadas"),
     ]),
   };
 }
@@ -151,6 +161,7 @@ function webinarMessage(data) {
 function talentMessage(data) {
   const required = ["empresa", "puesto", "personas", "ubicacion", "turnos", "contacto"];
   if (required.some((key) => !text(data[key]))) return { error: "Faltan campos obligatorios." };
+  if (!consentOk(data.privacidad)) return { error: "Debes aceptar la Politica de privacidad." };
   const contactEmail = email(data.contacto);
   return {
     subject: `[Logistikos] Talento Internacional · ${text(data.empresa, 120)}`,
@@ -162,6 +173,8 @@ function talentMessage(data) {
       row("Ubicacion", data.ubicacion),
       row("Turnos", data.turnos),
       row("Contacto", data.contacto),
+      row("Politica de privacidad", "Aceptada"),
+      row("Comunicaciones comerciales", consentOk(data.comunicaciones) ? "Autorizadas" : "No autorizadas"),
     ]),
   };
 }
