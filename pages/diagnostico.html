@@ -5,10 +5,10 @@
     <div class="diagnostic-glow diagnostic-glow--two" aria-hidden="true"></div>
     <div class="diagnostic-shell diagnostic-hero-inner">
       <div class="diagnostic-hero-copy">
-        <p class="diagnostic-eyebrow"><span></span> DIAGNÓSTICO GRATUITO · LOGÍSTIKOS</p>
-        <h1 id="diagnostic-title">Cuéntanos el reto.<br><span>Nosotros buscamos la causa.</span></h1>
-        <p class="diagnostic-lead">Describa la situación de su organización y, en un plazo de 24 horas laborables, recibirá un análisis elaborado por nuestro equipo de expertos.</p>
-        <div class="diagnostic-trust" aria-label="Características del diagnóstico">
+        <p class="diagnostic-eyebrow"><span></span> DIAGNÓSTICO GRATUITO EN 24 H · SIN COMPROMISO</p>
+        <h1 id="diagnostic-title">Cuéntanos tus necesidades<br><span>o problemas.</span></h1>
+        <p class="diagnostic-lead">Descríbenos la situación de tu equipo y en 24 horas laborables recibirás un primer informe diagnóstico elaborado por nuestro equipo de expertos.</p>
+        <div class="diagnostic-trust" aria-label="Características del informe">
           <span><b>01</b> Gratuito</span>
           <span><b>02</b> Individualizado</span>
           <span><b>03</b> En 24 h laborables</span>
@@ -28,13 +28,13 @@
     <div class="diagnostic-shell diagnostic-layout">
       <div class="diagnostic-content">
         <div class="diagnostic-intro">
-          <p>Explique, con sus propias palabras, las incidencias que afectan al desempeño de su área logística: errores en la preparación de pedidos, mandos intermedios absorbidos por la gestión de urgencias, incrementos no previstos en el coste de transporte u otras disfunciones operativas.</p>
-          <p>A partir de la información facilitada, nuestro equipo realizará un análisis individualizado que incluirá:</p>
+          <p>Cuéntanos, con tus propias palabras, qué está afectando al rendimiento de tu equipo: errores en la preparación de pedidos, mandos intermedios absorbidos por las urgencias, subidas inesperadas del coste de transporte o cualquier otra necesidad formativa.</p>
+          <p>Con esa información, nuestro equipo te preparará un informe individualizado que incluye:</p>
         </div>
 
-        <div class="diagnostic-deliverables" aria-label="Qué incluye el diagnóstico">
+        <div class="diagnostic-deliverables" aria-label="Qué incluye el informe diagnóstico">
           <article><span>01</span><div><h2>Causas probables</h2><p>La identificación de las causas más probables del problema.</p></div></article>
-          <article><span>02</span><div><h2>Intervención formativa</h2><p>Una primera propuesta de intervención formativa ajustada a su contexto.</p></div></article>
+          <article><span>02</span><div><h2>Intervención formativa</h2><p>Una primera propuesta formativa ajustada a tu contexto.</p></div></article>
           <article><span>03</span><div><h2>Indicadores</h2><p>Los indicadores recomendados para evaluar el impacto de la formación.</p></div></article>
           <article><span>04</span><div><h2>FUNDAE</h2><p>Una estimación de la cuantía bonificable a través de FUNDAE.</p></div></article>
         </div>
@@ -47,15 +47,15 @@
           <ol class="diagnostic-route">
             <li>
               <div class="diagnostic-route-number">01</div>
-              <div class="diagnostic-route-copy"><span>Aproximadamente dos minutos</span><h3>Descripción del caso</h3><p>Cumplimentación del formulario con la información básica de su organización y del problema detectado.</p></div>
+              <div class="diagnostic-route-copy"><span>Unos dos minutos</span><h3>Nos cuentas tu reto</h3><p>Rellenas el formulario con los datos básicos de tu empresa y el problema o la necesidad que has detectado.</p></div>
             </li>
             <li>
               <div class="diagnostic-route-number">02</div>
-              <div class="diagnostic-route-copy"><span>En 24 horas laborables</span><h3>Análisis técnico</h3><p>Nuestro equipo de expertos estudia el caso y le remite el diagnóstico por correo electrónico.</p></div>
+              <div class="diagnostic-route-copy"><span>En 24 horas laborables</span><h3>Te enviamos el informe</h3><p>Nuestro equipo de expertos estudia el caso y te envía el informe diagnóstico por correo electrónico.</p></div>
             </li>
             <li>
               <div class="diagnostic-route-number diagnostic-route-number--accent">03</div>
-              <div class="diagnostic-route-copy"><span>En la fecha que usted elija</span><h3>Reunión de trabajo</h3><p>Valoración conjunta de las alternativas de intervención más adecuadas para su organización.</p></div>
+              <div class="diagnostic-route-copy"><span>En la fecha que tú elijas</span><h3>Reunión con un experto</h3><p>Analizamos juntos el informe y las alternativas que mejor encajan con tu equipo. <a class="diagnostic-inline-link" href="https://calendly.com/logistikos/reunion" target="_blank" rel="noopener">Agendar reunión ↗</a></p></div>
             </li>
           </ol>
         </div>
@@ -63,12 +63,13 @@
 
       <aside class="diagnostic-form-card" aria-labelledby="diagnostic-form-title">
         <div class="diagnostic-form-head">
-          <p class="diagnostic-eyebrow">EMPEZAMOS AQUÍ</p>
-          <h2 id="diagnostic-form-title">Solicitar diagnóstico</h2>
-          <p>Todos los campos son necesarios para preparar un análisis riguroso.</p>
+          <p class="diagnostic-eyebrow">DIAGNÓSTICO GRATUITO EN 24 H</p>
+          <h2 id="diagnostic-form-title">Cuéntanos tu reto</h2>
+          <p class="diagnostic-form-topic" data-diagnostic-topic hidden></p>
+          <p>Con estos datos podemos preparar un informe riguroso. Los campos con * son obligatorios.</p>
         </div>
         <form class="diagnostic-form" data-diagnostic-form novalidate>
-          <input type="hidden" name="origen" value="Diagnóstico gratuito web Logístikos">
+          <input type="hidden" name="origen" value="Web Logístikos · Cuéntanos tu reto" data-diagnostic-origin>
           <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;opacity:0;pointer-events:none">
           <div class="diagnostic-form-row">
             <label><span>Nombre y apellidos *</span><input name="nombre" autocomplete="name" required></label>
@@ -76,19 +77,25 @@
           </div>
           <div class="diagnostic-form-row">
             <label><span>Empresa *</span><input name="empresa" autocomplete="organization" required></label>
-            <label><span>Plantilla *</span><select name="plantilla" required><option value="">Seleccione</option><option value="Menos de 50">Menos de 50</option><option value="50 a 249">50 a 249</option><option value="250 o más">250 o más</option></select></label>
+            <label><span>Plantilla *</span><select name="plantilla" required><option value="">Selecciona</option><option value="Menos de 50">Menos de 50</option><option value="50 a 249">50 a 249</option><option value="250 o más">250 o más</option></select></label>
           </div>
-          <label><span>Correo electrónico *</span><input name="email" type="email" autocomplete="email" required></label>
-          <label><span>Describa el problema *</span><textarea name="problema" required placeholder="Por ejemplo: en temporada alta aumentan los errores de preparación y los encargados dedican la mayor parte de la jornada a resolver incidencias."></textarea></label>
+          <div class="diagnostic-form-row">
+            <label><span>Correo electrónico *</span><input name="email" type="email" autocomplete="email" required></label>
+            <label><span>Teléfono (opcional)</span><input name="telefono" type="tel" autocomplete="tel"></label>
+          </div>
+          <label><span>Cuéntanos tu necesidad o problema *</span><textarea name="problema" required data-diagnostic-problem placeholder="Por ejemplo: en temporada alta aumentan los errores de preparación y los encargados dedican la mayor parte de la jornada a resolver incidencias."></textarea></label>
           <div class="diagnostic-form-status" data-diagnostic-status aria-live="polite"></div>
-          <button type="submit">Solicitar diagnóstico <span aria-hidden="true">↗</span></button>
-          <p class="diagnostic-form-note">Sus datos se utilizarán únicamente para elaborar el diagnóstico y contactar con usted.</p>
+          <button type="submit">Enviar mi reto <span aria-hidden="true">↗</span></button>
+          <p class="diagnostic-form-note">Tus datos se utilizarán únicamente para elaborar el informe y contactar contigo.</p>
+          <p class="diagnostic-form-alt">¿Prefieres hablarlo directamente? <a href="https://calendly.com/logistikos/reunion" target="_blank" rel="noopener">Agendar reunión ↗</a></p>
         </form>
         <div class="diagnostic-success" data-diagnostic-success hidden>
           <span class="diagnostic-success-icon" aria-hidden="true">✓</span>
           <p class="diagnostic-eyebrow">SOLICITUD REGISTRADA</p>
           <h2>Gracias. Ya tenemos el contexto.</h2>
-          <p>Nuestro equipo de expertos procederá a analizar la información y, en un plazo máximo de 24 horas laborables, le remitiremos por correo electrónico el diagnóstico, junto con una propuesta de fecha para la reunión de trabajo.</p>
+          <p>Nuestro equipo de expertos va a analizar tu caso y en un máximo de 24 horas laborables te enviaremos el informe diagnóstico por correo electrónico.</p>
+          <p>Si quieres ganar tiempo, reserva ya la reunión para comentarlo con uno de nuestros expertos.</p>
+          <a class="diagnostic-success-cta" href="https://calendly.com/logistikos/reunion" target="_blank" rel="noopener">Agendar reunión <span aria-hidden="true">↗</span></a>
         </div>
       </aside>
     </div>

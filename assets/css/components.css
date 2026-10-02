@@ -3147,3 +3147,7 @@ body .site-header {
   flex-direction: column;
   gap: 16px;
 }
+/* Línea de beneficio bajo el botón «Cuéntanos tu reto» (opción B) */
+.cta-benefit{display:flex;align-items:center;gap:8px;margin:16px 0 0!important;font:500 12px/1.4 "IBM Plex Mono",monospace;letter-spacing:.02em;opacity:.78}
+.cta-benefit>span{flex:none;width:6px;height:6px;border-radius:50%;background:#ff7a1a;box-shadow:0 0 10px rgba(255,122,26,.6)}
+.site-footer .footer-cta-benefit{margin:-2px 0 4px!important;color:#c3cee1}

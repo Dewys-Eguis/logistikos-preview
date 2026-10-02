@@ -179,7 +179,7 @@ class MainComponent extends DCLogic {
           campus: "Campus",
           "talento-internacional": "Talento Internacional",
           webinar: "Webinar · Jornadas empresariales",
-          diagnostico: "Diagnóstico gratuito",
+          diagnostico: "Cuéntanos tu reto",
         }[m[1]],
       };
     return { tpl: "tpl-home", key: "home" };

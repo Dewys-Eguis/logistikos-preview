@@ -39,7 +39,7 @@ try{
   await page.waitForSelector('[data-area="'+slug+'"]');assert.equal(await page.locator('a[data-pending-href^="#/area/"]').count(),0);
  }}
  await page.goto(base+'#/al-dia');assert.equal(await page.locator('[data-radar-topic="Liderazgo"] a[href="#/area/liderazgo"]').count(),1);
- for(const slug of Object.keys(baseline.data)){await page.goto(base+'#/area/'+slug);await page.locator('.ap-actions a[href="#contacto"]').first().click();assert(await page.locator('#contacto').evaluate(n=>{const r=n.getBoundingClientRect();return r.top>=0&&r.top<innerHeight;}));assert.equal(await page.locator('#app').getAttribute('data-view'),'tpl-area-'+slug);}
+ for(const slug of Object.keys(baseline.data)){await page.goto(base+'#/area/'+slug);await page.locator('.ap-actions a[href^="#/diagnostico?tema="]').first().click();await page.waitForFunction(()=>document.querySelector('#app').getAttribute('data-view')==='tpl-page-diagnostico');assert((await page.locator('[data-diagnostic-origin]').inputValue()).includes('·'),slug+' sin origen en el formulario');}
  await page.locator('[data-theme-toggle]:visible').first().click();const themeAfter=await page.locator('html').getAttribute('data-theme');await page.reload();assert.equal(await page.locator('html').getAttribute('data-theme'),themeAfter);await page.emulateMedia({reducedMotion:'no-preference'});await page.goto(base+'#/area/liderazgo');await page.locator('.ap-program summary').first().click();
  assert.deepEqual(errors,[]);report.searchPreserved=true;report.navigation=true;report.build='npm run build';fs.writeFileSync(path.join(out,'results.json'),JSON.stringify(report,null,2));console.log(JSON.stringify(report,null,2));
 }finally{await browser.close();}})().catch(e=>{console.error(e);process.exitCode=1});

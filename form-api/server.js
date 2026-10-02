@@ -108,14 +108,15 @@ function diagnosticMessage(data) {
   if (required.some((key) => !text(data[key]))) return { error: "Faltan campos obligatorios." };
   if (!replyTo) return { error: "El correo electronico no es valido." };
   return {
-    subject: `[Logistikos] Nuevo diagnostico · ${text(data.empresa, 120)}`,
+    subject: `[Logistikos] Nuevo reto · ${text(data.empresa, 120)}`,
     replyTo,
-    html: emailShell("Nueva solicitud de diagnostico", "Diagnostico gratuito de necesidades formativas", [
+    html: emailShell("Nuevo reto recibido", "Cuentanos tu reto · informe diagnostico en 24 h", [
       row("Nombre y apellidos", data.nombre),
       row("Cargo", data.cargo),
       row("Empresa", data.empresa),
       row("Plantilla", data.plantilla),
       row("Email", data.email),
+      row("Telefono", data.telefono || "No indicado"),
       row("Problema / reto", data.problema),
       row("Origen", data.origen || "Diagnostico gratuito web Logistikos"),
     ]),
