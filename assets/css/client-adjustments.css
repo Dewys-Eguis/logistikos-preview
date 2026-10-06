@@ -254,3 +254,231 @@
   transform: translateY(-2px);
 }
 .sc-btn-light:active { transform: translateY(0); }
+
+/* ============================================================
+   AJUSTE 5 · Talento Internacional: Rediseño Premium de Itinerarios
+   2 tarjetas anchas, uniformes, bien respiradas y adaptadas
+   ============================================================ */
+
+.talent-itinerarios-section {
+  position: relative;
+}
+
+.talent-itinerarios-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 36px;
+  align-items: stretch;
+  margin-top: 16px;
+}
+
+.talent-itinerary-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 42px 38px 36px;
+  border-radius: 26px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.045) 0%, rgba(255, 255, 255, 0.015) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(12px);
+  transition: transform .3s ease, border-color .3s ease, box-shadow .3s ease;
+}
+
+.talent-itinerary-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(255, 122, 26, 0.5);
+  box-shadow: 0 28px 75px rgba(0, 0, 0, 0.45), 0 0 45px rgba(255, 107, 44, 0.10);
+}
+
+.talent-itinerary-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding-bottom: 24px;
+  margin-bottom: 26px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.09);
+}
+
+.talent-itinerary-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  border-radius: 14px;
+  background: rgba(36, 72, 255, 0.14);
+  border: 1px solid rgba(36, 72, 255, 0.38);
+  color: #5c80ff;
+  font: 700 20px/1 "IBM Plex Mono", monospace;
+  box-shadow: 0 0 20px rgba(36, 72, 255, 0.15);
+}
+
+.talent-itinerary-headings {
+  flex: 1;
+  min-width: 0;
+}
+
+.talent-itinerary-eyebrow {
+  display: block;
+  margin-bottom: 6px;
+  font: 600 11px/1.3 "IBM Plex Mono", monospace;
+  letter-spacing: .10em;
+  text-transform: uppercase;
+  color: var(--talent-orange, #ff7a1a);
+}
+
+.talent-itinerary-title {
+  margin: 0;
+  font-family: "Archivo", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--text, #f6f8ff);
+}
+
+.talent-itinerary-modules {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-bottom: 28px;
+  flex: 1;
+}
+
+.talent-module-block {
+  position: relative;
+  padding-left: 22px;
+}
+
+.talent-module-block::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--talent-orange, #ff7a1a);
+  box-shadow: 0 0 10px rgba(255, 122, 26, 0.55);
+}
+
+.talent-module-name {
+  display: block;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 1.4;
+  color: #ffffff;
+  margin-bottom: 4px;
+}
+
+.talent-module-desc {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--muted, #aab4c8);
+}
+
+.talent-itinerary-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: auto;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.talent-itinerary-note {
+  padding: 13px 18px;
+  border-radius: 14px;
+  background: rgba(0, 0, 0, 0.28);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  font-size: 13px;
+  line-height: 1.55;
+  color: var(--muted, #b8c2d1);
+}
+
+.talent-itinerary-note strong {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+/* Modo claro (Light theme) */
+html[data-theme="light"] .talent-itinerary-card {
+  background: #ffffff;
+  border-color: rgba(13, 24, 44, 0.11);
+  box-shadow: 0 20px 60px rgba(22, 35, 66, 0.07);
+}
+
+html[data-theme="light"] .talent-itinerary-card:hover {
+  border-color: rgba(255, 122, 26, 0.6);
+  box-shadow: 0 26px 70px rgba(22, 35, 66, 0.12), 0 0 35px rgba(255, 122, 26, 0.12);
+}
+
+html[data-theme="light"] .talent-itinerary-header {
+  border-bottom-color: rgba(13, 24, 44, 0.08);
+}
+
+html[data-theme="light"] .talent-itinerary-badge {
+  background: #edf2ff;
+  border-color: rgba(36, 72, 255, 0.22);
+  color: #2448ff;
+  box-shadow: none;
+}
+
+html[data-theme="light"] .talent-itinerary-title {
+  color: #11182a;
+}
+
+html[data-theme="light"] .talent-module-name {
+  color: #11182a;
+}
+
+html[data-theme="light"] .talent-module-desc {
+  color: #59667a;
+}
+
+html[data-theme="light"] .talent-itinerary-footer {
+  border-top-color: rgba(13, 24, 44, 0.08);
+}
+
+html[data-theme="light"] .talent-itinerary-note {
+  background: #f8fafc;
+  border-color: rgba(13, 24, 44, 0.09);
+  color: #59667a;
+}
+
+html[data-theme="light"] .talent-itinerary-note strong {
+  color: #11182a;
+}
+
+/* Responsividad para Itinerarios */
+@media (max-width: 960px) {
+  .talent-itinerarios-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  .talent-itinerary-card {
+    padding: 32px 28px;
+  }
+}
+
+@media (max-width: 640px) {
+  .talent-itinerarios-grid {
+    gap: 22px;
+  }
+  .talent-itinerary-card {
+    padding: 26px 20px;
+    border-radius: 20px;
+  }
+  .talent-itinerary-title {
+    font-size: 21px;
+  }
+  .talent-itinerary-badge {
+    width: 40px;
+    height: 40px;
+    font-size: 17px;
+  }
+}
+
