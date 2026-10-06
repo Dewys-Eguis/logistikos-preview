@@ -17,3 +17,240 @@
 .webinar-hero-grid > .page-hero-photo { grid-column:1 / -1; }
 
 .wordmark-logo { display:block; height:1.15em; width:auto; aspect-ratio:6590 / 1224; }
+
+/* ============================================================
+   AJUSTE 3 · Hero photo Home · Ubicación al lado + Tratamiento premium
+   ============================================================ */
+
+/* En desktop la foto se posiciona al lado derecho en paralelo al texto del hero */
+.home-view .hero-photo {
+  position: absolute;
+  top: 50%;
+  right: max(24px, calc((100vw - 1440px) / 2 + 24px));
+  transform: translateY(-50%);
+  width: clamp(420px, 44vw, 680px);
+  max-width: 50vw;
+  z-index: 2;
+  margin: 0;
+  border-radius: 20px;
+  box-shadow:
+    0 0 0 2px rgba(255, 122, 26, 0.55),
+    0 0 0 5px rgba(255, 122, 26, 0.10),
+    0 28px 80px rgba(0, 0, 0, 0.45),
+    0 0 50px rgba(255, 122, 26, 0.07);
+  transition: box-shadow .35s ease, transform .35s ease;
+}
+.home-view .hero-photo:hover {
+  box-shadow:
+    0 0 0 2px rgba(255, 122, 26, 0.80),
+    0 0 0 6px rgba(255, 122, 26, 0.16),
+    0 36px 100px rgba(0, 0, 0, 0.50),
+    0 0 70px rgba(255, 122, 26, 0.12);
+  transform: translateY(-50%) translateY(-5px);
+}
+
+/* En tablets y móviles pasa a flujo natural ordenado debajo del texto */
+@media (max-width: 900px) {
+  .home-view .hero-photo {
+    position: relative;
+    top: auto;
+    right: auto;
+    transform: none;
+    width: min(100%, 580px);
+    max-width: 100%;
+    margin: 32px auto 0;
+  }
+  .home-view .hero-photo:hover {
+    transform: translateY(-4px);
+  }
+}
+
+/* Línea de acento naranja inferior sutil */
+.home-view .hero-photo::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 6%;
+  right: 6%;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255,122,26,.55) 25%,
+    rgba(255,122,26,.85) 50%,
+    rgba(255,122,26,.55) 75%,
+    transparent
+  );
+  border-radius: 0 0 18px 18px;
+  pointer-events: none;
+}
+
+/* Imagen interna */
+.home-view .hero-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 18px;
+  object-fit: cover;
+}
+
+/* ============================================================
+   AJUSTE 3 · Badges / Frases: colocadas al otro lado (izquierdo)
+   para NO tapar la maqueta/diseño de la imagen + microinteracción hover
+   ============================================================ */
+.hero-badges {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 3;
+}
+.hero-badge {
+  position: absolute;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 15px 8px 11px;
+  background: rgba(8, 14, 30, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 122, 26, 0.42);
+  border-radius: 999px;
+  font: 600 11px/1.3 "IBM Plex Mono", monospace;
+  letter-spacing: .06em;
+  color: #eef2ff;
+  white-space: nowrap;
+  pointer-events: auto;
+  cursor: pointer;
+  user-select: none;
+  box-shadow: 0 4px 18px rgba(0,0,0,.36);
+  animation: heroBadgeIn .45s cubic-bezier(.22,1,.36,1) both;
+  transition: transform .25s cubic-bezier(.22,1,.36,1), box-shadow .25s ease, border-color .25s ease, background .25s ease;
+}
+.hero-badge::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  flex-shrink: 0;
+  background: #ff7a1a;
+  border-radius: 50%;
+  box-shadow: 0 0 8px rgba(255,122,26,.85);
+  transition: transform .25s ease;
+}
+
+/* Microinteracción: al pasar el ratón se mueve un poco y se ilumina sutilmente */
+.hero-badge:hover {
+  transform: translateX(6px) translateY(-2px);
+  border-color: rgba(255, 122, 26, 0.80);
+  background: rgba(12, 20, 42, 0.95);
+  box-shadow: 0 8px 24px rgba(255, 122, 26, 0.22), 0 0 0 1px rgba(255, 122, 26, 0.40);
+}
+.hero-badge:hover::before {
+  transform: scale(1.25);
+}
+
+/* Ubicación al otro ladito (izquierda de la foto) para despejar la maqueta */
+.hero-badge--1 { top: 12%; left: 16px; right: auto; animation-delay: .08s; }
+.hero-badge--2 { top: 46%; left: 22px; right: auto; animation-delay: .20s; }
+.hero-badge--3 { bottom: 12%; left: 16px; right: auto; animation-delay: .32s; }
+
+@keyframes heroBadgeIn {
+  from { opacity: 0; transform: translateX(-12px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+/* En móvil los badges van como fila debajo de la foto */
+@media (max-width: 900px) {
+  .hero-badges { display: none; }
+  .hero-badges-mobile {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 14px auto 0;
+    padding: 0 2px;
+    max-width: 580px;
+  }
+  .hero-badge-m {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 12px 6px 8px;
+    background: rgba(255,122,26,.10);
+    border: 1px solid rgba(255,122,26,.32);
+    border-radius: 999px;
+    font: 600 10px/1.3 "IBM Plex Mono", monospace;
+    letter-spacing: .06em;
+    color: #e8eeff;
+    cursor: pointer;
+    transition: transform .22s ease, background .22s ease, border-color .22s ease;
+  }
+  .hero-badge-m:hover {
+    transform: translateY(-2px);
+    background: rgba(255,122,26,.20);
+    border-color: rgba(255,122,26,.60);
+  }
+  .hero-badge-m::before {
+    content: "";
+    width: 5px;
+    height: 5px;
+    flex-shrink: 0;
+    background: #ff7a1a;
+    border-radius: 50%;
+  }
+}
+@media (min-width: 901px) {
+  .hero-badges-mobile { display: none; }
+}
+
+/* ============================================================
+   AJUSTE 4 · Unificación hover botones de todas las áreas
+   Referencia: sc-btn-primary y sc-btn-ghost (supply-chain)
+   ============================================================ */
+
+/* Primario (Ver programas) */
+.sc-btn-primary {
+  background: #315bff;
+  color: #fff !important;
+  border-color: #315bff;
+  transition: background .22s ease, border-color .22s ease, box-shadow .22s ease, transform .22s ease;
+}
+.sc-btn-primary:hover {
+  background: #2347d6;
+  border-color: #2347d6;
+  box-shadow: 0 6px 28px rgba(49,91,255,.35);
+  transform: translateY(-2px);
+}
+.sc-btn-primary:active { transform: translateY(0); box-shadow: none; }
+
+/* Ghost secundario (Cuéntanos tu reto) */
+.sc-btn-ghost {
+  background: transparent;
+  border-color: #405071;
+  color: #f8fafc;
+  transition: background .22s ease, border-color .22s ease, color .22s ease, box-shadow .22s ease, transform .22s ease;
+}
+.sc-btn-ghost:hover {
+  background: rgba(248,250,252,.07);
+  border-color: #ff7a1a;
+  color: #f8fafc;
+  box-shadow: 0 4px 18px rgba(255,122,26,.14);
+  transform: translateY(-2px);
+}
+.sc-btn-ghost:active { transform: translateY(0); box-shadow: none; }
+
+/* Variantes de área (transporte/compras) — normalizar ghost hover */
+.tr-page .sc-btn-ghost:hover,
+.cp-page .sc-btn-ghost:hover {
+  background: rgba(248,250,252,.07);
+  border-color: #ff7a1a;
+  color: #f8fafc;
+}
+
+/* Botón light (FUNDAE) */
+.sc-btn-light {
+  transition: background .22s ease, box-shadow .22s ease, transform .22s ease;
+}
+.sc-btn-light:hover {
+  box-shadow: 0 4px 20px rgba(0,0,0,.18);
+  transform: translateY(-2px);
+}
+.sc-btn-light:active { transform: translateY(0); }
