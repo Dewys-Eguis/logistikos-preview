@@ -11,3 +11,9 @@
 
 .guarantee-pdf-link{display:inline-flex;align-items:center;gap:.4rem;margin-top:.7rem;color:inherit;font-size:.88rem;font-weight:600;text-decoration:underline;text-underline-offset:.22em;text-decoration-thickness:1px;transition:color .2s ease,transform .2s ease}
 .guarantee-pdf-link:hover{color:#ff9447;transform:translateX(2px)}
+
+.page-hero-photo { margin:32px 0 0; min-width:0; }
+.page-hero-photo img { display:block; width:100%; max-width:640px; height:auto; border-radius:16px; }
+.webinar-hero-grid > .page-hero-photo { grid-column:1 / -1; }
+
+.wordmark-logo { display:block; height:1.15em; width:auto; aspect-ratio:6590 / 1224; }

@@ -1,5 +1,4 @@
 "use strict";
-// Preserve prototype estimates; business/legal validation remains pending.
 function getCalculatorValues(data) {
   // ---- Calculadora FUNDAE ----
   const st = this.state;
@@ -117,10 +116,12 @@ function getCalculatorValues(data) {
     ),
   );
   [
-    ["IA generativa y agentes en la cadena de suministro", "live"],
-    ["Compliance aduanero y comercial UE", "live"],
-    ["Supply chain analytics con Power BI", "hib"],
-    ["Logística sostenible: ISO 14083 y PPWR", "live"],
+    ["IA en el trabajo: productividad con inteligencia artificial", "live"],
+    ["Logística integral: cómo funciona la cadena de suministro", "live"],
+    ["Liderazgo, comunicación y trabajo en equipo", "live"],
+    ["Mejora continua y productividad: Lean en la empresa", "live"],
+    ["Competencias digitales y datos para la toma de decisiones", "live"],
+    ["Sostenibilidad y logística responsable", "live"],
   ].forEach((u) =>
     catalog.push({
       label: "Universitario · " + u[0] + " (25 h)",

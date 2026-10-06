@@ -1030,3 +1030,11 @@ section#trayectoria.home-metrics,
     max-width:none !important;
   }
 }
+
+/* Static client photograph, separate from the former animated illustration. */
+.home-view .hero-photo { position:absolute; z-index:2; right:clamp(24px,3vw,48px); top:50%; transform:translateY(-50%); width:clamp(420px,42vw,760px); aspect-ratio:16 / 9; animation:none; opacity:1; filter:none; box-shadow:none; }
+.home-view .hero-photo img { display:block; width:100%; height:auto; border-radius:16px; }
+@media (max-width:1099px) {
+  .home-view .home-hero .hero-content { padding-right:24px; }
+  .home-view .hero-photo { position:relative; top:auto; right:auto; transform:none; width:calc(100% - 48px); max-width:760px; margin:0 auto 28px; }
+}

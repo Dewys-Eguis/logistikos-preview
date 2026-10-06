@@ -1,0 +1,113 @@
+REVISIÓN DE CAMBIOS DEL CLIENTE · 6 DE OCTUBRE DE 2026
+
+Implementados cambios 1 al 7. Sin commit, push ni publicación.
+Base: 5bea2c4. Integración por bloques comparados; no se aplicó el patch completo.
+index.html se generó exclusivamente mediante npm run build.
+
+ARCHIVOS MODIFICADOS: 25 (24 fuentes + index.html generado)
+C:\Users\ESTUDIANTE\Downloads\Logistikos_FINAL_GITHUB\assets\css\client-adjustments.css
+C:\Users\ESTUDIANTE\Downloads\Logistikos_FINAL_GITHUB\assets\css\home.css
+C:\Users\ESTUDIANTE\Downloads\Logistikos_FINAL_GITHUB\assets\js\animations.js
+C:\Users\ESTUDIANTE\Downloads\Logistikos_FINAL_GITHUB\assets\js\calculator.js
+C:\Users\ESTUDIANTE\Downloads\Logistikos_FINAL_GITHUB\assets\js\courses.js
+C:\Users\ESTUDIANTE\Downloads\Logistikos_FINAL_GITHUB\assets\js\main.js
+C:\Users\ESTUDIANTE\Downloads\Logistikos_FINAL_GITHUB\index.html
+C:\Users\ESTUDIANTE\Downloads\Logistikos_FINAL_GITHUB\pages\a-medida.html
+C:\Users\ESTUDIANTE\Downloads\Logistikos_FINAL_GITHUB\pages\al-dia.html
+C:\Users\ESTUDIANTE\Downloads\Logistikos_FINAL_GITHUB\pages\area-comercio-internacional.html
+C:\Users\ESTUDIANTE\Downloads\Logistikos_FINAL_GITHUB\pages\area-compras.html
+C:\Users\ESTUDIANTE\Downloads\Logistikos_FINAL_GITHUB\pages\area-ia-datos.html
+C:\Users\ESTUDIANTE\Downloads\Logistikos_FINAL_GITHUB\pages\area-liderazgo.html
+C:\Users\ESTUDIANTE\Downloads\Logistikos_FINAL_GITHUB\pages\area-supply-chain.html
+C:\Users\ESTUDIANTE\Downloads\Logistikos_FINAL_GITHUB\pages\area-transporte.html
+C:\Users\ESTUDIANTE\Downloads\Logistikos_FINAL_GITHUB\pages\campus.html
+C:\Users\ESTUDIANTE\Downloads\Logistikos_FINAL_GITHUB\pages\diagnostico.html
+C:\Users\ESTUDIANTE\Downloads\Logistikos_FINAL_GITHUB\pages\fundae.html
+C:\Users\ESTUDIANTE\Downloads\Logistikos_FINAL_GITHUB\pages\home.html
+C:\Users\ESTUDIANTE\Downloads\Logistikos_FINAL_GITHUB\pages\layout.html
+C:\Users\ESTUDIANTE\Downloads\Logistikos_FINAL_GITHUB\pages\programas.html
+C:\Users\ESTUDIANTE\Downloads\Logistikos_FINAL_GITHUB\pages\quienes-somos.html
+C:\Users\ESTUDIANTE\Downloads\Logistikos_FINAL_GITHUB\pages\talento-internacional.html
+C:\Users\ESTUDIANTE\Downloads\Logistikos_FINAL_GITHUB\pages\universitarios.html
+C:\Users\ESTUDIANTE\Downloads\Logistikos_FINAL_GITHUB\pages\webinar.html
+
+ARCHIVOS NUEVOS: 29 (18 fotos + 9 recursos de marca + prueba + este informe)
+C:\Users\ESTUDIANTE\Downloads\Logistikos_FINAL_GITHUB\assets\images\fotos\area-comercio-internacional.webp
+C:\Users\ESTUDIANTE\Downloads\Logistikos_FINAL_GITHUB\assets\images\fotos\area-compras.webp
+C:\Users\ESTUDIANTE\Downloads\Logistikos_FINAL_GITHUB\assets\images\fotos\area-ia-datos.webp
+C:\Users\ESTUDIANTE\Downloads\Logistikos_FINAL_GITHUB\assets\images\fotos\area-liderazgo.webp
+C:\Users\ESTUDIANTE\Downloads\Logistikos_FINAL_GITHUB\assets\images\fotos\area-supply-chain.webp
+C:\Users\ESTUDIANTE\Downloads\Logistikos_FINAL_GITHUB\assets\images\fotos\area-transporte.webp
+C:\Users\ESTUDIANTE\Downloads\Logistikos_FINAL_GITHUB\assets\images\fotos\buscar-programas.webp
+C:\Users\ESTUDIANTE\Downloads\Logistikos_FINAL_GITHUB\assets\images\fotos\campus.webp
+C:\Users\ESTUDIANTE\Downloads\Logistikos_FINAL_GITHUB\assets\images\fotos\cursos-universitarios.webp
+C:\Users\ESTUDIANTE\Downloads\Logistikos_FINAL_GITHUB\assets\images\fotos\diagnostico-reunion.webp
+C:\Users\ESTUDIANTE\Downloads\Logistikos_FINAL_GITHUB\assets\images\fotos\eventos-jornadas.webp
+C:\Users\ESTUDIANTE\Downloads\Logistikos_FINAL_GITHUB\assets\images\fotos\formacion-a-medida.webp
+C:\Users\ESTUDIANTE\Downloads\Logistikos_FINAL_GITHUB\assets\images\fotos\fundae.webp
+C:\Users\ESTUDIANTE\Downloads\Logistikos_FINAL_GITHUB\assets\images\fotos\home-areas-banner.webp
+C:\Users\ESTUDIANTE\Downloads\Logistikos_FINAL_GITHUB\assets\images\fotos\home-hero.webp
+C:\Users\ESTUDIANTE\Downloads\Logistikos_FINAL_GITHUB\assets\images\fotos\logistikos-al-dia.webp
+C:\Users\ESTUDIANTE\Downloads\Logistikos_FINAL_GITHUB\assets\images\fotos\quienes-somos.webp
+C:\Users\ESTUDIANTE\Downloads\Logistikos_FINAL_GITHUB\assets\images\fotos\talento-internacional.webp
+C:\Users\ESTUDIANTE\Downloads\Logistikos_FINAL_GITHUB\assets\images\marca\favicon.ico
+C:\Users\ESTUDIANTE\Downloads\Logistikos_FINAL_GITHUB\assets\images\marca\icono-180.png
+C:\Users\ESTUDIANTE\Downloads\Logistikos_FINAL_GITHUB\assets\images\marca\icono-32.png
+C:\Users\ESTUDIANTE\Downloads\Logistikos_FINAL_GITHUB\assets\images\marca\icono-512.png
+C:\Users\ESTUDIANTE\Downloads\Logistikos_FINAL_GITHUB\assets\images\marca\logistikos-icono.svg
+C:\Users\ESTUDIANTE\Downloads\Logistikos_FINAL_GITHUB\assets\images\marca\logistikos-logo-blanco.png
+C:\Users\ESTUDIANTE\Downloads\Logistikos_FINAL_GITHUB\assets\images\marca\logistikos-logo-blanco.svg
+C:\Users\ESTUDIANTE\Downloads\Logistikos_FINAL_GITHUB\assets\images\marca\logistikos-logo-negro.png
+C:\Users\ESTUDIANTE\Downloads\Logistikos_FINAL_GITHUB\assets\images\marca\logistikos-logo-negro.svg
+C:\Users\ESTUDIANTE\Downloads\Logistikos_FINAL_GITHUB\tests\client-oct06.cjs
+C:\Users\ESTUDIANTE\Downloads\Logistikos_FINAL_GITHUB\docs\revision-cliente-oct06.txt
+
+PROTECCIONES
+377 archivos previamente versionados siguen idénticos byte a byte respecto al inicio.
+Ningún archivo eliminado. Imágenes antiguas conservadas.
+Bloques <form> de todas las páginas idénticos a HEAD, incluidos consentimientos.
+Legales, cookies, garantía, lógica de formularios, configuración, form-api y Resend conservados.
+Ruta #/webinar conservada; solo se cambian las etiquetas solicitadas.
+assets/js/generated/download-data.js no presenta cambios.
+
+CORRECCIONES SOBRE EL PAQUETE
+Foto principal estática, sin adornos ni respuesta al ratón; disposición en flujo hasta 1099 px.
+Textos alternativos del PDF para fotos informativas; retirado aria-hidden de sus contenedores.
+Dimensiones HTML ajustadas a las dimensiones reales de las 18 fotos.
+Figure de Diagnóstico situado fuera del párrafo.
+Foto de Eventos ocupa una fila completa de la rejilla.
+
+VALIDACIÓN
+Diff revisado antes del build; git diff --check aprobado.
+npm run build aprobado: 23 plantillas; index.html 289247 bytes.
+node tests/client-oct06.cjs aprobado con Playwright del runtime y Microsoft Edge headless.
+80 escenarios numéricos equivalentes a HEAD; control presencial superior: 10 x 20 x 13 = 2600 EUR.
+92 combinaciones: 23 rutas a 1440, 1024, 390 y 320 px.
+18 imágenes nuevas cargadas y dimensiones comprobadas; accesibilidad de fotos informativas comprobada.
+Contadores 573 y 60 completan su animación en Home y Quiénes somos.
+Curso Agile/Scrum desplegable y encontrable por ambos términos.
+Calculadora con seis cursos universitarios de 25 h; seis FAQ y dos itinerarios de Talento.
+Cookies: rechazar, aceptar, configurar y persistencia tras recarga.
+Formularios de Diagnóstico, Eventos y Talento: privacidad obligatoria, comunicaciones opcionales,
+endpoint ausente, respuesta 500 simulada y éxito simulado. Seis solicitudes interceptadas.
+No se inició form-api ni se envió ninguna solicitud real a Resend.
+Cero errores JavaScript y cero recursos locales con HTTP 4xx/5xx.
+Inspección visual de portada, marca, menú móvil y páginas afectadas mediante capturas.
+
+INCIDENCIAS Y LÍMITES
+npm test no termina: falta ../backups/original-20260926/Logistikos_web/index.html.
+La prueba independiente no depende de ese respaldo; la batería original permanece intacta.
+API_BASE sigue vacío, como al inicio. El envío real requiere configuración y queda sin probar.
+#/marca presenta desbordamiento previo de 18 px a 390 px y de 88 px a 320 px;
+ambos valores se reproducen con el HTML anterior. Esa página no se modificó.
+Las solicitudes externas se bloquearon en las pruebas: no se validaron servicios, fuentes ni fotos remotas.
+El sistema de tema actual fuerza oscuro; no se modificó. Se verificó también el logo forzando claro.
+Ese modo claro conserva problemas de contraste previos fuera del logo y no se reactivó.
+
+EVIDENCIA TEMPORAL
+C:\Users\ESTUDIANTE\AppData\Local\Temp\logistikos-oct06-qa-nqGu10\report.json
+C:\Users\ESTUDIANTE\AppData\Local\Temp\logistikos-oct06-qa-nqGu10
+
+EJECUCIÓN DE LA PRUEBA (PowerShell)
+$env:NODE_PATH='C:/Users/ESTUDIANTE/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules'
+node tests/client-oct06.cjs

@@ -75,9 +75,9 @@ const HomeMotion = {
     let scrollFrame=0;
     function updateScroll() {
       scrollFrame=0;
-      header.classList.toggle('is-scrolled',scrollY>30);
+      if(header) header.classList.toggle('is-scrolled',scrollY>30);
       const available=document.documentElement.scrollHeight-innerHeight;
-      header.style.setProperty('--page-progress',String(available>0?Math.min(1,scrollY/available):0));
+      if(header) header.style.setProperty('--page-progress',String(available>0?Math.min(1,scrollY/available):0));
       const rect=manifesto?.getBoundingClientRect();
       const progress=rect ? Math.max(0,Math.min(1,(innerHeight*.55-rect.top)/Math.max(1,rect.height-innerHeight*.45))) : 0;
       statements.forEach((line,i)=>line.classList.toggle('is-active',reduced.matches || progress>i/3));
@@ -116,7 +116,7 @@ const MetricCounters = (() => {
   function mount(root) {
     const preference=matchMedia('(prefers-reduced-motion: reduce)');
     const frames=new Map();
-    const nodes=[...root.querySelectorAll('[data-count],[data-about-count]')].filter(n=>[130,1160,20000,4].includes(Number(n.dataset.count||n.dataset.aboutCount)));
+    const nodes=[...root.querySelectorAll('[data-count],[data-about-count]')].filter(n=>[130,573,20000,60].includes(Number(n.dataset.count||n.dataset.aboutCount)));
     const total=n=>Number(n.dataset.count||n.dataset.aboutCount);
     const key=n=>(root.classList.contains('about-view')?'about':'home')+':'+total(n);
     const finish=n=>{cancelAnimationFrame(frames.get(n));frames.delete(n);n.textContent=format(total(n));seen.add(key(n));};

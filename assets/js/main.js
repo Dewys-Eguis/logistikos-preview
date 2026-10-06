@@ -178,7 +178,7 @@ class MainComponent extends DCLogic {
           "al-dia": "Logístikos al día",
           campus: "Campus",
           "talento-internacional": "Talento Internacional",
-          webinar: "Webinar · Jornadas empresariales",
+          webinar: "Eventos · Jornadas empresariales",
           diagnostico: "Cuéntanos tu reto",
         }[m[1]],
       };

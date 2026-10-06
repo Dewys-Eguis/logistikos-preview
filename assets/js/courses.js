@@ -196,6 +196,12 @@ function getCourseValues() {
           mode: O,
           badge: N,
         },
+        {
+          title: "Agile Project Management y Scrum en la cadena de suministro",
+          hours: "16 h",
+          mode: H,
+          badge: N,
+        },
       ],
     },
     {
