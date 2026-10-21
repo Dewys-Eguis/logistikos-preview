@@ -38,7 +38,7 @@ class MainComponent extends DCLogic {
     "comercio-internacional": "Comercio Internacional",
     compras: "Compras y Category Management",
     "ia-datos": "IA, Datos y Digitalización",
-    liderazgo: "Liderazgo y Gestión de Equipos",
+    liderazgo: "Liderazgo y Bienestar de Equipos",
     "supply-chain": "Supply Chain y Logística",
     transporte: "Transporte y Distribución",
   };
@@ -144,6 +144,7 @@ class MainComponent extends DCLogic {
     var h = location.hash || "#/",
       m;
     if (h.indexOf("#/radar") === 0) h = "#/al-dia";
+    if (h.indexOf("#/beneficios") === 0) h = "#/s/beneficios";
     if (h.indexOf("#/de-jefe-a-lider") === 0 && PENDING_AREAS.has("#/area/liderazgo")) h = "#/area/liderazgo";
     if (Array.from(PENDING_AREAS).some(function (pending) { return h === pending || h.indexOf(pending + "#") === 0; })) {
       h = "#/programas";
@@ -248,6 +249,15 @@ class MainComponent extends DCLogic {
     }
     var href = a.getAttribute("href") || "";
     if (href === "#top") { e.preventDefault(); scrollToTop(); return; }
+    if (href.indexOf("#/s/") === 0) {
+      var sTarget = document.getElementById(href.slice(4));
+      if (sTarget) {
+        e.preventDefault();
+        if (location.hash !== href) history.pushState(null, "", href);
+        scrollToSection(sTarget);
+        return;
+      }
+    }
     if (href.charAt(0) === "#" && href.charAt(1) !== "/") {
       e.preventDefault();
       var t = href.length > 1 ? document.getElementById(href.slice(1)) : null;

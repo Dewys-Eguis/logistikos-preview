@@ -3,6 +3,7 @@
   <section class="home-hero" id="top" aria-labelledby="hero-title">
 
     <div class="home-shell hero-content" id="home-content" tabindex="-1">
+
       <p class="home-eyebrow hero-eyebrow"><span class="status-dot"></span> ESPECIALISTAS EN FORMACIÓN LOGÍSTICA · IN COMPANY EN TODA ESPAÑA</p>
       <h1 id="hero-title">Formación<br><span class="hero-accent-mark">logística</span> para<br><span class="hero-title-accent">inconformistas.</span></h1>
       <p class="hero-intro">Práctica, a medida e impartida por nuestro equipo de expertos. Para que tu equipo rinda más y tu operación cueste menos, desde el primer día.</p>
@@ -43,6 +44,26 @@
     </article>
   </section>
 
+  <section class="home-section home-shell home-video" id="video-destacado" aria-labelledby="home-video-title">
+    <div class="home-section-head" data-reveal="">
+      <div>
+        <p class="home-eyebrow">LOGÍSTIKOS EN DOS MINUTOS</p>
+        <h2 id="home-video-title">Así trabajamos con tu equipo.</h2>
+      </div>
+      <div class="home-section-aside">
+        <p>Del primer diagnóstico a la medición de resultados, contado por quienes lo hacen.</p>
+      </div>
+    </div>
+    <div class="home-video-wrapper" data-reveal="">
+      <div class="home-video-frame">
+        <video class="home-video-player" controls playsinline preload="metadata">
+          <source src="assets/video/logistikos-explicativo.mp4" type="video/mp4">
+          Tu navegador no soporta el elemento de vídeo.
+        </video>
+      </div>
+    </div>
+  </section>
+
   <section class="home-section home-shell home-areas" id="areas" aria-labelledby="areas-title">
     <div class="home-section-head" data-reveal=""><div><p class="home-eyebrow">01 / CONOCIMIENTO QUE MUEVE</p><h2 id="areas-title">Seis áreas.<br><span>Infinitas posibilidades.</span></h2></div><div class="home-section-aside"><p>De la operación a la estrategia. Desarrollamos las capacidades que tu organización necesita para dar su siguiente paso.</p></div></div>
     <figure class="home-human-media home-human-media--areas"><img width="2016" height="560" src="assets/images/fotos/home-areas-banner.webp" alt="Equipo de logística en un almacén" loading="lazy" decoding="async"></figure>
@@ -50,8 +71,62 @@
     <div class="home-area-note"><span>¿Tu reto no encaja en una categoría?</span><a href="#/a-medida">Diseñamos la formación que necesitas ↗</a></div>
   </section>
   <section class="home-solutions home-section" id="soluciones" aria-labelledby="solutions-title" data-content-secondary=""><div class="home-shell">
-    <div class="home-section-head" data-reveal=""><div><p class="home-eyebrow">02 / UNA SOLUCIÓN PARA CADA RETO</p><h2 id="solutions-title">A medida de <span>tu equipo.</span></h2></div><a class="home-text-link" href="#/a-medida">Diseñar mi formación a medida ↗</a></div>
+    <div class="home-section-head" data-reveal=""><div><p class="home-eyebrow">02 / UNA SOLUCIÓN PARA CADA RETO</p><h2 id="solutions-title">A la medida de <span>tu equipo.</span></h2></div><a class="home-text-link" href="#/a-medida">Diseñar mi formación a medida ↗</a></div>
     <details class="content-detail" id="home-solutions-detail"><summary>Ver modalidades, formatos y ejemplos de programa</summary><div class="content-detail-body"><!-- include: pages/partials/home-solutions.html --><div class="home-roadmap" data-reveal=""><div class="roadmap-heading"><p class="home-eyebrow">ASÍ PUEDE SER VUESTRO PROGRAMA</p><span class="roadmap-code" data-roadmap-value="code">{{hr.code}}</span></div><div class="roadmap-select" role="group" aria-label="Elegir ejemplo de programa"><sc-for list="{{roadmapOptions}}" as="option"><button type="button" data-roadmap="{{option.id}}" aria-pressed="false">{{option.label}}</button></sc-for></div><div class="roadmap-detail"><div><span class="home-eyebrow" data-roadmap-value="area">{{hr.area}}</span><h3 data-roadmap-value="title">{{hr.title}}</h3></div><dl><div><dt>Duración</dt><dd><span data-roadmap-value="hours">{{hr.hours}}</span><small class="program-duration-note">Duración orientativa · sujeta a adaptación</small></dd></div><div><dt>Modalidad</dt><dd><span class="program-modes-inline" aria-label="Modalidades"><span class="program-modes-label">Modalidades:</span><span>Presencial</span><span>Online Live</span><span>Híbrida</span></span></dd></div><div><dt>Formador</dt><dd data-roadmap-value="trainer">{{hr.trainer}}</dd></div></dl></div><div class="roadmap-bottom"><p><span>KPI PACTADO · DÍA 60</span><strong data-roadmap-value="kpi">{{hr.kpi}}</strong></p><a class="home-text-link" href="{{hr.route}}" data-roadmap-link="">Ver área ↗</a></div></div></div></details>
+  </div></section>
+  <section class="home-section home-benefits" id="beneficios" aria-labelledby="benefits-title"><div class="home-shell">
+    <div class="home-section-head" data-reveal=""><div><p class="home-eyebrow">03 / VALOR DIFERENCIAL</p><h2 id="benefits-title">Formación que se nota en tu cuenta de resultados.</h2></div><div class="home-section-aside"><p>Cuando una empresa forma con Logístikos no compra horas de curso. Invierte en resolver un problema concreto de su operación, con un resultado que se mide.</p></div></div>
+    <div class="home-benefits-grid" data-reveal="">
+      <article class="home-benefit-card">
+        <span class="home-benefit-index">01</span>
+        <h3>Partimos de tu problema, no de un catálogo</h3>
+        <p>Antes de proponer nada hacemos un diagnóstico gratuito en 24 horas. El programa se diseña a partir de vuestros retos, vuestros procesos y vuestros indicadores.</p>
+      </article>
+      <article class="home-benefit-card">
+        <span class="home-benefit-index">02</span>
+        <h3>Resultados medibles a los 60 días</h3>
+        <p>Pactamos contigo un indicador antes de empezar, como errores de preparación, costes de transporte, rotación o incidencias. A los 60 días lo medimos y te entregamos un informe de resultados.</p>
+      </article>
+      <article class="home-benefit-card">
+        <span class="home-benefit-index">03</span>
+        <h3>Garantía: si no hay resultado, reforzamos gratis</h3>
+        <p>Si a los 60 días el indicador no ha mejorado lo esperado, volvemos a formar a tu equipo sin coste adicional.</p>
+      </article>
+      <article class="home-benefit-card">
+        <span class="home-benefit-index">04</span>
+        <h3>Tú eliges al formador</h3>
+        <p>Para cada formación te presentamos dos expertos con perfiles distintos y eliges el que mejor encaja con tu equipo y tu sector.</p>
+      </article>
+      <article class="home-benefit-card">
+        <span class="home-benefit-index">05</span>
+        <h3>Formación sin coste o con un coste mínimo</h3>
+        <p>La formación es bonificable por FUNDAE y nosotros gestionamos el trámite completo sin coste añadido. Con nuestra calculadora sabes en un minuto cuánto puedes recuperar.</p>
+      </article>
+      <article class="home-benefit-card">
+        <span class="home-benefit-index">06</span>
+        <h3>Sin desplazamientos ni paradas innecesarias</h3>
+        <p>Formamos en vuestras instalaciones, en directo online o en formato híbrido, para que podáis organizar turnos y sedes sin detener la operación.</p>
+      </article>
+      <article class="home-benefit-card">
+        <span class="home-benefit-index">07</span>
+        <h3>Expertos que conocen tu día a día</h3>
+        <p>Más de 60 profesionales con experiencia real en logística, compras, transporte, comercio internacional, liderazgo e inteligencia artificial.</p>
+      </article>
+      <article class="home-benefit-card">
+        <span class="home-benefit-index">08</span>
+        <h3>Materiales propios y casos de tu empresa</h3>
+        <p>Creamos manuales, procedimientos y herramientas a medida, y trabajamos con casos prácticos de vuestra propia operación. Si usamos información interna, firmamos un acuerdo de confidencialidad.</p>
+      </article>
+      <article class="home-benefit-card">
+        <span class="home-benefit-index">09</span>
+        <h3>Respaldo universitario</h3>
+        <p>Nuestros cursos universitarios cuentan con el diploma de la Fundación General de la Universidad de Salamanca.</p>
+      </article>
+    </div>
+    <div class="home-benefits-footer" data-reveal="">
+      <a class="home-button home-button--blue" href="#/diagnostico?tema=beneficios" data-magnetic="">Solicita tu diagnóstico gratuito <span aria-hidden="true">→</span></a>
+      <p class="cta-benefit"><span aria-hidden="true"></span>Diagnóstico gratuito en 24 h · Sin compromiso</p>
+    </div>
   </div></section>
   <section class="home-final-cta home-section" id="home-contacto" aria-labelledby="contact-title"><div class="cta-sphere" aria-hidden="true"></div><div class="home-shell" data-reveal=""><p class="home-eyebrow"><span class="status-dot"></span> EL FUTURO SE ACTIVA EN EL PRESENTE</p><h2 id="contact-title">El próximo cambio<br>de tu organización<br><span>puede empezar aquí.</span></h2><p>30 minutos.
 Un reto compartido.<br>El primer paso hacia lo que viene.</p><div class="home-actions"><a class="home-button home-button--orange" href="#/diagnostico?tema=inicio-cierre" data-magnetic="">Cuéntanos tu reto <span aria-hidden="true">↗</span></a><a class="home-text-link" href="https://calendly.com/logistikos/reunion" target="_blank" rel="noopener">Agendar reunión <span aria-hidden="true">↗</span></a><a class="home-text-link" href="https://wa.me/34696348047" target="_blank" rel="noopener">Escribir por WhatsApp ↗</a></div><p class="cta-benefit"><span aria-hidden="true"></span>Diagnóstico gratuito en 24 h · Sin compromiso</p></div></section>

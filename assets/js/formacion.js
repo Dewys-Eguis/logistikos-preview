@@ -22,7 +22,7 @@ window.FormacionPage = (function () {
     const areas = [
       ['supply-chain','Supply Chain y Logística',true], ['compras','Compras y Category Management',true],
       ['transporte','Transporte y Distribución',true], ['comercio-internacional','Comercio Internacional',true],
-      ['liderazgo','Liderazgo y Gestión de Equipos',true], ['ia-datos','IA, Datos y Digitalización',true]
+      ['liderazgo','Liderazgo y Bienestar de Equipos',true], ['ia-datos','IA, Datos y Digitalización',true]
     ];
     const clean = text => text.replace(/\s+/g,' ').trim();
     const normalize = text => text.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
