@@ -79,3 +79,13 @@
   .legal-basic-info{font-size:10.5px!important}
 }
 
+
+/* Aviso compacto en móvil; se conserva íntegra la lógica de consentimiento. */
+@media(max-width:560px){
+  .cookie-banner{bottom:max(8px,env(safe-area-inset-bottom));width:calc(100% - 20px);padding:12px;gap:10px}
+  .cookie-banner .cookie-banner-kicker{display:none}
+  .cookie-banner h2{font-size:15px !important;line-height:1.25;margin-bottom:5px}
+  .cookie-banner p{font-size:11px;line-height:1.4}
+  .cookie-banner-actions{grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}
+  .cookie-banner-actions .cookie-action{min-height:44px;padding:8px 4px;font-size:11px}
+}

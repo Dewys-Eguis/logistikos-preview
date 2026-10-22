@@ -881,3 +881,50 @@ html[data-theme="light"] .talent-itinerary-note strong {
   }
 }
 
+
+/* Hero del Home: composición azul marino con fotografía panorámica. */
+:root .home-view .home-hero--container { min-height:740px; background:#062440; color:#fff; justify-content:center; }
+:root .home-view .home-hero--container::before { display:none; }
+.home-view .home-hero--container .hero-photo,
+.home-view .home-hero--container .hero-photo:hover { position:absolute; inset:0; width:100%; max-width:none; height:100%; margin:0; transform:none; border-radius:0; box-shadow:none; z-index:0; aspect-ratio:auto; }
+.home-view .home-hero--container .hero-photo img { width:100%; height:100%; object-fit:cover; object-position:65% center; border-radius:0; }
+.home-view .home-hero--container .hero-photo::after { inset:0; height:auto; border-radius:0; background:linear-gradient(90deg,#062440 0%,rgba(6,36,64,.97) 24%,rgba(6,36,64,.8) 40%,rgba(6,36,64,.12) 68%),linear-gradient(180deg,rgba(5,38,70,.85),transparent 55%,rgba(5,32,57,.35)); }
+.home-view .home-hero--container .hero-content { padding-top:64px; padding-bottom:24px; padding-right:40%; }
+.home-view .home-hero--container h1 { font-size:clamp(44px,5.1vw,78px) !important; line-height:1.06; color:#fff; max-width:none; letter-spacing:-.045em; text-wrap:initial; }
+.home-view .home-hero--container .hero-subtitle { margin:24px 0 0; max-width:29ch; color:#edf3fa; font-size:clamp(20px,1.8vw,27px); line-height:1.4; }
+.home-view .home-hero--container .hero-intro { color:#b9c8d9; font-size:15px; max-width:480px; margin:22px 0 !important; }
+.home-view .home-hero--container .hero-eyebrow { color:#b9c8d9; line-height:1.6; letter-spacing:.16em; font-size:9px; }
+.home-view .home-hero--container .hero-eyebrow .status-dot { width:40px; height:2px; border-radius:0; box-shadow:none; background:#ff7a1a; }
+.home-view .home-hero--container .home-button--blue { background:#ff7a1a; color:#08243d; border-color:#ff7a1a; }
+.home-view .home-hero--container .home-button--blue:hover { background:#ff913d; }
+.home-view .home-hero--container .home-text-link,
+.home-view .home-hero--container .cta-benefit,
+.home-view .home-hero--container .hero-bottom { color:#c8d5e3; }
+.home-view .home-hero--container .hero-scroll > span { color:#edf3fa; border-color:#8097ae; }
+.home-view .home-hero--container .hero-bottom { margin-top:0; }
+.home-view .hero-specialties { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:0; list-style:none; padding:0; margin:52px 0 0; max-width:680px; }
+.home-view .hero-specialties li { display:flex; flex-direction:column; align-items:center; gap:10px; padding:0 14px; text-align:center; color:#d9e4ef; font-size:10px; line-height:1.45; letter-spacing:.1em; text-transform:uppercase; }
+.home-view .hero-specialties li + li { border-left:1px solid #b46c32; }
+.hero-specialty-icon { display:grid; place-items:center; width:54px; height:54px; border:1px solid #b3c4d6; border-radius:50%; }
+.hero-specialty-icon svg { width:33px; height:33px; }
+:root body:has(.home-hero--container) .site-header { background:#062440; border-bottom-color:transparent; }
+:root body:has(.home-hero--container) .site-header .wordmark { color:#fff; }
+:root body:has(.home-hero--container) .site-header .site-nav,
+:root body:has(.home-hero--container) .site-header .architecture-burger { color:#d9e4ef; }
+:root body:has(.home-hero--container) .site-header .nav-home-link[aria-current="page"] { color:#fff; border-bottom-color:#ff7a1a; }
+.about-view .about-portrait-real { min-height:0; }
+.about-view .about-portrait-real .about-director-photo { margin:0; }
+@media(max-width:900px) {
+  :root .home-view .home-hero--container { min-height:0; }
+  .home-view .home-hero--container .hero-content { padding:40px 0 24px; width:calc(100% - 48px); }
+  .home-view .home-hero--container h1 { font-size:clamp(38px,6.4vw,58px) !important; }
+  .home-view .home-hero--container .hero-photo,
+  .home-view .home-hero--container .hero-photo:hover { position:relative; inset:auto; height:clamp(280px,55vw,480px); width:100%; }
+  .home-view .home-hero--container .hero-photo img { object-position:72% center; }
+  .home-view .home-hero--container .hero-photo::after { background:linear-gradient(#062440,transparent 30%,rgba(6,36,64,.15) 75%,#062440); }
+  .home-view .home-hero--container .hero-bottom { padding-top:16px; }
+  .home-view .hero-specialties { margin-top:40px; }
+  .home-view .hero-specialties li { padding:0 7px; font-size:8px; letter-spacing:.04em; }
+  .hero-specialty-icon { width:42px; height:42px; }
+  .hero-specialty-icon svg { width:27px; height:27px; }
+}
