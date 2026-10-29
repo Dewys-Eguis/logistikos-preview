@@ -98,6 +98,105 @@ const HomePage = {
     }
 
     const stopMotion = HomeMotion.mount(root);
-    return () => { controller.abort(); stopMotion(); };
+    const stopHero = initLogistikosHero(root.querySelector('.lgk-hero'));
+    return () => { controller.abort(); stopMotion(); stopHero(); };
   },
 };
+
+const HERO_CATS = [
+  'Supply Chain y Logística',
+  'Compras y Category Management',
+  'Transporte y Distribución',
+  'Comercio Internacional',
+  'Liderazgo y Bienestar de Equipos',
+  'IA, Datos y Digitalización',
+  'Cursos universitarios',
+  'Formaciones obligatorias',
+];
+
+function wrapHeroLines(text, width) {
+  const lines = [''];
+  text.toUpperCase().split(' ').forEach((w) => {
+    const cur = lines[lines.length - 1];
+    const next = cur ? cur + ' ' + w : w;
+    if (next.length <= width) lines[lines.length - 1] = next; else lines.push(w);
+  });
+  while (lines.length < 3) lines.push('');
+  return lines.slice(0, 3);
+}
+
+function getMadridTime(withSeconds) {
+  try {
+    const o = { timeZone: 'Europe/Madrid', hour: '2-digit', minute: '2-digit', hour12: false };
+    if (withSeconds) o.second = '2-digit';
+    return new Intl.DateTimeFormat('es-ES', o).format(new Date());
+  } catch (e) { return '--:--'; }
+}
+
+function initLogistikosHero(root) {
+  if (!root || root.__lgk) return () => {};
+  root.__lgk = true;
+  const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const flaps = root.querySelector('[data-lgk-flaps]');
+  const idx = root.querySelector('[data-lgk-idx]');
+  const bar = root.querySelector('[data-lgk-bar]');
+  const clock = root.querySelector('[data-lgk-clock]');
+  const cells = Array.from(root.querySelectorAll('[data-lgk-cell]'));
+  const fill = root.querySelector('[data-lgk-rail-fill]');
+  let t = 0, cat = -1;
+
+  function renderFlaps(ci) {
+    if (!flaps) return;
+    const width = window.innerWidth <= 760 ? 13 : 16;
+    const lines = wrapHeroLines(HERO_CATS[ci], width);
+    flaps.innerHTML = '';
+    lines.forEach((ln, r) => {
+      const row = document.createElement('div');
+      row.className = 'lgk-row';
+      const s = (ln + ' '.repeat(width)).slice(0, width);
+      for (let i = 0; i < width; i++) {
+        const c = document.createElement('span');
+        c.className = 'lgk-flap';
+        c.textContent = s[i] === ' ' ? '\u00A0' : s[i];
+        c.style.animationDelay = (r * 0.08 + i * 0.03).toFixed(2) + 's';
+        row.appendChild(c);
+      }
+      flaps.appendChild(row);
+    });
+    flaps.setAttribute('aria-label', 'Formación: ' + HERO_CATS[ci]);
+    if (idx) idx.textContent = '0' + (ci + 1);
+    if (bar) bar.style.width = ((ci + 1) / 8 * 100) + '%';
+  }
+
+  function renderRail(ai) {
+    cells.forEach((c, i) => {
+      c.classList.toggle('is-on', i === ai);
+      c.classList.toggle('is-done', i < ai);
+    });
+    if (fill) fill.style.width = (ai * 150) + 'px';
+  }
+
+  function tick() {
+    const ci = Math.floor(t / 3) % 8;
+    if (ci !== cat) { cat = ci; renderFlaps(ci); }
+    renderRail(Math.floor(t / 2) % 4);
+    if (clock) clock.textContent = 'ES ' + getMadridTime(window.innerWidth > 760);
+    t++;
+  }
+
+  tick();
+  const iv = reduce ? null : setInterval(tick, 1000);
+  let ivClock = null;
+  if (reduce && clock) ivClock = setInterval(() => { clock.textContent = 'ES ' + getMadridTime(false); }, 30000);
+  const onResize = () => { renderFlaps(cat < 0 ? 0 : cat); };
+  window.addEventListener('resize', onResize);
+  return function destroy() {
+    if (iv) clearInterval(iv);
+    if (ivClock) clearInterval(ivClock);
+    window.removeEventListener('resize', onResize);
+    root.__lgk = false;
+  };
+}
+
+window.initLogistikosHero = initLogistikosHero;
+
