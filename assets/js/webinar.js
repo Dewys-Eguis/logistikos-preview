@@ -7,6 +7,8 @@
   function applyFilter(filter){
     activeFilter=filter;
     var visible=0;
+    var list=document.querySelector("[data-webinar-list]");
+    if(list){cards().sort(function(a,b){var da=new Date(a.getAttribute("data-event-date")),db=new Date(b.getAttribute("data-event-date"));return filter==="past"?db-da:da-db;}).forEach(function(c){list.appendChild(c);});}
     cards().forEach(function(card){
       var state=classify(card),show=state===filter;card.hidden=!show;if(show)visible++;
       var button=card.querySelector("[data-webinar-register]"),badge=card.querySelector(".webinar-status");
@@ -19,6 +21,7 @@
   document.addEventListener("click",function(e){
     var tab=e.target.closest("[data-webinar-filter]");if(tab){applyFilter(tab.dataset.webinarFilter);return;}
     var register=e.target.closest("[data-webinar-register]");if(register){
+      if(register.disabled)return;
       var card=register.closest("[data-webinar-event]"),modal=document.querySelector("[data-webinar-modal]");if(!card||!modal)return;
       var title=card.dataset.eventTitle||"Webinar Logístikos";
       var label=modal.querySelector("[data-webinar-modal-event]"),field=modal.querySelector("[data-webinar-title-field]");
