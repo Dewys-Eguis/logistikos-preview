@@ -237,8 +237,8 @@
     ],
     "links": [
       "#/",
-      "mailto:formacion@logistikos.es?subject=Recuperar%20contrase%C3%B1a%20del%20campus",
-      "mailto:formacion@logistikos.es?subject=Ayuda%20con%20el%20campus"
+      "mailto:info@logistikos.pro?subject=Recuperar%20contrase%C3%B1a%20del%20campus",
+      "mailto:info@logistikos.pro?subject=Ayuda%20con%20el%20campus"
     ],
     "fields": [
       "<form id=\"login-form\" novalidate >",

@@ -94,7 +94,7 @@ document.addEventListener("submit", function (e) {
     p.value = "";
     m.dataset.tone = "error";
     m.textContent =
-      "No hemos podido validar esas credenciales en esta vista. Revisa los datos o solicita ayuda a formacion@logistikos.es.";
+      "No hemos podido validar esas credenciales en esta vista. Revisa los datos o solicita ayuda a info@logistikos.pro.";
   }
 });
 

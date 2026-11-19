@@ -113,7 +113,7 @@
         window.LogistikosAnalytics.trackDiagnosticSuccess(payload);
       }
     }catch(error){
-      if(status){status.textContent="No hemos podido enviar tu reto. Inténtalo de nuevo o escríbenos a formacion@logistikos.es.";status.dataset.tone="error";}
+      if(status){status.textContent="No hemos podido enviar tu reto. Inténtalo de nuevo o escríbenos a info@logistikos.pro.";status.dataset.tone="error";}
     }finally{if(button)button.disabled=false;}
   });
 })();

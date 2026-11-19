@@ -29,7 +29,7 @@ Crear un Web Service usando el mismo repositorio y configurar:
 Agregar estas variables en Render > Environment:
 
 - `RESEND_API_KEY`: API key secreta de Resend
-- `FORM_TO_EMAIL`: correo que recibira los formularios, por ejemplo `formacion@logistikos.es`
+- `FORM_TO_EMAIL`: correo que recibira los formularios, por ejemplo `info@logistikos.pro`
 - `FORM_FROM_EMAIL`: por ejemplo `Logistikos Web <formularios@logistikos.es>`
 - `ALLOWED_ORIGINS`: `https://dewys-eguis.github.io,https://logistikos.es,https://www.logistikos.es`
 

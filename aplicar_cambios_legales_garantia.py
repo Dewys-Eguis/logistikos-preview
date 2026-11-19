@@ -65,7 +65,7 @@ if 'assets/css/legal.css' not in layout:
         1,
     )
 
-old_footer = '<div class="site-footer-bottom"><span>© 2026 Logístikos</span><span class="footer-legal-pending">Aviso legal · Privacidad · Cookies <small>pendiente de textos definitivos</small></span><a href="mailto:formacion@logistikos.es?subject=Consulta%20legal%20o%20de%20privacidad">Consultas legales</a><a href="#top">Volver arriba ↑</a></div>'
+old_footer = '<div class="site-footer-bottom"><span>© 2026 Logístikos</span><span class="footer-legal-pending">Aviso legal · Privacidad · Cookies <small>pendiente de textos definitivos</small></span><a href="mailto:info@logistikos.pro?subject=Consulta%20legal%20o%20de%20privacidad">Consultas legales</a><a href="#top">Volver arriba ↑</a></div>'
 new_footer = '<div class="site-footer-bottom"><span>© 2026 Logístikos</span><a href="#/aviso-legal">Aviso legal</a><a href="#/politica-privacidad">Política de privacidad</a><a href="#/politica-cookies">Política de cookies</a><button type="button" class="footer-cookie-settings" data-cookie-settings>Configurar cookies</button><a href="#top">Volver arriba ↑</a></div>'
 if new_footer not in layout:
     if old_footer not in layout:
@@ -113,7 +113,7 @@ html = read(path)
 legal_diag = '''          <div class="legal-form-consent" data-legal-consent>
             <label class="legal-check"><input type="checkbox" name="privacidad" value="aceptada" required><span>He leído y acepto la <a href="#/politica-privacidad">Política de privacidad</a>. *</span></label>
             <label class="legal-check"><input type="checkbox" name="comunicaciones" value="si"><span>Quiero recibir información sobre formaciones, webinars y eventos de Logístikos.</span></label>
-            <p class="legal-basic-info"><strong>Información básica sobre protección de datos.</strong> Responsable: Javier Fernández Díez de los Ríos (Logístikos). Finalidad: atender tu solicitud y, si lo autorizas, enviarte información de nuestras formaciones. Legitimación: tu consentimiento. Destinatarios: no se ceden datos a terceros salvo obligación legal. Derechos: acceso, rectificación, supresión y otros, escribiendo a <a href="mailto:formacion@logistikos.es">formacion@logistikos.es</a>. Más información en nuestra <a href="#/politica-privacidad">Política de privacidad</a>.</p>
+            <p class="legal-basic-info"><strong>Información básica sobre protección de datos.</strong> Responsable: Javier Fernández Díez de los Ríos (Logístikos). Finalidad: atender tu solicitud y, si lo autorizas, enviarte información de nuestras formaciones. Legitimación: tu consentimiento. Destinatarios: no se ceden datos a terceros salvo obligación legal. Derechos: acceso, rectificación, supresión y otros, escribiendo a <a href="mailto:info@logistikos.pro">info@logistikos.pro</a>. Más información en nuestra <a href="#/politica-privacidad">Política de privacidad</a>.</p>
           </div>
 '''
 if 'data-legal-consent' not in html:
@@ -132,7 +132,7 @@ html = read(path)
 legal_webinar = '''        <div class="legal-form-consent" data-legal-consent>
           <label class="legal-check"><input type="checkbox" name="privacidad" value="aceptada" required><span>He leído y acepto la <a href="#/politica-privacidad">Política de privacidad</a>. *</span></label>
           <label class="legal-check"><input type="checkbox" name="comunicaciones" value="si"><span>Quiero recibir información sobre formaciones, webinars y eventos de Logístikos.</span></label>
-          <p class="legal-basic-info"><strong>Información básica sobre protección de datos.</strong> Responsable: Javier Fernández Díez de los Ríos (Logístikos). Finalidad: gestionar tu inscripción y, si lo autorizas, enviarte información de nuestras formaciones. Legitimación: tu consentimiento. Destinatarios: no se ceden datos a terceros salvo obligación legal. Derechos: acceso, rectificación, supresión y otros, escribiendo a <a href="mailto:formacion@logistikos.es">formacion@logistikos.es</a>. Más información en nuestra <a href="#/politica-privacidad">Política de privacidad</a>.</p>
+          <p class="legal-basic-info"><strong>Información básica sobre protección de datos.</strong> Responsable: Javier Fernández Díez de los Ríos (Logístikos). Finalidad: gestionar tu inscripción y, si lo autorizas, enviarte información de nuestras formaciones. Legitimación: tu consentimiento. Destinatarios: no se ceden datos a terceros salvo obligación legal. Derechos: acceso, rectificación, supresión y otros, escribiendo a <a href="mailto:info@logistikos.pro">info@logistikos.pro</a>. Más información en nuestra <a href="#/politica-privacidad">Política de privacidad</a>.</p>
         </div>'''
 if 'data-legal-consent' not in html:
     old = '<label class="webinar-consent"><input type="checkbox" name="consentimiento" required><span>Acepto que Logístikos utilice estos datos para gestionar mi inscripción y enviarme la información de acceso.</span></label>'
@@ -148,7 +148,7 @@ html = read(path)
 legal_talent = '''        <div class="legal-form-consent" data-legal-consent>
           <label class="legal-check"><input type="checkbox" name="privacidad" value="aceptada" required><span>He leído y acepto la <a href="#/politica-privacidad">Política de privacidad</a>. *</span></label>
           <label class="legal-check"><input type="checkbox" name="comunicaciones" value="si"><span>Quiero recibir información sobre formaciones, webinars y eventos de Logístikos.</span></label>
-          <p class="legal-basic-info"><strong>Información básica sobre protección de datos.</strong> Responsable: Javier Fernández Díez de los Ríos (Logístikos). Finalidad: atender tu solicitud y, si lo autorizas, enviarte información de nuestras formaciones. Legitimación: tu consentimiento. Destinatarios: no se ceden datos a terceros salvo obligación legal. Derechos: acceso, rectificación, supresión y otros, escribiendo a <a href="mailto:formacion@logistikos.es">formacion@logistikos.es</a>. Más información en nuestra <a href="#/politica-privacidad">Política de privacidad</a>.</p>
+          <p class="legal-basic-info"><strong>Información básica sobre protección de datos.</strong> Responsable: Javier Fernández Díez de los Ríos (Logístikos). Finalidad: atender tu solicitud y, si lo autorizas, enviarte información de nuestras formaciones. Legitimación: tu consentimiento. Destinatarios: no se ceden datos a terceros salvo obligación legal. Derechos: acceso, rectificación, supresión y otros, escribiendo a <a href="mailto:info@logistikos.pro">info@logistikos.pro</a>. Más información en nuestra <a href="#/politica-privacidad">Política de privacidad</a>.</p>
         </div>
 '''
 if 'data-legal-consent' not in html:
